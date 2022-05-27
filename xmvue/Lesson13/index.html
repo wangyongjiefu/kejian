@@ -1,0 +1,741 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>13.条件渲染 · Java入门教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="黑马程序员">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-darcula.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Lesson14/" />
+    
+    
+    <link rel="prev" href="../Lesson12/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Lesson01/">
+            
+                <a href="../Lesson01/">
+            
+                    
+                    01.什么是Vue.js？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Lesson02/">
+            
+                <a href="../Lesson02/">
+            
+                    
+                    02.从index.html开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Lesson03/">
+            
+                <a href="../Lesson03/">
+            
+                    
+                    03.条件与循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Lesson04/">
+            
+                <a href="../Lesson04/">
+            
+                    
+                    04.处理用户输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Lesson05/">
+            
+                <a href="../Lesson05/">
+            
+                    
+                    05.按钮事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Lesson06/">
+            
+                <a href="../Lesson06/">
+            
+                    
+                    06.组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Lesson07/">
+            
+                <a href="../Lesson07/">
+            
+                    
+                    07.过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Lesson08/">
+            
+                <a href="../Lesson08/">
+            
+                    
+                    08.计算属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Lesson09/">
+            
+                <a href="../Lesson09/">
+            
+                    
+                    09.观察属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Lesson10/">
+            
+                <a href="../Lesson10/">
+            
+                    
+                    10.设定机算属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Lesson11/">
+            
+                <a href="../Lesson11/">
+            
+                    
+                    11.Class绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Lesson12/">
+            
+                <a href="../Lesson12/">
+            
+                    
+                    12.Class对象绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    13.条件渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Lesson14/">
+            
+                <a href="../Lesson14/">
+            
+                    
+                    14.元素显示v-show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Lesson15/">
+            
+                <a href="../Lesson15/">
+            
+                    
+                    15.列表渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../Lesson16/">
+            
+                <a href="../Lesson16/">
+            
+                    
+                    16.JS对象迭代
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../Lesson17/">
+            
+                <a href="../Lesson17/">
+            
+                    
+                    17.事件处理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../Lesson18/">
+            
+                <a href="../Lesson18/">
+            
+                    
+                    18.表单控件绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../Lesson19/">
+            
+                <a href="../Lesson19/">
+            
+                    
+                    19.表单复选框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../Lesson20/">
+            
+                <a href="../Lesson20/">
+            
+                    
+                    20.表单单选按钮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../Lesson21/">
+            
+                <a href="../Lesson21/">
+            
+                    
+                    21.表单下拉框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../Lesson22/">
+            
+                <a href="../Lesson22/">
+            
+                    
+                    22.表单修饰符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../Lesson23/">
+            
+                <a href="../Lesson23/">
+            
+                    
+                    23.组件：基础的基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../Lesson24/">
+            
+                <a href="../Lesson24/">
+            
+                    
+                    24.组件：局部的组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="../Lesson25/">
+            
+                <a href="../Lesson25/">
+            
+                    
+                    25.组件：表行组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="../Lesson26/">
+            
+                <a href="../Lesson26/">
+            
+                    
+                    26.组件：数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="../Lesson27/">
+            
+                <a href="../Lesson27/">
+            
+                    
+                    27.组件：传递数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="../Lesson28/">
+            
+                <a href="../Lesson28/">
+            
+                    
+                    28.组件：传递变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="../Lesson29/">
+            
+                <a href="../Lesson29/">
+            
+                    
+                    29.组件：参数验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="../Lesson30/">
+            
+                <a href="../Lesson30/">
+            
+                    
+                    30.组件：事件传递
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="../Lesson31/">
+            
+                <a href="../Lesson31/">
+            
+                    
+                    31.组件：slot插槽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="../Lesson32/">
+            
+                <a href="../Lesson32/">
+            
+                    
+                    32.组件：组合slot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >13.条件渲染</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x6761;&#x4EF6;&#x6E32;&#x67D3;"><b></b>&#x6761;&#x4EF6;&#x6E32;&#x67D3;</a></li><ul><li><span class="title-icon "></span><a href="#&#x77E5;&#x8BC6;&#x70B9;"><b></b>&#x77E5;&#x8BC6;&#x70B9;</a></li><ul><li><span class="title-icon "></span><a href="#v-if"><b></b>v-if</a></li></ul><li><span class="title-icon "></span><a href="#&#x6E90;&#x6587;&#x4EF6;"><b></b>&#x6E90;&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x5C0F;&#x9A6C;&#x89C6;&#x9891;&#x9891;&#x9053;"><b></b>&#x5C0F;&#x9A6C;&#x89C6;&#x9891;&#x9891;&#x9053;</a></li></ul></ul></div><a href="#&#x6761;&#x4EF6;&#x6E32;&#x67D3;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6761;&#x4EF6;&#x6E32;&#x67D3;"><a name="&#x6761;&#x4EF6;&#x6E32;&#x67D3;" class="anchor-navigation-ex-anchor" href="#&#x6761;&#x4EF6;&#x6E32;&#x67D3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6761;&#x4EF6;&#x6E32;&#x67D3;</h1>
+<h2 id="&#x77E5;&#x8BC6;&#x70B9;"><a name="&#x77E5;&#x8BC6;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x77E5;&#x8BC6;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x77E5;&#x8BC6;&#x70B9;</h2>
+<ul>
+<li>v-if</li>
+<li>v-else-if</li>
+<li>v-else</li>
+</ul>
+<h3 id="v-if"><a name="v-if" class="anchor-navigation-ex-anchor" href="#v-if"><i class="fa fa-link" aria-hidden="true"></i></a>v-if</h3>
+<p>&#x5224;&#x65AD;vue.js&#x7684;&#x53D8;&#x91CF;&#x7684;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x6267;&#x884C;&#x9875;&#x9762;&#x6E32;&#x67D3;&#x903B;&#x8F91;&#x3002;&#xFF08;if-elseif-else&#xFF09;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>myApp<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>result == 0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x6210;&#x7EE9;&#x672A;&#x516C;&#x5E03;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">v-else-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>result &lt; 60<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{result}}&#x5206; - &#x8003;&#x8BD5;&#x4E0D;&#x53CA;&#x683C;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">v-else-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>result &lt; 80<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{result}}&#x5206; - &#x8FD8;&#x9700;&#x52AA;&#x529B;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">v-else</span><span class="token punctuation">&gt;</span></span>{{result}}&#x5206; - &#x8003;&#x5F97;&#x4E0D;&#x9519;&#xFF0C;&#x73A9;&#x6E38;&#x620F;&#x5427;&#xFF01;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>btnClick<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x8003;&#x8BD5;&#x6210;&#x7EE9;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
+    var myApp = new Vue({
+        el: &apos;#myApp&apos;, 
+        data: {
+            result: 0
+        },
+        methods: {
+            btnClick: function(){
+                this.result = Math.round(Math.random() * 100);
+            },
+        },
+    });
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h2 id="&#x6E90;&#x6587;&#x4EF6;"><a name="&#x6E90;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x6E90;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6E90;&#x6587;&#x4EF6;</h2>
+<ul>
+<li><a href="https://gitee.com/komavideo/LearnVueJS" target="_blank">https://gitee.com/komavideo/LearnVueJS</a></li>
+</ul>
+<h2 id="&#x5C0F;&#x9A6C;&#x89C6;&#x9891;&#x9891;&#x9053;"><a name="&#x5C0F;&#x9A6C;&#x89C6;&#x9891;&#x9891;&#x9053;" class="anchor-navigation-ex-anchor" href="#&#x5C0F;&#x9A6C;&#x89C6;&#x9891;&#x9891;&#x9053;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C0F;&#x9A6C;&#x89C6;&#x9891;&#x9891;&#x9053;</h2>
+<p><a href="http://komavideo.com" target="_blank">http://komavideo.com</a></p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; www.itheima.com/javase 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-05-20 09:11:59
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Lesson12/" class="navigation navigation-prev " aria-label="Previous page: 12.Class对象绑定">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Lesson14/" class="navigation navigation-next " aria-label="Next page: 14.元素显示v-show">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"13.条件渲染","level":"1.14","depth":1,"next":{"title":"14.元素显示v-show","level":"1.15","depth":1,"path":"Lesson14/README.md","ref":"Lesson14/README.md","articles":[]},"previous":{"title":"12.Class对象绑定","level":"1.13","depth":1,"path":"Lesson12/README.md","ref":"Lesson12/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-default-theme","search-pro","theme-comscore","splitter","tbfed-pagefooter","expandable-chapters","hide-element","custom-favicon","-highlight","prism","prism-themes","code","sectionx","flexible-alerts","ancre-navigation","livereload"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy www.itheima.com/javase 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-darcula.css"]},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"pdf":{"pageNumbers":true,"fontFamily":"Arial","fontSize":12,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56}},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"favicon":"favicon.ico","theme-comscore":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"prism-themes":{},"custom-favicon":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"黑马程序员","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java入门教程","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"用最通俗的语言，带你快速走进Java世界的大门"},"file":{"path":"Lesson13/README.md","mtime":"2019-05-20T01:11:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-27T13:24:49.458Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
