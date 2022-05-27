@@ -1,66 +1,38 @@
 <!DOCTYPE HTML>
 <html onselectstart='return false'>
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<title>3D旋转相册特效</title>
-	<script src="./js/jquery-1.11.3.min.js"></script>
-	<link rel="icon" href="./as.jpg">
-	<script type="text/javascript" src="js/canvas_bg.js" ></script>
-	<!-- <meta http-equiv="refresh" content="1;URL=./anfang/index.html"> -->
-
-
+	<link rel="icon" href="./public/img/as.jpg">
 	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
-
-
-
+	<link rel="stylesheet" href="./public/css/bootstrap.min.css">
 	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="./js/bootstrap.min.js" ></script>
-
-	<link rel="stylesheet" type="text/css" href="./css/index.css">
-	<!--  -->
+	<script src="./public/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./public/css/index.css">
 
 </head>
+
 <body>
-	<div style="width: 100px; height: 30px; background-color: red; position: fixed;right: 0px;top:50%;text-align: center;line-height: 30px;font-size: 21px; border-radius: 8px;z-index: 999;"><a href="http://jiahome.gitee.io/long" style="text-decoration: none;"><span style="color: yellow;">返回首页</span></a></div>
-	
+	<div
+		style="width: 100px; height: 30px; background-color: red; position: fixed;right: 0px;top:50%;text-align: center;line-height: 30px;font-size: 21px; border-radius: 8px;z-index: 999;">
+		<a href="http://jiahome.gitee.io/long" style="text-decoration: none;"><span style="color: yellow;">返回首页</span>
+		</a>
+	</div>
 	<nav class="navbar navbar-inverse  navbar-fixed-top">
 		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="./qcsj/shop.html">商城案例1</a>
-				<a class="navbar-brand" href="./csgl/login.html">后台案例2</a>
-				<a class="navbar-brand" href="./mzwz/index.html">魅族手机案例3</a>
-				<a class="navbar-brand" href="./bdhf/百度换背景.html">换背景案例4</a>
-				<a class="navbar-brand" href="./cart/index.html">购物动画案例5</a>
-				<a class="navbar-brand" href="./dmcm/index.html">大美官网案例6</a>
-				<a class="navbar-brand" href="./luntan/index.html">论坛发帖</a>
-				<a class="navbar-brand" href="./wzq/index.html">游戏五子棋7</a>
-				<a class="navbar-brand" href="./tcs.html">游戏贪吃蛇8</a>
-				
-				
-				
 				<a class="navbar-brand" href="./jianli/index.html" style="color: yellow;font-weight: bolder;">我的简历</a>
 				<a class="navbar-brand" href="./zxb/index.html" style="color: yellow;font-weight: bolder;">作息表</a>
 				<a class="navbar-brand" href="guiju/guiju.html" style="color: yellow;font-weight: bolder;">学生守则</a>
-
 				<a class="navbar-brand" href="./taiji/index.html" style="color: yellow;font-weight: bolder;">太极图</a>
-				
-				
-				
 				<a class="navbar-brand" href="./dist/index.html" style="color: yellow;font-weight: bolder;">手机APP案例1</a>
 				<!-- <a class="navbar-brand" href="http://h5yjy.com/miaomiao" style="color: yellow;font-weight: bolder;">手机APP案例1</a> -->
-				<a class="navbar-brand" href="anfang/index.html" style="color: yellow;font-weight: bolder;position: relative;">
-					<img src="img/new.png" width="60px" height="40px" alt="" style="position: absolute;top: 9px;left: 0px">
-				手机APP案例2</a>
+				<a class="navbar-brand" href="anfang/index.html"
+					style="color: yellow;font-weight: bolder;position: relative;">
+					手机APP案例2</a>
 				<a class="navbar-brand" href="./dbhd/dbhd.html" style="color: yellow;font-weight: bolder;">彼岸花特效</a>
 				<a class="navbar-brand" href="./xszs/index.html" style="color: yellow;font-weight: bolder;">学生作业展示</a>
 				<a class="navbar-brand" href="./tongxuelu/index.html" style="color: yellow;font-weight: bolder;">同学录</a>
@@ -70,105 +42,8 @@
 				<a class="navbar-brand" href="./sjfk/sjfk.html" style="color: yellow;font-weight: bolder;">特效方块</a>
 				<a class="navbar-brand" href="./2020/index.html" style="color: yellow;font-weight: bolder;">2020</a>
 				<a class="navbar-brand" href="./myEcharts/index.html" style="color: yellow;font-weight: bolder;">炫酷桌面</a>
-				<!-- <img src="img/new.png" alt="" style="position: absolute;top: 90px;left: 78px"> -->
-
 			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-
-
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
+		</div>
 	</nav>
-	<canvas id="c" style="position: absolute;z-index: -1;"></canvas>
-	<div class="ziti" >
-		<ul>
-			<li>点</li>
-			<li>击</li>
-			<li>音</li>
-			<li>乐</li>
-			<li>盒</li>
-		</ul>
-	</div>
-	<div class="zim" style="margin-top: 158px;">
-		<h1>电脑查看有动画效果&hearts;&hearts;&hearts;</h1>
-	</div>
-	
-	<div id="wrap">
-		<ul>
-			<li style="background-image:url(img/1.jpg);"></li>
-			<li style="background-image:url(img/2.jpg);"></li>
-			<li style="background-image:url(img/3.jpg);"></li>
-			<li style="background-image:url(img/4.jpg);"></li>
-			<li style="background-image:url(img/5.jpg);"></li>
-			<li style="background-image:url(img/6.jpg);"></li>
-			<li style="background-image:url(img/7.jpg);"></li>
-			<li style="background-image:url(img/8.jpg);"></li>
-			<li style="background-image:url(img/9.jpg);"></li>
-			<li style="background-image:url(img/10.jpg);"></li>
-			<li style="background-image:url(img/11.jpg);"></li>
-		</ul>
-		<p></p>
-	</div>
-
-	<div class="content">
-		<div class="wrap1">
-			<div class="box">
-				<div class="front">正面</div>
-				<div class="back">反面</div>
-				<div class="left">左面</div>	
-				<div class="right">右面</div>
-				<div class="top">上面</div>
-				<div class="bottom">底面</div>
-				<div class="front1">正面</div>
-				<div class="back1">反面</div>
-				<div class="left1">左面</div>	
-				<div class="right1">右面</div>
-				<div class="top1">上面</div>
-				<div class="bottom1">底面</div>
-			</div>
-		</div>
-	</div>
-	<section >
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</section>
-	<audio  autoplay loop src="./music.mp3" ></audio>
-	<div class="box1">
-
-		<div class="bottom11"><img src="musicb.jpg" alt=""></div>
-		<div class="top11"><img src="musict.jpg" alt=""></div>
-	</div>
-
-	<div class="boxq">
-
-		<div class="sun"></div>
-		<div class="lin1 public"></div>
-		<div class="lin2 public"></div>
-		<div class="lin3 public">
-			<span>
-				<b></b>
-			</span>
-		</div>
-
-		<div class="lin4 public"></div>
-
-		<div class="line5 public">
-			<span>
-				<b></b>
-			</span>
-		</div>
-
-	</div>
-
-
-
-	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,356 @@
+*{ margin:0; padding:0;}
+	body{ /*background:#000;*/ width:960px; /*height:100%;*/ /*overflow:hidden;*/  background-color: pink;
+
+	}
+
+	.zim{
+		color:red;
+		width: 1000px;
+		height: 50px;
+	}
+	.zim h1{
+
+		text-align: center;
+
+	}
+	#wrap{ width:133px; height:200px; margin:25% auto 0;
+		position:relative;
+		top:-100px;
+		-moz-transform-style:preserve-3d;
+		-webkit-transform-style:preserve-3d;
+		-ms-transform-style:preserve-3d;
+		-o-transform-style:preserve-3d;
+		transform-style:preserve-3d;
+		-moz-transform:perspective(1000px) rotateX(-10deg) rotateY(0deg);
+		-webkit-transform:perspective(1000px) rotateX(-10deg) rotateY(0deg);
+		-ms-transform:perspective(1000px) rotateX(-10deg) rotateY(0deg);
+		-o-transform:perspective(1000px) rotateX(-10deg) rotateY(0deg);
+		transform:perspective(1000px) rotateX(-10deg) rotateY(0deg);
+	}
+	#wrap ul li{
+		list-style:none;
+		width:120px;
+		height:180px;
+		position:absolute;
+		top:0;left:0;
+		border-radius:3px;
+		box-shadow:0 0 10px #fff;
+		background-size:100%;
+
+		-moz-transform:rotateY(0deg) translateZ(0px);
+		-webkit-transform:rotateY(0deg) translateZ(0px);
+		-ms-transform:rotateY(0deg) translateZ(0px);
+		-o-transform:rotateY(0deg) translateZ(0px);
+		transform:rotateY(0deg) translateZ(0px);
+
+		-moz-box-reflect:below 10px -moz-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,.5) 100%);
+		-webkit-box-reflect:below 10px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,.5) 100%);
+		-ms-box-reflect:below 10px -ms-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,.5) 100%);
+		-o-box-reflect:below 10px -o-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,.5) 100%);
+		-webkit-box-reflect:below 10px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,.5) 100%);
+		box-reflect:below 10px linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,.5) 100%);
+	}
+	#wrap p{ width:1200px; height:1200px; position:absolute; border-radius:100%;
+		left:50%; top:100%; margin-left:-600px; margin-top:-600px;
+		/*background:-webkit-radial-gradient(center center,600px 600px,rgba(50,50,50,1),rgba(0,0,0,0));*/
+		transform:rotateX(90deg);}
+
+
+		.content{width: 960px;/*border:1px solid black;*/height: 100px;}
+		.wrap1{width:100px; height: 100px; margin:150px auto;perspective:1000px;}
+		.box{position: relative;transform-style: preserve-3d;font-size: 20px;color: #fff;text-align: center;line-height: 100px;transform: rotateX(19deg) rotateY(24deg); animation: rot 20s linear infinite;}  /*匀速 循环*/
+		.box div{width: 100px;height: 100px;position: absolute;transition:transform .5s ease-in;}
+		.box div:nth-child(1){background:red; transform: rotateX(0deg) translateZ(50px) ;}
+		.box div:nth-child(2){background:pink; transform: rotateX(180deg) translateZ(50px) ; }
+		.box div:nth-child(3){background:blue; transform: rotateY(-90deg) translateZ(50px) ;}
+		.box div:nth-child(4){background:yellow; transform: rotateY(90deg) translateZ(50px) ;}
+		.box div:nth-child(5){background:black; transform: rotateX(90deg) translateZ(50px) ;}
+		.box div:nth-child(6){background:orange; transform: rotateX(-90deg) translateZ(50px) ;}
+
+		.wrap1 .box:hover .front1{background:red; transform: rotateX(0deg) translateZ(100px) ;}
+		.wrap1 .box:hover .back1{background:pink; transform: rotateX(180deg) translateZ(100px) ; }
+		.wrap1 .box:hover .left1{background:blue; transform: rotateY(-90deg) translateZ(100px) ;}
+		.wrap1 .box:hover .right1{background:yellow; transform: rotateY(90deg) translateZ(100px) ;}
+		.wrap1 .box:hover .top1{background:black; transform: rotateX(90deg) translateZ(100px) ;}
+		.wrap1 .box:hover .bottom1{background:orange; transform: rotateX(-90deg) translateZ(100px) ;}
+		/*关键帧 旋转suoxie 是下面的意思*/
+
+		section {
+			width: 300px;
+			height: 200px;
+			margin: 100px auto;
+			/*background: url(../images/dog.gif) no-repeat 112px 112px;*/
+			background-size: cover;
+			position: relative;
+			-webkit-transform-style: preserve-3d;  /* 让父盒子里面的子盒子以3d效果显示 */
+			transform-style: preserve-3d;  /* 让父盒子里面的子盒子以3d效果显示 */
+			transition:  5s linear;  /* 匀速  all 是可以省略的， 省略默认的all*/
+		}
+		section:hover {
+			-webkit-transform: rotateY(360deg);
+			transform: rotateY(360deg);
+		}
+		section div {
+			width: 72%;
+			height: 146%;
+			background: url(../images/dog.gif) no-repeat;
+			background-size: cover;
+			position: absolute;
+			top: 0;
+			left: 38px;
+		}
+		section div:nth-child(1) {
+			-webkit-transform: rotateY(0deg)  translateZ(400px);
+			transform: rotateY(0deg)  translateZ(400px);
+		}
+		section div:nth-child(2) {
+			-webkit-transform: rotateY(60deg)  translateZ(400px);
+			transform: rotateY(60deg)  translateZ(400px);
+		}
+		section div:nth-child(3) {
+			-webkit-transform: rotateY(120deg)  translateZ(400px);
+			transform: rotateY(120deg)  translateZ(400px);
+		}
+		section div:nth-child(4) {
+			-webkit-transform: rotateY(180deg)  translateZ(400px);
+			transform: rotateY(180deg)  translateZ(400px);
+		}
+		section div:nth-child(5) {
+			-webkit-transform: rotateY(240deg)  translateZ(400px);
+			transform: rotateY(240deg)  translateZ(400px);
+		}
+		section div:nth-child(6) {
+			-webkit-transform: rotateY(300deg)  translateZ(400px);
+			transform: rotateY(300deg)  translateZ(400px);
+		}
+
+		@keyframes rot{
+			0%{-webkit-transform: rotateX(0deg) rotateY(0deg);transform: rotateX(0deg) rotateY(0deg);}
+			100%{-webkit-transform: rotateX(360deg) rotateY(360deg);transform: rotateX(360deg) rotateY(360deg);}
+		}
+
+
+
+		.box1{
+			width: 300px;
+			height: 300px;
+			margin:100px auto;
+			position: relative;
+		}
+		.ro{
+			-webkit-animation:qiangge 4s linear infinite;
+		}
+		@-webkit-keyframes qiangge{
+			from{
+				transform:rotate(0deg);
+			}
+			to{
+				transform:rotate(360deg);
+			}
+		}
+		.top11, .bottom11{
+			position: absolute;
+			top:0px;
+			left:0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			border-radius: 50%;
+
+
+		}
+		.box1 .top11{
+			transition: all 0.5s ease 0s;
+			transform-origin:bottom;
+		}
+		.music{
+			transform:rotateX(180deg);
+		}
+
+
+		.boxq {
+			width: 600px;
+			height: 600px;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			position: absolute; 
+			left: 50%;
+			margin-left: -300px;
+			top: 2090px;
+			margin-top: -300px;
+			background-image: url(../bg.jpg);
+		}
+
+		.sun {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			background-color: orange;
+			border-radius: 50%;
+			margin-left: -25px;
+			left: 50%;
+			margin-top: -25px;
+			top: 50%;
+
+			box-shadow: 0px 0px 50px orange;
+		}
+
+		.lin1 {
+			width: 100px;
+			height: 100px;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			margin-left: -50px;
+			margin-top: -50px;
+			animation: rotate 10s linear infinite;
+		}
+
+		.lin1:after {
+			content: "";
+			width: 20px;
+			height: 20px;
+			display: block;
+			border-radius: 50%;
+			background-color: orange;
+			position: absolute;
+			left: -2px;
+			top: 10px;
+		}
+
+		.public {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+		}
+
+
+
+
+		@keyframes rotate {
+			from {
+				transform: rotateZ(0deg);
+			}
+
+			to {
+				transform: rotateZ(360deg);
+			}
+		}
+
+		.lin2 {
+			width: 150px;
+			height: 150px;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			margin-left: -75px;
+			margin-top: -75px;
+
+			animation: rotate 5s linear infinite;
+		}
+		.lin2:after {
+			content: "";
+			width: 10px;
+			height: 10px;
+			background-color: blue;
+			display: block;
+			border-radius: 50%;
+			position: absolute;
+			left: 25px;
+			top: 10px;
+		}
+
+		.lin3 {
+			width: 230px;
+			height: 230px;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			margin-left: -115px;
+			margin-top: -115px;
+			animation:  rotate 10s linear infinite;
+		}
+		.lin3 span {
+			width: 20px;
+			height: 20px;
+			display: block;
+			background-color: green;
+			border-radius: 50%;
+			position: absolute;
+			left: 50px;
+			animation: rotate 5s linear infinite;
+		}
+		.lin3 span b {
+			width: 10px;
+			height: 10px;
+			background-color: pink;
+			display: block;
+			border-radius: 50%;
+			position: absolute;
+			left: 25px;
+
+		}
+
+		.lin4  {
+			width: 332px;
+			height: 332px;
+			border: 1px solid #ccc;
+			background: url(asteroids_meteorids.png) no-repeat;
+			border-radius: 50%;
+			margin-left: -161px;
+			margin-top: -161px;
+			animation: rotate 15s linear infinite;
+		}
+
+		.lin4:after {
+			content: "";
+			display: block;
+			width: 10px;
+			height: 10px;
+			background-color: red;
+			border-radius: 50%;
+			position: absolute;
+			left: 120px;
+		}
+
+		.line5 {
+			width: 450px;
+			height: 450px;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			margin-left: -220px;
+			margin-top: -220px;
+			animation: rotate 10s linear infinite;
+		}
+
+		.line5 span {
+			width: 30px;
+			height: 30px;
+			background-color: blue;
+			border-radius: 50%;
+			display: block;
+			position: absolute;
+			left: 120px;
+		}
+
+		.line5 span  b {
+			display: block;
+			width: 40px;
+			height: 40px;
+			border: 5px solid #ccc;
+			border-radius: 50%;
+			transform: skew(45deg);
+			position: absolute;
+			left: -6px;
+			top: -10px;
+		}
+
+
+		.ziti{
+			color: red;
+			font-size: 50px;
+			position: absolute;
+			top:1228px;
+			left: 195px;
+
+		}
+		.ziti li{
+			list-style: none;
+		}
