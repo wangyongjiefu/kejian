@@ -1,0 +1,623 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>03-插值操作 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="04-动态绑定属性.html" />
+    
+    
+    <link rel="prev" href="02-HelloVue.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-ES6补充.html">
+            
+                <a href="01-ES6补充.html">
+            
+                    
+                    01-ES6补充
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02-HelloVue.html">
+            
+                <a href="02-HelloVue.html">
+            
+                    
+                    02-HelloVue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="03-插值操作.html">
+            
+                <a href="03-插值操作.html">
+            
+                    
+                    03-插值操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04-动态绑定属性.html">
+            
+                <a href="04-动态绑定属性.html">
+            
+                    
+                    04-动态绑定属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05-计算属性与侦听器.html">
+            
+                <a href="05-计算属性与侦听器.html">
+            
+                    
+                    05-计算属性与侦听器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="06-事件监听.html">
+            
+                <a href="06-事件监听.html">
+            
+                    
+                    06-事件监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="07-条件判断.html">
+            
+                <a href="07-条件判断.html">
+            
+                    
+                    07-条件判断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="08-遍历循环.html">
+            
+                <a href="08-遍历循环.html">
+            
+                    
+                    08-遍历循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="09-综合练习.html">
+            
+                <a href="09-综合练习.html">
+            
+                    
+                    09-综合练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10-v-model.html">
+            
+                <a href="10-v-model.html">
+            
+                    
+                    10-v-model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11-组件化开发.html">
+            
+                <a href="11-组件化开发.html">
+            
+                    
+                    11-组件化开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12-组件化高级.html">
+            
+                <a href="12-组件化高级.html">
+            
+                    
+                    12-组件化高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13-vue实例的生命周期.html">
+            
+                <a href="13-vue实例的生命周期.html">
+            
+                    
+                    13-vue实例的生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14-前端模块化.html">
+            
+                <a href="14-前端模块化.html">
+            
+                    
+                    14-前端模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="15-webpack.html">
+            
+                <a href="15-webpack.html">
+            
+                    
+                    15-webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="16-vue-cli.html">
+            
+                <a href="16-vue-cli.html">
+            
+                    
+                    16-vue-cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >03-插值操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xFF08;&#x4E09;&#xFF09;&#x63D2;&#x503C;&#x64CD;&#x4F5C;">&#xFF08;&#x4E09;&#xFF09;&#x63D2;&#x503C;&#x64CD;&#x4F5C;</h1>
+<h2 id="31----mustache&#x8BED;&#x6CD5;">3.1    Mustache&#x8BED;&#x6CD5;</h2>
+<p>&#x200B;    mustache&#x662F;&#x80E1;&#x987B;&#x7684;&#x610F;&#x601D;&#xFF0C;&#x56E0;&#x4E3A;<code>{{}}</code>&#x50CF;&#x80E1;&#x987B;&#xFF0C;&#x53C8;&#x53EB;&#x5927;&#x62EC;&#x53F7;&#x8BED;&#x6CD5;&#x3002;</p>
+<p>&#x200B;    &#x5728;vue&#x5BF9;&#x8C61;&#x6302;&#x8F7D;&#x7684;dom&#x5143;&#x7D20;&#x4E2D;&#xFF0C;<code>{{}}</code>&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5199;&#x53D8;&#x91CF;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5199;&#x7B80;&#x5355;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;ie=edge&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Mustache&#x7684;&#x8BED;&#x6CD5;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{message}}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{message}},&#x5567;&#x5567;&#x5567;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- Mustache&#x7684;&#x8BED;&#x6CD5;&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5199;&#x53D8;&#x91CF;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5199;&#x7B80;&#x5355;&#x8868;&#x8FBE;&#x5F0F; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{firstName + lastName}}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{firstName + &quot; &quot; + lastName}}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{firstName}}{{lastName}}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{count * 2}}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+      el:<span class="hljs-string">&quot;#app&quot;</span>,
+      data:{
+        message:<span class="hljs-string">&quot;&#x4F60;&#x597D;&#x554A;&quot;</span>,
+        firstName:<span class="hljs-string">&quot;skt t1&quot;</span>,
+        lastName:<span class="hljs-string">&quot;faker&quot;</span>,
+        count:<span class="hljs-number">100</span>
+      }
+    })
+
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h2 id="32----v-once">3.2    v-once</h2>
+<p>&#x200B;    v-once&#x8868;&#x793A;&#x8BE5;dom&#x5143;&#x7D20;&#x53EA;&#x6E32;&#x67D3;&#x4E00;&#x6B21;&#xFF0C;&#x4E4B;&#x540E;&#x6570;&#x636E;&#x6539;&#x53D8;&#xFF0C;&#x4E0D;&#x4F1A;&#x518D;&#x6B21;&#x6E32;&#x67D3;&#x3002;</p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{message}}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x53EA;&#x4F1A;&#x6E32;&#x67D3;&#x4E00;&#x6B21;&#xFF0C;&#x6570;&#x636E;&#x6539;&#x53D8;&#x4E0D;&#x4F1A;&#x518D;&#x6B21;&#x6E32;&#x67D3; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">v-once</span>&gt;</span>{{message}}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>&#x200B;    &#x4E0A;&#x8FF0;<code>{{message}}</code>&#x7684;message&#x4FEE;&#x6539;&#x540E;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;h2&#x6807;&#x7B7E;&#x6570;&#x636E;&#x4F1A;&#x81EA;&#x52A8;&#x6539;&#x53D8;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;h2&#x4E0D;&#x4F1A;&#x3002;</p>
+<h2 id="33----v-html">3.3    v-html</h2>
+<p>&#x200B;    &#x5728;&#x67D0;&#x4E9B;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x4E0D;&#x5E0C;&#x671B;&#x76F4;&#x63A5;&#x8F93;&#x51FA;<code>&lt;a href=&apos;http://www.baidu.com&apos;&gt;&#x767E;&#x5EA6;&#x4E00;&#x4E0B;&lt;/a&gt;</code>&#x8FD9;&#x6837;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x8F93;&#x51FA;&#x88AB;html&#x81EA;&#x5DF1;&#x8F6C;&#x5316;&#x7684;&#x8D85;&#x94FE;&#x63A5;&#x3002;&#x6B64;&#x65F6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;v-html&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;ie=edge&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>v-html&#x6307;&#x4EE4;&#x7684;&#x4F7F;&#x7528;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x4E0D;&#x4F7F;&#x7528;v-html<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{url}}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x4F7F;&#x7528;v-html&#xFF0C;&#x76F4;&#x63A5;&#x63D2;&#x5165;html<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">v-html</span>=<span class="hljs-string">&quot;url&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+      el:<span class="hljs-string">&quot;#app&quot;</span>,
+      data:{
+        message:<span class="hljs-string">&quot;&#x4F60;&#x597D;&#x554A;&quot;</span>,
+        url:<span class="hljs-string">&quot;&lt;a href=&apos;http://www.baidu.com&apos;&gt;&#x767E;&#x5EA6;&#x4E00;&#x4E0B;&lt;/a&gt;&quot;</span>
+      }
+    })
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="images/3.3-1.png" alt=""></p>
+<h2 id="34----v-text">3.4    v-text</h2>
+<p>&#x200B;    v-text&#x4F1A;&#x8986;&#x76D6;dom&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;js&#x7684;innerHTML&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;ie=edge&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>v-text&#x6307;&#x4EE4;&#x7684;&#x4F7F;&#x7528;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x4E0D;&#x4F7F;&#x7528;v-text<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{message}}&#xFF0C;&#x5567;&#x5567;&#x5567;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x4F7F;&#x7528;v-text&#xFF0C;&#x4EE5;&#x6587;&#x672C;&#x5F62;&#x5F0F;&#x663E;&#x793A;,&#x4F1A;&#x8986;&#x76D6;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">v-text</span>=<span class="hljs-string">&quot;message&quot;</span>&gt;</span>&#xFF0C;&#x5567;&#x5567;&#x5567;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+      el:<span class="hljs-string">&quot;#app&quot;</span>,
+      data:{
+        message:<span class="hljs-string">&quot;&#x4F60;&#x597D;&#x554A;&quot;</span>
+      }
+    })
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x200B;    &#x5982;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x4F7F;&#x7528;<code>{{message}}</code>&#x662F;&#x62FC;&#x63A5;&#x53D8;&#x91CF;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x662F;&#x7528;v-text&#x662F;&#x76F4;&#x63A5;&#x8986;&#x76D6;&#x5B57;&#x7B26;&#x4E32;&#x5185;&#x5BB9;&#x3002;</p>
+<p><img src="images/3.4-1.png" alt=""></p>
+<h2 id="35----v-pre">3.5    v-pre</h2>
+<p>&#x200B;    &#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x671F;&#x671B;&#x76F4;&#x63A5;&#x8F93;&#x51FA;<code>{{message}}</code>&#x8FD9;&#x6837;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x88AB;<code>{{}}</code>&#x8BED;&#x6CD5;&#x8F6C;&#x5316;&#x7684;message&#x7684;&#x53D8;&#x91CF;&#x503C;&#xFF0C;&#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>v-pre</code>&#x6807;&#x7B7E;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;ie=edge&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>v-pre&#x6307;&#x4EE4;&#x7684;&#x4F7F;&#x7528;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x4E0D;&#x4F7F;&#x7528;v-pre<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{message}}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x4F7F;&#x7528;v-pre,&#x4E0D;&#x4F1A;&#x89E3;&#x6790;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">v-pre</span>&gt;</span>{{message}}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+      el:<span class="hljs-string">&quot;#app&quot;</span>,
+      data:{
+        message:<span class="hljs-string">&quot;&#x4F60;&#x597D;&#x554A;&quot;</span>
+      }
+    })
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x200B;    &#x7ED3;&#x679C;&#x5982;&#x56FE;&#xFF0C;&#x4F7F;&#x7528;v-pre&#x4FEE;&#x9970;&#x7684;dom&#x4F1A;&#x76F4;&#x63A5;&#x8F93;&#x51FA;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p><img src="images/3.5-1.png" alt=""></p>
+<h2 id="36----v-cloak">3.6    v-cloak</h2>
+<p>&#x200B;    &#x6709;&#x65F6;&#x5019;&#x56E0;&#x4E3A;&#x52A0;&#x8F7D;&#x5EF6;&#x65F6;&#x95EE;&#x9898;&#xFF0C;&#x4F8B;&#x5982;&#x5361;&#x6389;&#x4E86;&#xFF0C;&#x6570;&#x636E;&#x6CA1;&#x6709;&#x53CA;&#x65F6;&#x5237;&#x65B0;&#xFF0C;&#x5C31;&#x9020;&#x6210;&#x4E86;&#x9875;&#x9762;&#x663E;&#x793A;&#x4ECE;<code>{{message}}</code>&#x5230;message&#x53D8;&#x91CF;&#x201C;&#x4F60;&#x597D;&#x554A;&#x201D;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x8FD9;&#x6837;&#x95EA;&#x52A8;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x4F1A;&#x9020;&#x6210;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x4E0D;&#x597D;&#x3002;&#x6B64;&#x65F6;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230;<code>v-cloak</code>&#x7684;&#x8FD9;&#x4E2A;&#x6807;&#x7B7E;&#x3002;&#x5728;vue&#x89E3;&#x6790;&#x4E4B;&#x524D;&#xFF0C;div&#x5C5E;&#x6027;&#x4E2D;&#x6709;<code>v-cloak</code>&#x8FD9;&#x4E2A;&#x6807;&#x7B7E;&#xFF0C;&#x5728;vue&#x89E3;&#x6790;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;v-cloak&#x6807;&#x7B7E;&#x88AB;&#x79FB;&#x9664;&#x3002;&#x7B80;&#x5355;&#xFF0C;&#x7C7B;&#x4F3C;div&#x5F00;&#x59CB;&#x6709;&#x4E00;&#x4E2A;css&#x5C5E;&#x6027;<code>display:none;</code>&#xFF0C;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;css&#x5C5E;&#x6027;&#x53D8;&#x6210;<code>display:block</code>&#xFF0C;&#x5143;&#x7D20;&#x663E;&#x793A;&#x51FA;&#x6765;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;ie=edge&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>v-cloak&#x6307;&#x4EE4;&#x7684;&#x4F7F;&#x7528;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+    <span class="hljs-selector-attr">[v-cloak]</span>{
+      <span class="hljs-attribute">display</span>: none;
+    }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span> <span class="hljs-attr">v-cloak</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{message}}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    <span class="hljs-comment">//&#x5728;vue&#x89E3;&#x6790;&#x524D;&#xFF0C;div&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;cloak</span>
+    <span class="hljs-comment">//&#x5728;vue&#x89E3;&#x6790;&#x4E4B;&#x540E;&#xFF0C;div&#x4E2D;&#x6CA1;&#x6709;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;v-cloak</span>
+    setTimeout(() =&gt; {
+      <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+        el: <span class="hljs-string">&quot;#app&quot;</span>,
+        data: {
+          message: <span class="hljs-string">&quot;&#x4F60;&#x597D;&#x554A;&quot;</span>
+        }
+      })
+    }, <span class="hljs-number">1000</span>);
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x200B;    &#x8FD9;&#x91CC;&#x901A;&#x8FC7;&#x5EF6;&#x65F6;1&#x79D2;&#x6A21;&#x62DF;&#x52A0;&#x8F7D;&#x5361;&#x4F4F;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x7ED3;&#x679C;&#x4E00;&#x5F00;&#x59CB;&#x4E0D;&#x663E;&#x793A;message&#x7684;&#x503C;&#xFF0C;div&#x5143;&#x7D20;&#x4E2D;&#x6709;v-cloak&#x7684;&#x5C5E;&#x6027;&#xFF0C;1&#x79D2;&#x540E;&#x663E;&#x793A;message&#x53D8;&#x91CF;&#x7684;&#x503C;&#xFF0C;div&#x4E2D;&#x7684;v-cloak&#x5143;&#x7D20;&#x88AB;&#x79FB;&#x9664;&#x3002;</p>
+<p><img src="images/3.6-1.gif" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02-HelloVue.html" class="navigation navigation-prev " aria-label="Previous page: 02-HelloVue">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="04-动态绑定属性.html" class="navigation navigation-next " aria-label="Next page: 04-动态绑定属性">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"03-插值操作","level":"1.4","depth":1,"next":{"title":"04-动态绑定属性","level":"1.5","depth":1,"path":"04-动态绑定属性.md","ref":"04-动态绑定属性.md","articles":[]},"previous":{"title":"02-HelloVue","level":"1.3","depth":1,"path":"02-HelloVue.md","ref":"02-HelloVue.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03-插值操作.md","mtime":"2019-11-12T13:29:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-28T04:34:55.330Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

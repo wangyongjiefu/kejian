@@ -1,0 +1,726 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>13-vue实例的生命周期 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="14-前端模块化.html" />
+    
+    
+    <link rel="prev" href="12-组件化高级.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-ES6补充.html">
+            
+                <a href="01-ES6补充.html">
+            
+                    
+                    01-ES6补充
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02-HelloVue.html">
+            
+                <a href="02-HelloVue.html">
+            
+                    
+                    02-HelloVue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03-插值操作.html">
+            
+                <a href="03-插值操作.html">
+            
+                    
+                    03-插值操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04-动态绑定属性.html">
+            
+                <a href="04-动态绑定属性.html">
+            
+                    
+                    04-动态绑定属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05-计算属性与侦听器.html">
+            
+                <a href="05-计算属性与侦听器.html">
+            
+                    
+                    05-计算属性与侦听器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="06-事件监听.html">
+            
+                <a href="06-事件监听.html">
+            
+                    
+                    06-事件监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="07-条件判断.html">
+            
+                <a href="07-条件判断.html">
+            
+                    
+                    07-条件判断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="08-遍历循环.html">
+            
+                <a href="08-遍历循环.html">
+            
+                    
+                    08-遍历循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="09-综合练习.html">
+            
+                <a href="09-综合练习.html">
+            
+                    
+                    09-综合练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10-v-model.html">
+            
+                <a href="10-v-model.html">
+            
+                    
+                    10-v-model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11-组件化开发.html">
+            
+                <a href="11-组件化开发.html">
+            
+                    
+                    11-组件化开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12-组件化高级.html">
+            
+                <a href="12-组件化高级.html">
+            
+                    
+                    12-组件化高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="13-vue实例的生命周期.html">
+            
+                <a href="13-vue实例的生命周期.html">
+            
+                    
+                    13-vue实例的生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14-前端模块化.html">
+            
+                <a href="14-前端模块化.html">
+            
+                    
+                    14-前端模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="15-webpack.html">
+            
+                <a href="15-webpack.html">
+            
+                    
+                    15-webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="16-vue-cli.html">
+            
+                <a href="16-vue-cli.html">
+            
+                    
+                    16-vue-cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >13-vue实例的生命周期</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xFF08;&#x5341;&#x4E09;&#xFF09;vue&#x5B9E;&#x4F8B;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;">&#xFF08;&#x5341;&#x4E09;&#xFF09;Vue&#x5B9E;&#x4F8B;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</h1>
+<h2 id="131-----&#x751F;&#x547D;&#x5468;&#x671F;&#x56FE;">13.1     <span id="top">&#x751F;&#x547D;&#x5468;&#x671F;&#x56FE;</span></h2>
+<p>&#x200B;    Vue&#x5B9E;&#x4F8B;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x6709;&#x591A;&#x4E2A;&#x72B6;&#x6001;&#x3002;</p>
+<p><img src="images/lifecycle.png" alt="&#x751F;&#x547D;&#x5468;&#x671F;&#x56FE;"></p>
+<blockquote>
+<p>&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;</p>
+</blockquote>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;ie=edge&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Vue&#x5B9E;&#x4F8B;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- &#x5F15;&#x5165;vue.js --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x6D4B;&#x8BD5;&#x751F;&#x547D;&#x5468;&#x671F;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{{msg}}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>&#x6D4B;&#x8BD5;beforeUpdate&#x548C;update&#x4E24;&#x4E2A;&#x94A9;&#x5B50;&#x51FD;&#x6570;<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;handlerUpdate&quot;</span>&gt;</span>&#x66F4;&#x65B0;&#x6570;&#x636E;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">var</span> app = <span class="hljs-keyword">new</span> Vue({
+            el:<span class="hljs-string">&quot;#app&quot;</span>,
+            data:{
+                msg:<span class="hljs-string">&quot;12345&quot;</span>
+            },
+            methods: {
+                handlerUpdate:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+                    <span class="hljs-keyword">this</span>.msg=<span class="hljs-keyword">this</span>.msg.split(<span class="hljs-string">&quot;&quot;</span>).reverse().join(<span class="hljs-string">&quot;&quot;</span>);
+                },
+            },<span class="hljs-comment">//&#x6309;&#x7167;&#x793A;&#x610F;&#x56FE;&#x4F9D;&#x6B21;&#x8C03;&#x7528;</span>
+            beforeCreate:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;&#x8C03;&#x7528;&#x4E86;beforeCreate&#x94A9;&#x5B50;&#x51FD;&#x6570;&quot;</span>);
+            },
+            created:<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;&#x8C03;&#x7528;&#x4E86;created&#x94A9;&#x5B50;&#x51FD;&#x6570;&quot;</span>);
+            },
+            beforeMount: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x8C03;&#x7528;&#x4E86;beforeMount&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;</span>)
+            },
+            mounted: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x8C03;&#x7528;&#x4E86;mounted&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;</span>)
+            },
+            beforeUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;&#x8C03;&#x7528;&#x4E86;beforeUpdate&#x94A9;&#x5B50;&#x51FD;&#x6570;&quot;</span>)
+            },
+            updated: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;&#x8C03;&#x7528;&#x4E86;updated&#x94A9;&#x5B50;&#x51FD;&#x6570;&quot;</span>);
+            },
+            beforeDestroy: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;&#x8C03;&#x7528;&#x4E86;beforeDestroy&#x94A9;&#x5B50;&#x51FD;&#x6570;&quot;</span>)
+            },
+            destroyed: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;&#x8C03;&#x7528;&#x4E86;destroyed&#x94A9;&#x5B50;&#x51FD;&#x6570;&quot;</span>);
+            },
+        });
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x5982;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="images/1.png" alt="reslut"></p>
+<p>&#x521D;&#x59CB;&#x5316;&#x9875;&#x9762;&#x4F9D;&#x6B21;&#x8C03;&#x7528;&#x4E86;&#xFF1A;</p>
+<blockquote>
+<ol>
+<li>&#x8C03;&#x7528;&#x4E86;beforeCreate&#x94A9;&#x5B50;&#x51FD;&#x6570;</li>
+<li>&#x8C03;&#x7528;&#x4E86;created&#x94A9;&#x5B50;&#x51FD;&#x6570;</li>
+<li>&#x8C03;&#x7528;&#x4E86;beforeMount&#x94A9;&#x5B50;&#x51FD;&#x6570;</li>
+<li>&#x8C03;&#x7528;&#x4E86;mounted&#x94A9;&#x5B50;&#x51FD;&#x6570;</li>
+</ol>
+</blockquote>
+<p>&#x70B9;&#x51FB;&#x66F4;&#x65B0;&#x6570;&#x636E;&#x540E;&#xFF1A;</p>
+<p><code>12345</code>&#x53D8;&#x6210;&#x4E86;<code>54321</code>&#xFF0C;&#x6B64;&#x65F6;&#x8C03;&#x7528;&#x4E86;&#xFF1A;</p>
+<blockquote>
+<ol>
+<li>&#x8C03;&#x7528;&#x4E86;beforeUpdate&#x94A9;&#x5B50;&#x51FD;&#x6570;</li>
+<li>&#x8C03;&#x7528;&#x4E86;updated&#x94A9;&#x5B50;&#x51FD;&#x6570;</li>
+</ol>
+</blockquote>
+<p>&#x6253;&#x5F00;F12&#x63A7;&#x5236;&#x53F0;
+&#x76F4;&#x63A5;&#x8F93;&#x5165;<code>app.$destroy()</code>&#x4E3B;&#x52A8;&#x9500;&#x6BC1;Vue&#x5B9E;&#x4F8B;&#x8C03;&#x7528;&#xFF1A;</p>
+<blockquote>
+<ol>
+<li>&#x8C03;&#x7528;&#x4E86;beforeDestroy&#x94A9;&#x5B50;&#x51FD;&#x6570;</li>
+<li>&#x8C03;&#x7528;&#x4E86;destroyed&#x94A9;&#x5B50;&#x51FD;&#x6570;</li>
+</ol>
+</blockquote>
+<h2 id="132----&#x518D;&#x63A2;&#x7A76;">13.2    &#x518D;&#x63A2;&#x7A76;</h2>
+<h3 id="1321----beforecreate&#x4E4B;&#x524D;">13.2.1    beforeCreate&#x4E4B;&#x524D;</h3>
+<p>&#x521D;&#x59CB;&#x5316;&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x548C;&#x751F;&#x547D;&#x5468;&#x671F;</p>
+<h3 id="1322----beforecreate&#x548C;created&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x95F4;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;">13.2.2    beforeCreate&#x548C;created&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x95F4;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</h3>
+<p>&#x5728;beforeCreate&#x548C;created&#x4E4B;&#x95F4;&#xFF0C;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x89C2;&#x6D4B;(data observer) &#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5728;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x5F00;&#x59CB;&#x76D1;&#x63A7;data&#x4E2D;&#x7684;&#x6570;&#x636E;&#x53D8;&#x5316;&#x4E86;&#xFF0C;&#x540C;&#x65F6;&#x521D;&#x59CB;&#x5316;&#x4E8B;&#x4EF6;&#x3002;
+<span style="float:right;"><a href="#1">&#x751F;&#x547D;&#x5468;&#x671F;&#x5C55;&#x793A;&#x56FE;</a></span></p>
+<h3 id="1323----created&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x548C;beforemount&#x95F4;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;">13.2.3    created&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x548C;beforeMount&#x95F4;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</h3>
+<p>&#x5BF9;&#x4E8E;created&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x548C;beforeMount&#x6709;&#x5224;&#x65AD;&#xFF1A;
+<img src="images/2.png" alt="2"></p>
+<h4 id="13231el&#x9009;&#x9879;&#x5BF9;&#x751F;&#x547D;&#x5468;&#x671F;&#x5F71;&#x54CD;">13.2.3.1el&#x9009;&#x9879;&#x5BF9;&#x751F;&#x547D;&#x5468;&#x671F;&#x5F71;&#x54CD;</h4>
+<blockquote>
+<ol>
+<li>&#x6709;el&#x9009;&#x9879;</li>
+</ol>
+</blockquote>
+<pre><code>new Vue({
+    el: &apos;#app&apos;,
+    beforeCreate: function () {
+        console.log(&apos;&#x8C03;&#x7528;&#x4E86;beforeCreat&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;)
+    },
+    created: function () {
+        console.log(&apos;&#x8C03;&#x7528;&#x4E86;created&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;)
+    },
+    beforeMount: function () {
+        console.log(&apos;&#x8C03;&#x7528;&#x4E86;beforeMount&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;)
+    },
+    mounted: function () {
+        console.log(&apos;&#x8C03;&#x7528;&#x4E86;mounted&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;)
+    }
+})
+</code></pre><p>&#x7ED3;&#x679C;:
+<img src="images/3.png" alt="&#x6709;el"></p>
+<blockquote>
+<ol>
+<li>&#x65E0;el&#x9009;&#x9879;</li>
+</ol>
+</blockquote>
+<pre><code>new Vue({
+    beforeCreate: function () {
+        console.log(&apos;&#x8C03;&#x7528;&#x4E86;beforeCreat&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;)
+    },
+    created: function () {
+        console.log(&apos;&#x8C03;&#x7528;&#x4E86;created&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;)
+    },
+    beforeMount: function () {
+        console.log(&apos;&#x8C03;&#x7528;&#x4E86;beforeMount&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;)
+    },
+    mounted: function () {
+        console.log(&apos;&#x8C03;&#x7528;&#x4E86;mounted&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;)
+    }
+})
+</code></pre><p>&#x7ED3;&#x679C;&#xFF1A;
+<img src="images/4.png" alt="&#x65E0;el"></p>
+<blockquote>
+<p>&#x8BC1;&#x660E;&#x6CA1;&#x6709;el&#x9009;&#x9879;&#xFF0C;&#x5219;&#x505C;&#x6B62;&#x7F16;&#x8BD1;&#xFF0C;&#x4E5F;&#x610F;&#x5473;&#x7740;&#x6682;&#x65F6;&#x505C;&#x6B62;&#x4E86;&#x751F;&#x547D;&#x5468;&#x671F;&#x3002;&#x751F;&#x547D;&#x5468;&#x671F;&#x5230;created&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x5C31;&#x7ED3;&#x675F;&#x4E86;&#x3002;&#x800C;&#x5F53;&#x6211;&#x4EEC;&#x4E0D;&#x52A0;el&#x9009;&#x9879;&#xFF0C;&#x4F46;&#x662F;&#x624B;&#x52A8;&#x6267;&#x884C;vm.$mount(el)&#x65B9;&#x6CD5;&#x7684;&#x8BDD;&#xFF0C;&#x4E5F;&#x80FD;&#x591F;&#x4F7F;&#x6682;&#x505C;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x8FDB;&#x884C;&#x4E0B;&#x53BB;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+</blockquote>
+<pre><code>var app = new Vue({
+    beforeCreate: function () {
+        console.log(&apos;&#x8C03;&#x7528;&#x4E86;beforeCreat&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;)
+    },
+    created: function () {
+        console.log(&apos;&#x8C03;&#x7528;&#x4E86;created&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;)
+    },
+    beforeMount: function () {
+        console.log(&apos;&#x8C03;&#x7528;&#x4E86;beforeMount&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;)
+    },
+    mounted: function () {
+        console.log(&apos;&#x8C03;&#x7528;&#x4E86;mounted&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;)
+    }
+})
+app.$mount(&apos;#app&apos;)
+</code></pre><p>&#x7ED3;&#x679C;&#xFF1A;
+<img src="images/3.png" alt="&#x6709;el"></p>
+<h4 id="13232----template">13.2.3.2    template</h4>
+<p><img src="images/5.png" alt="template"></p>
+<blockquote>
+<p>&#x540C;&#x65F6;&#x4F7F;&#x7528;<code>template</code>&#x548C;<code>HTML</code>&#xFF0C;&#x67E5;&#x770B;&#x4F18;&#x5148;&#x7EA7;&#xFF1A;</p>
+</blockquote>
+<pre><code>    &lt;h1&gt;&#x6D4B;&#x8BD5;template&#x548C;HTML&#x7684;&#x4F18;&#x5148;&#x7EA7;&lt;/h1&gt;
+    &lt;div id=&quot;app&quot;&gt;
+        &lt;p&gt;HTML&#x4F18;&#x5148;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+        var app = new Vue({
+            el:&quot;#app&quot;,
+            data:{
+                msg:&quot;template&#x4F18;&#x5148;&quot;
+            },
+            template:&quot;&lt;p&gt;{{msg}}&lt;/p&gt;&quot;,
+        });
+    &lt;/script&gt;
+</code></pre><p>&#x7ED3;&#x679C;&#xFF1A;
+<img src="images/6.png" alt="template"></p>
+<blockquote>
+<p>&#x7ED3;&#x8BBA;</p>
+</blockquote>
+<ol>
+<li>&#x5982;&#x679C;Vue&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x4E2D;&#x6709;template&#x53C2;&#x6570;&#x9009;&#x9879;&#xFF0C;&#x5219;&#x5C06;&#x5176;&#x4F5C;&#x4E3A;&#x6A21;&#x677F;&#x7F16;&#x8BD1;&#x6210;render&#x51FD;&#x6570;</li>
+<li>&#x5982;&#x679C;&#x6CA1;&#x6709;template&#x53C2;&#x6570;&#x9009;&#x9879;&#xFF0C;&#x5219;&#x5C06;&#x5916;&#x90E8;&#x7684;HTML&#x4F5C;&#x4E3A;&#x6A21;&#x677F;&#x7F16;&#x8BD1;&#xFF08;template&#xFF09;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;template&#x53C2;&#x6570;&#x9009;&#x9879;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x8981;&#x6BD4;&#x5916;&#x90E8;&#x7684;HTML&#x9AD8;</li>
+<li>&#x5982;&#x679C;1,2&#x6761;&#x4EF6;&#x90FD;&#x4E0D;&#x5177;&#x5907;&#xFF0C;&#x5219;&#x62A5;&#x9519;</li>
+</ol>
+<blockquote>
+<p>&#x6CE8;&#x610F;</p>
+</blockquote>
+<ol>
+<li>Vue&#x9700;&#x8981;&#x901A;&#x8FC7;el&#x53BB;&#x627E;&#x5BF9;&#x5E94;&#x7684;template&#xFF0C;Vue&#x5B9E;&#x4F8B;&#x901A;&#x8FC7;el&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x9996;&#x5148;&#x627E;&#x81EA;&#x5DF1;&#x6709;&#x6CA1;&#x6709;template&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x518D;&#x53BB;&#x627E;&#x5916;&#x90E8;&#x7684;html&#xFF0C;&#x627E;&#x5230;&#x540E;&#x5C06;&#x5176;&#x7F16;&#x8BD1;&#x6210;render&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8C03;&#x7528;<a href="https://cn.vuejs.org/v2/api/#render" target="_blank">render</a>&#x9009;&#x9879;&#xFF0C;&#x4F18;&#x5148;&#x7EA7;&#xFF1A;<code>render&#x51FD;&#x6570;&#x9009;&#x9879;  &gt; template&#x53C2;&#x6570;  &gt; &#x5916;&#x90E8;HTML</code>&#x3002;</li>
+</ol>
+<hr>
+
+
+<pre><code>new Vue({
+    el: &apos;#app&apos;,
+    render (createElement) {
+        return (....)
+    }
+})
+</code></pre><h3 id="1324----beforemount&#x548C;mounted&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x95F4;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;">13.2.4    beforeMount&#x548C;mounted&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x95F4;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</h3>
+<p><img src="images/7.png" alt="7"></p>
+<blockquote>
+<p>beforeMount</p>
+</blockquote>
+<p>&#x8F7D;&#x5165;&#x524D;&#xFF08;&#x5B8C;&#x6210;&#x4E86;data&#x548C;el&#x6570;&#x636E;&#x521D;&#x59CB;&#x5316;&#xFF09;&#xFF0C;&#x4F46;&#x662F;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x8FD8;&#x662F;vue&#x4E2D;&#x7684;&#x5360;&#x4F4D;&#x7B26;&#xFF0C;data&#x4E2D;&#x7684;message&#x4FE1;&#x606F;&#x6CA1;&#x6709;&#x88AB;&#x6302;&#x5728;&#x5230;Dom&#x8282;&#x70B9;&#x4E2D;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x5728;&#x6E32;&#x67D3;&#x524D;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x66F4;&#x6539;&#x6570;&#x636E;&#x7684;&#x673A;&#x4F1A;&#xFF0C;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;&#x5176;&#x4ED6;&#x7684;&#x94A9;&#x5B50;&#x51FD;&#x6570;&#xFF0C;&#x4E00;&#x822C;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x505A;&#x521D;&#x59CB;&#x6570;&#x636E;&#x7684;&#x83B7;&#x53D6;&#x3002;</p>
+<blockquote>
+<p>Mount</p>
+</blockquote>
+<p>&#x8F7D;&#x5165;&#x540E;html&#x5DF2;&#x7ECF;&#x6E32;&#x67D3;(ajax&#x8BF7;&#x6C42;&#x53EF;&#x4EE5;&#x653E;&#x5728;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E2D;)&#xFF0C;&#x628A;vue&#x5B9E;&#x4F8B;&#x4E2D;&#x7684;data&#x91CC;&#x7684;message&#x6302;&#x8F7D;&#x5230;DOM&#x8282;&#x70B9;&#x4E2D;&#x53BB;</p>
+<blockquote>
+<p>&#x8FD9;&#x91CC;&#x4E24;&#x4E2A;&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x95F4;&#x662F;&#x8F7D;&#x5165;&#x6570;&#x636E;&#x3002;</p>
+</blockquote>
+<h3 id="1325----beforeupdate&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x548C;updated&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x95F4;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;">13.2.5    beforeUpdate&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x548C;updated&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x95F4;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</h3>
+<p><img src="images/8.png" alt="8">
+&#x5728;Vue&#x4E2D;&#xFF0C;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x4F1A;&#x5BFC;&#x81F4;&#x91CD;&#x65B0;&#x6E32;&#x67D3;&#xFF0C;&#x4F9D;&#x6B21;&#x8C03;&#x7528;beforeUpdate&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x548C;updated&#x94A9;&#x5B50;&#x51FD;&#x6570;</p>
+<p>&#x5982;&#x679C;&#x5F85;&#x4FEE;&#x6539;&#x7684;&#x6570;&#x636E;&#x6CA1;&#x6709;&#x8F7D;&#x5165;&#x6A21;&#x677F;&#x4E2D;&#xFF0C;&#x4E0D;&#x4F1A;&#x8C03;&#x7528;&#x8FD9;&#x91CC;&#x4E24;&#x4E2A;&#x94A9;&#x5B50;&#x51FD;&#x6570;</p>
+<pre><code>var app = new Vue({
+    el: &apos;#app&apos;,
+    data: {
+        msg: 1
+    },
+    template: &apos;&lt;div id=&quot;app&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&apos;,
+    beforeUpdate: function () {
+        console.log(&apos;&#x8C03;&#x7528;&#x4E86;beforeUpdate&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;)
+    },
+    updated: function () {
+        console.log(&apos;&#x8C03;&#x7528;&#x4E86;updated&#x94A9;&#x5B50;&#x51FD;&#x6570;&apos;)
+    }
+})
+app.msg = 2
+</code></pre><p>&#x7ED3;&#x679C;&#xFF1A;
+<img src="images/9.png" alt="9">
+&#x5982;&#x679C;&#x7ED1;&#x5B9A;&#x4E86;&#x6570;&#x636E;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x4E24;&#x4E2A;&#x94A9;&#x5B50;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code>&lt;h1&gt;&#x6D4B;&#x8BD5;&#x6709;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#x4FEE;&#x6539;&#x6570;&#x636E;&#xFF0C;&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x60C5;&#x51B5;&lt;/h1&gt;
+&lt;div id=&quot;app&quot;&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    var app = new Vue({
+        el:&quot;#app&quot;,
+        template:&quot;&lt;p&gt;{{msg}}&lt;/p&gt;&quot;,
+        data:{
+            msg:&quot;&#x539F;&#x6570;&#x636E;&quot;
+        },
+        beforeUpdate: function () {
+            console.log(&quot;&#x8C03;&#x7528;&#x4E86;beforeUpdate&#x94A9;&#x5B50;&#x51FD;&#x6570;&quot;)
+        },
+        updated: function () {
+            console.log(&quot;&#x8C03;&#x7528;&#x4E86;updated&#x94A9;&#x5B50;&#x51FD;&#x6570;&quot;);
+        },
+    });
+    app.msg = &quot;&#x6570;&#x636E;&#x88AB;&#x4FEE;&#x6539;&#x4E86;&quot;;
+&lt;/script&gt;
+</code></pre><p>&#x7ED3;&#x679C;&#xFF1A;
+<img src="images/10.png" alt="10"></p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#x53EA;&#x6709;&#x5199;&#x5165;&#x6A21;&#x677F;&#x7684;&#x6570;&#x636E;&#x624D;&#x4F1A;&#x88AB;&#x8FFD;&#x8E2A;</p>
+</blockquote>
+<h3 id="1326----beforedestroy&#x548C;destroyed&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x95F4;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;">13.2.6    beforeDestroy&#x548C;destroyed&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x95F4;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</h3>
+<p><img src="images/11.png" alt="11"></p>
+<h4 id="13261----beforedestroy">13.2.6.1    beforeDestroy</h4>
+<p>&#x9500;&#x6BC1;&#x524D;&#x6267;&#x884C;&#xFF08;$destroy&#x65B9;&#x6CD5;&#x88AB;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x4F1A;&#x6267;&#x884C;&#xFF09;,&#x4E00;&#x822C;&#x5728;&#x8FD9;&#x91CC;&#x5584;&#x540E;:&#x6E05;&#x9664;&#x8BA1;&#x65F6;&#x5668;&#x3001;&#x6E05;&#x9664;&#x975E;&#x6307;&#x4EE4;&#x7ED1;&#x5B9A;&#x7684;&#x4E8B;&#x4EF6;&#x7B49;&#x7B49;&#x2026;&#x2019;)</p>
+<h4 id="13262----destroyed">13.2.6.2    destroyed</h4>
+<p>&#x9500;&#x6BC1;&#x540E; &#xFF08;Dom&#x5143;&#x7D20;&#x5B58;&#x5728;&#xFF0C;&#x53EA;&#x662F;&#x4E0D;&#x518D;&#x53D7;vue&#x63A7;&#x5236;&#xFF09;,&#x5378;&#x8F7D;watcher&#xFF0C;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#xFF0C;&#x5B50;&#x7EC4;&#x4EF6;</p>
+<blockquote>
+<p>&#x603B;&#x7ED3;</p>
+</blockquote>
+<ul>
+<li>beforecreate : &#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x52A0;&#x4E2A;loading&#x4E8B;&#x4EF6;</li>
+<li>created &#xFF1A;&#x5728;&#x8FD9;&#x7ED3;&#x675F;loading&#xFF0C;&#x8FD8;&#x505A;&#x4E00;&#x4E9B;&#x521D;&#x59CB;&#x6570;&#x636E;&#x7684;&#x83B7;&#x53D6;&#xFF0C;&#x5B9E;&#x73B0;&#x51FD;&#x6570;&#x81EA;-&#x6267;&#x884C;</li>
+<li>mounted &#xFF1A; &#x5728;&#x8FD9;&#x53D1;&#x8D77;&#x540E;&#x7AEF;&#x8BF7;&#x6C42;&#xFF0C;&#x62FF;&#x56DE;&#x6570;&#x636E;&#xFF0C;&#x914D;&#x5408;&#x8DEF;&#x7531;&#x94A9;&#x5B50;&#x505A;&#x4E00;&#x4E9B;&#x4E8B;&#x60C5;</li>
+<li>beforeDestroy&#xFF1A; &#x4F60;&#x786E;&#x8BA4;&#x5220;&#x9664;XX&#x5417;&#xFF1F;</li>
+<li>destroyed &#xFF1A;&#x5F53;&#x524D;&#x7EC4;&#x4EF6;&#x5DF2;&#x88AB;&#x5220;&#x9664;&#xFF0C;&#x6E05;&#x7A7A;&#x76F8;&#x5173;&#x5185;&#x5BB9;</li>
+</ul>
+<p><hr></p>
+<div>
+  <span style="float:left;"><a href="#top">&#x8FD4;&#x56DE;&#x9876;&#x90E8;</a></span><span style="float:right;"><a href="../README.md">&#x8FD4;&#x56DE;&#x9996;&#x9875;</a></span>
+</div>
+
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="12-组件化高级.html" class="navigation navigation-prev " aria-label="Previous page: 12-组件化高级">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="14-前端模块化.html" class="navigation navigation-next " aria-label="Next page: 14-前端模块化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"13-vue实例的生命周期","level":"1.14","depth":1,"next":{"title":"14-前端模块化","level":"1.15","depth":1,"path":"14-前端模块化.md","ref":"14-前端模块化.md","articles":[]},"previous":{"title":"12-组件化高级","level":"1.13","depth":1,"path":"12-组件化高级.md","ref":"12-组件化高级.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"13-vue实例的生命周期.md","mtime":"2019-11-12T13:29:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-28T04:34:55.330Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

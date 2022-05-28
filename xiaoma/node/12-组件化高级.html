@@ -1,0 +1,759 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>12-组件化高级 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="13-vue实例的生命周期.html" />
+    
+    
+    <link rel="prev" href="11-组件化开发.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-ES6补充.html">
+            
+                <a href="01-ES6补充.html">
+            
+                    
+                    01-ES6补充
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02-HelloVue.html">
+            
+                <a href="02-HelloVue.html">
+            
+                    
+                    02-HelloVue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03-插值操作.html">
+            
+                <a href="03-插值操作.html">
+            
+                    
+                    03-插值操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04-动态绑定属性.html">
+            
+                <a href="04-动态绑定属性.html">
+            
+                    
+                    04-动态绑定属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05-计算属性与侦听器.html">
+            
+                <a href="05-计算属性与侦听器.html">
+            
+                    
+                    05-计算属性与侦听器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="06-事件监听.html">
+            
+                <a href="06-事件监听.html">
+            
+                    
+                    06-事件监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="07-条件判断.html">
+            
+                <a href="07-条件判断.html">
+            
+                    
+                    07-条件判断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="08-遍历循环.html">
+            
+                <a href="08-遍历循环.html">
+            
+                    
+                    08-遍历循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="09-综合练习.html">
+            
+                <a href="09-综合练习.html">
+            
+                    
+                    09-综合练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10-v-model.html">
+            
+                <a href="10-v-model.html">
+            
+                    
+                    10-v-model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11-组件化开发.html">
+            
+                <a href="11-组件化开发.html">
+            
+                    
+                    11-组件化开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="12-组件化高级.html">
+            
+                <a href="12-组件化高级.html">
+            
+                    
+                    12-组件化高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13-vue实例的生命周期.html">
+            
+                <a href="13-vue实例的生命周期.html">
+            
+                    
+                    13-vue实例的生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14-前端模块化.html">
+            
+                <a href="14-前端模块化.html">
+            
+                    
+                    14-前端模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="15-webpack.html">
+            
+                <a href="15-webpack.html">
+            
+                    
+                    15-webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="16-vue-cli.html">
+            
+                <a href="16-vue-cli.html">
+            
+                    
+                    16-vue-cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >12-组件化高级</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xFF08;&#x5341;&#x4E8C;&#xFF09;&#x7EC4;&#x4EF6;&#x5316;&#x9AD8;&#x7EA7;">&#xFF08;&#x5341;&#x4E8C;&#xFF09;&#x7EC4;&#x4EF6;&#x5316;&#x9AD8;&#x7EA7;</h1>
+<h2 id="121----slot-&#x63D2;&#x69FD;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;">12.1    slot-&#x63D2;&#x69FD;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
+<p>&#x200B;    &#x6211;&#x4EEC;&#x5728;&#x4F7F;&#x7528;&#x7EC4;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#x6709;&#x65F6;&#x5019;&#x5E0C;&#x671B;&#xFF0C;&#x5728;&#x7EC4;&#x4EF6;&#x5185;&#x90E8;&#x5B9A;&#x5236;&#x5316;&#x5185;&#x5BB9;&#xFF0C;&#x4F8B;&#x5982;&#x4EAC;&#x4E1C;&#x8FD9;&#x6837;&#x3002;</p>
+<p><img src="images/12.1-1.png" alt=""></p>
+<p><img src="images/12.1-2.png" alt=""></p>
+<p>&#x8FD9;&#x4E24;&#x4E2A;&#x90FD;&#x662F;&#x5BFC;&#x822A;&#x680F;&#xFF0C;&#x7EC4;&#x4EF6;&#x7684;&#x601D;&#x60F3;&#x662F;&#x53EF;&#x4EE5;&#x590D;&#x7528;&#x7684;&#xFF0C;&#x628A;&#x8FD9;&#x4E2A;&#x5BFC;&#x822A;&#x680F;&#x770B;&#x505A;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x7EC4;&#x4EF6;&#x90FD;&#x53EF;&#x4EE5;&#x5206;&#x6210;&#x4E09;&#x4E2A;&#x90E8;&#x5206;&#xFF0C;&#x5DE6;&#x8FB9;&#x4E2D;&#x95F4;&#x53F3;&#x8FB9;&#xFF0C;&#x5982;&#x679C;&#x53EF;&#x4EE5;&#x5206;&#x5272;&#x7EC4;&#x4EF6;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5B9A;&#x5236;&#x5316;&#x7EC4;&#x4EF6;&#x5185;&#x5BB9;&#x4E86;&#x3002;</p>
+<pre><code class="lang-html">  <span class="hljs-comment">&lt;!-- &#x7236;&#x7EC4;&#x4EF6; --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">cpn</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">cpn</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cpn</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color:red;&quot;</span>&gt;</span>&#x8FD9;&#x662F;&#x63D2;&#x69FD;&#x5185;&#x5BB9;222<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">cpn</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cpn</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color:red;&quot;</span>&gt;</span>&#x8FD9;&#x662F;&#x63D2;&#x69FD;&#x5185;&#x5BB9;333<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">cpn</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cpn</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">cpn</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- &#x63D2;&#x69FD;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x4F7F;&#x7528;&lt;slot&gt;&lt;/slot&gt; --&gt;</span>
+  <span class="hljs-comment">&lt;!-- &#x5B50;&#x7EC4;&#x4EF6; --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;cpn&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        {{message}}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- &#x63D2;&#x69FD;&#x9ED8;&#x8BA4;&#x503C; --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">slot</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    <span class="hljs-keyword">const</span> cpn = {
+      template: <span class="hljs-string">&quot;#cpn&quot;</span>,
+      data() {
+        <span class="hljs-keyword">return</span> {
+          message: <span class="hljs-string">&quot;&#x6211;&#x662F;&#x5B50;&#x7EC4;&#x4EF6;&quot;</span>
+        }
+      },
+    }
+    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+      el: <span class="hljs-string">&quot;#app&quot;</span>,
+      data() {
+        <span class="hljs-keyword">return</span> {
+          message: <span class="hljs-string">&quot;&#x6211;&#x662F;&#x7236;&#x7EC4;&#x4EF6;&#x6D88;&#x606F;&quot;</span>
+        }
+      },
+      components: {
+        cpn
+      },
+    })
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>&#x7B80;&#x5355;&#x4F7F;&#x7528;&#x63D2;&#x69FD;&#xFF0C;&#x5B9A;&#x4E49;template&#x65F6;&#x5019;&#x4F7F;&#x7528;<code>slot</code></p>
+</blockquote>
+<pre><code class="lang-html">  <span class="hljs-comment">&lt;!-- &#x5B50;&#x7EC4;&#x4EF6; --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;cpn&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        {{message}}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- &#x63D2;&#x69FD;&#x9ED8;&#x8BA4;&#x503C; --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">slot</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>&#x63D2;&#x69FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;<code>&lt;button&gt;button&lt;/button&gt;</code>&#x5C31;&#x662F;&#x63D2;&#x69FD;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">cpn</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">cpn</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">cpn</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color:red;&quot;</span>&gt;</span>&#x8FD9;&#x662F;&#x63D2;&#x69FD;&#x5185;&#x5BB9;222<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">cpn</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>&#x4F7F;&#x7528;&#x63D2;&#x69FD;&#xFF0C;<code>&lt;span style=&quot;color:red;&quot;&gt;&#x8FD9;&#x662F;&#x63D2;&#x69FD;&#x5185;&#x5BB9;222&lt;/span&gt;</code>&#x5C06;&#x66FF;&#x6362;&#x63D2;&#x69FD;&#x7684;&#x9ED8;&#x8BA4;&#x503C;</p>
+</blockquote>
+<p>&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x7ED3;&#x679C;&#x5982;&#x56FE;&#x6240;&#x793A;</p>
+<p><img src="images/12.1-3.png" alt=""></p>
+<blockquote>
+<p>&#x66FF;&#x6362;&#x4E86;&#x4E24;&#x6B21;&#x63D2;&#x69FD;&#xFF0C;&#x4E24;&#x6B21;&#x672A;&#x66FF;&#x6362;&#x663E;&#x793A;&#x9ED8;&#x8BA4;&#x7684;button&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60F3;&#x5B9E;&#x73B0;&#x7EC4;&#x4EF6;&#x5206;&#x6210;&#x4E09;&#x90E8;&#x5206;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E09;&#x4E2A;<code>&lt;slot&gt;&lt;/slot&gt;</code>&#x6765;&#x586B;&#x5145;&#x63D2;&#x69FD;&#x4E86;&#x3002;</p>
+</blockquote>
+<h2 id="122----slot-&#x5177;&#x540D;&#x63D2;&#x69FD;&#x7684;&#x4F7F;&#x7528;">12.2    slot-&#x5177;&#x540D;&#x63D2;&#x69FD;&#x7684;&#x4F7F;&#x7528;</h2>
+<p>&#x200B;    &#x5177;&#x540D;&#x63D2;&#x69FD;&#xFF0C;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x8BA9;&#x63D2;&#x69FD;&#x6309;&#x6307;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#x586B;&#x5145;&#xFF0C;&#x800C;&#x6CA1;&#x6709;&#x5177;&#x540D;&#x7684;&#x63D2;&#x69FD;&#x662F;&#x6309;&#x7167;&#x4F60;&#x586B;&#x5145;&#x7684;&#x987A;&#x5E8F;&#x6392;&#x5217;&#x7684;&#xFF0C;&#x800C;&#x5177;&#x540D;&#x63D2;&#x69FD;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x6392;&#x5217;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x7236;&#x7EC4;&#x4EF6; --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">cpn</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>&#x6CA1;&#x5177;&#x540D;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x8FD9;&#x662F;&#x5DE6;&#x8FB9;&#x5177;&#x540D;&#x63D2;&#x69FD;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- &#x65B0;&#x8BED;&#x6CD5; --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">v-slot:center</span>&gt;</span>&#x8FD9;&#x662F;&#x4E2D;&#x95F4;&#x5177;&#x540D;&#x63D2;&#x69FD;<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- &#x65B0;&#x8BED;&#x6CD5;&#x7F29;&#x5199; --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">right</span>&gt;</span>&#x8FD9;&#x662F;&#x53F3;&#x8FB9;&#x5177;&#x540D;&#x63D2;&#x69FD;<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">cpn</span>&gt;</span>
+
+
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- &#x63D2;&#x69FD;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x4F7F;&#x7528;&lt;slot&gt;&lt;/slot&gt; --&gt;</span>
+  <span class="hljs-comment">&lt;!-- &#x5B50;&#x7EC4;&#x4EF6; --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;cpn&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x8FB9;<span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span>&#x4E2D;&#x95F4;<span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x8FB9;<span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">slot</span>&gt;</span>&#x6CA1;&#x6709;&#x5177;&#x540D;&#x7684;&#x63D2;&#x69FD;<span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    <span class="hljs-keyword">const</span> cpn = {
+      template: <span class="hljs-string">&quot;#cpn&quot;</span>,
+      data() {
+        <span class="hljs-keyword">return</span> {
+          message: <span class="hljs-string">&quot;&#x6211;&#x662F;&#x5B50;&#x7EC4;&#x4EF6;&quot;</span>
+        }
+      },
+    }
+    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+      el: <span class="hljs-string">&quot;#app&quot;</span>,
+      data() {
+        <span class="hljs-keyword">return</span> {
+          message: <span class="hljs-string">&quot;&#x6211;&#x662F;&#x7236;&#x7EC4;&#x4EF6;&#x6D88;&#x606F;&quot;</span>
+        }
+      },
+      components: {
+        cpn
+      },
+    })
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>&#x5982;&#x56FE;&#x6240;&#x793A;</p>
+</blockquote>
+<p><img src="images/12.2-1.png" alt=""></p>
+<blockquote>
+<p>&#x6CA1;&#x6709;&#x5177;&#x540D;&#x7684;&#x63D2;&#x69FD;&#x6392;&#x5728;&#x6700;&#x540E;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6392;&#x5728;&#x4E86;&#x6700;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x6309;&#x987A;&#x5E8F;&#x6392;&#x5217;&#x3002;&#x5177;&#x540D;&#x63D2;&#x69FD;&#x6309;&#x7167;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x987A;&#x5E8F;&#x6392;&#x5217;&#x3002;</p>
+<p>&#x5B9A;&#x4E49;&#x5177;&#x540D;&#x63D2;&#x69FD;&#xFF0C;&#x4F7F;&#x7528;<code>name</code>&#x5C5E;&#x6027;&#xFF0C;&#x7ED9;&#x63D2;&#x69FD;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x540D;&#x5B57;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-html">  <span class="hljs-comment">&lt;!-- &#x63D2;&#x69FD;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x4F7F;&#x7528;&lt;slot&gt;&lt;/slot&gt; --&gt;</span>
+  <span class="hljs-comment">&lt;!-- &#x5B50;&#x7EC4;&#x4EF6;&#x6A21;&#x677F; --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;cpn&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x8FB9;<span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span>&#x4E2D;&#x95F4;<span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x8FB9;<span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">slot</span>&gt;</span>&#x6CA1;&#x6709;&#x5177;&#x540D;&#x7684;&#x63D2;&#x69FD;<span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>&#x4F7F;&#x7528;&#x5177;&#x540D;&#x63D2;&#x69FD;&#xFF0C;&#x5728;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#x6807;&#x7B7E;&#x5185;&#x4F7F;&#x7528;<code>slot=&quot;left&quot;</code>&#xFF0C;&#x63D2;&#x5165;&#x6307;&#x5B9A;&#x63D2;&#x69FD;</p>
+</blockquote>
+<pre><code class="lang-html">  <span class="hljs-comment">&lt;!-- &#x7236;&#x7EC4;&#x4EF6; --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cpn</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>&#x6CA1;&#x5177;&#x540D;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x8FD9;&#x662F;&#x5DE6;&#x8FB9;&#x5177;&#x540D;&#x63D2;&#x69FD;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- &#x65B0;&#x8BED;&#x6CD5; --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">v-slot:center</span>&gt;</span>&#x8FD9;&#x662F;&#x4E2D;&#x95F4;&#x5177;&#x540D;&#x63D2;&#x69FD;<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- &#x65B0;&#x8BED;&#x6CD5;&#x7F29;&#x5199; --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">right</span>&gt;</span>&#x8FD9;&#x662F;&#x53F3;&#x8FB9;&#x5177;&#x540D;&#x63D2;&#x69FD;<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">cpn</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x6B64;&#x5904;&#x6709;&#x662F;&#x4E09;&#x79CD;&#x5199;&#x6CD5;&#xFF0C;&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x63D2;&#x69FD;&#x3002;</p>
+</blockquote>
+<h2 id="123----&#x7F16;&#x8BD1;&#x7684;&#x4F5C;&#x7528;&#x57DF;">12.3    &#x7F16;&#x8BD1;&#x7684;&#x4F5C;&#x7528;&#x57DF;</h2>
+<p>&#x200B;    &#x524D;&#x9762;&#x8BF4;&#x8FC7;&#x7EC4;&#x4EF6;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x81EA;&#x5DF1;&#x7EC4;&#x4EF6;&#x7684;&#x4F5C;&#x7528;&#x5728;&#x81EA;&#x5DF1;&#x7EC4;&#x4EF6;&#x5185;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;ie=edge&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x7F16;&#x8BD1;&#x7684;&#x4F5C;&#x7528;&#x57DF;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- &#x7236;&#x7EC4;&#x4EF6; --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x4F7F;&#x7528;&#x7684;vue&#x5B9E;&#x4F8B;&#x4F5C;&#x7528;&#x57DF;&#x7684;isShow --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cpn</span> <span class="hljs-attr">v-show</span>=<span class="hljs-string">&quot;isShow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">cpn</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- &#x63D2;&#x69FD;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x4F7F;&#x7528;&lt;slot&gt;&lt;/slot&gt; --&gt;</span>
+  <span class="hljs-comment">&lt;!-- &#x5B50;&#x7EC4;&#x4EF6; --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;cpn&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x6211;&#x662F;&#x5B50;&#x7EC4;&#x4EF6;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x54C8;&#x54C8;&#x54C8;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- &#x7EC4;&#x4EF6;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x4F5C;&#x7528;&#x57DF; --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">v-show</span>=<span class="hljs-string">&quot;isShow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    <span class="hljs-keyword">const</span> cpn = {
+      template: <span class="hljs-string">&quot;#cpn&quot;</span>,
+      data() {
+        <span class="hljs-keyword">return</span> {
+          isShwo:<span class="hljs-literal">false</span>
+        }
+      },
+    }
+    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+      el: <span class="hljs-string">&quot;#app&quot;</span>,
+      data() {
+        <span class="hljs-keyword">return</span> {
+          message: <span class="hljs-string">&quot;&#x6211;&#x662F;&#x7236;&#x7EC4;&#x4EF6;&#x6D88;&#x606F;&quot;</span>,
+          isShow:<span class="hljs-literal">true</span>
+        }
+      },
+      components: {
+        cpn
+      },
+    })
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x7ED3;&#x679C;&#x5982;&#x4E0B;</p>
+<p><img src="images/12.3-1.png" alt=""></p>
+<blockquote>
+<p>&#x5B50;&#x7EC4;&#x4EF6;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x5B50;&#x7EC4;&#x4EF6;&#x7684;isShow&#xFF0C;&#x5B50;&#x7EC4;&#x4EF6;&#x4E3A;false&#xFF0C;&#x6240;&#x4EE5;button&#x6CA1;&#x663E;&#x793A;&#xFF0C;&#x88AB;&#x9690;&#x85CF;&#x3002;</p>
+</blockquote>
+<h2 id="124----&#x4F5C;&#x7528;&#x57DF;&#x63D2;&#x69FD;&#x6848;&#x4F8B;">12.4    &#x4F5C;&#x7528;&#x57DF;&#x63D2;&#x69FD;&#x6848;&#x4F8B;</h2>
+<p>&#x200B;    &#x7236;&#x7EC4;&#x4EF6;&#x66FF;&#x6362;&#x63D2;&#x69FD;&#x7684;&#x6807;&#x7B7E;&#xFF0C;&#x4F46;&#x662F;&#x5185;&#x5BB9;&#x662F;&#x7531;&#x5B50;&#x7EC4;&#x4EF6;&#x6765;&#x63D0;&#x4F9B;&#x3002;</p>
+<p>&#x200B;    &#x5F53;&#x7EC4;&#x4EF6;&#x9700;&#x8981;&#x5728;&#x591A;&#x4E2A;&#x7236;&#x7EC4;&#x4EF6;&#x591A;&#x4E2A;&#x754C;&#x9762;&#x5C55;&#x793A;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C06;&#x5185;&#x5BB9;&#x653E;&#x5728;&#x5B50;&#x7EC4;&#x4EF6;&#x63D2;&#x69FD;&#x4E2D;&#xFF0C;&#x7236;&#x7EC4;&#x4EF6;&#x53EA;&#x9700;&#x8981;&#x544A;&#x8BC9;&#x5B50;&#x7EC4;&#x4EF6;&#x4F7F;&#x7528;&#x4EC0;&#x4E48;&#x65B9;&#x5F0F;&#x5C55;&#x793A;&#x754C;&#x9762;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;ie=edge&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x4F5C;&#x7528;&#x57DF;&#x63D2;&#x69FD;&#x6848;&#x4F8B;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+
+  <span class="hljs-comment">&lt;!-- &#x7236;&#x7EC4;&#x4EF6; --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cpn</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">cpn</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x76EE;&#x7684;&#x662F;&#x83B7;&#x53D6;&#x5B50;&#x7EC4;&#x4EF6;&#x6570;&#x636E; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cpn</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- 2.5&#x4EE5;&#x4E0B;&#x5FC5;&#x987B;&#x4F7F;&#x7528;template --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">slot-scope</span>=<span class="hljs-string">&quot;slot&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- &lt;span v-for=&quot;(item, index) in slot.data&quot; :key=&quot;index&quot;&gt;{{item}}-&lt;/span&gt; --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{{slot.data.join(&apos; - &apos;)}}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">cpn</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cpn</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- 2.5&#x4EE5;&#x4E0B;&#x5FC5;&#x987B;&#x4F7F;&#x7528;template --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">slot-scope</span>=<span class="hljs-string">&quot;slot&quot;</span>&gt;</span>
+          <span class="hljs-comment">&lt;!-- &lt;span v-for=&quot;(item, index) in slot.data&quot; :key=&quot;index&quot;&gt;{{item}}*&lt;/span&gt; --&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{{slot.data.join(&apos; * &apos;)}}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">cpn</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- &#x63D2;&#x69FD;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x4F7F;&#x7528;&lt;slot&gt;&lt;/slot&gt; --&gt;</span>
+  <span class="hljs-comment">&lt;!-- &#x5B50;&#x7EC4;&#x4EF6; --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;cpn&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">:data</span>=<span class="hljs-string">&quot;pLanguage&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;(item, index) in pLanguage&quot;</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;index&quot;</span>&gt;</span>{{item}}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    <span class="hljs-keyword">const</span> cpn = {
+      template: <span class="hljs-string">&quot;#cpn&quot;</span>,
+      data() {
+        <span class="hljs-keyword">return</span> {
+          isShwo:<span class="hljs-literal">false</span>,
+          pLanguage:[<span class="hljs-string">&apos;JavaScript&apos;</span>,<span class="hljs-string">&apos;Java&apos;</span>,<span class="hljs-string">&apos;C++&apos;</span>,<span class="hljs-string">&apos;C&apos;</span>]
+        }
+      },
+    }
+    <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Vue({
+      el: <span class="hljs-string">&quot;#app&quot;</span>,
+      data() {
+        <span class="hljs-keyword">return</span> {
+          isShow:<span class="hljs-literal">true</span>
+        }
+      },
+      components: {
+        cpn
+      },
+    })
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;<code>slot-scope=&quot;slot&quot;</code><strong>&#xFF08;2.6.0&#x5DF2;&#x7ECF;&#x5E9F;&#x5F03;&#xFF09;</strong>&#x7ED9;&#x63D2;&#x69FD;&#x5C5E;&#x6027;&#x547D;&#x540D;&#xFF0C;&#x5728;&#x901A;&#x8FC7;<code>slot</code>&#x8C03;&#x7528;&#x7ED1;&#x5B9A;&#x5728;&#x63D2;&#x69FD;&#x4E0A;&#x7684;&#x5C5E;&#x6027;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>v-slot=&quot;slot&quot;</code>&#x3002;</p>
+</blockquote>
+<p><img src="images/12.4-1.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="11-组件化开发.html" class="navigation navigation-prev " aria-label="Previous page: 11-组件化开发">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="13-vue实例的生命周期.html" class="navigation navigation-next " aria-label="Next page: 13-vue实例的生命周期">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"12-组件化高级","level":"1.13","depth":1,"next":{"title":"13-vue实例的生命周期","level":"1.14","depth":1,"path":"13-vue实例的生命周期.md","ref":"13-vue实例的生命周期.md","articles":[]},"previous":{"title":"11-组件化开发","level":"1.12","depth":1,"path":"11-组件化开发.md","ref":"11-组件化开发.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"12-组件化高级.md","mtime":"2019-11-12T13:29:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-28T04:34:55.330Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
