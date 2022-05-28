@@ -1,0 +1,582 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>09. HTML5-main,article,section标记 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Lesson10/" />
+    
+    
+    <link rel="prev" href="../Lesson08/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Lesson01/">
+            
+                <a href="../Lesson01/">
+            
+                    
+                    01. HTML5学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Lesson02/">
+            
+                <a href="../Lesson02/">
+            
+                    
+                    02. HTML基本要素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Lesson03/">
+            
+                <a href="../Lesson03/">
+            
+                    
+                    03. HTML5-meta标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Lesson04/">
+            
+                <a href="../Lesson04/">
+            
+                    
+                    04. HTML5-title,base标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Lesson05/">
+            
+                <a href="../Lesson05/">
+            
+                    
+                    05. HTML5-link标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Lesson06/">
+            
+                <a href="../Lesson06/">
+            
+                    
+                    06. HTML5-style标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Lesson07/">
+            
+                <a href="../Lesson07/">
+            
+                    
+                    07. HTML5-script,noscript标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Lesson08/">
+            
+                <a href="../Lesson08/">
+            
+                    
+                    08. HTML5-template标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    09. HTML5-main,article,section标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Lesson10/">
+            
+                <a href="../Lesson10/">
+            
+                    
+                    10. HTML5-nav,aside标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Lesson11/">
+            
+                <a href="../Lesson11/">
+            
+                    
+                    11. HTML5-h1~h6,header,footer,address标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Lesson12/">
+            
+                <a href="../Lesson12/">
+            
+                    
+                    12. HTML5-p,blockquote标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Lesson13/">
+            
+                <a href="../Lesson13/">
+            
+                    
+                    13. HTML5-ol,ul,li标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Lesson14/">
+            
+                <a href="../Lesson14/">
+            
+                    
+                    14. HTML5-dl,dt,dd标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Lesson15/">
+            
+                <a href="../Lesson15/">
+            
+                    
+                    15. HTML5-figure,figcaption标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../Lesson16/">
+            
+                <a href="../Lesson16/">
+            
+                    
+                    16. HTML5-pre,code标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../Lesson17/">
+            
+                <a href="../Lesson17/">
+            
+                    
+                    17. HTML5-div,hr标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../Lesson18/">
+            
+                <a href="../Lesson18/">
+            
+                    
+                    18. HTML5-a标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../Lesson19/">
+            
+                <a href="../Lesson19/">
+            
+                    
+                    19. HTML5-强调标记em,strong,b,i
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../Lesson20/">
+            
+                <a href="../Lesson20/">
+            
+                    
+                    20. HTML5-文字标记mark,u,small,s
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../Lesson21/">
+            
+                <a href="../Lesson21/">
+            
+                    
+                    21. 制作汉堡菜单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../Lesson22/README.md">
+            
+                <span>
+            
+                    
+                    22. HTML5-文字标记cite,q,dfn,abbr
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >09. HTML5-main,article,section标记</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="html5-mainarticlesection&#x6807;&#x8BB0;">HTML5-main,article,section&#x6807;&#x8BB0;</h1>
+<h2 id="&#x77E5;&#x8BC6;&#x70B9;">&#x77E5;&#x8BC6;&#x70B9;</h2>
+<ul>
+<li>main&#xFF08;&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#xFF09;</li>
+<li>article&#xFF08;&#x6587;&#x7AE0;&#x5185;&#x5BB9;&#xFF09;</li>
+<li>section&#xFF08;&#x6587;&#x7AE0;&#x5185;&#x5BB9;&#x533A;&#x5757;&#xFF09;</li>
+</ul>
+<h3 id="main">main</h3>
+<p>main&#x6807;&#x8BB0;&#x63CF;&#x8FF0;&#x6587;&#x7AE0;&#x7684;&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#xFF0C;&#x662F;HTML5&#x65B0;&#x589E;&#x52A0;&#x7684;&#x6807;&#x8BB0;&#x3002;
+&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x6BCF;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x72EC;&#x6709;&#x5185;&#x5BB9;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x65B0;&#x95FB;&#x7F51;&#x9875;&#x7684;&#x65B0;&#x95FB;&#x5185;&#x5BB9;&#xFF0C;&#x4EC5;&#x4EC5;&#x8FD9;&#x4E2A;&#x9875;&#x9762;&#x624D;&#x6709;&#x7684;&#x5185;&#x5BB9;&#x3002;
+&#x800C;&#x9875;&#x5934;&#xFF0C;&#x9875;&#x811A;&#xFF0C;&#x83DC;&#x5355;&#x680F;&#x7B49;&#x90E8;&#x5206;&#x5219;&#x4E0D;&#x5C5E;&#x4E8E;&#x9875;&#x9762;&#x7684;&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;main&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x8FD9;&#x662F;&#x9875;&#x9762;&#x7684;&#x6B63;&#x6587;&#x6807;&#x9898;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4F1A;&#x5199;&#x9875;&#x9762;&#x7684;&#x6B63;&#x6587;&#x5185;&#x5BB9;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x51E0;&#x4E2A;&#x81EA;&#x7136;&#x6BB5;&#xFF0C;&#x5F00;&#x5934;&#x522B;&#x5FD8;&#x4E86;&#x7A7A;2&#x4E2A;&#x7A7A;&#x683C;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4F1A;&#x5199;&#x9875;&#x9762;&#x7684;&#x6B63;&#x6587;&#x5185;&#x5BB9;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x51E0;&#x4E2A;&#x81EA;&#x7136;&#x6BB5;&#xFF0C;&#x5F00;&#x5934;&#x522B;&#x5FD8;&#x4E86;&#x7A7A;2&#x4E2A;&#x7A7A;&#x683C;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4F1A;&#x5199;&#x9875;&#x9762;&#x7684;&#x6B63;&#x6587;&#x5185;&#x5BB9;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x51E0;&#x4E2A;&#x81EA;&#x7136;&#x6BB5;&#xFF0C;&#x5F00;&#x5934;&#x522B;&#x5FD8;&#x4E86;&#x7A7A;2&#x4E2A;&#x7A7A;&#x683C;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<h3 id="article">article</h3>
+<p>article&#x6807;&#x8BB0;&#x8868;&#x793A;&#x7F51;&#x9875;&#x5185;&#x72EC;&#x7ACB;&#x5185;&#x5BB9;&#x7684;&#x533A;&#x57DF;&#xFF08;section&#xFF09;&#xFF0C;&#x6BD4;&#x5982;&#x65B0;&#x95FB;&#x6B63;&#x6587;&#x5185;&#x5BB9;&#xFF0C;&#x535A;&#x5BA2;&#x6B63;&#x6587;&#x5185;&#x5BB9;&#x7B49;&#x7B49;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>&#x8FD9;&#x662F;&#x6587;&#x7AE0;&#x7684;&#x5934;&#x90E8;&#xFF0C;&#x53EF;&#x4EE5;&#x5199;&#x4E0A;&#x6587;&#x7AE0;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x53D1;&#x8868;&#x65F6;&#x95F4;&#x7B49;&#x7B49;<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x8FD9;&#x662F;&#x6587;&#x7AE0;&#x7684;&#x6B63;&#x6587;&#x90E8;&#x5206;&#xFF0C;&#x81EA;&#x7136;&#x6BB5;1...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x8FD9;&#x662F;&#x6587;&#x7AE0;&#x7684;&#x6B63;&#x6587;&#x90E8;&#x5206;&#xFF0C;&#x81EA;&#x7136;&#x6BB5;2...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x8FD9;&#x662F;&#x6587;&#x7AE0;&#x7684;&#x6B63;&#x6587;&#x90E8;&#x5206;&#xFF0C;&#x81EA;&#x7136;&#x6BB5;3...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>&#x8FD9;&#x662F;&#x6587;&#x7AE0;&#x7684;&#x811A;&#x90E8;&#xFF0C;&#x53EF;&#x4EE5;&#x5199;&#x4E0A;&#x4F5C;&#x8005;&#x4FE1;&#x606F;&#xFF0C;&#x6587;&#x7AE0;&#x51FA;&#x5904;&#x7B49;&#x7B49;<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+</code></pre>
+<h3 id="section">section</h3>
+<p>section&#x8868;&#x793A;&#x6587;&#x7AE0;&#x4E2D;&#x7684;&#x6BB5;&#x843D;&#x90E8;&#x5206;&#xFF0C;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x9875;&#x9762;&#x7684;&#x8F6E;&#x5ED3;&#xFF08;outline&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9875;&#x9762;&#x5185;&#x5BB9;&#x7684;&#x60C5;&#x51B5;&#x628A;&#x5185;&#x5BB9;
+&#x903B;&#x8F91;&#x5206;&#x4E3A;&#x51E0;&#x4E2A;&#x5177;&#x6709;&#x5C42;&#x6B21;&#x611F;&#x7684;&#x533A;&#x57DF;&#xFF0C;&#x4E5F;&#x662F;SEO&#x5DE5;&#x4F5C;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x5C3D;&#x91CF;&#x4F7F;&#x5F97;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x7684;&#x673A;&#x5668;&#x4EBA;&#x66F4;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#x7F51;&#x9875;&#x7684;&#x7ED3;&#x6784;&#x548C;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;&#x6587;&#x7AE0;&#x7684;&#x5927;&#x6807;&#x9898;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;&#x6587;&#x7AE0;&#x7684;&#x5C0F;&#x6807;&#x9898;1<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;&#x5C0F;&#x6807;&#x9898;1&#x7684;&#x5185;&#x5BB9;&#x533A;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;&#x5C0F;&#x6807;&#x9898;1&#x7684;&#x5185;&#x5BB9;&#x533A;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;&#x5C0F;&#x6807;&#x9898;1&#x7684;&#x5185;&#x5BB9;&#x533A;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;&#x6587;&#x7AE0;&#x7684;&#x5C0F;&#x6807;&#x9898;2<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;&#x5C0F;&#x6807;&#x9898;2&#x7684;&#x5185;&#x5BB9;&#x533A;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;&#x5C0F;&#x6807;&#x9898;2&#x7684;&#x5185;&#x5BB9;&#x533A;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;&#x5C0F;&#x6807;&#x9898;2&#x7684;&#x5185;&#x5BB9;&#x533A;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;&#x6587;&#x7AE0;&#x7684;&#x5C0F;&#x6807;&#x9898;3<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;&#x5C0F;&#x6807;&#x9898;3&#x7684;&#x5185;&#x5BB9;&#x533A;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;&#x5C0F;&#x6807;&#x9898;3&#x7684;&#x5185;&#x5BB9;&#x533A;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;&#x5C0F;&#x6807;&#x9898;3&#x7684;&#x5185;&#x5BB9;&#x533A;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+</code></pre>
+<p><strong>&#x5907;&#x6CE8;</strong></p>
+<p>section&#x6807;&#x8BB0;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B50;&#x6807;&#x8BB0;&#x4E00;&#x5B9A;&#x8981;&#x7528;h1-h6&#x7684;&#x5C0F;&#x6807;&#x9898;&#x3002;</p>
+<h2 id="&#x6E90;&#x4EE3;&#x7801;">&#x6E90;&#x4EE3;&#x7801;</h2>
+<p><a href="https://github.com/komavideo/LearnHTML5" target="_blank">https://github.com/komavideo/LearnHTML5</a></p>
+<h2 id="&#x5C0F;&#x9A6C;&#x89C6;&#x9891;&#x9891;&#x9053;">&#x5C0F;&#x9A6C;&#x89C6;&#x9891;&#x9891;&#x9053;</h2>
+<p><a href="http://komavideo.com" target="_blank">http://komavideo.com</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Lesson08/" class="navigation navigation-prev " aria-label="Previous page: 08. HTML5-template标记">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Lesson10/" class="navigation navigation-next " aria-label="Next page: 10. HTML5-nav,aside标记">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"09. HTML5-main,article,section标记","level":"1.10","depth":1,"next":{"title":"10. HTML5-nav,aside标记","level":"1.11","depth":1,"path":"Lesson10/README.md","ref":"Lesson10/README.md","articles":[]},"previous":{"title":"08. HTML5-template标记","level":"1.9","depth":1,"path":"Lesson08/README.md","ref":"Lesson08/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Lesson09/README.md","mtime":"2020-01-03T13:39:20.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-28T01:11:10.327Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
