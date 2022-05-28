@@ -1,0 +1,315 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Canvas · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Canvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Canvas</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x4F7F;&#x7528;javascript&#x753B;&#x56FE;&#x5462;&#xFF1F;&#x7528;html5&#x753B;&#x5E03;canvas&#x5440;">&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x4F7F;&#x7528;JavaScript&#x753B;&#x56FE;&#x5462;&#xFF1F;&#x7528;HTML5&#x753B;&#x5E03;(Canvas)&#x5440;</h1>
+<h2 id="youtube&#x89C6;&#x9891;&#x8BB2;&#x89E3;">Youtube&#x89C6;&#x9891;&#x8BB2;&#x89E3;</h2>
+<p><a href="https://youtu.be/7-EIqjYs6jY" target="_blank">https://youtu.be/7-EIqjYs6jY</a></p>
+<h2 id="&#x77E5;&#x8BC6;&#x70B9;">&#x77E5;&#x8BC6;&#x70B9;</h2>
+<ul>
+<li>&#x4F7F;&#x7528;HTML5+JavaScript&#x753B;&#x4E2A;&#x56FE;&#x770B;&#x770B;</li>
+</ul>
+<h2 id="&#x4EE3;&#x7801;&#x5B9E;&#x6218;">&#x4EE3;&#x7801;&#x5B9E;&#x6218;</h2>
+<h3 id="mainhtml">main.html</h3>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;zh-cmn-Hans&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;ie=edge&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>JavaScript Art<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./main.css&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;mainCanvas&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;800&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;600&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>    
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;main.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="maincss">main.css</h3>
+<pre><code class="lang-css"><span class="hljs-selector-id">#mainCanvas</span> {
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">3px</span> solid gray;
+}
+</code></pre>
+<h3 id="mainjs">main.js</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x83B7;&#x53D6;&#x753B;&#x5E03;&#x5BF9;&#x8C61;&#xFF0C;&#x751F;&#x6210;2d&#x4E0A;&#x4E0B;&#x6587;</span>
+<span class="hljs-keyword">const</span> canvas = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;#mainCanvas&quot;</span>)
+<span class="hljs-keyword">const</span> ctx = canvas.getContext(<span class="hljs-string">&quot;2d&quot;</span>)
+
+<span class="hljs-comment">// &#x2605;&#x2605;&#x2605;&#x6CE8;&#x610F;&#xFF1A;&#x753B;&#x5E03;&#x7684;&#x5750;&#x6807;&#x539F;&#x70B9;&#x4E3A;&#x5DE6;&#x4E0A;&#x89D2;(0,0)</span>
+
+<span class="hljs-comment">///////////////////////////////////////////////////////////</span>
+<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x753B;&#x7B14;&#x586B;&#x5145;&#x6837;&#x5F0F;</span>
+ctx.fillStyle = <span class="hljs-string">&quot;gray&quot;</span>
+
+<span class="hljs-comment">// &#x753B;&#x4E00;&#x4E2A;&#x77E9;&#x5F62;&#xFF1A;fillRect(x, y, w, h)</span>
+ctx.fillRect(<span class="hljs-number">50</span>, <span class="hljs-number">150</span>, <span class="hljs-number">100</span>, <span class="hljs-number">200</span>)
+
+<span class="hljs-comment">///////////////////////////////////////////////////////////</span>
+<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x63CF;&#x8FB9;&#x6837;&#x5F0F;</span>
+ctx.strokeStyle = <span class="hljs-string">&quot;green&quot;</span>
+
+<span class="hljs-comment">// &#x753B;&#x4E00;&#x4E2A;&#x63CF;&#x8FB9;&#x77E9;&#x5F62;(&#x65E0;&#x586B;&#x5145;)&#xFF1A;strokeRect(x, y, w, h)</span>
+ctx.strokeRect(<span class="hljs-number">200</span>, <span class="hljs-number">150</span>, <span class="hljs-number">100</span>, <span class="hljs-number">200</span>)
+
+<span class="hljs-comment">///////////////////////////////////////////////////////////</span>
+<span class="hljs-comment">// &#x4F7F;&#x7528;&#x8DEF;&#x5F84;Path&#x6765;&#x753B;&#x4E00;&#x4E2A;&#x5706;&#x5F62;</span>
+ctx.beginPath()
+
+<span class="hljs-comment">// &#x753B;&#x5706;&#xFF1A;arc(x, y, radius, startAngle, endAngle)</span>
+ctx.arc(<span class="hljs-number">400</span>, <span class="hljs-number">150</span>, <span class="hljs-number">50</span>, <span class="hljs-number">0</span>, <span class="hljs-built_in">Math</span>.PI * <span class="hljs-number">2</span>)
+
+<span class="hljs-comment">// &#x586B;&#x5145;&#x6837;&#x5F0F;</span>
+ctx.fillStyle = <span class="hljs-string">&quot;gray&quot;</span>
+
+<span class="hljs-comment">// &#x63CF;&#x753B;&#x586B;&#x5145;</span>
+ctx.fill()
+
+<span class="hljs-comment">///////////////////////////////////////////////////////////</span>
+<span class="hljs-comment">// &#x753B;&#x4E00;&#x6761;&#x5F27;&#x7EBF;</span>
+ctx.beginPath()
+
+<span class="hljs-comment">// &#x753B;&#x5F27;&#xFF1A;arc(x, y, radius, startAngle, endAngle)</span>
+ctx.arc(<span class="hljs-number">400</span>, <span class="hljs-number">250</span>, <span class="hljs-number">50</span>, <span class="hljs-number">0</span>, <span class="hljs-built_in">Math</span>.PI)
+
+<span class="hljs-comment">// &#x586B;&#x5145;&#x6837;&#x5F0F;</span>
+ctx.fillStyle = <span class="hljs-string">&quot;pink&quot;</span>
+
+<span class="hljs-comment">// &#x63CF;&#x753B;&#x586B;&#x5145;</span>
+ctx.fill()
+
+<span class="hljs-comment">///////////////////////////////////////////////////////////</span>
+<span class="hljs-comment">// &#x753B;&#x51FA;&#x4EFB;&#x610F;&#x4E24;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x8FDE;&#x7EBF;</span>
+ctx.beginPath()
+
+<span class="hljs-comment">// &#x79FB;&#x52A8;&#x5230;&#x8D77;&#x59CB;&#x70B9;</span>
+ctx.moveTo(<span class="hljs-number">500</span>, <span class="hljs-number">250</span>)
+
+<span class="hljs-comment">// &#x5411;&#x76EE;&#x6807;&#x70B9;&#x753B;&#x4E00;&#x6761;&#x7EBF;</span>
+ctx.lineTo(<span class="hljs-number">600</span>, <span class="hljs-number">350</span>)
+
+<span class="hljs-comment">// &#x7EBF;&#x7684;&#x6837;&#x5F0F;</span>
+ctx.strokeStyle = <span class="hljs-string">&quot;blue&quot;</span>
+
+<span class="hljs-comment">// &#x63CF;&#x753B;</span>
+ctx.stroke()
+</code></pre>
+<h2 id="api&#x53C2;&#x8003;mdn">API&#x53C2;&#x8003;(MDN)</h2>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial" target="_blank">https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial</a></p>
+<h2 id="&#x8BFE;&#x7A0B;&#x6587;&#x4EF6;">&#x8BFE;&#x7A0B;&#x6587;&#x4EF6;</h2>
+<p><a href="https://github.com/komavideo" target="_blank">https://github.com/komavideo</a></p>
+<h2 id="&#x5C0F;&#x9A6C;&#x89C6;&#x9891;&#x9891;&#x9053;">&#x5C0F;&#x9A6C;&#x89C6;&#x9891;&#x9891;&#x9053;</h2>
+<p><a href="http://komavideo.com" target="_blank">http://komavideo.com</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Canvas","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-12-20T08:29:26.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-28T01:36:27.434Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
