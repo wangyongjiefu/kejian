@@ -1,218 +1,360 @@
-<!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>幻灯片 1</title><meta name="author" content="admin"/><style type="text/css"> * {margin:0; padding:0; text-indent:0; }
- .s1 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
- .s2 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; vertical-align: 16pt; }
- h1 { color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 36pt; }
- .s3 { color: #F00; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 36pt; }
- h2 { color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 24pt; }
- .s4 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
- h3 { color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
- .p, p { color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; margin:0pt; }
- .s5 { color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- h4 { color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
- .s7 { color: #F00; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 10.5pt; }
- .s8 { color: black; font-family:"Courier New", monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- .s9 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- .s10 { color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
- .s11 { color: #F00; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- .s12 { color: #FFF; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 10.5pt; }
- .s13 { color: black; font-family:"Courier New", monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
- .s14 { color: #252525; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- .s15 { color: #FFF; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 10pt; }
- .s16 { color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
- .s17 { color: #252525; font-family:"Courier New", monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
- .s18 { color: #F00; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
- .s19 { color: #252525; font-family:"Courier New", monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- .s20 { color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12pt; }
- li {display: block; }
- #l1 {padding-left: 0pt; }
- #l1> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
- li {display: block; }
- #l2 {padding-left: 0pt; }
- #l2> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- li {display: block; }
- #l3 {padding-left: 0pt;counter-reset: e1 1; }
- #l3> li>*:first-child:before {counter-increment: e1; content: counter(e1, decimal)". "; color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 24pt; }
- #l3> li:first-child>*:first-child:before {counter-increment: e1 0;  }
- #l4 {padding-left: 0pt; }
- #l4> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- #l5 {padding-left: 0pt; }
- #l5> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
- li {display: block; }
- #l6 {padding-left: 0pt;counter-reset: g1 2; }
- #l6> li>*:first-child:before {counter-increment: g1; content: counter(g1, decimal)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
- #l6> li:first-child>*:first-child:before {counter-increment: g1 0;  }
- #l7 {padding-left: 0pt;counter-reset: g2 1; }
- #l7> li>*:first-child:before {counter-increment: g2; content: counter(g1, decimal)"."counter(g2, decimal)" "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
- #l7> li:first-child>*:first-child:before {counter-increment: g2 0;  }
- #l8 {padding-left: 0pt;counter-reset: g3 1; }
- #l8> li>*:first-child:before {counter-increment: g3; content: counter(g3, decimal)". "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
- #l8> li:first-child>*:first-child:before {counter-increment: g3 0;  }
- #l9 {padding-left: 0pt; }
- #l9> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- #l10 {padding-left: 0pt; }
- #l10> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- #l11 {padding-left: 0pt; }
- #l11> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- li {display: block; }
- #l12 {padding-left: 0pt; }
- #l12> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
- li {display: block; }
- #l13 {padding-left: 0pt;counter-reset: i1 3; }
- #l13> li>*:first-child:before {counter-increment: i1; content: counter(i1, decimal)". "; color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 24pt; }
- #l13> li:first-child>*:first-child:before {counter-increment: i1 0;  }
- #l14 {padding-left: 0pt;counter-reset: i2 1; }
- #l14> li>*:first-child:before {counter-increment: i2; content: counter(i1, decimal)"."counter(i2, decimal)" "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
- #l14> li:first-child>*:first-child:before {counter-increment: i2 0;  }
- li {display: block; }
- #l15 {padding-left: 0pt;counter-reset: j1 3; }
- #l15> li>*:first-child:before {counter-increment: j1; content: counter(j1, decimal)". "; color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 24pt; }
- #l15> li:first-child>*:first-child:before {counter-increment: j1 0;  }
- #l16 {padding-left: 0pt;counter-reset: j2 1; }
- #l16> li>*:first-child:before {counter-increment: j2; content: counter(j1, decimal)"."counter(j2, decimal)" "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
- #l16> li:first-child>*:first-child:before {counter-increment: j2 0;  }
- li {display: block; }
- #l17 {padding-left: 0pt;counter-reset: k1 2; }
- #l17> li>*:first-child:before {counter-increment: k1; content: counter(k1, decimal)". "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
- #l17> li:first-child>*:first-child:before {counter-increment: k1 0;  }
- #l18 {padding-left: 0pt; }
- #l18> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- li {display: block; }
- #l19 {padding-left: 0pt;counter-reset: l1 3; }
- #l19> li>*:first-child:before {counter-increment: l1; content: counter(l1, decimal)". "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
- #l19> li:first-child>*:first-child:before {counter-increment: l1 0;  }
- #l20 {padding-left: 0pt;counter-reset: l2 1; }
- #l20> li>*:first-child:before {counter-increment: l2; content: counter(l1, decimal)"."counter(l2, decimal)" "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
- #l20> li:first-child>*:first-child:before {counter-increment: l2 0;  }
- li {display: block; }
- #l21 {padding-left: 0pt;counter-reset: m1 3; }
- #l21> li>*:first-child:before {counter-increment: m1; content: counter(m1, decimal)". "; color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 24pt; }
- #l21> li:first-child>*:first-child:before {counter-increment: m1 0;  }
- #l22 {padding-left: 0pt;counter-reset: m2 1; }
- #l22> li>*:first-child:before {counter-increment: m2; content: counter(m1, decimal)"."counter(m2, decimal)" "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
- #l22> li:first-child>*:first-child:before {counter-increment: m2 0;  }
- #l23 {padding-left: 0pt;counter-reset: n1 5; }
- #l23> li>*:first-child:before {counter-increment: n1; content: counter(n1, decimal)". "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
- #l23> li:first-child>*:first-child:before {counter-increment: n1 0;  }
- #l24 {padding-left: 0pt; }
- #l24> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- li {display: block; }
- #l25 {padding-left: 0pt;counter-reset: o1 1; }
- #l25> li>*:first-child:before {counter-increment: o1; content: counter(o1, decimal)". "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
- #l25> li:first-child>*:first-child:before {counter-increment: o1 0;  }
- #l26 {padding-left: 0pt; }
- #l26> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- #l27 {padding-left: 0pt; }
- #l27> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- li {display: block; }
- #l28 {padding-left: 0pt;counter-reset: p1 3; }
- #l28> li>*:first-child:before {counter-increment: p1; content: counter(p1, decimal)". "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
- #l28> li:first-child>*:first-child:before {counter-increment: p1 0;  }
- #l29 {padding-left: 0pt; }
- #l29> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- li {display: block; }
- #l30 {padding-left: 0pt;counter-reset: q1 3; }
- #l30> li>*:first-child:before {counter-increment: q1; content: counter(q1, decimal)". "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
- #l30> li:first-child>*:first-child:before {counter-increment: q1 0;  }
- #l31 {padding-left: 0pt;counter-reset: r1 3; }
- #l31> li>*:first-child:before {counter-increment: r1; content: counter(r1, decimal)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
- #l31> li:first-child>*:first-child:before {counter-increment: r1 0;  }
- #l32 {padding-left: 0pt;counter-reset: r2 2; }
- #l32> li>*:first-child:before {counter-increment: r2; content: counter(r1, decimal)"."counter(r2, decimal)" "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
- #l32> li:first-child>*:first-child:before {counter-increment: r2 0;  }
- #l33 {padding-left: 0pt; }
- #l33> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- li {display: block; }
- #l34 {padding-left: 0pt;counter-reset: r1 3; }
- #l34> li>*:first-child:before {counter-increment: r1; content: counter(r1, decimal)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
- #l34> li:first-child>*:first-child:before {counter-increment: r1 0;  }
- #l35 {padding-left: 0pt;counter-reset: r2 3; }
- #l35> li>*:first-child:before {counter-increment: r2; content: counter(r1, decimal)"."counter(r2, decimal)" "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
- #l35> li:first-child>*:first-child:before {counter-increment: r2 0;  }
- #l36 {padding-left: 0pt;counter-reset: s1 1; }
- #l36> li>*:first-child:before {counter-increment: s1; content: counter(s1, decimal)". "; color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
- #l36> li:first-child>*:first-child:before {counter-increment: s1 0;  }
- #l37 {padding-left: 0pt; }
- #l37> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- li {display: block; }
- #l38 {padding-left: 0pt;counter-reset: t1 1; }
- #l38> li>*:first-child:before {counter-increment: t1; content: counter(t1, decimal)". "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
- #l38> li:first-child>*:first-child:before {counter-increment: t1 0;  }
- #l39 {padding-left: 0pt; }
- #l39> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- #l40 {padding-left: 0pt; }
- #l40> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- #l41 {padding-left: 0pt; }
- #l41> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- li {display: block; }
- #l42 {padding-left: 0pt;counter-reset: u1 3; }
- #l42> li>*:first-child:before {counter-increment: u1; content: counter(u1, decimal)". "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
- #l42> li:first-child>*:first-child:before {counter-increment: u1 0;  }
- #l43 {padding-left: 0pt;counter-reset: v1 3; }
- #l43> li>*:first-child:before {counter-increment: v1; content: counter(v1, decimal)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
- #l43> li:first-child>*:first-child:before {counter-increment: v1 0;  }
- #l44 {padding-left: 0pt;counter-reset: v2 4; }
- #l44> li>*:first-child:before {counter-increment: v2; content: counter(v1, decimal)"."counter(v2, decimal)" "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
- #l44> li:first-child>*:first-child:before {counter-increment: v2 0;  }
- #l45 {padding-left: 0pt; }
- #l45> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- #l46 {padding-left: 0pt; }
- #l46> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- #l47 {padding-left: 0pt; }
- #l47> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- li {display: block; }
- #l48 {padding-left: 0pt;counter-reset: v1 3; }
- #l48> li>*:first-child:before {counter-increment: v1; content: counter(v1, decimal)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
- #l48> li:first-child>*:first-child:before {counter-increment: v1 0;  }
- #l49 {padding-left: 0pt;counter-reset: v2 5; }
- #l49> li>*:first-child:before {counter-increment: v2; content: counter(v1, decimal)"."counter(v2, decimal)" "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
- #l49> li:first-child>*:first-child:before {counter-increment: v2 0;  }
- #l50 {padding-left: 0pt;counter-reset: w1 1; }
- #l50> li>*:first-child:before {counter-increment: w1; content: counter(w1, decimal)". "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
- #l50> li:first-child>*:first-child:before {counter-increment: w1 0;  }
- #l51 {padding-left: 0pt; }
- #l51> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- #l52 {padding-left: 0pt;counter-reset: x1 1; }
- #l52> li>*:first-child:before {counter-increment: x1; content: counter(x1, decimal)". "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
- #l52> li:first-child>*:first-child:before {counter-increment: x1 0;  }
- #l53 {padding-left: 0pt; }
- #l53> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- #l54 {padding-left: 0pt; }
- #l54> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- li {display: block; }
- #l55 {padding-left: 0pt;counter-reset: y1 1; }
- #l55> li>*:first-child:before {counter-increment: y1; content: counter(y1, decimal)". "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
- #l55> li:first-child>*:first-child:before {counter-increment: y1 0;  }
- #l56 {padding-left: 0pt; }
- #l56> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- #l57 {padding-left: 0pt; }
- #l57> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- li {display: block; }
- #l58 {padding-left: 0pt;counter-reset: z1 3; }
- #l58> li>*:first-child:before {counter-increment: z1; content: counter(z1, decimal)". "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
- #l58> li:first-child>*:first-child:before {counter-increment: z1 0;  }
- #l59 {padding-left: 0pt; }
- #l59> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- li {display: block; }
- #l60 {padding-left: 0pt;counter-reset: c1 3; }
- #l60> li>*:first-child:before {counter-increment: c1; content: counter(c1, decimal)". "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
- #l60> li:first-child>*:first-child:before {counter-increment: c1 0;  }
- #l61 {padding-left: 0pt; }
- #l61> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
- li {display: block; }
- #l62 {padding-left: 0pt; }
- #l62> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
- li {display: block; }
- #l63 {padding-left: 0pt;counter-reset: e1 4; }
- #l63> li>*:first-child:before {counter-increment: e1; content: counter(e1, decimal)". "; color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 24pt; }
- #l63> li:first-child>*:first-child:before {counter-increment: e1 0;  }
- #l64 {padding-left: 0pt;counter-reset: e2 1; }
- #l64> li>*:first-child:before {counter-increment: e2; content: counter(e2, decimal)". "; color: #404040; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
- #l64> li:first-child>*:first-child:before {counter-increment: e2 0;  }
- #l65 {padding-left: 0pt; }
- #l65> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- #l66 {padding-left: 0pt; }
- #l66> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
- #l67 {padding-left: 0pt; }
- #l67> li>*:first-child:before {content: " "; color: #252525; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10.5pt; }
-</style></head><body><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s1" style="padding-left: 43pt;text-indent: 0pt;text-align: left;"><span><img width="21" height="12" alt="image" src="index_files/Image_001.png"/></span>	<span><img width="21" height="17" alt="image" src="index_files/Image_002.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s2" style="padding-left: 379pt;text-indent: 0pt;text-align: left;">	<span><img width="25" height="19" alt="image" src="index_files/Image_003.png"/></span></p><p style="padding-left: 105pt;text-indent: 0pt;text-align: left;"><span><img width="21" height="16" alt="image" src="index_files/Image_004.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="326" height="112" alt="image" src="index_files/Image_005.png"/></span><span><img width="228" height="62" alt="image" src="index_files/Image_006.png"/></span><span><img width="14" height="13" alt="image" src="index_files/Image_007.png"/></span><span><img width="24" height="24" alt="image" src="index_files/Image_008.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="22" height="30" alt="image" src="index_files/Image_009.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="19" height="19" alt="image" src="index_files/Image_010.png"/></span><span><img width="13" height="13" alt="image" src="index_files/Image_011.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="20" height="20" alt="image" src="index_files/Image_012.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="27" height="27" alt="image" src="index_files/Image_013.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="18" height="9" alt="image" src="index_files/Image_014.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="22" height="18" alt="image" src="index_files/Image_015.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="15" height="14" alt="image" src="index_files/Image_016.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><h1 style="text-indent: 0pt;text-align: left;">Vue全家桶之Vue基础</h1><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_017.png"/></span></p><p style="padding-left: 547pt;text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_018.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><br/></p><ul id="l1"><li><p style="padding-top: 14pt;padding-left: 107pt;text-indent: -17pt;text-align: left;"><span style=" color: #F00; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue概述</span></p></li><li><p style="padding-top: 7pt;padding-left: 107pt;text-indent: -17pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue基本使用</span></p></li><li><p style="padding-top: 7pt;padding-left: 107pt;text-indent: -17pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue模板语法</span></p></li><li><p style="padding-top: 7pt;padding-left: 107pt;text-indent: -17pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">基础案例</span></p></li><li><p style="padding-top: 7pt;padding-left: 107pt;text-indent: -17pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue常用特性</span></p></li><li><p style="padding-top: 7pt;padding-left: 107pt;text-indent: -17pt;line-height: 22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">综合案例</span></p></li></ul><p style="padding-left: 159pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/><p style="padding-left: 36pt;text-indent: 0pt;line-height: 77pt;text-align: left;"><span style=" color: #FFF; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 44pt;">目</span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="15" height="8" alt="image" src="index_files/Image_019.png"/></span><span><img width="14" height="11" alt="image" src="index_files/Image_020.png"/></span></p><p class="s3" style="padding-left: 1pt;text-indent: 0pt;line-height: 50pt;text-align: left;">Contents</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_021.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_022.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_023.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_024.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_025.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_026.png"/></span></p><h2 style="padding-left: 21pt;text-indent: 0pt;line-height: 43pt;text-align: left;">1. Vue概述</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><h3 style="text-indent: 0pt;line-height: 24pt;text-align: left;">尤雨溪：Vue.js的创建者</h3><ul id="l2"><li><p style="padding-left: 22pt;text-indent: -22pt;line-height: 17pt;text-align: left;">2014年2月，Vue.js正式发布</p></li><li><p style="padding-top: 5pt;padding-left: 22pt;text-indent: -22pt;text-align: left;">2015年10月27日，正式发布1.0.0</p></li><li><p style="padding-top: 5pt;padding-left: 22pt;text-indent: -22pt;line-height: 17pt;text-align: left;">2016年4月27日，发布2.0的预览版本</p></li></ul><p class="s4" style="padding-left: 32pt;text-indent: 0pt;text-align: left;"><span><img width="240" height="240" alt="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=c08a0c60a844ad342ebf8081e8996bc9/4afbfbedab64034f29596c8ba6c379310b551da2.jpg" title="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=c08a0c60a844ad342ebf8081e8996bc9/4afbfbedab64034f29596c8ba6c379310b551da2.jpg" src="index_files/Image_027.jpg"/></span>	</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_028.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_029.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_030.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_031.png"/></span></p><ol id="l3"><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 43pt;text-align: left;">Vue概述</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_032.png"/></span></p><h3 style="padding-left: 186pt;text-indent: 0pt;text-align: left;">Vue：渐进式JavaScript框架</h3><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="215" height="187" alt="image" src="index_files/Image_033.jpg"/></span></p><p style="padding-left: 186pt;text-indent: 0pt;text-align: left;">声明式渲染<span class="s5"></span>组件系统<span class="s5"></span>客户端路由<span class="s5"></span>集中式状态管理<span class="s5"></span>项目构建</p><p style="text-indent: 0pt;text-align: left;"><br/></p><h3 style="padding-left: 186pt;text-indent: 0pt;text-align: left;">官网：<span style=" color: #F00;">https://cn.vuejs.org/v2/guide/</span></h3><p style="text-indent: 0pt;text-align: left;"><br/></p><ul id="l4"><li><p style="padding-left: 212pt;text-indent: -25pt;text-align: left;">易用：熟悉HTML、CSS、JavaScript知识后，可快速上手Vue</p></li><li><p style="padding-top: 5pt;padding-left: 212pt;text-indent: -25pt;text-align: left;">灵活：在一个库和一套完整框架之间自如伸缩</p><p style="text-indent: 0pt;text-align: left;"/></li><li><p style="padding-top: 5pt;padding-left: 212pt;text-indent: -25pt;text-align: left;">高效：20kB运行大小，超快虚拟 DOM</p><p style="text-indent: 0pt;text-align: left;"/><p style="padding-left: 547pt;text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_034.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><br/></p><ul id="l5"><li><p style="padding-top: 14pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue概述</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #F00; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue基本使用</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue模板语法</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">基础案例</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue常用特性</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;line-height: 22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">综合案例</span></p></li></ul><p style="padding-left: 159pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/><p style="padding-left: 36pt;text-indent: 0pt;line-height: 77pt;text-align: left;"><span style=" color: #FFF; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 44pt;">目</span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="15" height="8" alt="image" src="index_files/Image_035.png"/></span><span><img width="14" height="11" alt="image" src="index_files/Image_036.png"/></span></p><p class="s3" style="padding-left: 1pt;text-indent: 0pt;line-height: 50pt;text-align: left;">Contents</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_037.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_038.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_039.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_040.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_041.png"/></span></p></li></ul></li><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 43pt;text-align: left;">Vue基本使用</h2></li></ol><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_042.png"/></span></p><ol id="l6"><ol id="l7"><li><h3 style="padding-left: 70pt;text-indent: -32pt;text-align: left;">传统开发模式对比</h3><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;line-height: 20pt;text-align: left;"><span style=" color: black; font-family:黑体, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">原生</span><span style=" color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">JS</span></p><p class="s8" style="text-indent: 0pt;text-align: left;">&lt;div id=&quot;msg&quot;&gt;&lt;/div&gt;</p><p class="s8" style="padding-top: 6pt;padding-left: 12pt;text-indent: -12pt;line-height: 159%;text-align: left;"><span>&lt;script type=&quot;text/javascript&quot;&gt;<br/>var msg = &#39;Hello World&#39;;</span></p><p class="s8" style="padding-left: 12pt;text-indent: 0pt;line-height: 159%;text-align: left;"><span>var div = document.getElementById(&#39;msg&#39;);<br/>div.innerHTML = msg;</span></p><p class="s8" style="text-indent: 0pt;line-height: 12pt;text-align: left;">&lt;/script&gt;</p><p style="padding-left: 60pt;text-indent: 0pt;text-align: left;"><span><img width="161" height="111" alt="image" src="index_files/Image_043.png"/></span><span><img width="104" height="61" alt="image" src="index_files/Image_044.png"/></span><span><img width="151" height="102" alt="image" src="index_files/Image_045.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;line-height: 18pt;text-align: left;"><span style=" color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">jQuery</span></p><p class="s8" style="padding-left: 12pt;text-indent: 0pt;text-align: left;">var msg = &#39;Hello World&#39;;</p><p class="s8" style="padding-top: 7pt;padding-left: 12pt;text-indent: 0pt;text-align: left;">$(&#39;#msg&#39;).html(msg);</p><p class="s8" style="padding-top: 6pt;text-indent: 0pt;text-align: left;">&lt;/script&gt;</p><p class="s8" style="text-indent: 0pt;text-align: left;">&lt;div id=&quot;msg&quot;&gt;&lt;/div&gt;</p><p class="s8" style="padding-top: 6pt;text-indent: 0pt;text-align: left;">&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.js&quot;&gt;&lt;/script&gt;</p><p class="s8" style="padding-top: 7pt;text-indent: 0pt;text-align: left;">&lt;script type=&quot;text/javascript&quot;&gt;</p><p style="padding-left: 60pt;text-indent: 0pt;text-align: left;"><span><img width="161" height="111" alt="image" src="index_files/Image_046.png"/></span><span><img width="103" height="59" alt="image" src="index_files/Image_047.png"/></span><span><img width="151" height="102" alt="image" src="index_files/Image_048.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_049.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_050.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_051.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_052.png"/></span></p><h2 style="padding-left: 21pt;text-indent: 0pt;line-height: 43pt;text-align: left;">2. Vue基本使用</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/></li><li><h3 style="padding-left: 70pt;text-indent: -32pt;text-align: left;">Vue.js之HelloWorld基本步骤</h3><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s8" style="padding-left: 19pt;text-indent: 0pt;text-align: left;">&lt;div id=&quot;app&quot;&gt;</p><p class="s8" style="padding-top: 6pt;padding-left: 32pt;text-indent: 0pt;text-align: left;">&lt;div&gt;{{msg}}&lt;/div&gt;</p><p class="s8" style="padding-top: 7pt;padding-left: 19pt;text-indent: 0pt;text-align: left;">&lt;/div&gt;</p><p class="s8" style="padding-top: 6pt;padding-left: 19pt;text-indent: 0pt;text-align: left;">&lt;script type=&quot;text/javascript&quot; src=&quot;js/vue.js&quot;&gt;&lt;/script&gt;</p><p class="s8" style="padding-left: 32pt;text-indent: -12pt;line-height: 19pt;text-align: left;"><span>&lt;script type=&quot;text/javascript&quot;&gt;<br/>new Vue({</span></p><p class="s8" style="padding-left: 44pt;text-indent: 0pt;line-height: 21pt;text-align: left;">el: &#39;#app&#39;,                                           <span style=" color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">Vue</span></p><p class="s8" style="padding-top: 5pt;padding-left: 44pt;text-indent: 0pt;text-align: left;">data: {</p><p class="s8" style="padding-top: 7pt;padding-left: 57pt;text-indent: 0pt;text-align: left;">msg: &#39;HelloWorld&#39;</p><p class="s8" style="padding-top: 6pt;padding-left: 44pt;text-indent: 0pt;text-align: left;">}</p><p class="s8" style="padding-top: 7pt;padding-left: 32pt;text-indent: 0pt;text-align: left;">})</p><p class="s8" style="padding-top: 6pt;padding-left: 19pt;text-indent: 0pt;text-align: left;">&lt;/script&gt;</p><p style="padding-left: 37pt;text-indent: 0pt;text-align: left;"><span><img width="161" height="111" alt="image" src="index_files/Image_053.png"/></span><span><img width="152" height="102" alt="image" src="index_files/Image_054.png"/></span><span><img width="445" height="270" alt="image" src="index_files/Image_055.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_056.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_057.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_058.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_059.png"/></span></p><h2 style="padding-left: 21pt;text-indent: 0pt;line-height: 43pt;text-align: left;">2. Vue基本使用</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><h3 style="padding-left: 70pt;text-indent: -32pt;text-align: left;">Vue.js之HelloWorld细节分析</h3><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_060.png"/></span></p><ol id="l8"><li><h4 style="padding-top: 1pt;padding-left: 68pt;text-indent: -16pt;text-align: left;">实例参数分析</h4><ul id="l9"><li><p style="padding-top: 6pt;padding-left: 108pt;text-indent: -27pt;line-height: 19pt;text-align: left;">el： 元素的挂载位置（值可以是CSS选择器或者DOM元素）</p><p style="padding-top: 8pt;padding-left: 13pt;text-indent: 0pt;line-height: 22pt;text-align: left;"><span style=" color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">Vue</span></p><p style="padding-left: 10pt;text-indent: 0pt;line-height: 23pt;text-align: left;"><span style=" color: black; font-family:黑体, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">代码</span></p><p style="text-indent: 0pt;line-height: 13pt;text-align: left;"><span style=" color: #585858; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt;">Vue</span><span style=" color: #585858; font-family:黑体, monospace; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt;">框架</span></p><p style="text-indent: 0pt;line-height: 20pt;text-align: left;"><span style=" color: black; font-family:黑体, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">原生</span><span style=" color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">js</span></p><p style="padding-left: 5pt;text-indent: 0pt;line-height: 20pt;text-align: left;"><span style=" color: black; font-family:黑体, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">代码</span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="83" height="91" alt="image" src="index_files/Image_061.png"/></span><span><img width="86" height="86" alt="image" src="index_files/Image_062.png"/></span><span><img width="76" height="83" alt="image" src="index_files/Image_063.png"/></span><span><img width="136" height="98" alt="image" src="index_files/Image_064.png"/></span><span><img width="101" height="87" alt="image" src="index_files/Image_065.png"/></span><span><img width="129" height="91" alt="image" src="index_files/Image_066.png"/></span></p></li><li><p style="padding-left: 108pt;text-indent: -27pt;line-height: 19pt;text-align: left;">data：模型数据（值是一个对象）</p></li></ul></li><li><h4 style="padding-top: 5pt;padding-left: 67pt;text-indent: -16pt;text-align: left;">插值表达式用法</h4><ul id="l10"><li><p style="padding-top: 6pt;padding-left: 108pt;text-indent: -27pt;line-height: 19pt;text-align: left;">将数据填充到HTML标签中</p></li><li><p style="padding-left: 108pt;text-indent: -27pt;line-height: 19pt;text-align: left;">插值表达式支持基本的计算操作</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><h4 style="padding-top: 1pt;padding-left: 67pt;text-indent: -16pt;text-align: left;">Vue代码运行原理分析</h4><p style="text-indent: 0pt;text-align: left;"/><ul id="l11"><li><p style="padding-top: 6pt;padding-left: 108pt;text-indent: -27pt;text-align: left;">概述编译过程的概念（Vue语法<span class="s5"></span>原生语法）</p></li></ul></li></ol></li></ol></ol><p style="text-indent: 0pt;text-align: left;"/><p style="padding-left: 547pt;text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_067.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><br/></p><ul id="l12"><li><p style="padding-top: 14pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue概述</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue基本使用</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #F00; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue模板语法</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">基础案例</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue常用特性</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;line-height: 22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">综合案例</span></p></li></ul><p style="padding-left: 159pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/><p style="padding-left: 36pt;text-indent: 0pt;line-height: 77pt;text-align: left;"><span style=" color: #FFF; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 44pt;">目</span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="15" height="8" alt="image" src="index_files/Image_068.png"/></span><span><img width="14" height="11" alt="image" src="index_files/Image_069.png"/></span></p><p class="s3" style="padding-left: 1pt;text-indent: 0pt;line-height: 50pt;text-align: left;">Contents</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_070.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_071.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_072.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_073.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_074.png"/></span></p><ol id="l13"><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 43pt;text-align: left;">Vue模板语法</h2><ol id="l14"><li><h3 style="padding-top: 17pt;padding-left: 70pt;text-indent: -32pt;text-align: left;">模板语法概述</h3></li></ol></li></ol><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_075.png"/></span></p><h4 style="padding-top: 1pt;padding-left: 38pt;text-indent: 0pt;text-align: left;">1. 如何理解前端渲染？</h4><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="padding-top: 2pt;padding-left: 54pt;text-indent: 0pt;text-align: left;">把数据填充到HTML标签中</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;line-height: 18pt;text-align: left;"><span style=" color: black; font-family:黑体, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">前端渲染</span></p><p style="text-indent: 0pt;line-height: 20pt;text-align: left;"><span style=" color: black; font-family:黑体, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">静态</span><span style=" color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">HTML</span><span style=" color: black; font-family:黑体, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">内容</span></p><p style="text-indent: 0pt;line-height: 18pt;text-align: left;"><span style=" color: black; font-family:黑体, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">数据</span></p><p style="padding-top: 13pt;padding-left: 22pt;text-indent: 0pt;text-align: left;"><span style=" color: black; font-family:黑体, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">模板</span></p><p style="padding-left: 85pt;text-indent: 0pt;text-align: left;"><span><img width="117" height="76" alt="image" src="index_files/Image_076.png"/></span><span><img width="110" height="68" alt="image" src="index_files/Image_077.png"/></span><span><img width="181" height="136" alt="image" src="index_files/Image_078.png"/></span><span><img width="191" height="61" alt="image" src="index_files/Image_079.png"/></span><span><img width="174" height="129" alt="image" src="index_files/Image_080.png"/></span><span><img width="106" height="106" alt="image" src="index_files/Image_081.png"/></span><span><img width="86" height="59" alt="image" src="index_files/Image_082.png"/></span><span><img width="99" height="99" alt="image" src="index_files/Image_083.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_084.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_085.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_086.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_087.png"/></span></p><ol id="l15"><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 43pt;text-align: left;">Vue模板语法</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_088.png"/></span></p><ol id="l16"><li><h3 style="padding-left: 70pt;text-indent: -32pt;text-align: left;">模板语法概述</h3></li></ol></li></ol><ol id="l17"><li><h4 style="padding-top: 14pt;padding-left: 55pt;text-indent: -16pt;text-align: left;">前端渲染方式</h4><p style="text-indent: 0pt;text-align: left;"><br/></p><ul id="l18"><li><p style="padding-top: 2pt;padding-left: 85pt;text-indent: -27pt;line-height: 19pt;text-align: left;">原生js拼接字符串</p></li><li><p style="padding-left: 85pt;text-indent: -27pt;line-height: 19pt;text-align: left;">使用前端模板引擎</p><p style="text-indent: 0pt;text-align: left;"/></li><li><p style="padding-left: 85pt;text-indent: -27pt;line-height: 19pt;text-align: left;">使用vue特有的模板语法</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_089.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_090.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_091.png"/></span></p></li></ul></li><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 42pt;text-align: left;">Vue模板语法</h2></li></ol><h3 style="padding-top: 17pt;padding-left: 37pt;text-indent: 0pt;text-align: left;">3.1 模板语法概述</h3><h4 style="padding-top: 14pt;padding-left: 38pt;text-indent: 0pt;text-align: left;">3. 原生js拼接字符串</h4><p style="padding-top: 13pt;padding-left: 56pt;text-indent: 0pt;text-align: left;"><span>基本上就是将数据以字符串的方式拼接到HTML标                                                                                                                                             <br/>签中，前端代码风格大体上如右图所示。</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s7" style="padding-left: 56pt;text-indent: 0pt;text-align: left;">缺点：<span class="p">不同开发人员的代码风格差别很大，随着业                                                                                                                                              <br/>务的复杂，后期的维护变得逐渐困难起来。</span></p><p class="s8" style="padding-top: 8pt;padding-left: 37pt;text-indent: 0pt;text-align: left;">var d = data.weather;</p><p class="s8" style="padding-top: 6pt;padding-left: 37pt;text-indent: 0pt;line-height: 160%;text-align: left;"><span>var info = document.getElementById(&#39;info&#39;);<br/>info.innerHTML = &#39;&#39;;</span></p><p class="s8" style="padding-left: 50pt;text-indent: -12pt;line-height: 159%;text-align: left;"><span>for(var i=0;i&lt;d.length;i++){<br/>var date = d[i].date;</span></p><p class="s8" style="padding-left: 50pt;text-indent: 0pt;line-height: 159%;text-align: left;"><span>var day = d[i].info.day;<br/>var night = d[i].info.night;<br/>var tag = &#39;&#39;;</span></p><p class="s8" style="padding-left: 50pt;text-indent: 0pt;line-height: 14pt;text-align: left;">tag += &#39;&lt;span&gt;<span class="s9">日期：</span>&#39;+date+&#39;&lt;/sapn&gt;&lt;ul&gt;&#39;;</p><p class="s8" style="padding-left: 50pt;text-indent: 0pt;text-align: justify;">tag += &#39;&lt;li&gt;<span class="s9">白天天气：</span><span>&#39;+day[1]+&#39;&lt;/li&gt;&#39;<br/>tag += &#39;&lt;li&gt;</span><span class="s9">白天温度：</span><span>&#39;+day[2]+&#39;&lt;/li&gt;&#39;<br/>tag += &#39;&lt;li&gt;</span><span class="s9">白天风向：</span>&#39;+day[3]+&#39;&lt;/li&gt;&#39;</p><p class="s8" style="padding-left: 50pt;text-indent: 0pt;line-height: 123%;text-align: left;">tag += &#39;&lt;li&gt;<span class="s9">白天风速：</span><span>&#39;+day[4]+&#39;&lt;/li&gt;&#39;<br/>tag += &#39;&lt;/ul&gt;&#39;;</span></p><p class="s8" style="padding-top: 3pt;padding-left: 50pt;text-indent: 0pt;line-height: 159%;text-align: left;"><span>var div = document.createElement(&#39;div&#39;);<br/>div.innerHTML = tag;<br/>info.appendChild(div);</span></p><p class="s8" style="padding-left: 10pt;text-indent: 0pt;text-align: center;">}</p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_092.png"/></span><span><img width="445" height="270" alt="image" src="index_files/Image_093.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_094.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_095.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_096.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_097.png"/></span></p><ol id="l19"><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 43pt;text-align: left;">Vue模板语法</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s8" style="padding-top: 8pt;padding-left: 25pt;text-indent: 0pt;text-align: left;">&lt;script id=&quot;abc&quot; type=&quot;text/html&quot;&gt;</p><p class="s8" style="padding-top: 6pt;padding-left: 56pt;text-indent: 0pt;text-align: left;">{{if isAdmin}}</p><p class="s8" style="padding-top: 7pt;padding-left: 56pt;text-indent: 0pt;text-align: left;">&lt;h1&gt;{{title}}&lt;/h1&gt;</p><p class="s8" style="padding-top: 6pt;padding-left: 56pt;text-indent: 0pt;text-align: left;">&lt;ul&gt;</p><p class="s8" style="padding-top: 7pt;padding-left: 81pt;text-indent: 0pt;text-align: left;">{{each list as value i}}</p><p class="s8" style="padding-top: 2pt;padding-left: 100pt;text-indent: 0pt;text-align: left;">&lt;li&gt;<span class="s9">索引 </span>{{i + 1}} <span class="s9">：</span>{{value}}&lt;/li&gt;</p><p class="s8" style="padding-top: 4pt;padding-left: 81pt;text-indent: 0pt;text-align: left;">{{/each}}</p><p class="s8" style="padding-top: 6pt;padding-left: 56pt;text-indent: 0pt;text-align: left;">&lt;/ul&gt;</p><p class="s8" style="padding-top: 7pt;padding-left: 56pt;text-indent: 0pt;text-align: left;">{{/if}}</p><p class="s8" style="padding-top: 6pt;padding-left: 25pt;text-indent: 0pt;text-align: left;">&lt;/script&gt;</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_098.png"/></span></p><ol id="l20"><li><h3 style="padding-left: 70pt;text-indent: -32pt;text-align: left;">模板语法概述</h3></li></ol></li><li><h4 style="padding-top: 14pt;padding-left: 55pt;text-indent: -16pt;text-align: left;">使用前端模板引擎</h4></li></ol><p style="padding-top: 13pt;padding-left: 56pt;text-indent: 0pt;text-align: justify;"><span>右侧代码是基于模板引擎art-template的一段代<br/>码，与拼接字符串相比，代码明显规范了很多，<br/>它拥有自己的一套模板语法规则。</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s7" style="padding-left: 56pt;text-indent: 0pt;text-align: left;">优点：<span class="p">大家都遵循同样的规则写代码，代码可读性                                                                                                                                              <br/>明显提高了，方便后期的维护。</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s7" style="padding-left: 56pt;text-indent: 0pt;line-height: 19pt;text-align: left;">缺点：<span class="p">没有专门提供事件机制。</span></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_099.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_100.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_101.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_102.png"/></span></p><ol id="l21"><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 43pt;text-align: left;">Vue模板语法</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="436" height="270" alt="image" src="index_files/Image_103.png"/></span></p><ol id="l22"><li><h3 style="padding-left: 70pt;text-indent: -32pt;text-align: left;">模板语法概述</h3><ol id="l23"><li><h4 style="padding-top: 14pt;padding-left: 55pt;text-indent: -16pt;text-align: left;">模板语法概览</h4><ul id="l24"><li><p style="padding-top: 13pt;padding-left: 83pt;text-indent: -27pt;line-height: 19pt;text-align: left;">差值表达式</p></li><li><p style="padding-left: 83pt;text-indent: -27pt;line-height: 19pt;text-align: left;">指令</p></li><li><p style="padding-left: 83pt;text-indent: -27pt;line-height: 19pt;text-align: left;">事件绑定</p></li><li><p style="padding-left: 83pt;text-indent: -27pt;line-height: 19pt;text-align: left;">属性绑定</p></li><li><p style="padding-left: 83pt;text-indent: -27pt;line-height: 19pt;text-align: left;">样式绑定</p><p style="text-indent: 0pt;text-align: left;"/></li><li><p style="padding-left: 83pt;text-indent: -27pt;line-height: 19pt;text-align: left;">分支循环结构</p></li></ul></li></ol><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_104.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_105.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_106.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_107.png"/></span></p><h2 style="padding-left: 21pt;text-indent: 0pt;line-height: 43pt;text-align: left;">3. Vue模板语法</h2><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_108.png"/></span></p></li><li><h3 style="padding-top: 17pt;padding-left: 70pt;text-indent: -32pt;text-align: left;">指令</h3></li></ol></li></ol><ol id="l25"><li><h4 style="padding-top: 11pt;padding-left: 56pt;text-indent: -16pt;text-align: left;">什么是指令？</h4><ul id="l26"><li><p style="padding-top: 6pt;padding-left: 96pt;text-indent: -27pt;line-height: 19pt;text-align: left;">什么是自定义属性</p></li><li><p style="padding-left: 96pt;text-indent: -27pt;line-height: 19pt;text-align: left;">指令的本质就是自定义属性</p></li><li><p style="padding-left: 96pt;text-indent: -27pt;line-height: 19pt;text-align: left;">指令的格式：以v-开始（比如：v-cloak）</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><h4 style="padding-top: 1pt;padding-left: 56pt;text-indent: -16pt;text-align: left;">v-cloak指令用法</h4><p style="text-indent: 0pt;text-align: left;"><br/></p><ul id="l27"><li><p style="padding-top: 2pt;padding-left: 96pt;text-indent: -27pt;line-height: 19pt;text-align: left;">插值表达式存在的问题：“闪动”</p></li><li><p style="padding-left: 96pt;text-indent: -27pt;line-height: 19pt;text-align: left;">如何解决该问题：使用v-cloak指令</p></li><li><p style="padding-left: 96pt;text-indent: -27pt;line-height: 19pt;text-align: left;">解决该问题的原理：先隐藏，替换好值之后再显示最终的值</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><h3 style="padding-left: 45pt;text-indent: 0pt;text-align: left;">官网：<span style=" color: #F00;">https://cn.vuejs.org/v2/api/</span></h3><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_109.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_110.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_111.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_112.png"/></span></p></li></ul></li><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 43pt;text-align: left;">Vue模板语法</h2></li></ol><p style="text-indent: 0pt;text-align: left;"><br/></p><h3 style="padding-left: 37pt;text-indent: 0pt;text-align: left;">3.2 指令</h3><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_113.png"/></span></p><ol id="l28"><li><h4 style="padding-top: 1pt;padding-left: 56pt;text-indent: -16pt;text-align: left;">数据绑定指令</h4><ul id="l29"><li><p style="padding-top: 6pt;padding-left: 96pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-text 填充纯文本</p><p style="padding-left: 105pt;text-indent: 0pt;line-height: 19pt;text-align: left;">①     相比插值表达式更加简洁</p></li><li><p style="padding-left: 96pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-html 填充HTML片段</p><p style="padding-left: 105pt;text-indent: 0pt;line-height: 19pt;text-align: left;">①     存在安全问题</p><p style="padding-left: 105pt;text-indent: 0pt;line-height: 19pt;text-align: left;">②     本网站内部数据可以使用，来自第三方的数据不可以用</p></li><li><p style="padding-left: 96pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-pre 填充原始信息</p></li></ul></li></ol><p style="text-indent: 0pt;text-align: left;"/><p style="padding-left: 105pt;text-indent: 0pt;line-height: 19pt;text-align: left;">①     显示原始信息，跳过编译过程（分析编译过程）</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_114.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_115.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_116.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_117.png"/></span></p><ol id="l30"><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 43pt;text-align: left;">Vue模板语法</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><ol id="l31"><ol id="l32"><li><h3 style="padding-left: 70pt;text-indent: -32pt;text-align: left;">指令</h3><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_118.png"/></span></p></li></ol></ol></li><li><h4 style="padding-top: 1pt;padding-left: 56pt;text-indent: -16pt;text-align: left;">数据响应式</h4><ul id="l33"><li><p style="padding-top: 6pt;padding-left: 96pt;text-indent: -27pt;line-height: 19pt;text-align: left;">如何理解响应式</p><p style="padding-left: 105pt;text-indent: 0pt;line-height: 19pt;text-align: left;">①     html5中的响应式（屏幕尺寸的变化导致样式的变化）</p><p style="padding-left: 105pt;text-indent: 0pt;line-height: 19pt;text-align: left;">②     数据的响应式（数据的变化导致页面内容的变化）</p></li><li><p style="padding-left: 96pt;text-indent: -27pt;line-height: 19pt;text-align: left;">什么是数据绑定</p><p style="padding-left: 105pt;text-indent: 0pt;line-height: 19pt;text-align: left;">①     数据绑定：将数据填充到标签中</p></li><li><p style="padding-left: 96pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-once 只编译一次</p></li></ul></li></ol><p style="text-indent: 0pt;text-align: left;"/><p style="padding-left: 105pt;text-indent: 0pt;line-height: 19pt;text-align: left;">①     显示内容之后不再具有响应式功能</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_119.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_120.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_121.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_122.png"/></span></p><h2 style="padding-left: 21pt;text-indent: 0pt;line-height: 43pt;text-align: left;">3. Vue模板语法</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_123.png"/></span></p><ol id="l34"><ol id="l35"><li><h3 style="padding-left: 70pt;text-indent: -32pt;text-align: left;">双向数据绑定指令</h3><ol id="l36"><li><p class="s10" style="padding-top: 8pt;padding-left: 55pt;text-indent: -16pt;text-align: left;">什么是双向数据绑定？</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="175" height="41" alt="image" src="index_files/Image_124.jpg"/></span></p><p class="s11" style="padding-top: 2pt;padding-left: 277pt;text-indent: 0pt;text-align: left;">这里的变化会导致上面的内容跟着变化</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p class="s10" style="padding-top: 1pt;padding-left: 56pt;text-indent: -16pt;line-height: 25pt;text-align: left;">双向数据绑定分析</p><ul id="l37"><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-model指令用法</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="8" height="23" alt="image" src="index_files/Image_125.png"/></span></p><p class="s12" style="padding-left: 39pt;text-indent: 0pt;text-align: left;">ViewModel</p><p class="s13" style="padding-top: 8pt;padding-left: 7pt;text-indent: 0pt;text-align: left;">&lt;input type=&#39;text&#39; v-model=&#39;uname&#39;/&gt;</p><p style="padding-left: 54pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p class="s10" style="padding-left: 53pt;text-indent: -16pt;line-height: 24pt;text-align: left;">MVVM设计思想</p></li></ol><p style="padding-left: 72pt;text-indent: 0pt;line-height: 19pt;text-align: left;">①     M(model)</p><p style="padding-left: 72pt;text-indent: 0pt;line-height: 19pt;text-align: left;">②     V(view)</p><p style="padding-left: 72pt;text-indent: 0pt;line-height: 19pt;text-align: left;">③     VM(View-Model)</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s12" style="padding-left: 9pt;text-indent: 0pt;text-align: left;">View</p><p style="padding-left: 27pt;text-indent: 0pt;text-align: left;"><span><img width="8" height="23" alt="image" src="index_files/Image_126.png"/></span></p><p class="s14" style="padding-left: 36pt;text-indent: 0pt;text-align: left;">DOM</p><p class="s15" style="padding-top: 6pt;padding-left: 280pt;text-indent: 0pt;line-height: 284%;text-align: center;"><span>DOM Listeners<br/>Data Bindings</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p class="s14" style="padding-left: 280pt;text-indent: 0pt;text-align: center;">Vue</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s12" style="padding-top: 7pt;padding-left: 11pt;text-indent: 0pt;text-align: left;">Model</p><p style="text-indent: 0pt;text-align: left;"><span><img width="8" height="23" alt="image" src="index_files/Image_127.png"/></span></p><p class="s14" style="padding-left: 36pt;text-indent: 0pt;text-align: left;">Plain JavaScript Objects</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_128.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_129.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_130.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_131.png"/></span></p><h2 style="padding-left: 21pt;text-indent: 0pt;line-height: 43pt;text-align: left;">3. Vue模板语法</h2><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_132.png"/></span></p></li><li><h3 style="padding-top: 17pt;padding-left: 70pt;text-indent: -32pt;text-align: left;">事件绑定</h3></li></ol></ol><ol id="l38"><li><h4 style="padding-top: 11pt;padding-left: 56pt;text-indent: -16pt;line-height: 25pt;text-align: left;">Vue如何处理事件？</h4><p class="s16" style="padding-top: 3pt;padding-left: 61pt;text-indent: 0pt;text-align: left;">&lt;input type=‘button&#39; v-on:click=&#39;num++&#39;/&gt;</p><p style="text-indent: 0pt;text-align: left;"/><ul id="l39"><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-on指令用法</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-left: 102pt;text-indent: -27pt;text-align: left;">v-on简写形式</p><p style="padding-top: 3pt;padding-left: 61pt;text-indent: 0pt;text-align: left;">&lt;input type=‘button&#39; @click=&#39;num++&#39;/&gt;</p><p style="padding-left: 42pt;text-indent: 0pt;text-align: left;"/></li></ul></li><li><h4 style="padding-top: 1pt;padding-left: 56pt;text-indent: -16pt;line-height: 25pt;text-align: left;">事件函数的调用方式</h4><p class="s16" style="padding-top: 3pt;padding-left: 61pt;text-indent: 0pt;text-align: left;">&lt;<span class="s13">button v-on:click=&#39;say&#39;&gt;Hello&lt;/button&gt;</span></p><p style="text-indent: 0pt;text-align: left;"/><ul id="l40"><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">直接绑定函数名称</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-left: 102pt;text-indent: -27pt;text-align: left;">调用函数</p><p style="padding-top: 3pt;padding-left: 61pt;text-indent: 0pt;text-align: left;">&lt;<span class="s13">button v-on:click=&#39;say()&#39;&gt;Say hi&lt;/button&gt;</span></p><p style="padding-left: 42pt;text-indent: 0pt;text-align: left;"/></li></ul></li><li><h4 style="padding-top: 1pt;padding-left: 56pt;text-indent: -16pt;line-height: 25pt;text-align: left;">事件函数参数传递</h4><p style="text-indent: 0pt;text-align: left;"/><p class="s13" style="padding-top: 8pt;padding-left: 61pt;text-indent: 0pt;text-align: left;">&lt;button v-on:click=&#39;say(&quot;hi&quot;,$event)&#39;&gt;Say hi&lt;/button&gt;</p><p style="text-indent: 0pt;text-align: left;"/><ul id="l41"><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">普通参数和事件对象</p></li></ul></li></ol><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_133.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_134.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_135.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_136.png"/></span></p><ol id="l42"><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 43pt;text-align: left;">Vue模板语法</h2><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_137.png"/></span></p><ol id="l43"><ol id="l44"><li><h3 style="padding-top: 17pt;padding-left: 70pt;text-indent: -32pt;text-align: left;">事件绑定</h3></li></ol></ol></li><li><h4 style="padding-top: 11pt;padding-left: 56pt;text-indent: -16pt;line-height: 25pt;text-align: left;">事件修饰符</h4><p class="s13" style="padding-top: 3pt;padding-left: 61pt;text-indent: 0pt;text-align: left;">&lt;a v-on:click.stop=<span style=" color: #252525;">&quot;</span>handle<span style=" color: #252525;">&quot;</span>&gt;<span class="s4">跳转</span>&lt;/a&gt;</p><p style="text-indent: 0pt;text-align: left;"/><ul id="l45"><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">.stop 阻止冒泡</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-left: 102pt;text-indent: -27pt;text-align: left;">.prevent 阻止默认行为</p><p class="s8" style="padding-top: 3pt;padding-left: 61pt;text-indent: 0pt;text-align: left;">&lt;a v-on:click.prevent=&quot;handle&quot;&gt;<span class="s9">跳转</span>&lt;/a&gt;</p><p style="padding-left: 42pt;text-indent: 0pt;text-align: left;"/></li></ul></li><li><h4 style="padding-top: 1pt;padding-left: 56pt;text-indent: -16pt;line-height: 25pt;text-align: left;">按键修饰符</h4><p class="s13" style="padding-top: 8pt;padding-left: 61pt;text-indent: 0pt;text-align: left;">&lt;input v-on:keyup.enter=&#39;submit&#39;&gt;</p><p style="text-indent: 0pt;text-align: left;"/><ul id="l46"><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">.enter 回车键</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-left: 102pt;text-indent: -27pt;text-align: left;">.esc 退出键</p><p class="s8" style="padding-top: 8pt;padding-left: 61pt;text-indent: 0pt;text-align: left;">&lt;input v-on:keyup.delete=&#39;handle&#39;&gt;</p><p style="padding-left: 42pt;text-indent: 0pt;text-align: left;"/></li></ul></li><li><h4 style="padding-top: 1pt;padding-left: 56pt;text-indent: -16pt;line-height: 25pt;text-align: left;">自定义按键修饰符</h4><p style="text-indent: 0pt;text-align: left;"/><ul id="l47"><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">全局 config.keyCodes 对象</p></li></ul></li></ol><p class="s13" style="padding-top: 8pt;padding-left: 61pt;text-indent: 0pt;text-align: left;">Vue.config.keyCodes.f1 = 112</p><p style="padding-left: 42pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_138.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_139.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_140.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_141.png"/></span></p><h2 style="padding-left: 21pt;text-indent: 0pt;line-height: 43pt;text-align: left;">3. Vue模板语法</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="34" height="33" alt="C:\Users\admin\Desktop\案例图标.png" title="C:\Users\admin\Desktop\案例图标.png" src="index_files/Image_142.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_143.png"/></span></p><p class="s18" style="padding-top: 1pt;padding-left: 75pt;text-indent: 0pt;text-align: left;">案例：简单计算器</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="174" height="111" alt="image" src="index_files/Image_144.jpg"/></span></p><p style="padding-left: 41pt;text-indent: 0pt;text-align: left;">需求：实现简单的<span class="s7">加法计算</span>，分别输入数值a和数值b</p><p style="text-indent: 0pt;text-align: left;"/><p style="padding-top: 5pt;padding-left: 41pt;text-indent: 0pt;text-align: left;">，点击计算按钮，结果显示在下面。</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_145.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_146.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_147.png"/></span></p><h2 style="padding-left: 21pt;text-indent: 0pt;line-height: 43pt;text-align: left;">3. Vue模板语法</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="34" height="33" alt="C:\Users\admin\Desktop\案例图标.png" title="C:\Users\admin\Desktop\案例图标.png" src="index_files/Image_148.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="174" height="111" alt="image" src="index_files/Image_149.jpg"/></span><span><img width="445" height="270" alt="image" src="index_files/Image_150.png"/></span></p><p class="s18" style="padding-left: 75pt;text-indent: 0pt;text-align: left;">案例：需求分析</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_151.png"/></span></p><p style="padding-left: 21pt;text-indent: 0pt;line-height: 19pt;text-align: left;">①     通过v-model指令实现数值a和数值b的绑定</p><p style="padding-left: 21pt;text-indent: 0pt;line-height: 19pt;text-align: left;">②     给计算按钮绑定事件，实现计算逻辑</p><p style="text-indent: 0pt;text-align: left;"/><p style="padding-left: 21pt;text-indent: 0pt;line-height: 19pt;text-align: left;">③     将计算结果绑定到对应位置</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_152.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_153.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_154.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_155.png"/></span></p><h2 style="padding-left: 21pt;text-indent: 0pt;line-height: 43pt;text-align: left;">3. Vue模板语法</h2><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_156.png"/></span></p><ol id="l48"><ol id="l49"><li><h3 style="padding-top: 17pt;padding-left: 70pt;text-indent: -32pt;text-align: left;">属性绑定</h3><ol id="l50"><li><h4 style="padding-top: 15pt;padding-left: 56pt;text-indent: -16pt;line-height: 25pt;text-align: left;">Vue如何动态处理属性？</h4><p class="s17" style="padding-top: 1pt;padding-left: 49pt;text-indent: 0pt;text-align: left;">&lt;a v-bind:href=&#39;url&#39;&gt;<span class="s16">跳转</span>&lt;/a&gt;</p><p style="text-indent: 0pt;text-align: left;"/><ul id="l51"><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-bind指令用法</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s17" style="padding-top: 1pt;padding-left: 49pt;text-indent: 0pt;text-align: left;">&lt;a :href=&#39;url&#39;&gt;<span class="s16">跳转</span>&lt;/a&gt;</p><p style="text-indent: 0pt;text-align: left;"/></li><li><p style="padding-left: 102pt;text-indent: -27pt;text-align: left;">缩写形式</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/></li></ul></li><li><h4 style="padding-top: 1pt;padding-bottom: 4pt;padding-left: 56pt;text-indent: -16pt;text-align: left;">v-model的低层实现原理分析</h4><p class="s17" style="padding-top: 5pt;padding-left: 49pt;text-indent: 0pt;text-align: left;">&lt;input v-bind:value=&quot;msg&quot; v-on:input=&quot;msg=$event.target.value&quot;&gt;</p><p style="padding-left: 49pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_157.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_158.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_159.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_160.png"/></span></p></li><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 43pt;text-align: left;">Vue模板语法</h2></li></ol><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_161.png"/></span></p></li><li><h3 style="padding-top: 17pt;padding-left: 70pt;text-indent: -32pt;text-align: left;">样式绑定</h3><ol id="l52"><li><h4 style="padding-top: 16pt;padding-left: 56pt;text-indent: -16pt;line-height: 25pt;text-align: left;">class样式处理</h4><p class="s19" style="padding-top: 5pt;padding-left: 56pt;text-indent: 0pt;text-align: left;">&lt;div v-bind:class=&quot;{ active: isActive }&quot;&gt;&lt;/div&gt;</p><p style="text-indent: 0pt;text-align: left;"/><ul id="l53"><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">对象语法</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s17" style="padding-top: 5pt;padding-left: 55pt;text-indent: 0pt;text-align: left;">&lt;div v-bind:class=&quot;[activeClass, errorClass]&quot;&gt;&lt;/div&gt;</p><p style="text-indent: 0pt;text-align: left;"/></li><li><p style="padding-left: 102pt;text-indent: -27pt;text-align: left;">数组语法</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><h4 style="padding-left: 56pt;text-indent: -16pt;line-height: 25pt;text-align: left;">style样式处理</h4><p class="s19" style="padding-top: 5pt;padding-left: 35pt;text-indent: 0pt;text-align: left;">&lt;div v-bind:style=&quot;{ color: activeColor, fontSize: fontSize }&quot;&gt;&lt;/div&gt;</p><p style="text-indent: 0pt;text-align: left;"/><ul id="l54"><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">对象语法</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/></li><li><p style="padding-left: 102pt;text-indent: -27pt;text-align: left;">数组语法</p><p class="s8" style="padding-top: 5pt;padding-left: 32pt;text-indent: 0pt;text-align: left;">&lt;div v-bind:style=&quot;[baseStyles, overridingStyles]&quot;&gt;&lt;/div&gt;</p><p style="padding-left: 43pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_162.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_163.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_164.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_165.png"/></span></p></li></ul></li><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 43pt;text-align: left;">Vue模板语法</h2></li></ol></li><li><h3 style="padding-top: 17pt;padding-left: 70pt;text-indent: -32pt;text-align: left;">分支循环结构</h3></li></ol></ol><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_166.png"/></span></p><ol id="l55"><li><h4 style="padding-top: 1pt;padding-left: 56pt;text-indent: -16pt;line-height: 25pt;text-align: left;">分支结构</h4><ul id="l56"><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-if</p></li><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-else</p></li><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-else-if</p></li><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-show</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><h4 style="padding-top: 1pt;padding-left: 56pt;text-indent: -16pt;line-height: 25pt;text-align: left;">v-if与v-show的区别</h4><ul id="l57"><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-if控制元素是否渲染到页面</p><p style="text-indent: 0pt;text-align: left;"/></li><li><p style="padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-show控制元素是否显示（已经渲染到了页面）</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_167.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_168.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_169.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_170.png"/></span></p></li></ul></li><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 43pt;text-align: left;">Vue模板语法</h2></li></ol><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_171.png"/></span></p><h3 style="padding-top: 17pt;padding-left: 37pt;text-indent: 0pt;text-align: left;">3.7 分支循环结构</h3><ol id="l58"><li><h4 style="padding-top: 9pt;padding-left: 56pt;text-indent: -16pt;line-height: 25pt;text-align: left;">循环结构</h4><ul id="l59"><li><p style="padding-bottom: 2pt;padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-for遍历数组</p><p class="s8" style="padding-top: 8pt;padding-left: 38pt;text-indent: 0pt;text-align: left;">&lt;li v-for=&#39;item in list&#39;&gt;{{item}}&lt;/li&gt;</p><p style="padding-left: 37pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s8" style="padding-top: 8pt;padding-left: 38pt;text-indent: 0pt;text-align: left;">&lt;li v-for=&#39;(item,index) in list&#39;&gt;{{item}} + &#39;---&#39; +{{index}}&lt;/li&gt;</p><p style="padding-left: 37pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/></li><li><p style="padding-top: 3pt;padding-bottom: 4pt;padding-left: 102pt;text-indent: -27pt;text-align: left;">key的作用：帮助Vue区分不同的元素，从而提高性能</p></li></ul></li></ol><p class="s8" style="padding-top: 8pt;padding-left: 38pt;text-indent: 0pt;text-align: left;">&lt;li :key=&#39;item.id&#39; v-for=&#39;(item,index) in list&#39;&gt;{{item}} + &#39;---&#39; {{index}}&lt;/li&gt;</p><p style="padding-left: 37pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_172.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_173.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_174.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_175.png"/></span></p><ol id="l60"><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 43pt;text-align: left;">Vue模板语法</h2><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_176.png"/></span></p><h3 style="padding-top: 17pt;padding-left: 37pt;text-indent: 0pt;text-align: left;">3.7 分支循环结构</h3></li><li><h4 style="padding-top: 9pt;padding-left: 56pt;text-indent: -16pt;line-height: 25pt;text-align: left;">循环结构</h4><ul id="l61"><li><p style="padding-bottom: 2pt;padding-left: 102pt;text-indent: -27pt;line-height: 19pt;text-align: left;">v-for遍历对象</p><p class="s8" style="padding-top: 8pt;padding-left: 38pt;text-indent: 0pt;text-align: left;">&lt;div v-for=&#39;(value, key, index) in object&#39;&gt;&lt;/div&gt;</p><p style="padding-left: 37pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/></li><li><p class="s20" style="padding-top: 6pt;padding-left: 102pt;text-indent: -27pt;text-align: left;">v-if和v-for结合使用</p></li></ul></li></ol><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s8" style="padding-top: 8pt;padding-left: 38pt;text-indent: 0pt;text-align: left;">&lt;div v-if=&#39;value==12&#39; v-for=&#39;(value, key, index) in object&#39;&gt;&lt;/div&gt;</p><p style="padding-left: 37pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/><p style="padding-left: 547pt;text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_177.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><br/></p><ul id="l62"><li><p style="padding-top: 14pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue概述</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue基本使用</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue模板语法</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #F00; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">基础案例</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">Vue常用特性</span></p></li><li><p style="padding-top: 7pt;padding-left: 111pt;text-indent: -22pt;line-height: 22pt;text-align: left;"><span style=" color: #252525; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt;">综合案例</span></p></li></ul><p style="padding-left: 159pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"/><p style="padding-left: 36pt;text-indent: 0pt;line-height: 77pt;text-align: left;"><span style=" color: #FFF; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 44pt;">目</span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="15" height="8" alt="image" src="index_files/Image_178.png"/></span><span><img width="14" height="11" alt="image" src="index_files/Image_179.png"/></span></p><p class="s3" style="padding-left: 1pt;text-indent: 0pt;line-height: 50pt;text-align: left;">Contents</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_180.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_181.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_182.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_183.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_184.png"/></span></p><h2 style="padding-left: 21pt;text-indent: 0pt;line-height: 43pt;text-align: left;">4. 基础案例</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="34" height="33" alt="C:\Users\admin\Desktop\案例图标.png" title="C:\Users\admin\Desktop\案例图标.png" src="index_files/Image_185.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="512" height="353" alt="image" src="index_files/Image_186.jpg"/></span><span><img width="445" height="270" alt="image" src="index_files/Image_187.png"/></span></p><p class="s18" style="padding-top: 1pt;padding-left: 75pt;text-indent: 0pt;text-align: left;">案例：Tab选项卡</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_188.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_189.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_190.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_191.png"/></span></p><h2 style="padding-left: 21pt;text-indent: 0pt;line-height: 43pt;text-align: left;">4. 基础案例</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="34" height="33" alt="C:\Users\admin\Desktop\案例图标.png" title="C:\Users\admin\Desktop\案例图标.png" src="index_files/Image_192.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="510" height="353" alt="image" src="index_files/Image_193.jpg"/></span><span><img width="445" height="270" alt="image" src="index_files/Image_194.png"/></span></p><p class="s18" style="padding-top: 1pt;padding-left: 75pt;text-indent: 0pt;text-align: left;">案例：Tab选项卡</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_195.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_196.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_197.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_198.png"/></span></p><h2 style="padding-left: 21pt;text-indent: 0pt;line-height: 43pt;text-align: left;">4. 基础案例</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="34" height="33" alt="C:\Users\admin\Desktop\案例图标.png" title="C:\Users\admin\Desktop\案例图标.png" src="index_files/Image_199.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="511" height="353" alt="image" src="index_files/Image_200.jpg"/></span><span><img width="445" height="270" alt="image" src="index_files/Image_201.png"/></span></p><p class="s18" style="padding-top: 1pt;padding-left: 75pt;text-indent: 0pt;text-align: left;">案例：Tab选项卡</p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="10" height="10" alt="image" src="index_files/Image_202.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_203.png"/></span><span><img width="10" height="10" alt="image" src="index_files/Image_204.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="135" height="64" alt="image" src="index_files/Image_205.png"/></span></p><ol id="l63"><li><h2 style="padding-left: 50pt;text-indent: -28pt;line-height: 43pt;text-align: left;">基础案例</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="34" height="33" alt="C:\Users\admin\Desktop\案例图标.png" title="C:\Users\admin\Desktop\案例图标.png" src="index_files/Image_206.png"/></span></p><p style="text-indent: 0pt;line-height: 20pt;text-align: left;"><span style=" color: #FFF; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">Vue</span><span style=" color: #FFF; font-family:黑体, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">模板</span></p><p style="text-indent: 0pt;line-height: 12pt;text-align: left;"><span style=" color: #FFF; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt;">Vue</span><span style=" color: #FFF; font-family:黑体, monospace; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt;">实例对象</span></p><p style="text-indent: 0pt;line-height: 19pt;text-align: left;"><span style=" color: #FFF; font-family:黑体, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">前端</span></p><p style="text-indent: 0pt;line-height: 19pt;text-align: left;"><span style=" color: #FFF; font-family:黑体, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">功能</span></p><p style="text-indent: 0pt;line-height: 20pt;text-align: left;"><span style=" color: #FFF; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">Js</span><span style=" color: #FFF; font-family:黑体, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">控制</span></p><p style="padding-left: 6pt;text-indent: 0pt;line-height: 20pt;text-align: left;"><span style=" color: #FFF; font-family:黑体, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt;">逻辑</span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="151" height="68" alt="image" src="index_files/Image_207.png"/></span><span><img width="123" height="61" alt="image" src="index_files/Image_208.png"/></span><span><img width="144" height="61" alt="image" src="index_files/Image_209.png"/></span><span><img width="159" height="76" alt="image" src="index_files/Image_210.png"/></span><span><img width="103" height="87" alt="image" src="index_files/Image_211.png"/></span><span><img width="151" height="68" alt="image" src="index_files/Image_212.png"/></span><span><img width="135" height="126" alt="image" src="index_files/Image_213.png"/></span><span><img width="86" height="86" alt="image" src="index_files/Image_214.png"/></span><span><img width="129" height="119" alt="image" src="index_files/Image_215.png"/></span><span><img width="48" height="79" alt="image" src="index_files/Image_216.png"/></span><span><img width="48" height="72" alt="image" src="index_files/Image_217.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="270" alt="image" src="index_files/Image_218.png"/></span></p><p class="s18" style="padding-top: 1pt;padding-left: 75pt;text-indent: 0pt;text-align: left;">案例：实现步骤</p><p style="text-indent: 0pt;text-align: left;"><br/></p><ol id="l64"><li><h4 style="padding-top: 1pt;padding-left: 57pt;text-indent: -16pt;text-align: left;">实现静态UI效果</h4><ul id="l65"><li><p style="padding-top: 5pt;padding-left: 77pt;text-indent: -18pt;text-align: left;">用传统的方式实现标签结构和样式</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><h4 style="padding-left: 57pt;text-indent: -16pt;text-align: left;">基于数据重构UI效果</h4><ul id="l66"><li><p style="padding-top: 5pt;padding-left: 77pt;text-indent: -18pt;line-height: 19pt;text-align: left;">将静态的结构和样式重构为基于Vue模板语法的形式</p></li><li><p style="padding-left: 77pt;text-indent: -18pt;line-height: 19pt;text-align: left;">处理事件绑定和js控制逻辑</p></li></ul></li><li><h4 style="padding-top: 9pt;padding-left: 56pt;text-indent: -16pt;text-align: left;">声明式编程</h4><p style="text-indent: 0pt;text-align: left;"/><ul id="l67"><li><p style="padding-top: 5pt;padding-left: 76pt;text-indent: -18pt;text-align: left;">模板的结构和最终显示的效果基本一致</p></li></ul></li></ol></li></ol><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 119pt;text-indent: 0pt;text-align: left;"><span><img width="164" height="65" alt="image" src="index_files/Image_219.png"/></span><span><img width="445" height="270" alt="image" src="index_files/Image_220.png"/></span></p></body></html>
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>01_Vue全家桶-Vue概述 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../02_Vue全家桶-组件化开发思想/" />
+    
+    
+    <link rel="prev" href="../01_Vue全家桶-Vue常用特性/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01_Vue全家桶-Vue常用特性/">
+            
+                <a href="../01_Vue全家桶-Vue常用特性/">
+            
+                    
+                    01_Vue全家桶-Vue常用特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    01_Vue全家桶-Vue概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../02_Vue全家桶-组件化开发思想/">
+            
+                <a href="../02_Vue全家桶-组件化开发思想/">
+            
+                    
+                    02_Vue全家桶-组件化开发思想
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04-Vue全家桶-路由的基本概念与原理/">
+            
+                <a href="../04-Vue全家桶-路由的基本概念与原理/">
+            
+                    
+                    04-Vue全家桶-路由的基本概念与原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05-Vue全家桶-模块化相关规范/">
+            
+                <a href="../05-Vue全家桶-模块化相关规范/">
+            
+                    
+                    05-Vue全家桶-模块化相关规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../06-Vue全家桶-项目概述/">
+            
+                <a href="../06-Vue全家桶-项目概述/">
+            
+                    
+                    06-Vue全家桶-项目概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../06-Vue全家桶-项目实战（上）/">
+            
+                <a href="../06-Vue全家桶-项目实战（上）/">
+            
+                    
+                    06-Vue全家桶-项目实战（上）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../06-Vue全家桶-项目实战（下）/">
+            
+                <a href="../06-Vue全家桶-项目实战（下）/">
+            
+                    
+                    06-Vue全家桶-项目实战（下）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../07-Vue全家桶-项目上线/">
+            
+                <a href="../07-Vue全家桶-项目上线/">
+            
+                    
+                    07-Vue全家桶-项目上线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../08-Vue全家桶-Vuex/">
+            
+                <a href="../08-Vue全家桶-Vuex/">
+            
+                    
+                    08-Vue全家桶-Vuex
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >01_Vue全家桶-Vue概述</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="01vue&#x5168;&#x5BB6;&#x6876;-vue&#x6982;&#x8FF0;">01_Vue&#x5168;&#x5BB6;&#x6876;-Vue&#x6982;&#x8FF0;</h1>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../01_Vue全家桶-Vue常用特性/" class="navigation navigation-prev " aria-label="Previous page: 01_Vue全家桶-Vue常用特性">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../02_Vue全家桶-组件化开发思想/" class="navigation navigation-next " aria-label="Next page: 02_Vue全家桶-组件化开发思想">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"01_Vue全家桶-Vue概述","level":"1.3","depth":1,"next":{"title":"02_Vue全家桶-组件化开发思想","level":"1.4","depth":1,"path":"02_Vue全家桶-组件化开发思想/README.md","ref":"02_Vue全家桶-组件化开发思想/README.md","articles":[]},"previous":{"title":"01_Vue全家桶-Vue常用特性","level":"1.2","depth":1,"path":"01_Vue全家桶-Vue常用特性/README.md","ref":"01_Vue全家桶-Vue常用特性/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"01_Vue全家桶-Vue概述/README.md","mtime":"2022-05-28T13:00:27.357Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-28T13:01:33.679Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
