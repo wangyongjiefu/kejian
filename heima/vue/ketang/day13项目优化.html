@@ -1,0 +1,831 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>day13项目优化 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="day14vuex.html" />
+    
+    
+    <link rel="prev" href="day12.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="day01Vue是什么.html">
+            
+                <a href="day01Vue是什么.html">
+            
+                    
+                    day01Vue是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="day02Vue常用特性.html">
+            
+                <a href="day02Vue常用特性.html">
+            
+                    
+                    day02Vue常用特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="day03组件.html">
+            
+                <a href="day03组件.html">
+            
+                    
+                    day03组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="day04a接口调用方式.html">
+            
+                <a href="day04a接口调用方式.html">
+            
+                    
+                    day04a接口调用方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="day04todos接口案例.html">
+            
+                <a href="day04todos接口案例.html">
+            
+                    
+                    day04todos接口案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="day05_vue路由.html">
+            
+                <a href="day05_vue路由.html">
+            
+                    
+                    day05_vue路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="day06_vue前端工程化.html">
+            
+                <a href="day06_vue前端工程化.html">
+            
+                    
+                    day06_vue前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="day07项目前台.html">
+            
+                <a href="day07项目前台.html">
+            
+                    
+                    day07项目前台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="day08项目后台.html">
+            
+                <a href="day08项目后台.html">
+            
+                    
+                    day08项目后台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="day09.html">
+            
+                <a href="day09.html">
+            
+                    
+                    day09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="day10.html">
+            
+                <a href="day10.html">
+            
+                    
+                    day10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="day11.html">
+            
+                <a href="day11.html">
+            
+                    
+                    day11
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="day12.html">
+            
+                <a href="day12.html">
+            
+                    
+                    day12
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="day13项目优化.html">
+            
+                <a href="day13项目优化.html">
+            
+                    
+                    day13项目优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="day14vuex.html">
+            
+                <a href="day14vuex.html">
+            
+                    
+                    day14vuex
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >day13项目优化</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x4ECA;&#x65E5;&#x76EE;&#x6807;">&#x4ECA;&#x65E5;&#x76EE;&#x6807;</h3>
+<p>1.&#x5B8C;&#x6210;&#x9879;&#x76EE;&#x4F18;&#x5316;
+2.&#x5B8C;&#x6210;&#x9879;&#x76EE;&#x4E0A;&#x7EBF;</p>
+<h3 id="1&#x9879;&#x76EE;&#x4F18;&#x5316;">1.&#x9879;&#x76EE;&#x4F18;&#x5316;</h3>
+<p>&#x5B9E;&#x73B0;&#x6B65;&#x9AA4;&#xFF1A;
+A.&#x751F;&#x6210;&#x6253;&#x5305;&#x62A5;&#x544A;&#xFF0C;&#x6839;&#x636E;&#x62A5;&#x544A;&#x4F18;&#x5316;&#x9879;&#x76EE;
+B.&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#x542F;&#x7528;CDN
+C.Element-UI&#x7EC4;&#x4EF6;&#x6309;&#x9700;&#x52A0;&#x8F7D;
+D.&#x8DEF;&#x7531;&#x61D2;&#x52A0;&#x8F7D;
+E.&#x9996;&#x9875;&#x5185;&#x5BB9;&#x5B9A;&#x5236;</p>
+<h3 id="2&#x6DFB;&#x52A0;&#x8FDB;&#x5EA6;&#x6761;">2.&#x6DFB;&#x52A0;&#x8FDB;&#x5EA6;&#x6761;</h3>
+<p>&#x7ED9;&#x9879;&#x76EE;&#x6DFB;&#x52A0;&#x8FDB;&#x5EA6;&#x6761;&#x6548;&#x679C;&#xFF0C;&#x5148;&#x6253;&#x5F00;&#x9879;&#x76EE;&#x63A7;&#x5236;&#x53F0;&#xFF0C;&#x6253;&#x5F00;&#x4F9D;&#x8D56;&#xFF0C;&#x5B89;&#x88C5;nprogress
+&#x6253;&#x5F00;main.js&#xFF0C;&#x7F16;&#x5199;&#x5982;&#x4E0B;&#x4EE3;&#x7801;</p>
+<pre><code>//&#x5BFC;&#x5165;&#x8FDB;&#x5EA6;&#x6761;&#x63D2;&#x4EF6;
+import NProgress from &apos;nprogress&apos;
+//&#x5BFC;&#x5165;&#x8FDB;&#x5EA6;&#x6761;&#x6837;&#x5F0F;
+import &apos;nprogress/nprogress.css&apos;
+.....
+//&#x8BF7;&#x6C42;&#x5728;&#x5230;&#x8FBE;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x4F1A;&#x8C03;&#x7528;use&#x4E2D;&#x7684;&#x8FD9;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x6765;&#x6DFB;&#x52A0;&#x8BF7;&#x6C42;&#x5934;&#x4FE1;&#x606F;
+axios.interceptors.request.use(config =&gt; {
+  //&#x5F53;&#x8FDB;&#x5165;request&#x62E6;&#x622A;&#x5668;&#xFF0C;&#x8868;&#x793A;&#x53D1;&#x9001;&#x4E86;&#x8BF7;&#x6C42;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x5F00;&#x542F;&#x8FDB;&#x5EA6;&#x6761;
+  NProgress.start()
+  //&#x4E3A;&#x8BF7;&#x6C42;&#x5934;&#x5BF9;&#x8C61;&#xFF0C;&#x6DFB;&#x52A0;token&#x9A8C;&#x8BC1;&#x7684;Authorization&#x5B57;&#x6BB5;
+  config.headers.Authorization = window.sessionStorage.getItem(&quot;token&quot;)
+  //&#x5FC5;&#x987B;&#x8FD4;&#x56DE;config
+  return config
+})
+//&#x5728;response&#x62E6;&#x622A;&#x5668;&#x4E2D;&#xFF0C;&#x9690;&#x85CF;&#x8FDB;&#x5EA6;&#x6761;
+axios.interceptors.response.use(config =&gt;{
+  //&#x5F53;&#x8FDB;&#x5165;response&#x62E6;&#x622A;&#x5668;&#xFF0C;&#x8868;&#x793A;&#x8BF7;&#x6C42;&#x5DF2;&#x7ECF;&#x7ED3;&#x675F;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x7ED3;&#x675F;&#x8FDB;&#x5EA6;&#x6761;
+  NProgress.done()
+  return config
+})
+</code></pre><h3 id="3&#x6839;&#x636E;&#x62A5;&#x9519;&#x4FEE;&#x6539;&#x4EE3;&#x7801;">3.&#x6839;&#x636E;&#x62A5;&#x9519;&#x4FEE;&#x6539;&#x4EE3;&#x7801;</h3>
+<p>&#x6839;&#x636E;ESLint&#x7684;&#x8B66;&#x544A;&#x63D0;&#x793A;&#x66F4;&#x6539;&#x5BF9;&#x5E94;&#x7684;&#x4EE3;&#x7801;
+&#x5728;.prettierrc&#x6587;&#x4EF6;&#x4E2D;&#x66F4;&#x6539;&#x8BBE;&#x7F6E;&quot;printWidth&quot;:200,  &#x5C06;&#x6BCF;&#x884C;&#x4EE3;&#x7801;&#x7684;&#x6587;&#x5B57;&#x6570;&#x91CF;&#x66F4;&#x6539;&#x4E3A;200</p>
+<pre><code>{
+    &quot;semi&quot;:false,
+    &quot;singleQuote&quot;:true,
+    &quot;printWidth&quot;:200
+}
+</code></pre><h3 id="4&#x6267;&#x884C;build">4.&#x6267;&#x884C;build</h3>
+<p>&#x5B89;&#x88C5;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#xFF08;babel-plugin-transform-remove-console&#xFF09;&#x5728;&#x9879;&#x76EE;build&#x9636;&#x6BB5;&#x79FB;&#x9664;&#x6240;&#x6709;&#x7684;console&#x4FE1;&#x606F;
+&#x6253;&#x5F00;&#x9879;&#x76EE;&#x63A7;&#x5236;&#x53F0;&#xFF0C;&#x70B9;&#x51FB;&#x4F9D;&#x8D56;-&gt;&#x5F00;&#x53D1;&#x4F9D;&#x8D56;&#xFF0C;&#x8F93;&#x5165;babel-plugin-transform-remove-console&#xFF0C;&#x5B89;&#x88C5;
+&#x6253;&#x5F00;babel.config.js&#xFF0C;&#x7F16;&#x8F91;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>//&#x9879;&#x76EE;&#x53D1;&#x5E03;&#x9636;&#x6BB5;&#x9700;&#x8981;&#x7528;&#x5230;&#x7684;babel&#x63D2;&#x4EF6;
+const productPlugins = []
+
+//&#x5224;&#x65AD;&#x662F;&#x5F00;&#x53D1;&#x8FD8;&#x662F;&#x53D1;&#x5E03;&#x9636;&#x6BB5;
+if(process.env.NODE_ENV === &apos;production&apos;){
+  //&#x53D1;&#x5E03;&#x9636;&#x6BB5;
+  productPlugins.push(&quot;transform-remove-console&quot;)
+}
+
+module.exports = {
+  &quot;presets&quot;: [
+    &quot;@vue/app&quot;
+  ],
+  &quot;plugins&quot;: [
+    [
+      &quot;component&quot;,
+      {
+        &quot;libraryName&quot;: &quot;element-ui&quot;,
+        &quot;styleLibraryName&quot;: &quot;theme-chalk&quot;
+      }
+    ],
+    ...productPlugins
+  ]
+}
+</code></pre><h3 id="5&#x751F;&#x6210;&#x6253;&#x5305;&#x62A5;&#x544A;">5.&#x751F;&#x6210;&#x6253;&#x5305;&#x62A5;&#x544A;</h3>
+<p>A.&#x547D;&#x4EE4;&#x884C;&#x5F62;&#x5F0F;&#x751F;&#x6210;&#x6253;&#x5305;&#x62A5;&#x544A;
+vue-cli-service build --report
+B.&#x5728;vue&#x63A7;&#x5236;&#x53F0;&#x751F;&#x6210;&#x6253;&#x5305;&#x62A5;&#x544A;
+&#x70B9;&#x51FB;&#x201C;&#x4EFB;&#x52A1;&#x201D;=&gt;&#x201C;build&#x201D;=&gt;&#x201C;&#x8FD0;&#x884C;&#x201D;
+&#x8FD0;&#x884C;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#x70B9;&#x51FB;&#x53F3;&#x4FA7;&#x201C;&#x5206;&#x6790;&#x201D;&#xFF0C;&#x201C;&#x63A7;&#x5236;&#x53F0;&#x201D;&#x9762;&#x677F;&#x67E5;&#x770B;&#x62A5;&#x544A;</p>
+<h3 id="6&#x4FEE;&#x6539;webpack&#x7684;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;">6.&#x4FEE;&#x6539;webpack&#x7684;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;</h3>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;vue-cli 3.0&#x751F;&#x6210;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x9690;&#x85CF;&#x4E86;webpack&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x914D;&#x7F6E;webpack
+&#x9700;&#x8981;&#x901A;&#x8FC7;vue.config.js&#x6765;&#x914D;&#x7F6E;&#x3002;
+&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA;vue.config.js&#x6587;&#x4EF6;&#xFF0C;</p>
+<pre><code>module.exports = {
+    chainWebpack:config=&gt;{
+        //&#x53D1;&#x5E03;&#x6A21;&#x5F0F;
+        config.when(process.env.NODE_ENV === &apos;production&apos;,config=&gt;{
+            //entry&#x627E;&#x5230;&#x9ED8;&#x8BA4;&#x7684;&#x6253;&#x5305;&#x5165;&#x53E3;&#xFF0C;&#x8C03;&#x7528;clear&#x5219;&#x662F;&#x5220;&#x9664;&#x9ED8;&#x8BA4;&#x7684;&#x6253;&#x5305;&#x5165;&#x53E3;
+            //add&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x6253;&#x5305;&#x5165;&#x53E3;
+            config.entry(&apos;app&apos;).clear().add(&apos;./src/main-prod.js&apos;)
+        })
+        //&#x5F00;&#x53D1;&#x6A21;&#x5F0F;
+        config.when(process.env.NODE_ENV === &apos;development&apos;,config=&gt;{
+            config.entry(&apos;app&apos;).clear().add(&apos;./src/main-dev.js&apos;)
+        })
+    }
+}
+</code></pre><p>&#x8865;&#x5145;&#xFF1A;
+chainWebpack&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x94FE;&#x5F0F;&#x7F16;&#x7A0B;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x4FEE;&#x6539;webpack&#x914D;&#x7F6E;
+configureWebpack&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x4FEE;&#x6539;webpack&#x914D;&#x7F6E;</p>
+<h3 id="7&#x52A0;&#x8F7D;&#x5916;&#x90E8;cdn">7.&#x52A0;&#x8F7D;&#x5916;&#x90E8;CDN</h3>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F9D;&#x8D56;&#x9879;&#x7684;&#x6240;&#x6709;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x90FD;&#x4F1A;&#x88AB;&#x6253;&#x5305;&#x5230;js/chunk-vendors.<strong>**</strong>.js&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5BFC;&#x81F4;&#x8BE5;js&#x6587;&#x4EF6;&#x8FC7;&#x5927;
+&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;externals&#x6392;&#x9664;&#x8FD9;&#x4E9B;&#x5305;&#xFF0C;&#x4F7F;&#x5B83;&#x4EEC;&#x4E0D;&#x88AB;&#x6253;&#x5305;&#x5230;js/chunk-vendors.<strong>**</strong>.js&#x6587;&#x4EF6;&#x4E2D;</p>
+<pre><code>module.exports = {
+    chainWebpack:config=&gt;{
+        //&#x53D1;&#x5E03;&#x6A21;&#x5F0F;
+        config.when(process.env.NODE_ENV === &apos;production&apos;,config=&gt;{
+            //entry&#x627E;&#x5230;&#x9ED8;&#x8BA4;&#x7684;&#x6253;&#x5305;&#x5165;&#x53E3;&#xFF0C;&#x8C03;&#x7528;clear&#x5219;&#x662F;&#x5220;&#x9664;&#x9ED8;&#x8BA4;&#x7684;&#x6253;&#x5305;&#x5165;&#x53E3;
+            //add&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x6253;&#x5305;&#x5165;&#x53E3;
+            config.entry(&apos;app&apos;).clear().add(&apos;./src/main-prod.js&apos;)
+
+            //&#x4F7F;&#x7528;externals&#x8BBE;&#x7F6E;&#x6392;&#x9664;&#x9879;
+            config.set(&apos;externals&apos;,{
+                vue:&apos;Vue&apos;,
+                &apos;vue-router&apos;:&apos;VueRouter&apos;,
+                axios:&apos;axios&apos;,
+                lodash:&apos;_&apos;,
+                echarts:&apos;echarts&apos;,
+                nprogress:&apos;NProgress&apos;,
+                &apos;vue-quill-editor&apos;:&apos;VueQuillEditor&apos;
+            })
+        })
+        //&#x5F00;&#x53D1;&#x6A21;&#x5F0F;
+        config.when(process.env.NODE_ENV === &apos;development&apos;,config=&gt;{
+            config.entry(&apos;app&apos;).clear().add(&apos;./src/main-dev.js&apos;)
+        })
+    }
+}
+</code></pre><p>&#x8BBE;&#x7F6E;&#x597D;&#x6392;&#x9664;&#x4E4B;&#x540E;&#xFF0C;&#x4E3A;&#x4E86;&#x4F7F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;vue&#xFF0C;axios&#x7B49;&#x5185;&#x5BB9;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x5916;&#x90E8;CDN&#x7684;&#x5F62;&#x5F0F;&#x89E3;&#x51B3;&#x5F15;&#x5165;&#x4F9D;&#x8D56;&#x9879;&#x3002;
+&#x6253;&#x5F00;&#x5F00;&#x53D1;&#x5165;&#x53E3;&#x6587;&#x4EF6;main-prod.js,&#x5220;&#x9664;&#x6389;&#x9ED8;&#x8BA4;&#x7684;&#x5F15;&#x5165;&#x4EE3;&#x7801;</p>
+<pre><code>import Vue from &apos;vue&apos;
+import App from &apos;./App.vue&apos;
+import router from &apos;./router&apos;
+// import &apos;./plugins/element.js&apos;
+//&#x5BFC;&#x5165;&#x5B57;&#x4F53;&#x56FE;&#x6807;
+import &apos;./assets/fonts/iconfont.css&apos;
+//&#x5BFC;&#x5165;&#x5168;&#x5C40;&#x6837;&#x5F0F;
+import &apos;./assets/css/global.css&apos;
+//&#x5BFC;&#x5165;&#x7B2C;&#x4E09;&#x65B9;&#x7EC4;&#x4EF6;vue-table-with-tree-grid
+import TreeTable from &apos;vue-table-with-tree-grid&apos;
+//&#x5BFC;&#x5165;&#x8FDB;&#x5EA6;&#x6761;&#x63D2;&#x4EF6;
+import NProgress from &apos;nprogress&apos;
+//&#x5BFC;&#x5165;&#x8FDB;&#x5EA6;&#x6761;&#x6837;&#x5F0F;
+// import &apos;nprogress/nprogress.css&apos;
+// //&#x5BFC;&#x5165;axios
+import axios from &apos;axios&apos;
+// //&#x5BFC;&#x5165;vue-quill-editor&#xFF08;&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#xFF09;
+import VueQuillEditor from &apos;vue-quill-editor&apos;
+// //&#x5BFC;&#x5165;vue-quill-editor&#x7684;&#x6837;&#x5F0F;
+// import &apos;quill/dist/quill.core.css&apos;
+// import &apos;quill/dist/quill.snow.css&apos;
+// import &apos;quill/dist/quill.bubble.css&apos;
+
+axios.defaults.baseURL = &apos;http://127.0.0.1:8888/api/private/v1/&apos;
+//&#x8BF7;&#x6C42;&#x5728;&#x5230;&#x8FBE;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x4F1A;&#x8C03;&#x7528;use&#x4E2D;&#x7684;&#x8FD9;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x6765;&#x6DFB;&#x52A0;&#x8BF7;&#x6C42;&#x5934;&#x4FE1;&#x606F;
+axios.interceptors.request.use(config =&gt; {
+  //&#x5F53;&#x8FDB;&#x5165;request&#x62E6;&#x622A;&#x5668;&#xFF0C;&#x8868;&#x793A;&#x53D1;&#x9001;&#x4E86;&#x8BF7;&#x6C42;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x5F00;&#x542F;&#x8FDB;&#x5EA6;&#x6761;
+  NProgress.start()
+  //&#x4E3A;&#x8BF7;&#x6C42;&#x5934;&#x5BF9;&#x8C61;&#xFF0C;&#x6DFB;&#x52A0;token&#x9A8C;&#x8BC1;&#x7684;Authorization&#x5B57;&#x6BB5;
+  config.headers.Authorization = window.sessionStorage.getItem(&quot;token&quot;)
+  //&#x5FC5;&#x987B;&#x8FD4;&#x56DE;config
+  return config
+})
+//&#x5728;response&#x62E6;&#x622A;&#x5668;&#x4E2D;&#xFF0C;&#x9690;&#x85CF;&#x8FDB;&#x5EA6;&#x6761;
+axios.interceptors.response.use(config =&gt;{
+  //&#x5F53;&#x8FDB;&#x5165;response&#x62E6;&#x622A;&#x5668;&#xFF0C;&#x8868;&#x793A;&#x8BF7;&#x6C42;&#x5DF2;&#x7ECF;&#x7ED3;&#x675F;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x7ED3;&#x675F;&#x8FDB;&#x5EA6;&#x6761;
+  NProgress.done()
+  return config
+})
+Vue.prototype.$http = axios
+
+Vue.config.productionTip = false
+
+//&#x5168;&#x5C40;&#x6CE8;&#x518C;&#x7EC4;&#x4EF6;
+Vue.component(&apos;tree-table&apos;, TreeTable)
+//&#x5168;&#x5C40;&#x6CE8;&#x518C;&#x5BCC;&#x6587;&#x672C;&#x7EC4;&#x4EF6;
+Vue.use(VueQuillEditor)
+
+//&#x521B;&#x5EFA;&#x8FC7;&#x6EE4;&#x5668;&#x5C06;&#x79D2;&#x6570;&#x8FC7;&#x6EE4;&#x4E3A;&#x5E74;&#x6708;&#x65E5;&#xFF0C;&#x65F6;&#x5206;&#x79D2;
+Vue.filter(&apos;dateFormat&apos;,function(originVal){
+  const dt = new Date(originVal)
+  const y = dt.getFullYear()
+  const m = (dt.getMonth()+1+&apos;&apos;).padStart(2,&apos;0&apos;)
+  const d = (dt.getDate()+&apos;&apos;).padStart(2,&apos;0&apos;)
+
+  const hh = (dt.getHours()+&apos;&apos;).padStart(2,&apos;0&apos;)
+  const mm = (dt.getMinutes()+&apos;&apos;).padStart(2,&apos;0&apos;)
+  const ss = (dt.getSeconds()+&apos;&apos;).padStart(2,&apos;0&apos;)
+
+  return `${y}-${m}-${d} ${hh}:${mm}:${ss}`
+})
+
+new Vue({
+  router,
+  render: h =&gt; h(App)
+}).$mount(&apos;#app&apos;)
+</code></pre><p>&#x7136;&#x540E;&#x6253;&#x5F00;public/index.html&#x6DFB;&#x52A0;&#x5916;&#x90E8;cdn&#x5F15;&#x5165;&#x4EE3;&#x7801;</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;&lt;%= BASE_URL %&gt;favicon.ico&quot;&gt;
+    &lt;title&gt;&#x7535;&#x5546;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&lt;/title&gt;
+
+    &lt;!-- nprogress &#x7684;&#x6837;&#x5F0F;&#x8868;&#x6587;&#x4EF6; --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.staticfile.org/nprogress/0.2.0/nprogress.min.css&quot; /&gt;
+    &lt;!-- &#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668; &#x7684;&#x6837;&#x5F0F;&#x8868;&#x6587;&#x4EF6; --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.staticfile.org/quill/1.3.4/quill.core.min.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.staticfile.org/quill/1.3.4/quill.snow.min.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.staticfile.org/quill/1.3.4/quill.bubble.min.css&quot; /&gt;
+    &lt;!-- element-ui &#x7684;&#x6837;&#x5F0F;&#x8868;&#x6587;&#x4EF6; --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.staticfile.org/element-ui/2.8.2/theme-chalk/index.css&quot; /&gt;
+
+    &lt;script src=&quot;https://cdn.staticfile.org/vue/2.5.22/vue.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.staticfile.org/vue-router/3.0.1/vue-router.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.staticfile.org/axios/0.18.0/axios.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.staticfile.org/lodash.js/4.17.11/lodash.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.staticfile.org/echarts/4.1.0/echarts.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.staticfile.org/nprogress/0.2.0/nprogress.min.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- &#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x7684; js &#x6587;&#x4EF6; --&gt;
+    &lt;script src=&quot;https://cdn.staticfile.org/quill/1.3.4/quill.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue-quill-editor@3.0.4/dist/vue-quill-editor.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- element-ui &#x7684; js &#x6587;&#x4EF6; --&gt;
+    &lt;script src=&quot;https://cdn.staticfile.org/element-ui/2.8.2/index.js&quot;&gt;&lt;/script&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;noscript&gt;
+      &lt;strong&gt;We&apos;re sorry but vue_shop doesn&apos;t work properly without JavaScript enabled. Please enable it to continue.&lt;/strong&gt;
+    &lt;/noscript&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+    &lt;!-- built files will be auto injected --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h3 id="8&#x5B9A;&#x5236;&#x9996;&#x9875;&#x5185;&#x5BB9;">8.&#x5B9A;&#x5236;&#x9996;&#x9875;&#x5185;&#x5BB9;</h3>
+<p>&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x7684;&#x9996;&#x9875;&#x548C;&#x53D1;&#x5E03;&#x73AF;&#x5883;&#x7684;&#x9996;&#x9875;&#x5C55;&#x793A;&#x5185;&#x5BB9;&#x7684;&#x5F62;&#x5F0F;&#x6709;&#x6240;&#x4E0D;&#x540C;
+&#x5982;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x662F;import&#x52A0;&#x8F7D;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#xFF0C;&#x800C;&#x53D1;&#x5E03;&#x73AF;&#x5883;&#x5219;&#x662F;&#x4F7F;&#x7528;CDN&#xFF0C;&#x90A3;&#x4E48;&#x9996;&#x9875;&#x4E5F;&#x9700;&#x6839;&#x636E;&#x73AF;&#x5883;&#x4E0D;&#x540C;&#x6765;&#x8FDB;&#x884C;&#x4E0D;&#x540C;&#x7684;&#x5B9E;&#x73B0;
+&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x63D2;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5B9A;&#x5236;&#x9996;&#x9875;&#x5185;&#x5BB9;&#xFF0C;&#x6253;&#x5F00;vue.config.js&#xFF0C;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>module.exports = {
+    chainWebpack:config=&gt;{
+        config.when(process.env.NODE_ENV === &apos;production&apos;,config=&gt;{
+            ......
+
+            //&#x4F7F;&#x7528;&#x63D2;&#x4EF6;
+            config.plugin(&apos;html&apos;).tap(args=&gt;{
+                //&#x6DFB;&#x52A0;&#x53C2;&#x6570;isProd
+                args[0].isProd = true
+                return args
+            })
+        })
+
+        config.when(process.env.NODE_ENV === &apos;development&apos;,config=&gt;{
+            config.entry(&apos;app&apos;).clear().add(&apos;./src/main-dev.js&apos;)
+
+            //&#x4F7F;&#x7528;&#x63D2;&#x4EF6;
+            config.plugin(&apos;html&apos;).tap(args=&gt;{
+                //&#x6DFB;&#x52A0;&#x53C2;&#x6570;isProd
+                args[0].isProd = false
+                return args
+            })
+        })
+    }
+}
+</code></pre><p>&#x7136;&#x540E;&#x5728;public/index.html&#x4E2D;&#x4F7F;&#x7528;&#x63D2;&#x4EF6;&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x53D1;&#x5E03;&#x73AF;&#x5883;&#x5E76;&#x5B9A;&#x5236;&#x9996;&#x9875;&#x5185;&#x5BB9;</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;&lt;%= BASE_URL %&gt;favicon.ico&quot;&gt;
+    &lt;title&gt;&lt;%= htmlWebpackPlugin.options.isProd ? &apos;&apos; : &apos;dev - &apos; %&gt;&#x7535;&#x5546;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&lt;/title&gt;
+
+    &lt;% if(htmlWebpackPlugin.options.isProd){ %&gt;
+    &lt;!-- nprogress &#x7684;&#x6837;&#x5F0F;&#x8868;&#x6587;&#x4EF6; --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.staticfile.org/nprogress/0.2.0/nprogress.min.css&quot; /&gt;
+    ........
+    &lt;!-- element-ui &#x7684; js &#x6587;&#x4EF6; --&gt;
+    &lt;script src=&quot;https://cdn.staticfile.org/element-ui/2.8.2/index.js&quot;&gt;&lt;/script&gt;
+    &lt;% } %&gt;
+  &lt;/head&gt;
+  .......
+</code></pre><h3 id="9&#x8DEF;&#x7531;&#x61D2;&#x52A0;&#x8F7D;">9.&#x8DEF;&#x7531;&#x61D2;&#x52A0;&#x8F7D;</h3>
+<p>&#x5F53;&#x8DEF;&#x7531;&#x88AB;&#x8BBF;&#x95EE;&#x65F6;&#x624D;&#x52A0;&#x8F7D;&#x5BF9;&#x5E94;&#x7684;&#x8DEF;&#x7531;&#x6587;&#x4EF6;&#xFF0C;&#x5C31;&#x662F;&#x8DEF;&#x7531;&#x61D2;&#x52A0;&#x8F7D;&#x3002;
+&#x8DEF;&#x7531;&#x61D2;&#x52A0;&#x8F7D;&#x5B9E;&#x73B0;&#x6B65;&#x9AA4;&#xFF1A;
+1.&#x5B89;&#x88C5; @babel/plugin-syntax-dynamic-import
+&#x6253;&#x5F00;vue&#x63A7;&#x5236;&#x53F0;&#xFF0C;&#x70B9;&#x51FB;&#x4F9D;&#x8D56;-&gt;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;-&gt;&#x5F00;&#x53D1;&#x4F9D;&#x8D56;-&gt;&#x641C;&#x7D22;@babel/plugin-syntax-dynamic-import
+&#x70B9;&#x51FB;&#x5B89;&#x88C5;&#x3002;</p>
+<p>2.&#x5728;babel.config.js&#x4E2D;&#x58F0;&#x660E;&#x8BE5;&#x63D2;&#x4EF6;&#xFF0C;&#x6253;&#x5F00;babel.config.js</p>
+<pre><code>//&#x9879;&#x76EE;&#x53D1;&#x5E03;&#x9636;&#x6BB5;&#x9700;&#x8981;&#x7528;&#x5230;&#x7684;babel&#x63D2;&#x4EF6;
+const productPlugins = []
+
+//&#x5224;&#x65AD;&#x662F;&#x5F00;&#x53D1;&#x8FD8;&#x662F;&#x53D1;&#x5E03;&#x9636;&#x6BB5;
+if(process.env.NODE_ENV === &apos;production&apos;){
+  //&#x53D1;&#x5E03;&#x9636;&#x6BB5;
+  productPlugins.push(&quot;transform-remove-console&quot;)
+}
+
+module.exports = {
+  &quot;presets&quot;: [
+    &quot;@vue/app&quot;
+  ],
+  &quot;plugins&quot;: [
+    [
+      &quot;component&quot;,
+      {
+        &quot;libraryName&quot;: &quot;element-ui&quot;,
+        &quot;styleLibraryName&quot;: &quot;theme-chalk&quot;
+      }
+    ],
+    ...productPlugins,
+    //&#x914D;&#x7F6E;&#x8DEF;&#x7531;&#x61D2;&#x52A0;&#x8F7D;&#x63D2;&#x4EF6;
+    &quot;@babel/plugin-syntax-dynamic-import&quot;
+  ]
+}
+</code></pre><p>3.&#x5C06;&#x8DEF;&#x7531;&#x66F4;&#x6539;&#x4E3A;&#x6309;&#x9700;&#x52A0;&#x8F7D;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x6253;&#x5F00;router.js&#xFF0C;&#x66F4;&#x6539;&#x5F15;&#x5165;&#x7EC4;&#x4EF6;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>import Vue from &apos;vue&apos;
+import Router from &apos;vue-router&apos;
+const Login = () =&gt; import(/* webpackChunkName:&quot;login_home_welcome&quot; */ &apos;./components/Login.vue&apos;)
+// import Login from &apos;./components/Login.vue&apos;
+const Home = () =&gt; import(/* webpackChunkName:&quot;login_home_welcome&quot; */ &apos;./components/Home.vue&apos;)
+// import Home from &apos;./components/Home.vue&apos;
+const Welcome = () =&gt; import(/* webpackChunkName:&quot;login_home_welcome&quot; */ &apos;./components/Welcome.vue&apos;)
+// import Welcome from &apos;./components/Welcome.vue&apos;
+const Users = () =&gt; import(/* webpackChunkName:&quot;user&quot; */ &apos;./components/user/Users.vue&apos;)
+// import Users from &apos;./components/user/Users.vue&apos;
+const Rights = () =&gt; import(/* webpackChunkName:&quot;power&quot; */ &apos;./components/power/Rights.vue&apos;)
+// import Rights from &apos;./components/power/Rights.vue&apos;
+const Roles = () =&gt; import(/* webpackChunkName:&quot;power&quot; */ &apos;./components/power/Roles.vue&apos;)
+// import Roles from &apos;./components/power/Roles.vue&apos;
+const Cate = () =&gt; import(/* webpackChunkName:&quot;goods&quot; */ &apos;./components/goods/Cate.vue&apos;)
+// import Cate from &apos;./components/goods/Cate.vue&apos;
+const Params = () =&gt; import(/* webpackChunkName:&quot;goods&quot; */ &apos;./components/goods/Params.vue&apos;)
+// import Params from &apos;./components/goods/Params.vue&apos;
+const GoodList = () =&gt; import(/* webpackChunkName:&quot;goods&quot; */ &apos;./components/goods/List.vue&apos;)
+// import GoodList from &apos;./components/goods/List.vue&apos;
+const GoodAdd = () =&gt; import(/* webpackChunkName:&quot;goods&quot; */ &apos;./components/goods/Add.vue&apos;)
+// import GoodAdd from &apos;./components/goods/Add.vue&apos;
+const Order = () =&gt; import(/* webpackChunkName:&quot;order&quot; */ &apos;./components/order/Order.vue&apos;)
+// import Order from &apos;./components/order/Order.vue&apos;
+const Report = () =&gt; import(/* webpackChunkName:&quot;report&quot; */ &apos;./components/report/Report.vue&apos;)
+// import Report from &apos;./components/report/Report.vue&apos;
+</code></pre><h3 id="10&#x9879;&#x76EE;&#x4E0A;&#x7EBF;">10.&#x9879;&#x76EE;&#x4E0A;&#x7EBF;</h3>
+<h4 id="a&#x901A;&#x8FC7;node&#x521B;&#x5EFA;&#x670D;&#x52A1;&#x5668;">A.&#x901A;&#x8FC7;node&#x521B;&#x5EFA;&#x670D;&#x52A1;&#x5668;</h4>
+<p>&#x5728;vue_shop&#x540C;&#x7EA7;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;vue_shop_server&#x5B58;&#x653E;node&#x670D;&#x52A1;&#x5668;
+&#x4F7F;&#x7528;&#x7EC8;&#x7AEF;&#x6253;&#x5F00;vue_shop_server&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4; npm init -y
+&#x521D;&#x59CB;&#x5316;&#x5305;&#x4E4B;&#x540E;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4; npm i express -S
+&#x6253;&#x5F00;vue_shop&#x76EE;&#x5F55;&#xFF0C;&#x590D;&#x5236;dist&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x7C98;&#x8D34;&#x5230;vue_shop_server&#x4E2D;
+&#x5728;vue_shop_server&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x521B;&#x5EFA;app.js&#x6587;&#x4EF6;,&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>const express = require(&apos;express&apos;)
+
+const app = express()
+
+app.use(express.static(&apos;./dist&apos;))
+
+app.listen(8998,()=&gt;{
+    console.log(&quot;server running at http://127.0.0.1:8998&quot;)
+})
+</code></pre><p>&#x7136;&#x540E;&#x518D;&#x6B21;&#x5728;&#x7EC8;&#x7AEF;&#x4E2D;&#x8F93;&#x5165;  node app.js</p>
+<h4 id="b&#x5F00;&#x542F;gzip&#x538B;&#x7F29;">B.&#x5F00;&#x542F;gzip&#x538B;&#x7F29;</h4>
+<p>&#x6253;&#x5F00;vue_shop_server&#x6587;&#x4EF6;&#x5939;&#x7684;&#x7EC8;&#x7AEF;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;npm i compression -D
+&#x6253;&#x5F00;app.js,&#x7F16;&#x5199;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>const express = require(&apos;express&apos;)
+
+const compression = require(&apos;compression&apos;)
+
+const app = express()
+
+app.use(compression())
+app.use(express.static(&apos;./dist&apos;))
+
+app.listen(8998,()=&gt;{
+    console.log(&quot;server running at http://127.0.0.1:8998&quot;)
+})
+</code></pre><h4 id="c&#x914D;&#x7F6E;https&#x670D;&#x52A1;">C.&#x914D;&#x7F6E;https&#x670D;&#x52A1;</h4>
+<p>&#x914D;&#x7F6E;https&#x670D;&#x52A1;&#x4E00;&#x822C;&#x662F;&#x540E;&#x53F0;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4E86;&#x89E3;&#x5373;&#x53EF;&#x3002;
+&#x9996;&#x5148;&#xFF0C;&#x9700;&#x8981;&#x7533;&#x8BF7;SSL&#x8BC1;&#x4E66;&#xFF0C;&#x8FDB;&#x5165;<a href="https://freessl.cn&#x5B98;&#x7F51;" target="_blank">https://freessl.cn&#x5B98;&#x7F51;</a>
+&#x5728;&#x540E;&#x53F0;&#x5BFC;&#x5165;&#x8BC1;&#x4E66;&#xFF0C;&#x6253;&#x5F00;&#x4ECA;&#x5929;&#x8D44;&#x6599;/&#x7D20;&#x6750;&#xFF0C;&#x590D;&#x5236;&#x7D20;&#x6750;&#x4E2D;&#x7684;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#x5230;vue_shop_server&#x4E2D;
+&#x6253;&#x5F00;app.js&#x6587;&#x4EF6;&#xFF0C;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x5BFC;&#x5165;&#x8BC1;&#x4E66;&#xFF0C;&#x5E76;&#x5F00;&#x542F;https&#x670D;&#x52A1;</p>
+<pre><code>const express = require(&apos;express&apos;)
+const compression = require(&apos;compression&apos;)
+const https = require(&apos;https&apos;)
+const fs = require(&apos;fs&apos;)
+
+const app = express()
+//&#x521B;&#x5EFA;&#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#x8BBE;&#x7F6E;&#x516C;&#x94A5;&#x548C;&#x79C1;&#x94A5;
+const options = {
+    cert:fs.readFileSync(&apos;./full_chain.pem&apos;),
+    key:fs.readFileSync(&apos;./private.key&apos;)
+}
+
+app.use(compression())
+app.use(express.static(&apos;./dist&apos;))
+
+// app.listen(8998,()=&gt;{
+//     console.log(&quot;server running at http://127.0.0.1:8998&quot;)
+// })
+
+//&#x542F;&#x52A8;https&#x670D;&#x52A1;
+https.createServer(options,app).listen(443)
+</code></pre><p>&#x6CE8;&#x610F;&#xFF1A;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7684;&#x8BC1;&#x4E66;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x6240;&#x4EE5;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x4F7F;&#x7528;https&#x670D;&#x52A1;</p>
+<h4 id="d&#x4F7F;&#x7528;pm2&#x7BA1;&#x7406;&#x5E94;&#x7528;">D.&#x4F7F;&#x7528;pm2&#x7BA1;&#x7406;&#x5E94;&#x7528;</h4>
+<p>&#x6253;&#x5F00;vue_shop_server&#x6587;&#x4EF6;&#x5939;&#x7684;&#x7EC8;&#x7AEF;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;npm i pm2 -g
+&#x4F7F;&#x7528;pm2&#x542F;&#x52A8;&#x9879;&#x76EE;&#xFF0C;&#x5728;&#x7EC8;&#x7AEF;&#x4E2D;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;pm2 start app.js --name &#x81EA;&#x5B9A;&#x4E49;&#x540D;&#x79F0;
+&#x67E5;&#x770B;&#x9879;&#x76EE;&#x5217;&#x8868;&#x547D;&#x4EE4;&#xFF1A;pm2 ls
+&#x91CD;&#x542F;&#x9879;&#x76EE;&#xFF1A;pm2 restart &#x81EA;&#x5B9A;&#x4E49;&#x540D;&#x79F0;
+&#x505C;&#x6B62;&#x9879;&#x76EE;&#xFF1A;pm2 stop &#x81EA;&#x5B9A;&#x4E49;&#x540D;&#x79F0;
+&#x5220;&#x9664;&#x9879;&#x76EE;&#xFF1A;pm2 delete &#x81EA;&#x5B9A;&#x4E49;&#x540D;&#x79F0;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="day12.html" class="navigation navigation-prev " aria-label="Previous page: day12">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="day14vuex.html" class="navigation navigation-next " aria-label="Next page: day14vuex">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"day13项目优化","level":"1.15","depth":1,"next":{"title":"day14vuex","level":"1.16","depth":1,"path":"day14vuex.md","ref":"day14vuex.md","articles":[]},"previous":{"title":"day12","level":"1.14","depth":1,"path":"day12.md","ref":"day12.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"day13项目优化.md","mtime":"2019-09-11T00:12:27.851Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-28T05:39:51.519Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
