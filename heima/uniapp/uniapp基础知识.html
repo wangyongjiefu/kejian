@@ -1,0 +1,1722 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.uniapp基础知识 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="黑马商城.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="uniapp基础知识.html">
+            
+                <a href="uniapp基础知识.html">
+            
+                    
+                    1.uniapp基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="黑马商城.html">
+            
+                <a href="黑马商城.html">
+            
+                    
+                    2.黑马商城
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >1.uniapp基础知识</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="uni-app&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;">uni-app&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;</h4>
+<p>&#x8BFE;&#x7A0B;&#x4ECB;&#x7ECD;&#xFF1A;</p>
+<p>&#x57FA;&#x7840;&#x90E8;&#x5206;&#xFF1A;</p>
+<ul>
+<li>&#x73AF;&#x5883;&#x642D;&#x5EFA;</li>
+<li>&#x9875;&#x9762;&#x5916;&#x89C2;&#x914D;&#x7F6E;</li>
+<li>&#x6570;&#x636E;&#x7ED1;&#x5B9A;</li>
+<li>uni-app&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</li>
+<li>&#x7EC4;&#x4EF6;&#x7684;&#x4F7F;&#x7528;</li>
+<li>uni-app&#x4E2D;&#x6837;&#x5F0F;&#x5B66;&#x4E60;</li>
+<li>&#x5728;uni-app&#x4E2D;&#x4F7F;&#x7528;&#x5B57;&#x4F53;&#x56FE;&#x6807;&#x548C;&#x5F00;&#x542F;scss</li>
+<li>&#x6761;&#x4EF6;&#x6CE8;&#x91CA;&#x8DE8;&#x7AEF;&#x517C;&#x5BB9;</li>
+<li>uni&#x4E2D;&#x7684;&#x4E8B;&#x4EF6;</li>
+<li>&#x5BFC;&#x822A;&#x8DF3;&#x8F6C;</li>
+<li>&#x7EC4;&#x4EF6;&#x521B;&#x5EFA;&#x548C;&#x901A;&#x8BAF;&#xFF0C;&#x53CA;&#x7EC4;&#x4EF6;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</li>
+<li>uni-app&#x4E2D;&#x4F7F;&#x7528;uni-ui&#x5E93;</li>
+</ul>
+<p>&#x9879;&#x76EE;&#xFF1A;&#x9ED1;&#x9A6C;&#x5546;&#x57CE;&#x9879;&#x76EE;</p>
+<h5 id="uni-app&#x4ECB;&#x7ECD;-&#x5B98;&#x65B9;&#x7F51;&#x9875;">uni-app&#x4ECB;&#x7ECD; <a href="https://uniapp.dcloud.io/resource" target="_blank">&#x5B98;&#x65B9;&#x7F51;&#x9875;</a></h5>
+<p><code>uni-app</code> &#x662F;&#x4E00;&#x4E2A;&#x4F7F;&#x7528; <a href="https://vuejs.org/" target="_blank">Vue.js</a> &#x5F00;&#x53D1;&#x6240;&#x6709;&#x524D;&#x7AEF;&#x5E94;&#x7528;&#x7684;&#x6846;&#x67B6;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x7F16;&#x5199;&#x4E00;&#x5957;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x53D1;&#x5E03;&#x5230;iOS&#x3001;Android&#x3001;H5&#x3001;&#x4EE5;&#x53CA;&#x5404;&#x79CD;&#x5C0F;&#x7A0B;&#x5E8F;&#xFF08;&#x5FAE;&#x4FE1;/&#x652F;&#x4ED8;&#x5B9D;/&#x767E;&#x5EA6;/&#x5934;&#x6761;/QQ/&#x9489;&#x9489;&#xFF09;&#x7B49;&#x591A;&#x4E2A;&#x5E73;&#x53F0;&#x3002;</p>
+<p>&#x5373;&#x4F7F;&#x4E0D;&#x8DE8;&#x7AEF;&#xFF0C;<code>uni-app</code>&#x540C;&#x65F6;&#x4E5F;&#x662F;&#x66F4;&#x597D;&#x7684;&#x5C0F;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x6846;&#x67B6;&#x3002;</p>
+<p>&#x5177;&#x6709;vue&#x548C;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x5F00;&#x53D1;&#x7ECF;&#x9A8C;&#xFF0C;&#x53EF;&#x5FEB;&#x901F;&#x4E0A;&#x624B;uni-app</p>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x53BB;&#x5B66;&#x4E60;uni-app&#xFF1F;</p>
+<p>&#x76F8;&#x5BF9;&#x5F00;&#x53D1;&#x8005;&#x6765;&#x8BF4;&#xFF0C;&#x51CF;&#x5C11;&#x4E86;&#x5B66;&#x4E60;&#x6210;&#x672C;&#xFF0C;&#x56E0;&#x4E3A;&#x53EA;&#x5B66;&#x4F1A;uni-app&#x4E4B;&#x540E;&#xFF0C;&#x5373;&#x53EF;&#x5F00;&#x53D1;&#x51FA;iOS&#x3001;Android&#x3001;H5&#x3001;&#x4EE5;&#x53CA;&#x5404;&#x79CD;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x53BB;&#x5B66;&#x4E60;&#x5F00;&#x53D1;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x7684;&#x6846;&#x67B6;&#xFF0C;&#x76F8;&#x5BF9;&#x516C;&#x53F8;&#x800C;&#x8A00;&#xFF0C;&#x4E5F;&#x5927;&#x5927;&#x51CF;&#x5C11;&#x4E86;&#x5F00;&#x53D1;&#x6210;&#x672C;&#x3002;</p>
+<h5 id="&#x73AF;&#x5883;&#x642D;&#x5EFA;">&#x73AF;&#x5883;&#x642D;&#x5EFA;</h5>
+<p>&#x5B89;&#x88C5;&#x7F16;&#x8F91;&#x5668;HbuilderX  <a href="https://www.dcloud.io/hbuilderx.html" target="_blank">&#x4E0B;&#x8F7D;&#x5730;&#x5740;</a></p>
+<p>HBuilderX&#x662F;&#x901A;&#x7528;&#x7684;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#xFF0C;&#x4F46;&#x4E3A;<code>uni-app</code>&#x505A;&#x4E86;&#x7279;&#x522B;&#x5F3A;&#x5316;&#x3002;</p>
+<p>&#x4E0B;&#x8F7D;App&#x5F00;&#x53D1;&#x7248;&#xFF0C;&#x53EF;&#x5F00;&#x7BB1;&#x5373;&#x7528;</p>
+<p>&#x5B89;&#x88C5;&#x5FAE;&#x4FE1;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177; <a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" target="_blank">&#x4E0B;&#x8F7D;&#x5730;&#x5740;</a></p>
+<h5 id="&#x5229;&#x7528;hbuilderx&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;">&#x5229;&#x7528;HbuilderX&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;</h5>
+<ul>
+<li><p>&#x70B9;&#x51FB;HbuilderX&#x83DC;&#x5355;&#x680F;&#x6587;&#x4EF6;&gt;&#x9879;&#x76EE;&gt;&#x65B0;&#x5EFA;</p>
+</li>
+<li><p>&#x9009;&#x62E9;uni-app,&#x586B;&#x5199;&#x9879;&#x76EE;&#x540D;&#x79F0;&#xFF0C;&#x9879;&#x76EE;&#x521B;&#x5EFA;&#x7684;&#x76EE;&#x5F55;</p>
+<p><img src="images/create.jpg" alt=""></p>
+</li>
+</ul>
+<h5 id="&#x8FD0;&#x884C;&#x9879;&#x76EE;">&#x8FD0;&#x884C;&#x9879;&#x76EE;</h5>
+<p>&#x5728;&#x83DC;&#x5355;&#x680F;&#x4E2D;&#x70B9;&#x51FB;&#x8FD0;&#x884C;&#xFF0C;&#x8FD0;&#x884C;&#x5230;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x9009;&#x62E9;&#x6D4F;&#x89C8;&#x5668;&#x5373;&#x53EF;&#x8FD0;&#x884C;</p>
+<p>&#x5728;&#x5FAE;&#x4FE1;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x91CC;&#x8FD0;&#x884C;&#xFF1A;&#x8FDB;&#x5165;hello-uniapp&#x9879;&#x76EE;&#xFF0C;&#x70B9;&#x51FB;&#x5DE5;&#x5177;&#x680F;&#x7684;&#x8FD0;&#x884C; -&gt; &#x8FD0;&#x884C;&#x5230;&#x5C0F;&#x7A0B;&#x5E8F;&#x6A21;&#x62DF;&#x5668; -&gt; &#x5FAE;&#x4FE1;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#xFF0C;&#x5373;&#x53EF;&#x5728;&#x5FAE;&#x4FE1;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x91CC;&#x9762;&#x4F53;&#x9A8C;uni-app</p>
+<p>&#x5728;&#x5FAE;&#x4FE1;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x91CC;&#x8FD0;&#x884C;&#xFF1A;&#x8FDB;&#x5165;hello-uniapp&#x9879;&#x76EE;&#xFF0C;&#x70B9;&#x51FB;&#x5DE5;&#x5177;&#x680F;&#x7684;&#x8FD0;&#x884C; -&gt; &#x8FD0;&#x884C;&#x5230;&#x624B;&#x673A;&#x6216;&#x6A21;&#x62DF;&#x5668; -&gt; &#x9009;&#x62E9;&#x8C03;&#x5F0F;&#x7684;&#x624B;&#x673A;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong></p>
+<ul>
+<li>&#x5982;&#x679C;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x914D;&#x7F6E;&#x5C0F;&#x7A0B;&#x5E8F;ide&#x7684;&#x76F8;&#x5173;&#x8DEF;&#x5F84;&#xFF0C;&#x624D;&#x80FD;&#x8FD0;&#x884C;&#x6210;&#x529F;</li>
+<li>&#x5FAE;&#x4FE1;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x5728;&#x8BBE;&#x7F6E;&#x4E2D;&#x5B89;&#x5168;&#x8BBE;&#x7F6E;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x53E3;&#x5F00;&#x542F;</li>
+</ul>
+<h5 id="&#x4ECB;&#x7ECD;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x548C;&#x6587;&#x4EF6;&#x4F5C;&#x7528;">&#x4ECB;&#x7ECD;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x548C;&#x6587;&#x4EF6;&#x4F5C;&#x7528;</h5>
+<p><code>pages.json</code> &#x6587;&#x4EF6;&#x7528;&#x6765;&#x5BF9; uni-app &#x8FDB;&#x884C;&#x5168;&#x5C40;&#x914D;&#x7F6E;&#xFF0C;&#x51B3;&#x5B9A;&#x9875;&#x9762;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x3001;&#x7A97;&#x53E3;&#x6837;&#x5F0F;&#x3001;&#x539F;&#x751F;&#x7684;&#x5BFC;&#x822A;&#x680F;&#x3001;&#x5E95;&#x90E8;&#x7684;&#x539F;&#x751F;tabbar &#x7B49;</p>
+<p><code>manifest.json</code> &#x6587;&#x4EF6;&#x662F;&#x5E94;&#x7528;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x5E94;&#x7528;&#x7684;&#x540D;&#x79F0;&#x3001;&#x56FE;&#x6807;&#x3001;&#x6743;&#x9650;&#x7B49;&#x3002;</p>
+<p><code>App.vue</code>&#x662F;&#x6211;&#x4EEC;&#x7684;&#x8DDF;&#x7EC4;&#x4EF6;&#xFF0C;&#x6240;&#x6709;&#x9875;&#x9762;&#x90FD;&#x662F;&#x5728;<code>App.vue</code>&#x4E0B;&#x8FDB;&#x884C;&#x5207;&#x6362;&#x7684;&#xFF0C;&#x662F;&#x9875;&#x9762;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x5E94;&#x7528;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#x3002;</p>
+<p><code>main.js</code>&#x662F;&#x6211;&#x4EEC;&#x7684;&#x9879;&#x76EE;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#x662F;&#x521D;&#x59CB;&#x5316;<code>vue</code>&#x5B9E;&#x4F8B;&#x5E76;&#x4F7F;&#x7528;&#x9700;&#x8981;&#x7684;&#x63D2;&#x4EF6;&#x3002;</p>
+<p><code>uni.scss</code>&#x6587;&#x4EF6;&#x7684;&#x7528;&#x9014;&#x662F;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x6574;&#x4F53;&#x63A7;&#x5236;&#x5E94;&#x7528;&#x7684;&#x98CE;&#x683C;&#x3002;&#x6BD4;&#x5982;&#x6309;&#x94AE;&#x989C;&#x8272;&#x3001;&#x8FB9;&#x6846;&#x98CE;&#x683C;&#xFF0C;<code>uni.scss</code>&#x6587;&#x4EF6;&#x91CC;&#x9884;&#x7F6E;&#x4E86;&#x4E00;&#x6279;scss&#x53D8;&#x91CF;&#x9884;&#x7F6E;&#x3002;</p>
+<p><code>unpackage</code> &#x5C31;&#x662F;&#x6253;&#x5305;&#x76EE;&#x5F55;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x6709;&#x5404;&#x4E2A;&#x5E73;&#x53F0;&#x7684;&#x6253;&#x5305;&#x6587;&#x4EF6;</p>
+<p><code>pages</code> &#x6240;&#x6709;&#x7684;&#x9875;&#x9762;&#x5B58;&#x653E;&#x76EE;&#x5F55;</p>
+<p><code>static</code> &#x9759;&#x6001;&#x8D44;&#x6E90;&#x76EE;&#x5F55;&#xFF0C;&#x4F8B;&#x5982;&#x56FE;&#x7247;&#x7B49;</p>
+<p><code>components</code> &#x7EC4;&#x4EF6;&#x5B58;&#x653E;&#x76EE;&#x5F55;</p>
+<p>&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x591A;&#x7AEF;&#x517C;&#x5BB9;&#xFF0C;&#x7EFC;&#x5408;&#x8003;&#x8651;&#x7F16;&#x8BD1;&#x901F;&#x5EA6;&#x3001;&#x8FD0;&#x884C;&#x6027;&#x80FD;&#x7B49;&#x56E0;&#x7D20;&#xFF0C;<code>uni-app</code> &#x7EA6;&#x5B9A;&#x4E86;&#x5982;&#x4E0B;&#x5F00;&#x53D1;&#x89C4;&#x8303;&#xFF1A;</p>
+<ul>
+<li>&#x9875;&#x9762;&#x6587;&#x4EF6;&#x9075;&#x5FAA; <a href="https://vue-loader.vuejs.org/zh/spec.html" target="_blank">Vue &#x5355;&#x6587;&#x4EF6;&#x7EC4;&#x4EF6; (SFC) &#x89C4;&#x8303;</a></li>
+<li>&#x7EC4;&#x4EF6;&#x6807;&#x7B7E;&#x9760;&#x8FD1;&#x5C0F;&#x7A0B;&#x5E8F;&#x89C4;&#x8303;&#xFF0C;&#x8BE6;&#x89C1;<a href="https://uniapp.dcloud.io/component/README" target="_blank">uni-app &#x7EC4;&#x4EF6;&#x89C4;&#x8303;</a></li>
+<li>&#x63A5;&#x53E3;&#x80FD;&#x529B;&#xFF08;JS API&#xFF09;&#x9760;&#x8FD1;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x89C4;&#x8303;&#xFF0C;&#x4F46;&#x9700;&#x5C06;&#x524D;&#x7F00; <code>wx</code> &#x66FF;&#x6362;&#x4E3A; <code>uni</code>&#xFF0C;&#x8BE6;&#x89C1;<a href="https://uniapp.dcloud.io/api/README" target="_blank">uni-app&#x63A5;&#x53E3;&#x89C4;&#x8303;</a></li>
+<li>&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#x53CA;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x540C; <code>Vue.js</code> &#x89C4;&#x8303;&#xFF0C;&#x540C;&#x65F6;&#x8865;&#x5145;&#x4E86;App&#x53CA;&#x9875;&#x9762;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</li>
+<li>&#x4E3A;&#x517C;&#x5BB9;&#x591A;&#x7AEF;&#x8FD0;&#x884C;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;flex&#x5E03;&#x5C40;&#x8FDB;&#x884C;&#x5F00;&#x53D1;</li>
+</ul>
+<h4 id="&#x5168;&#x5C40;&#x914D;&#x7F6E;&#x548C;&#x9875;&#x9762;&#x914D;&#x7F6E;">&#x5168;&#x5C40;&#x914D;&#x7F6E;&#x548C;&#x9875;&#x9762;&#x914D;&#x7F6E;</h4>
+<h5 id="&#x901A;&#x8FC7;globalstyle&#x8FDB;&#x884C;&#x5168;&#x5C40;&#x914D;&#x7F6E;">&#x901A;&#x8FC7;globalStyle&#x8FDB;&#x884C;&#x5168;&#x5C40;&#x914D;&#x7F6E;</h5>
+<p>&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x5E94;&#x7528;&#x7684;&#x72B6;&#x6001;&#x680F;&#x3001;&#x5BFC;&#x822A;&#x6761;&#x3001;&#x6807;&#x9898;&#x3001;&#x7A97;&#x53E3;&#x80CC;&#x666F;&#x8272;&#x7B49;&#x3002;<a href="https://uniapp.dcloud.io/collocation/pages?id=globalstyle" target="_blank">&#x8BE6;&#x7EC6;&#x6587;&#x6863;</a></p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>navigationBarBackgroundColor</td>
+<td>HexColor</td>
+<td>#F7F7F7</td>
+<td>&#x5BFC;&#x822A;&#x680F;&#x80CC;&#x666F;&#x989C;&#x8272;&#xFF08;&#x540C;&#x72B6;&#x6001;&#x680F;&#x80CC;&#x666F;&#x8272;&#xFF09;</td>
+</tr>
+<tr>
+<td>navigationBarTextStyle</td>
+<td>String</td>
+<td>white</td>
+<td>&#x5BFC;&#x822A;&#x680F;&#x6807;&#x9898;&#x989C;&#x8272;&#x53CA;&#x72B6;&#x6001;&#x680F;&#x524D;&#x666F;&#x989C;&#x8272;&#xFF0C;&#x4EC5;&#x652F;&#x6301; black/white</td>
+</tr>
+<tr>
+<td>navigationBarTitleText</td>
+<td>String</td>
+<td></td>
+<td>&#x5BFC;&#x822A;&#x680F;&#x6807;&#x9898;&#x6587;&#x5B57;&#x5185;&#x5BB9;</td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td>HexColor</td>
+<td>#ffffff</td>
+<td>&#x7A97;&#x53E3;&#x7684;&#x80CC;&#x666F;&#x8272;</td>
+</tr>
+<tr>
+<td>backgroundTextStyle</td>
+<td>String</td>
+<td>dark</td>
+<td>&#x4E0B;&#x62C9; loading &#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x4EC5;&#x652F;&#x6301; dark / light</td>
+</tr>
+<tr>
+<td>enablePullDownRefresh</td>
+<td>Boolean</td>
+<td>false</td>
+<td>&#x662F;&#x5426;&#x5F00;&#x542F;&#x4E0B;&#x62C9;&#x5237;&#x65B0;&#xFF0C;&#x8BE6;&#x89C1;<a href="https://uniapp.dcloud.io/use?id=%e9%a1%b5%e9%9d%a2%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f" target="_blank">&#x9875;&#x9762;&#x751F;&#x547D;&#x5468;&#x671F;</a>&#x3002;</td>
+</tr>
+<tr>
+<td>onReachBottomDistance</td>
+<td>Number</td>
+<td>50</td>
+<td>&#x9875;&#x9762;&#x4E0A;&#x62C9;&#x89E6;&#x5E95;&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x65F6;&#x8DDD;&#x9875;&#x9762;&#x5E95;&#x90E8;&#x8DDD;&#x79BB;&#xFF0C;&#x5355;&#x4F4D;&#x53EA;&#x652F;&#x6301;px&#xFF0C;&#x8BE6;&#x89C1;<a href="https://uniapp.dcloud.io/use?id=%e9%a1%b5%e9%9d%a2%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f" target="_blank">&#x9875;&#x9762;&#x751F;&#x547D;&#x5468;&#x671F;</a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x521B;&#x5EFA;&#x65B0;&#x7684;message&#x9875;&#x9762;">&#x521B;&#x5EFA;&#x65B0;&#x7684;message&#x9875;&#x9762;</h5>
+<p>&#x53F3;&#x952E;pages&#x65B0;&#x5EFA;message&#x76EE;&#x5F55;&#xFF0C;&#x5728;message&#x76EE;&#x5F55;&#x4E0B;&#x53F3;&#x952E;&#x65B0;&#x5EFA;.vue&#x6587;&#x4EF6;,&#x5E76;&#x9009;&#x62E9;&#x57FA;&#x672C;&#x6A21;&#x677F;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+        &#x8FD9;&#x662F;&#x4FE1;&#x606F;&#x9875;&#x9762;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="undefined">
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<h5 id="&#x901A;&#x8FC7;pages&#x6765;&#x914D;&#x7F6E;&#x9875;&#x9762;">&#x901A;&#x8FC7;pages&#x6765;&#x914D;&#x7F6E;&#x9875;&#x9762;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td>String</td>
+<td></td>
+<td>&#x914D;&#x7F6E;&#x9875;&#x9762;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td>style</td>
+<td>Object</td>
+<td></td>
+<td>&#x914D;&#x7F6E;&#x9875;&#x9762;&#x7A97;&#x53E3;&#x8868;&#x73B0;&#xFF0C;&#x914D;&#x7F6E;&#x9879;&#x53C2;&#x8003; <a href="https://uniapp.dcloud.io/collocation/pages?id=style" target="_blank">pageStyle</a></td>
+</tr>
+</tbody>
+</table>
+<p>pages&#x6570;&#x7EC4;&#x6570;&#x7EC4;&#x4E2D;&#x7B2C;&#x4E00;&#x9879;&#x8868;&#x793A;&#x5E94;&#x7528;&#x542F;&#x52A8;&#x9875;</p>
+<pre><code class="lang-html">&quot;pages&quot;: [ &#x3001;
+        {
+            &quot;path&quot;:&quot;pages/message/message&quot;
+        },
+        {
+            &quot;path&quot;: &quot;pages/index/index&quot;,
+            &quot;style&quot;: {
+                &quot;navigationBarTitleText&quot;: &quot;uni-app&quot;
+            }
+        }
+    ]
+</code></pre>
+<p>&#x901A;&#x8FC7;style&#x4FEE;&#x6539;&#x9875;&#x9762;&#x7684;&#x6807;&#x9898;&#x548C;&#x5BFC;&#x822A;&#x680F;&#x80CC;&#x666F;&#x8272;&#xFF0C;&#x5E76;&#x4E14;&#x8BBE;&#x7F6E;h5&#x4E0B;&#x62C9;&#x5237;&#x65B0;&#x7684;&#x7279;&#x6709;&#x6837;&#x5F0F;</p>
+<pre><code class="lang-js"><span class="hljs-string">&quot;pages&quot;</span>: [ <span class="hljs-comment">//pages&#x6570;&#x7EC4;&#x4E2D;&#x7B2C;&#x4E00;&#x9879;&#x8868;&#x793A;&#x5E94;&#x7528;&#x542F;&#x52A8;&#x9875;&#xFF0C;&#x53C2;&#x8003;&#xFF1A;https://uniapp.dcloud.io/collocation/pages</span>
+        {
+            <span class="hljs-string">&quot;path&quot;</span>:<span class="hljs-string">&quot;pages/message/message&quot;</span>,
+            <span class="hljs-string">&quot;style&quot;</span>: {
+                <span class="hljs-string">&quot;navigationBarBackgroundColor&quot;</span>: <span class="hljs-string">&quot;#007AFF&quot;</span>,
+                <span class="hljs-string">&quot;navigationBarTextStyle&quot;</span>: <span class="hljs-string">&quot;white&quot;</span>,
+                <span class="hljs-string">&quot;enablePullDownRefresh&quot;</span>: <span class="hljs-literal">true</span>,
+                <span class="hljs-string">&quot;disableScroll&quot;</span>: <span class="hljs-literal">true</span>,
+                <span class="hljs-string">&quot;h5&quot;</span>: {
+                    <span class="hljs-string">&quot;pullToRefresh&quot;</span>: {
+                        <span class="hljs-string">&quot;color&quot;</span>: <span class="hljs-string">&quot;#007AFF&quot;</span>
+                    }
+                }
+            }
+        }
+    ]
+</code></pre>
+<h5 id="&#x914D;&#x7F6E;tabbar">&#x914D;&#x7F6E;tabbar</h5>
+<p>&#x5982;&#x679C;&#x5E94;&#x7528;&#x662F;&#x4E00;&#x4E2A;&#x591A; tab &#x5E94;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; tabBar &#x914D;&#x7F6E;&#x9879;&#x6307;&#x5B9A; tab &#x680F;&#x7684;&#x8868;&#x73B0;&#xFF0C;&#x4EE5;&#x53CA; tab &#x5207;&#x6362;&#x65F6;&#x663E;&#x793A;&#x7684;&#x5BF9;&#x5E94;&#x9875;&#x3002;</p>
+<p><strong>Tips</strong></p>
+<ul>
+<li>&#x5F53;&#x8BBE;&#x7F6E; position &#x4E3A; top &#x65F6;&#xFF0C;&#x5C06;&#x4E0D;&#x4F1A;&#x663E;&#x793A; icon</li>
+<li>tabBar &#x4E2D;&#x7684; list &#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x53EA;&#x80FD;&#x914D;&#x7F6E;&#x6700;&#x5C11;2&#x4E2A;&#x3001;&#x6700;&#x591A;5&#x4E2A; tab&#xFF0C;tab &#x6309;&#x6570;&#x7EC4;&#x7684;&#x987A;&#x5E8F;&#x6392;&#x5E8F;&#x3002;</li>
+</ul>
+<p><strong>&#x5C5E;&#x6027;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x586B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x5E73;&#x53F0;&#x5DEE;&#x5F02;&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>HexColor</td>
+<td>&#x662F;</td>
+<td></td>
+<td>tab &#x4E0A;&#x7684;&#x6587;&#x5B57;&#x9ED8;&#x8BA4;&#x989C;&#x8272;</td>
+<td></td>
+</tr>
+<tr>
+<td>selectedColor</td>
+<td>HexColor</td>
+<td>&#x662F;</td>
+<td></td>
+<td>tab &#x4E0A;&#x7684;&#x6587;&#x5B57;&#x9009;&#x4E2D;&#x65F6;&#x7684;&#x989C;&#x8272;</td>
+<td></td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td>HexColor</td>
+<td>&#x662F;</td>
+<td></td>
+<td>tab &#x7684;&#x80CC;&#x666F;&#x8272;</td>
+<td></td>
+</tr>
+<tr>
+<td>borderStyle</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>black</td>
+<td>tabbar &#x4E0A;&#x8FB9;&#x6846;&#x7684;&#x989C;&#x8272;&#xFF0C;&#x4EC5;&#x652F;&#x6301; black/white</td>
+<td>App 2.3.4+ &#x652F;&#x6301;&#x5176;&#x4ED6;&#x989C;&#x8272;&#x503C;</td>
+</tr>
+<tr>
+<td>list</td>
+<td>Array</td>
+<td>&#x662F;</td>
+<td></td>
+<td>tab &#x7684;&#x5217;&#x8868;&#xFF0C;&#x8BE6;&#x89C1; list &#x5C5E;&#x6027;&#x8BF4;&#x660E;&#xFF0C;&#x6700;&#x5C11;2&#x4E2A;&#x3001;&#x6700;&#x591A;5&#x4E2A; tab</td>
+<td></td>
+</tr>
+<tr>
+<td>position</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>bottom</td>
+<td>&#x53EF;&#x9009;&#x503C; bottom&#x3001;top</td>
+<td>top &#x503C;&#x4EC5;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x652F;&#x6301;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5176;&#x4E2D; list &#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x9879;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x5C5E;&#x6027;&#x503C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x586B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pagePath</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x9875;&#x9762;&#x8DEF;&#x5F84;&#xFF0C;&#x5FC5;&#x987B;&#x5728; pages &#x4E2D;&#x5148;&#x5B9A;&#x4E49;</td>
+</tr>
+<tr>
+<td>text</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>tab &#x4E0A;&#x6309;&#x94AE;&#x6587;&#x5B57;&#xFF0C;&#x5728; 5+APP &#x548C; H5 &#x5E73;&#x53F0;&#x4E3A;&#x975E;&#x5FC5;&#x586B;&#x3002;&#x4F8B;&#x5982;&#x4E2D;&#x95F4;&#x53EF;&#x653E;&#x4E00;&#x4E2A;&#x6CA1;&#x6709;&#x6587;&#x5B57;&#x7684;+&#x53F7;&#x56FE;&#x6807;</td>
+</tr>
+<tr>
+<td>iconPath</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x56FE;&#x7247;&#x8DEF;&#x5F84;&#xFF0C;icon &#x5927;&#x5C0F;&#x9650;&#x5236;&#x4E3A;40kb&#xFF0C;&#x5EFA;&#x8BAE;&#x5C3A;&#x5BF8;&#x4E3A; 81px * 81px&#xFF0C;&#x5F53; postion &#x4E3A; top &#x65F6;&#xFF0C;&#x6B64;&#x53C2;&#x6570;&#x65E0;&#x6548;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x7F51;&#x7EDC;&#x56FE;&#x7247;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x5B57;&#x4F53;&#x56FE;&#x6807;</td>
+</tr>
+<tr>
+<td>selectedIconPath</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x9009;&#x4E2D;&#x65F6;&#x7684;&#x56FE;&#x7247;&#x8DEF;&#x5F84;&#xFF0C;icon &#x5927;&#x5C0F;&#x9650;&#x5236;&#x4E3A;40kb&#xFF0C;&#x5EFA;&#x8BAE;&#x5C3A;&#x5BF8;&#x4E3A; 81px * 81px &#xFF0C;&#x5F53; postion &#x4E3A; top &#x65F6;&#xFF0C;&#x6B64;&#x53C2;&#x6570;&#x65E0;&#x6548;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x6848;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-string">&quot;tabBar&quot;</span>: {
+        <span class="hljs-string">&quot;list&quot;</span>: [
+            {
+                <span class="hljs-string">&quot;text&quot;</span>: <span class="hljs-string">&quot;&#x9996;&#x9875;&quot;</span>,
+                <span class="hljs-string">&quot;pagePath&quot;</span>:<span class="hljs-string">&quot;pages/index/index&quot;</span>,
+                <span class="hljs-string">&quot;iconPath&quot;</span>:<span class="hljs-string">&quot;static/tabs/home.png&quot;</span>,
+                <span class="hljs-string">&quot;selectedIconPath&quot;</span>:<span class="hljs-string">&quot;static/tabs/home-active.png&quot;</span>
+            },
+            {
+                <span class="hljs-string">&quot;text&quot;</span>: <span class="hljs-string">&quot;&#x4FE1;&#x606F;&quot;</span>,
+                <span class="hljs-string">&quot;pagePath&quot;</span>:<span class="hljs-string">&quot;pages/message/message&quot;</span>,
+                <span class="hljs-string">&quot;iconPath&quot;</span>:<span class="hljs-string">&quot;static/tabs/message.png&quot;</span>,
+                <span class="hljs-string">&quot;selectedIconPath&quot;</span>:<span class="hljs-string">&quot;static/tabs/message-active.png&quot;</span>
+            },
+            {
+                <span class="hljs-string">&quot;text&quot;</span>: <span class="hljs-string">&quot;&#x6211;&#x4EEC;&quot;</span>,
+                <span class="hljs-string">&quot;pagePath&quot;</span>:<span class="hljs-string">&quot;pages/contact/contact&quot;</span>,
+                <span class="hljs-string">&quot;iconPath&quot;</span>:<span class="hljs-string">&quot;static/tabs/contact.png&quot;</span>,
+                <span class="hljs-string">&quot;selectedIconPath&quot;</span>:<span class="hljs-string">&quot;static/tabs/contact-active.png&quot;</span>
+            }
+        ]
+    }
+</code></pre>
+<h5 id="condition&#x542F;&#x52A8;&#x6A21;&#x5F0F;&#x914D;&#x7F6E;">condition&#x542F;&#x52A8;&#x6A21;&#x5F0F;&#x914D;&#x7F6E;</h5>
+<p>&#x542F;&#x52A8;&#x6A21;&#x5F0F;&#x914D;&#x7F6E;&#xFF0C;&#x4EC5;&#x5F00;&#x53D1;&#x671F;&#x95F4;&#x751F;&#x6548;&#xFF0C;&#x7528;&#x4E8E;&#x6A21;&#x62DF;&#x76F4;&#x8FBE;&#x9875;&#x9762;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x5982;&#xFF1A;&#x5C0F;&#x7A0B;&#x5E8F;&#x8F6C;&#x53D1;&#x540E;&#xFF0C;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x6240;&#x6253;&#x5F00;&#x7684;&#x9875;&#x9762;&#x3002;</p>
+<p><strong>&#x5C5E;&#x6027;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>current</td>
+<td>Number</td>
+<td>&#x662F;</td>
+<td>&#x5F53;&#x524D;&#x6FC0;&#x6D3B;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;list&#x8282;&#x70B9;&#x7684;&#x7D22;&#x5F15;&#x503C;</td>
+</tr>
+<tr>
+<td>list</td>
+<td>Array</td>
+<td>&#x662F;</td>
+<td>&#x542F;&#x52A8;&#x6A21;&#x5F0F;&#x5217;&#x8868;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>list&#x8BF4;&#x660E;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x542F;&#x52A8;&#x6A21;&#x5F0F;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>path</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x542F;&#x52A8;&#x9875;&#x9762;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td>query</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x542F;&#x52A8;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x5728;&#x9875;&#x9762;&#x7684; <a href="https://uniapp.dcloud.io/use?id=%e9%a1%b5%e9%9d%a2%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f" target="_blank">onLoad</a> &#x51FD;&#x6570;&#x91CC;&#x83B7;&#x5F97;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x7EC4;&#x4EF6;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;">&#x7EC4;&#x4EF6;&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;</h4>
+<p>uni-app&#x63D0;&#x4F9B;&#x4E86;&#x4E30;&#x5BCC;&#x7684;&#x57FA;&#x7840;&#x7EC4;&#x4EF6;&#x7ED9;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x50CF;&#x642D;&#x79EF;&#x6728;&#x4E00;&#x6837;&#xFF0C;&#x7EC4;&#x5408;&#x5404;&#x79CD;&#x7EC4;&#x4EF6;&#x62FC;&#x63A5;&#x79F0;&#x81EA;&#x5DF1;&#x7684;&#x5E94;&#x7528;</p>
+<p>uni-app&#x4E2D;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x5C31;&#x50CF; <code>HTML</code> &#x4E2D;&#x7684; <code>div</code> &#x3001;<code>p</code>&#x3001;<code>span</code> &#x7B49;&#x6807;&#x7B7E;&#x7684;&#x4F5C;&#x7528;&#x4E00;&#x6837;&#xFF0C;&#x7528;&#x4E8E;&#x642D;&#x5EFA;&#x9875;&#x9762;&#x7684;&#x57FA;&#x7840;&#x7ED3;&#x6784;</p>
+<h5 id="text&#x6587;&#x672C;&#x7EC4;&#x4EF6;&#x7684;&#x7528;&#x6CD5;">text&#x6587;&#x672C;&#x7EC4;&#x4EF6;&#x7684;&#x7528;&#x6CD5;</h5>
+<h6 id="001---text-&#x7EC4;&#x4EF6;&#x7684;&#x5C5E;&#x6027;">001 - text &#x7EC4;&#x4EF6;&#x7684;&#x5C5E;&#x6027;</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5C5E;&#x6027;</th>
+<th style="text-align:center">&#x7C7B;&#x578B;</th>
+<th style="text-align:center">&#x9ED8;&#x8BA4;&#x503C;</th>
+<th style="text-align:center">&#x5FC5;&#x586B;</th>
+<th style="text-align:center">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">selectable</td>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">false</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">&#x6587;&#x672C;&#x662F;&#x5426;&#x53EF;&#x9009;</td>
+</tr>
+<tr>
+<td style="text-align:center">space</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">.</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">&#x663E;&#x793A;&#x8FDE;&#x7EED;&#x7A7A;&#x683C;&#xFF0C;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF1A;<code>ensp</code>&#x3001;<code>emsp</code>&#x3001;<code>nbsp</code></td>
+</tr>
+<tr>
+<td style="text-align:center">decode</td>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">false</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">&#x662F;&#x5426;&#x89E3;&#x7801;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><code>text</code> &#x7EC4;&#x4EF6;&#x76F8;&#x5F53;&#x4E8E;&#x884C;&#x5185;&#x6807;&#x7B7E;&#x3001;&#x5728;&#x540C;&#x4E00;&#x884C;&#x663E;&#x793A;</li>
+<li>&#x9664;&#x4E86;&#x6587;&#x672C;&#x8282;&#x70B9;&#x4EE5;&#x5916;&#x7684;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x90FD;&#x65E0;&#x6CD5;&#x957F;&#x6309;&#x9009;&#x4E2D;</li>
+</ul>
+<h6 id="002---&#x4EE3;&#x7801;&#x6848;&#x4F8B;">002 - &#x4EE3;&#x7801;&#x6848;&#x4F8B;</h6>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- &#x957F;&#x6309;&#x6587;&#x672C;&#x662F;&#x5426;&#x53EF;&#x9009; --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">selectable</span>=<span class="hljs-string">&apos;true&apos;</span>&gt;</span>&#x6765;&#x4E86;&#x8001;&#x5F1F;<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- &#x663E;&#x793A;&#x8FDE;&#x7EED;&#x7A7A;&#x683C;&#x7684;&#x65B9;&#x5F0F; --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">space</span>=<span class="hljs-string">&apos;ensp&apos;</span>&gt;</span>&#x6765;&#x4E86;  &#x8001;&#x5F1F;<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">space</span>=<span class="hljs-string">&apos;emsp&apos;</span>&gt;</span>&#x6765;&#x4E86;  &#x8001;&#x5F1F;<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">space</span>=<span class="hljs-string">&apos;nbsp&apos;</span>&gt;</span>&#x6765;&#x4E86;  &#x8001;&#x5F1F;<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">text</span>&gt;</span>skyblue<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- &#x662F;&#x5426;&#x89E3;&#x7801; --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">decode</span>=<span class="hljs-string">&apos;true&apos;</span>&gt;</span>&amp;nbsp; &amp;lt; &amp;gt; &amp;amp; &amp;apos; &amp;ensp; &amp;emsp;<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+</code></pre>
+<h5 id="view&#x89C6;&#x56FE;&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;&#x7684;&#x7528;&#x6CD5;">view&#x89C6;&#x56FE;&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;&#x7684;&#x7528;&#x6CD5;</h5>
+<blockquote>
+<p>View &#x89C6;&#x56FE;&#x5BB9;&#x5668;&#xFF0C; &#x7C7B;&#x4F3C;&#x4E8E; HTML &#x4E2D;&#x7684; div</p>
+</blockquote>
+<h6 id="001---&#x7EC4;&#x4EF6;&#x7684;&#x5C5E;&#x6027;">001 - &#x7EC4;&#x4EF6;&#x7684;&#x5C5E;&#x6027;</h6>
+<p><img src="images/2view.png" alt=""></p>
+<h6 id="002---&#x4EE3;&#x7801;&#x6848;&#x4F8B;">002 - &#x4EE3;&#x7801;&#x6848;&#x4F8B;</h6>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box2&quot;</span> <span class="hljs-attr">hover-class</span>=<span class="hljs-string">&quot;box2_active&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&apos;box1&apos;</span> <span class="hljs-attr">hover-class</span>=<span class="hljs-string">&apos;active&apos;</span> <span class="hljs-attr">hover-stop-propagation</span> <span class="hljs-attr">:hover-start-time</span>=<span class="hljs-string">&quot;2000&quot;</span> <span class="hljs-attr">:hover-stay-time</span>=<span class="hljs-string">&apos;2000&apos;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+</code></pre>
+<h5 id="button&#x6309;&#x94AE;&#x7EC4;&#x4EF6;&#x7684;&#x7528;&#x6CD5;">button&#x6309;&#x94AE;&#x7EC4;&#x4EF6;&#x7684;&#x7528;&#x6CD5;</h5>
+<h6 id="001---&#x7EC4;&#x4EF6;&#x7684;&#x5C5E;&#x6027;">001 - &#x7EC4;&#x4EF6;&#x7684;&#x5C5E;&#x6027;</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5C5E;&#x6027;&#x540D;</th>
+<th style="text-align:center">&#x7C7B;&#x578B;</th>
+<th style="text-align:center">&#x9ED8;&#x8BA4;&#x503C;</th>
+<th style="text-align:center">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">size</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">default</td>
+<td style="text-align:center">&#x6309;&#x94AE;&#x7684;&#x5927;&#x5C0F;</td>
+</tr>
+<tr>
+<td style="text-align:center">type</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">default</td>
+<td style="text-align:center">&#x6309;&#x94AE;&#x7684;&#x6837;&#x5F0F;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td style="text-align:center">plain</td>
+<td style="text-align:center">Boolean</td>
+<td style="text-align:center">false</td>
+<td style="text-align:center">&#x6309;&#x94AE;&#x662F;&#x5426;&#x9542;&#x7A7A;&#xFF0C;&#x80CC;&#x666F;&#x8272;&#x900F;&#x660E;</td>
+</tr>
+<tr>
+<td style="text-align:center">disabled</td>
+<td style="text-align:center">Boolean</td>
+<td style="text-align:center">false</td>
+<td style="text-align:center">&#x662F;&#x5426;&#x6309;&#x94AE;</td>
+</tr>
+<tr>
+<td style="text-align:center">loading</td>
+<td style="text-align:center">Boolean</td>
+<td style="text-align:center">false</td>
+<td style="text-align:center">&#x540D;&#x79F0;&#x662F;&#x5426;&#x5E26; loading t&#x56FE;&#x6807;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><code>button</code> &#x7EC4;&#x4EF6;&#x9ED8;&#x8BA4;&#x72EC;&#x5360;&#x4E00;&#x884C;&#xFF0C;&#x8BBE;&#x7F6E; <code>size</code> &#x4E3A; <code>mini</code> &#x65F6;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x884C;&#x663E;&#x793A;&#x591A;&#x4E2A;</li>
+</ul>
+<h6 id="002---&#x6848;&#x4F8B;&#x4EE3;&#x7801;">002 - &#x6848;&#x4F8B;&#x4EE3;&#x7801;</h6>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&apos;mini&apos;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&apos;primary&apos;</span>&gt;</span>&#x524D;&#x7AEF;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&apos;mini&apos;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&apos;default&apos;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">&apos;true&apos;</span>&gt;</span>&#x524D;&#x7AEF;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&apos;mini&apos;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&apos;warn&apos;</span> <span class="hljs-attr">loading</span>=<span class="hljs-string">&apos;true&apos;</span>&gt;</span>&#x524D;&#x7AEF;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<h5 id="image&#x7EC4;&#x4EF6;&#x7684;&#x4F7F;&#x7528;">image&#x7EC4;&#x4EF6;&#x7684;&#x4F7F;&#x7528;</h5>
+<h6 id="image"><a href="https://uniapp.dcloud.io/component/image?id=image" target="_blank">image</a></h6>
+<p>&#x56FE;&#x7247;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x5E73;&#x53F0;&#x5DEE;&#x5F02;&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>src</td>
+<td>String</td>
+<td></td>
+<td>&#x56FE;&#x7247;&#x8D44;&#x6E90;&#x5730;&#x5740;</td>
+<td></td>
+</tr>
+<tr>
+<td>mode</td>
+<td>String</td>
+<td>&apos;scaleToFill&apos;</td>
+<td>&#x56FE;&#x7247;&#x88C1;&#x526A;&#x3001;&#x7F29;&#x653E;&#x7684;&#x6A21;&#x5F0F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tips</strong></p>
+<ul>
+<li><code>&lt;image&gt;</code> &#x7EC4;&#x4EF6;&#x9ED8;&#x8BA4;&#x5BBD;&#x5EA6; 300px&#x3001;&#x9AD8;&#x5EA6; 225px&#xFF1B;</li>
+<li><code>src</code> &#x4EC5;&#x652F;&#x6301;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x3001;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x652F;&#x6301; base64 &#x7801;&#xFF1B;</li>
+<li>&#x9875;&#x9762;&#x7ED3;&#x6784;&#x590D;&#x6742;&#xFF0C;css&#x6837;&#x5F0F;&#x592A;&#x591A;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x4F7F;&#x7528; image &#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x6837;&#x5F0F;&#x751F;&#x6548;&#x8F83;&#x6162;&#xFF0C;&#x51FA;&#x73B0; &#x201C;&#x95EA;&#x4E00;&#x4E0B;&#x201D; &#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6B64;&#x65F6;&#x8BBE;&#x7F6E; <code>image{will-change: transform}</code> ,&#x53EF;&#x4F18;&#x5316;&#x6B64;&#x95EE;&#x9898;&#x3002;</li>
+</ul>
+<h4 id="uni-app&#x4E2D;&#x7684;&#x6837;&#x5F0F;">uni-app&#x4E2D;&#x7684;&#x6837;&#x5F0F;</h4>
+<ul>
+<li><p>rpx &#x5373;&#x54CD;&#x5E94;&#x5F0F;px&#xFF0C;&#x4E00;&#x79CD;&#x6839;&#x636E;&#x5C4F;&#x5E55;&#x5BBD;&#x5EA6;&#x81EA;&#x9002;&#x5E94;&#x7684;&#x52A8;&#x6001;&#x5355;&#x4F4D;&#x3002;&#x4EE5;750&#x5BBD;&#x7684;&#x5C4F;&#x5E55;&#x4E3A;&#x57FA;&#x51C6;&#xFF0C;750rpx&#x6070;&#x597D;&#x4E3A;&#x5C4F;&#x5E55;&#x5BBD;&#x5EA6;&#x3002;&#x5C4F;&#x5E55;&#x53D8;&#x5BBD;&#xFF0C;rpx &#x5B9E;&#x9645;&#x663E;&#x793A;&#x6548;&#x679C;&#x4F1A;&#x7B49;&#x6BD4;&#x653E;&#x5927;&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528;<code>@import</code>&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x5BFC;&#x5165;&#x5916;&#x8054;&#x6837;&#x5F0F;&#x8868;&#xFF0C;<code>@import</code>&#x540E;&#x8DDF;&#x9700;&#x8981;&#x5BFC;&#x5165;&#x7684;&#x5916;&#x8054;&#x6837;&#x5F0F;&#x8868;&#x7684;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x7528;<code>;</code>&#x8868;&#x793A;&#x8BED;&#x53E5;&#x7ED3;&#x675F;</p>
+</li>
+<li><p>&#x652F;&#x6301;&#x57FA;&#x672C;&#x5E38;&#x7528;&#x7684;&#x9009;&#x62E9;&#x5668;class&#x3001;id&#x3001;element&#x7B49;</p>
+</li>
+<li><p>&#x5728; <code>uni-app</code> &#x4E2D;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; <code>*</code> &#x9009;&#x62E9;&#x5668;&#x3002;</p>
+</li>
+<li><p><code>page</code> &#x76F8;&#x5F53;&#x4E8E; <code>body</code> &#x8282;&#x70B9;</p>
+</li>
+<li><p>&#x5B9A;&#x4E49;&#x5728; App.vue &#x4E2D;&#x7684;&#x6837;&#x5F0F;&#x4E3A;&#x5168;&#x5C40;&#x6837;&#x5F0F;&#xFF0C;&#x4F5C;&#x7528;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x3002;&#x5728; pages &#x76EE;&#x5F55;&#x4E0B; &#x7684; vue &#x6587;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x6837;&#x5F0F;&#x4E3A;&#x5C40;&#x90E8;&#x6837;&#x5F0F;&#xFF0C;&#x53EA;&#x4F5C;&#x7528;&#x5728;&#x5BF9;&#x5E94;&#x7684;&#x9875;&#x9762;&#xFF0C;&#x5E76;&#x4F1A;&#x8986;&#x76D6; App.vue &#x4E2D;&#x76F8;&#x540C;&#x7684;&#x9009;&#x62E9;&#x5668;&#x3002;</p>
+</li>
+<li><p><code>uni-app</code> &#x652F;&#x6301;&#x4F7F;&#x7528;&#x5B57;&#x4F53;&#x56FE;&#x6807;&#xFF0C;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x4E0E;&#x666E;&#x901A; <code>web</code> &#x9879;&#x76EE;&#x76F8;&#x540C;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x4EE5;&#x4E0B;&#x51E0;&#x70B9;&#xFF1A;</p>
+<ul>
+<li><p>&#x5B57;&#x4F53;&#x6587;&#x4EF6;&#x5C0F;&#x4E8E; 40kb&#xFF0C;<code>uni-app</code> &#x4F1A;&#x81EA;&#x52A8;&#x5C06;&#x5176;&#x8F6C;&#x5316;&#x4E3A; base64 &#x683C;&#x5F0F;&#xFF1B;</p>
+</li>
+<li><p>&#x5B57;&#x4F53;&#x6587;&#x4EF6;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 40kb&#xFF0C; &#x9700;&#x5F00;&#x53D1;&#x8005;&#x81EA;&#x5DF1;&#x8F6C;&#x6362;&#xFF0C;&#x5426;&#x5219;&#x4F7F;&#x7528;&#x5C06;&#x4E0D;&#x751F;&#x6548;&#xFF1B;</p>
+</li>
+<li><p>&#x5B57;&#x4F53;&#x6587;&#x4EF6;&#x7684;&#x5F15;&#x7528;&#x8DEF;&#x5F84;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x4EE5; ~@ &#x5F00;&#x5934;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;</p>
+<pre><code> @font-face {
+     font-family: test1-icon;
+     src: url(&apos;~@/static/iconfont.ttf&apos;);
+ }
+</code></pre></li>
+</ul>
+</li>
+<li><p>&#x5982;&#x4F55;&#x4F7F;&#x7528;scss&#x6216;&#x8005;less</p>
+</li>
+</ul>
+<h4 id="uni-app&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7ED1;&#x5B9A;">uni-app&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7ED1;&#x5B9A;</h4>
+<p>&#x5728;&#x9875;&#x9762;&#x4E2D;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#xFF0C;&#x548C;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x7684;vue&#x4E00;&#x6478;&#x4E00;&#x6837;&#xFF0C;&#x76F4;&#x63A5;&#x5728;data&#x4E2D;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x5373;&#x53EF;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  data () {
+    <span class="hljs-keyword">return</span> {
+      msg: <span class="hljs-string">&apos;hello-uni&apos;</span>
+    }
+  }
+}
+</code></pre>
+<h5 id="&#x63D2;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x4F7F;&#x7528;">&#x63D2;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x4F7F;&#x7528;</h5>
+<p> &#x5229;&#x7528;&#x63D2;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#x6E32;&#x67D3;&#x57FA;&#x672C;&#x6570;&#x636E;</p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>{{msg}}<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+</code></pre>
+<p> &#x5728;&#x63D2;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x4F7F;&#x7528;&#x4E09;&#x5143;&#x8FD0;&#x7B97;</p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>{{ flag ? &quot;&#x6211;&#x662F;&#x771F;&#x7684;&quot;:&quot;&#x6211;&#x662F;&#x5047;&#x7684;&quot; }}<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+</code></pre>
+<ul>
+<li><p>&#x57FA;&#x672C;&#x8FD0;&#x7B97;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<h5 id="v-bind&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#x5C5E;&#x6027;">v-bind&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#x5C5E;&#x6027;</h5>
+<p>&#x5728;data&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x5F20;&#x56FE;&#x7247;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x628A;&#x8FD9;&#x5F20;&#x56FE;&#x7247;&#x6E32;&#x67D3;&#x5230;&#x9875;&#x9762;&#x4E0A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  data () {
+    <span class="hljs-keyword">return</span> {
+      img: <span class="hljs-string">&apos;http://destiny001.gitee.io/image/monkey_02.jpg&apos;</span>
+    }
+  }
+}
+</code></pre>
+<p>&#x5229;&#x7528;v-bind&#x8FDB;&#x884C;&#x6E32;&#x67D3;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">image</span> <span class="hljs-attr">v-bind:src</span>=<span class="hljs-string">&quot;img&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">image</span>&gt;</span>
+</code></pre>
+<p>&#x8FD8;&#x53EF;&#x4EE5;&#x7F29;&#x5199;&#x6210;:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">image</span> <span class="hljs-attr">:src</span>=<span class="hljs-string">&quot;img&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">image</span>&gt;</span>
+</code></pre>
+<h5 id="v-for&#x7684;&#x4F7F;&#x7528;">v-for&#x7684;&#x4F7F;&#x7528;</h5>
+<p>data&#x4E2D;&#x5B9A;&#x4EE5;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x6700;&#x7EC8;&#x5C06;&#x6570;&#x7EC4;&#x6E32;&#x67D3;&#x5230;&#x9875;&#x9762;&#x4E0A;</p>
+<pre><code class="lang-js">data () {
+  <span class="hljs-keyword">return</span> {
+    arr: [
+      { name: <span class="hljs-string">&apos;&#x5218;&#x80FD;&apos;</span>, age: <span class="hljs-number">29</span> },
+      { name: <span class="hljs-string">&apos;&#x8D75;&#x56DB;&apos;</span>, age: <span class="hljs-number">39</span> },
+      { name: <span class="hljs-string">&apos;&#x5B8B;&#x5C0F;&#x5B9D;&apos;</span>, age: <span class="hljs-number">49</span> },
+      { name: <span class="hljs-string">&apos;&#x5C0F;&#x6C88;&#x9633;&apos;</span>, age: <span class="hljs-number">59</span> }
+    ]
+  }
+}
+</code></pre>
+<p>&#x5229;&#x7528;v-for&#x8FDB;&#x884C;&#x5FAA;&#x73AF;</p>
+<pre><code class="lang-js">&lt;view v-for=&quot;(item,i) in arr&quot; :key=&quot;i&quot;&gt;&#x540D;&#x5B57;&#xFF1A;{{item.name}}---&#x5E74;&#x9F84;&#xFF1A;{{item.age}}&lt;/view&gt;
+</code></pre>
+<h4 id="uni&#x4E2D;&#x7684;&#x4E8B;&#x4EF6;">uni&#x4E2D;&#x7684;&#x4E8B;&#x4EF6;</h4>
+<h5 id="&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;">&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;</h5>
+<p>&#x5728;uni&#x4E2D;&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;&#x548C;vue&#x4E2D;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x901A;&#x8FC7;v-on&#x8FDB;&#x884C;&#x4E8B;&#x4EF6;&#x7684;&#x7ED1;&#x5B9A;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x4E3A;@</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;tapHandle&quot;</span>&gt;</span>&#x70B9;&#x6211;&#x554A;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<p>&#x4E8B;&#x4EF6;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x5728;methods&#x4E2D;</p>
+<pre><code class="lang-js">methods: {
+  tapHandle () {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x771F;&#x7684;&#x70B9;&#x6211;&#x4E86;&apos;</span>)
+  }
+}
+</code></pre>
+<h5 id="&#x4E8B;&#x4EF6;&#x4F20;&#x53C2;">&#x4E8B;&#x4EF6;&#x4F20;&#x53C2;</h5>
+<ul>
+<li><p>&#x9ED8;&#x8BA4;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4F20;&#x9012;&#x53C2;&#x6570;&#xFF0C;&#x4E8B;&#x4EF6;&#x51FD;&#x6570;&#x7B2C;&#x4E00;&#x4E2A;&#x5F62;&#x53C2;&#x4E3A;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;</p>
+<pre><code>// template
+&lt;button @click=&quot;tapHandle&quot;&gt;&#x70B9;&#x6211;&#x554A;&lt;/button&gt;
+// script
+methods: {
+  tapHandle (e) {
+    console.log(e)
+  }
+}
+</code></pre></li>
+<li><p>&#x5982;&#x679C;&#x7ED9;&#x4E8B;&#x4EF6;&#x51FD;&#x6570;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x4E86;&#xFF0C;&#x5219;&#x5BF9;&#x5E94;&#x7684;&#x4E8B;&#x4EF6;&#x51FD;&#x6570;&#x5F62;&#x53C2;&#x63A5;&#x6536;&#x7684;&#x5219;&#x662F;&#x4F20;&#x9012;&#x8FC7;&#x6765;&#x7684;&#x6570;&#x636E;</p>
+<pre><code>// template
+&lt;button @click=&quot;tapHandle(1)&quot;&gt;&#x70B9;&#x6211;&#x554A;&lt;/button&gt;
+// script
+methods: {
+  tapHandle (num) {
+    console.log(num)
+  }
+}
+</code></pre></li>
+<li><p>&#x5982;&#x679C;&#x83B7;&#x53D6;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x4E5F;&#x60F3;&#x4F20;&#x9012;&#x53C2;&#x6570;</p>
+<pre><code>// template
+&lt;button @click=&quot;tapHandle(1,$event)&quot;&gt;&#x70B9;&#x6211;&#x554A;&lt;/button&gt;
+// script
+methods: {
+  tapHandle (num,e) {
+    console.log(num,e)
+  }
+}
+</code></pre></li>
+</ul>
+<h4 id="uni&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;">uni&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</h4>
+<h5 id="&#x5E94;&#x7528;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;">&#x5E94;&#x7528;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</h5>
+<p>&#x751F;&#x547D;&#x5468;&#x671F;&#x7684;&#x6982;&#x5FF5;&#xFF1A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4ECE;&#x521B;&#x5EFA;&#x3001;&#x8FD0;&#x884C;&#x3001;&#x9500;&#x6BC1;&#x7684;&#x6574;&#x4E2A;&#x8FC7;&#x7A0B;&#x88AB;&#x6210;&#x4E3A;&#x751F;&#x547D;&#x5468;&#x671F;&#x3002;</p>
+<p>&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#xFF1A;&#x5728;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x6BCF;&#x4E2A;&#x9636;&#x6BB5;&#x4F1A;&#x4F34;&#x968F;&#x7740;&#x6BCF;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x89E6;&#x53D1;&#xFF0C;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x88AB;&#x79F0;&#x4E3A;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;</p>
+<p><code>uni-app</code> &#x652F;&#x6301;&#x5982;&#x4E0B;&#x5E94;&#x7528;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;&#x540D;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onLaunch</td>
+<td>&#x5F53;<code>uni-app</code> &#x521D;&#x59CB;&#x5316;&#x5B8C;&#x6210;&#x65F6;&#x89E6;&#x53D1;&#xFF08;&#x5168;&#x5C40;&#x53EA;&#x89E6;&#x53D1;&#x4E00;&#x6B21;&#xFF09;</td>
+</tr>
+<tr>
+<td>onShow</td>
+<td>&#x5F53; <code>uni-app</code> &#x542F;&#x52A8;&#xFF0C;&#x6216;&#x4ECE;&#x540E;&#x53F0;&#x8FDB;&#x5165;&#x524D;&#x53F0;&#x663E;&#x793A;</td>
+</tr>
+<tr>
+<td>onHide</td>
+<td>&#x5F53; <code>uni-app</code> &#x4ECE;&#x524D;&#x53F0;&#x8FDB;&#x5165;&#x540E;&#x53F0;</td>
+</tr>
+<tr>
+<td>onError</td>
+<td>&#x5F53; <code>uni-app</code> &#x62A5;&#x9519;&#x65F6;&#x89E6;&#x53D1;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x9875;&#x9762;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;">&#x9875;&#x9762;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</h5>
+<p><code>uni-app</code> &#x652F;&#x6301;&#x5982;&#x4E0B;&#x9875;&#x9762;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;&#x540D;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x5E73;&#x53F0;&#x5DEE;&#x5F02;&#x8BF4;&#x660E;</th>
+<th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onLoad</td>
+<td>&#x76D1;&#x542C;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#xFF0C;&#x5176;&#x53C2;&#x6570;&#x4E3A;&#x4E0A;&#x4E2A;&#x9875;&#x9762;&#x4F20;&#x9012;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x4E3A;Object&#xFF08;&#x7528;&#x4E8E;&#x9875;&#x9762;&#x4F20;&#x53C2;&#xFF09;&#xFF0C;&#x53C2;&#x8003;<a href="https://uniapp.dcloud.io/api/router?id=navigateto" target="_blank">&#x793A;&#x4F8B;</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>onShow</td>
+<td>&#x76D1;&#x542C;&#x9875;&#x9762;&#x663E;&#x793A;&#x3002;&#x9875;&#x9762;&#x6BCF;&#x6B21;&#x51FA;&#x73B0;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x90FD;&#x89E6;&#x53D1;&#xFF0C;&#x5305;&#x62EC;&#x4ECE;&#x4E0B;&#x7EA7;&#x9875;&#x9762;&#x70B9;&#x8FD4;&#x56DE;&#x9732;&#x51FA;&#x5F53;&#x524D;&#x9875;&#x9762;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>onReady</td>
+<td>&#x76D1;&#x542C;&#x9875;&#x9762;&#x521D;&#x6B21;&#x6E32;&#x67D3;&#x5B8C;&#x6210;&#x3002;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>onHide</td>
+<td>&#x76D1;&#x542C;&#x9875;&#x9762;&#x9690;&#x85CF;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>onUnload</td>
+<td>&#x76D1;&#x542C;&#x9875;&#x9762;&#x5378;&#x8F7D;</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x4E0B;&#x62C9;&#x5237;&#x65B0;">&#x4E0B;&#x62C9;&#x5237;&#x65B0;</h4>
+<h5 id="&#x5F00;&#x542F;&#x4E0B;&#x62C9;&#x5237;&#x65B0;">&#x5F00;&#x542F;&#x4E0B;&#x62C9;&#x5237;&#x65B0;</h5>
+<p>&#x5728;uni-app&#x4E2D;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x5F00;&#x542F;&#x4E0B;&#x62C9;&#x5237;&#x65B0;</p>
+<ul>
+<li>&#x9700;&#x8981;&#x5728; <code>pages.json</code> &#x91CC;&#xFF0C;&#x627E;&#x5230;&#x7684;&#x5F53;&#x524D;&#x9875;&#x9762;&#x7684;pages&#x8282;&#x70B9;&#xFF0C;&#x5E76;&#x5728; <code>style</code> &#x9009;&#x9879;&#x4E2D;&#x5F00;&#x542F; <code>enablePullDownRefresh</code></li>
+<li>&#x901A;&#x8FC7;&#x8C03;&#x7528;uni.startPullDownRefresh&#x65B9;&#x6CD5;&#x6765;&#x5F00;&#x542F;&#x4E0B;&#x62C9;&#x5237;&#x65B0;</li>
+</ul>
+<h6 id="&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5F00;&#x542F;">&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5F00;&#x542F;</h6>
+<p>&#x521B;&#x5EFA;list&#x9875;&#x9762;&#x8FDB;&#x884C;&#x6F14;&#x793A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+        &#x676D;&#x5DDE;&#x5B66;&#x79D1;
+        <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;(item,index) in arr&quot;</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;index&quot;</span>&gt;</span>
+            {{item}}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                arr: [<span class="hljs-string">&apos;&#x524D;&#x7AEF;&apos;</span>,<span class="hljs-string">&apos;java&apos;</span>,<span class="hljs-string">&apos;ui&apos;</span>,<span class="hljs-string">&apos;&#x5927;&#x6570;&#x636E;&apos;</span>]
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<p>&#x901A;&#x8FC7;pages.json&#x6587;&#x4EF6;&#x4E2D;&#x627E;&#x5230;&#x5F53;&#x524D;&#x9875;&#x9762;&#x7684;pages&#x8282;&#x70B9;&#xFF0C;&#x5E76;&#x5728; <code>style</code> &#x9009;&#x9879;&#x4E2D;&#x5F00;&#x542F; <code>enablePullDownRefresh</code></p>
+<pre><code class="lang-js">{
+  <span class="hljs-string">&quot;path&quot;</span>:<span class="hljs-string">&quot;pages/list/list&quot;</span>,
+    <span class="hljs-string">&quot;style&quot;</span>:{
+      <span class="hljs-string">&quot;enablePullDownRefresh&quot;</span>: <span class="hljs-literal">true</span>
+    }
+}
+</code></pre>
+<h6 id="&#x901A;&#x8FC7;api&#x5F00;&#x542F;">&#x901A;&#x8FC7;API&#x5F00;&#x542F;</h6>
+<p><a href="https://uniapp.dcloud.io/api/ui/pulldown" target="_blank">api&#x6587;&#x6863;</a></p>
+<pre><code class="lang-html">uni.startPullDownRefresh()
+</code></pre>
+<h5 id="&#x76D1;&#x542C;&#x4E0B;&#x62C9;&#x5237;&#x65B0;">&#x76D1;&#x542C;&#x4E0B;&#x62C9;&#x5237;&#x65B0;</h5>
+<p>&#x901A;&#x8FC7;onPullDownRefresh&#x53EF;&#x4EE5;&#x76D1;&#x542C;&#x5230;&#x4E0B;&#x62C9;&#x5237;&#x65B0;&#x7684;&#x52A8;&#x4F5C;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  data () {
+    <span class="hljs-keyword">return</span> {
+      arr: [<span class="hljs-string">&apos;&#x524D;&#x7AEF;&apos;</span>,<span class="hljs-string">&apos;java&apos;</span>,<span class="hljs-string">&apos;ui&apos;</span>,<span class="hljs-string">&apos;&#x5927;&#x6570;&#x636E;&apos;</span>]
+    }
+  },
+  methods: {
+    startPull () {
+      uni.startPullDownRefresh()
+    }
+  },
+  onPullDownRefresh () {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x89E6;&#x53D1;&#x4E0B;&#x62C9;&#x5237;&#x65B0;&#x4E86;&apos;</span>)
+  }
+}
+</code></pre>
+<h5 id="&#x5173;&#x95ED;&#x4E0B;&#x62C9;&#x5237;&#x65B0;">&#x5173;&#x95ED;&#x4E0B;&#x62C9;&#x5237;&#x65B0;</h5>
+<p>uni.stopPullDownRefresh()</p>
+<p>&#x505C;&#x6B62;&#x5F53;&#x524D;&#x9875;&#x9762;&#x4E0B;&#x62C9;&#x5237;&#x65B0;&#x3002;</p>
+<p>&#x6848;&#x4F8B;&#x6F14;&#x793A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;startPull&quot;</span>&gt;</span>&#x5F00;&#x542F;&#x4E0B;&#x62C9;&#x5237;&#x65B0;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        &#x676D;&#x5DDE;&#x5B66;&#x79D1;
+        <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;(item,index) in arr&quot;</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;index&quot;</span>&gt;</span>
+            {{item}}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                arr: [<span class="hljs-string">&apos;&#x524D;&#x7AEF;&apos;</span>,<span class="hljs-string">&apos;java&apos;</span>,<span class="hljs-string">&apos;ui&apos;</span>,<span class="hljs-string">&apos;&#x5927;&#x6570;&#x636E;&apos;</span>]
+            }
+        },
+        methods: {
+            startPull () {
+                uni.startPullDownRefresh()
+            }
+        },
+
+        onPullDownRefresh () {
+            <span class="hljs-keyword">this</span>.arr = []
+            setTimeout(()=&gt; {
+                <span class="hljs-keyword">this</span>.arr = [<span class="hljs-string">&apos;&#x524D;&#x7AEF;&apos;</span>,<span class="hljs-string">&apos;java&apos;</span>,<span class="hljs-string">&apos;ui&apos;</span>,<span class="hljs-string">&apos;&#x5927;&#x6570;&#x636E;&apos;</span>]
+                uni.stopPullDownRefresh()
+            }, <span class="hljs-number">1000</span>);
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h4 id="&#x4E0A;&#x62C9;&#x52A0;&#x8F7D;">&#x4E0A;&#x62C9;&#x52A0;&#x8F7D;</h4>
+<p>&#x901A;&#x8FC7;&#x5728;pages.json&#x6587;&#x4EF6;&#x4E2D;&#x627E;&#x5230;&#x5F53;&#x524D;&#x9875;&#x9762;&#x7684;pages&#x8282;&#x70B9;&#x4E0B;style&#x4E2D;&#x914D;&#x7F6E;onReachBottomDistance&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x8DDD;&#x79BB;&#x5E95;&#x90E8;&#x5F00;&#x542F;&#x52A0;&#x8F7D;&#x7684;&#x8DDD;&#x79BB;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;50px</p>
+<p>&#x901A;&#x8FC7;onReachBottom&#x76D1;&#x542C;&#x5230;&#x89E6;&#x5E95;&#x7684;&#x884C;&#x4E3A;</p>
+<pre><code class="lang-js">&lt;template&gt;
+    &lt;view&gt;
+        &lt;button type=&quot;primary&quot; @click=&quot;startPull&quot;&gt;&#x5F00;&#x542F;&#x4E0B;&#x62C9;&#x5237;&#x65B0;&lt;/button&gt;
+        &#x676D;&#x5DDE;&#x5B66;&#x79D1;
+        &lt;view v-for=&quot;(item,index) in arr&quot; :key=&quot;index&quot;&gt;
+            {{item}}
+        &lt;/view&gt;
+    &lt;/view&gt;
+&lt;/template&gt;
+&lt;script&gt;
+    export default {
+        data () {
+            return {
+                arr: [&apos;&#x524D;&#x7AEF;&apos;,&apos;java&apos;,&apos;ui&apos;,&apos;&#x5927;&#x6570;&#x636E;&apos;,&apos;&#x524D;&#x7AEF;&apos;,&apos;java&apos;,&apos;ui&apos;,&apos;&#x5927;&#x6570;&#x636E;&apos;]
+            }
+        },
+        onReachBottom () {
+            console.log(&apos;&#x89E6;&#x5E95;&#x4E86;&apos;)
+        }
+    }
+&lt;/script&gt;
+
+&lt;style&gt;
+    view{
+        height: 100px;
+        line-height: 100px;
+    }
+&lt;/style&gt;
+</code></pre>
+<h4 id="&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;">&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;</h4>
+<p>&#x5728;uni&#x4E2D;&#x53EF;&#x4EE5;&#x8C03;&#x7528;uni.request&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x8BF7;&#x6C42;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;</p>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF1A;&#x5728;&#x5C0F;&#x7A0B;&#x5E8F;&#x4E2D;&#x7F51;&#x7EDC;&#x76F8;&#x5173;&#x7684; API &#x5728;&#x4F7F;&#x7528;&#x524D;&#x9700;&#x8981;&#x914D;&#x7F6E;&#x57DF;&#x540D;&#x767D;&#x540D;&#x5355;&#x3002;</p>
+<p><strong>&#x53D1;&#x9001;get&#x8BF7;&#x6C42;</strong></p>
+<pre><code class="lang-js">&lt;template&gt;
+    &lt;view&gt;
+        &lt;button @click=&quot;sendGet&quot;&gt;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&lt;/button&gt;
+    &lt;/view&gt;
+&lt;/template&gt;
+&lt;script&gt;
+    export default {
+        methods: {
+            sendGet () {
+                uni.request({
+                    url: &apos;http://localhost:8082/api/getlunbo&apos;,
+                    success(res) {
+                        console.log(res)
+                    }
+                })
+            }
+        }
+    }
+&lt;/script&gt;
+</code></pre>
+<p><strong>&#x53D1;&#x9001;post&#x8BF7;&#x6C42;</strong></p>
+<h4 id="&#x6570;&#x636E;&#x7F13;&#x5B58;">&#x6570;&#x636E;&#x7F13;&#x5B58;</h4>
+<h5 id="unisetstorage"><strong>uni.setStorage</strong></h5>
+<p><a href="https://uniapp.dcloud.io/api/storage/storage?id=setstorage" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a></p>
+<p>&#x5C06;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5728;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x4E2D;&#x6307;&#x5B9A;&#x7684; key &#x4E2D;&#xFF0C;&#x4F1A;&#x8986;&#x76D6;&#x6389;&#x539F;&#x6765;&#x8BE5; key &#x5BF9;&#x5E94;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x63A5;&#x53E3;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#x6F14;&#x793A;</p>
+<pre><code class="lang-js">&lt;template&gt;
+    &lt;view&gt;
+        &lt;button type=&quot;primary&quot; @click=&quot;setStor&quot;&gt;&#x5B58;&#x50A8;&#x6570;&#x636E;&lt;/button&gt;
+    &lt;/view&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+    export default {
+        methods: {
+            setStor () {
+                uni.setStorage({
+                     key: &apos;id&apos;,
+                     data: 100,
+                     success () {
+                         console.log(&apos;&#x5B58;&#x50A8;&#x6210;&#x529F;&apos;)
+                     }
+                 })
+            }
+        }
+    }
+&lt;/script&gt;
+
+&lt;style&gt;
+&lt;/style&gt;
+</code></pre>
+<h5 id="unisetstoragesync">uni.setStorageSync</h5>
+<p>&#x5C06; data &#x5B58;&#x50A8;&#x5728;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x4E2D;&#x6307;&#x5B9A;&#x7684; key &#x4E2D;&#xFF0C;&#x4F1A;&#x8986;&#x76D6;&#x6389;&#x539F;&#x6765;&#x8BE5; key &#x5BF9;&#x5E94;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x540C;&#x6B65;&#x63A5;&#x53E3;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#x6F14;&#x793A;</p>
+<pre><code class="lang-js">&lt;template&gt;
+    &lt;view&gt;
+        &lt;button type=&quot;primary&quot; @click=&quot;setStor&quot;&gt;&#x5B58;&#x50A8;&#x6570;&#x636E;&lt;/button&gt;
+    &lt;/view&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+    export default {
+        methods: {
+            setStor () {
+                uni.setStorageSync(&apos;id&apos;,100)
+            }
+        }
+    }
+&lt;/script&gt;
+
+&lt;style&gt;
+&lt;/style&gt;
+</code></pre>
+<h5 id="unigetstorage">uni.getStorage</h5>
+<p>&#x4ECE;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x4E2D;&#x5F02;&#x6B65;&#x83B7;&#x53D6;&#x6307;&#x5B9A; key &#x5BF9;&#x5E94;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#x6F14;&#x793A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;getStorage&quot;</span>&gt;</span>&#x83B7;&#x53D6;&#x6570;&#x636E;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                id: <span class="hljs-string">&apos;&apos;</span>
+            }
+        },
+        methods: {
+            getStorage () {
+                uni.getStorage({
+                    key: <span class="hljs-string">&apos;id&apos;</span>,
+                    success:  res=&gt;{
+                        <span class="hljs-keyword">this</span>.id = res.data
+                    }
+                })
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h5 id="unigetstoragesync">uni.getStorageSync</h5>
+<p>&#x4ECE;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x4E2D;&#x540C;&#x6B65;&#x83B7;&#x53D6;&#x6307;&#x5B9A; key &#x5BF9;&#x5E94;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#x6F14;&#x793A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;getStorage&quot;</span>&gt;</span>&#x83B7;&#x53D6;&#x6570;&#x636E;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        methods: {
+            getStorage () {
+                <span class="hljs-keyword">const</span> id = uni.getStorageSync(<span class="hljs-string">&apos;id&apos;</span>)
+                <span class="hljs-built_in">console</span>.log(id)
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h5 id="uniremovestorage">uni.removeStorage</h5>
+<p>&#x4ECE;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x4E2D;&#x5F02;&#x6B65;&#x79FB;&#x9664;&#x6307;&#x5B9A; key&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#x6F14;&#x793A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;removeStorage&quot;</span>&gt;</span>&#x5220;&#x9664;&#x6570;&#x636E;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        methods: {
+            removeStorage () {
+                uni.removeStorage({
+                    key: <span class="hljs-string">&apos;id&apos;</span>,
+                    success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x5220;&#x9664;&#x6210;&#x529F;&apos;</span>)
+                    }
+                })
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h5 id="uniremovestoragesync">uni.removeStorageSync</h5>
+<p>&#x4ECE;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x4E2D;&#x540C;&#x6B65;&#x79FB;&#x9664;&#x6307;&#x5B9A; key&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#x6F14;&#x793A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;removeStorage&quot;</span>&gt;</span>&#x5220;&#x9664;&#x6570;&#x636E;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        methods: {
+            removeStorage () {
+                uni.removeStorageSync(<span class="hljs-string">&apos;id&apos;</span>)
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h4 id="&#x4E0A;&#x4F20;&#x56FE;&#x7247;&#x3001;&#x9884;&#x89C8;&#x56FE;&#x7247;">&#x4E0A;&#x4F20;&#x56FE;&#x7247;&#x3001;&#x9884;&#x89C8;&#x56FE;&#x7247;</h4>
+<h5 id="&#x4E0A;&#x4F20;&#x56FE;&#x7247;">&#x4E0A;&#x4F20;&#x56FE;&#x7247;</h5>
+<p>uni.chooseImage&#x65B9;&#x6CD5;&#x4ECE;&#x672C;&#x5730;&#x76F8;&#x518C;&#x9009;&#x62E9;&#x56FE;&#x7247;&#x6216;&#x4F7F;&#x7528;&#x76F8;&#x673A;&#x62CD;&#x7167;&#x3002;</p>
+<p>&#x6848;&#x4F8B;&#x4EE3;&#x7801;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;chooseImg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span>&gt;</span>&#x4E0A;&#x4F20;&#x56FE;&#x7247;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">image</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;item in imgArr&quot;</span> <span class="hljs-attr">:src</span>=<span class="hljs-string">&quot;item&quot;</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;index&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">image</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                imgArr: []
+            }
+        },
+        methods: {
+            chooseImg () {
+                uni.chooseImage({
+                    count: <span class="hljs-number">9</span>,
+                    success: res=&gt;{
+                        <span class="hljs-keyword">this</span>.imgArr = res.tempFilePaths
+                    }
+                })
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h5 id="&#x9884;&#x89C8;&#x56FE;&#x7247;">&#x9884;&#x89C8;&#x56FE;&#x7247;</h5>
+<p>&#x7ED3;&#x6784;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">image</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;item in imgArr&quot;</span> <span class="hljs-attr">:src</span>=<span class="hljs-string">&quot;item&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;previewImg(item)&quot;</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">image</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+</code></pre>
+<p>&#x9884;&#x89C8;&#x56FE;&#x7247;&#x7684;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-js">previewImg (current) {
+  uni.previewImage({
+    urls: <span class="hljs-keyword">this</span>.imgArr,
+    current
+  })
+}
+</code></pre>
+<h4 id="&#x6761;&#x4EF6;&#x6CE8;&#x91CA;&#x5B9E;&#x73B0;&#x8DE8;&#x6BB5;&#x517C;&#x5BB9;">&#x6761;&#x4EF6;&#x6CE8;&#x91CA;&#x5B9E;&#x73B0;&#x8DE8;&#x6BB5;&#x517C;&#x5BB9;</h4>
+<p>&#x6761;&#x4EF6;&#x7F16;&#x8BD1;&#x662F;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x6CE8;&#x91CA;&#x4F5C;&#x4E3A;&#x6807;&#x8BB0;&#xFF0C;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x6839;&#x636E;&#x8FD9;&#x4E9B;&#x7279;&#x6B8A;&#x7684;&#x6CE8;&#x91CA;&#xFF0C;&#x5C06;&#x6CE8;&#x91CA;&#x91CC;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x7F16;&#x8BD1;&#x5230;&#x4E0D;&#x540C;&#x5E73;&#x53F0;&#x3002;</p>
+<p><strong>&#x5199;&#x6CD5;&#xFF1A;</strong>&#x4EE5; #ifdef &#x52A0;&#x5E73;&#x53F0;&#x6807;&#x8BC6; &#x5F00;&#x5934;&#xFF0C;&#x4EE5; #endif &#x7ED3;&#x5C3E;&#x3002;</p>
+<p>&#x5E73;&#x53F0;&#x6807;&#x8BC6;</p>
+<table>
+<thead>
+<tr>
+<th>&#x503C;</th>
+<th>&#x5E73;&#x53F0;</th>
+<th>&#x53C2;&#x8003;&#x6587;&#x6863;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APP-PLUS</td>
+<td>5+App</td>
+<td><a href="http://www.html5plus.org/doc/" target="_blank">HTML5+ &#x89C4;&#x8303;</a></td>
+</tr>
+<tr>
+<td>H5</td>
+<td>H5</td>
+<td></td>
+</tr>
+<tr>
+<td>MP-WEIXIN</td>
+<td>&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;</td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/api/" target="_blank">&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;</a></td>
+</tr>
+<tr>
+<td>MP-ALIPAY</td>
+<td>&#x652F;&#x4ED8;&#x5B9D;&#x5C0F;&#x7A0B;&#x5E8F;</td>
+<td><a href="https://docs.alipay.com/mini/developer/getting-started" target="_blank">&#x652F;&#x4ED8;&#x5B9D;&#x5C0F;&#x7A0B;&#x5E8F;</a></td>
+</tr>
+<tr>
+<td>MP-BAIDU</td>
+<td>&#x767E;&#x5EA6;&#x5C0F;&#x7A0B;&#x5E8F;</td>
+<td><a href="https://smartprogram.baidu.com/docs/develop/tutorial/codedir/" target="_blank">&#x767E;&#x5EA6;&#x5C0F;&#x7A0B;&#x5E8F;</a></td>
+</tr>
+<tr>
+<td>MP-TOUTIAO</td>
+<td>&#x5934;&#x6761;&#x5C0F;&#x7A0B;&#x5E8F;</td>
+<td><a href="https://developer.toutiao.com/dev/cn/mini-app/develop/framework/basic-reference/introduction" target="_blank">&#x5934;&#x6761;&#x5C0F;&#x7A0B;&#x5E8F;</a></td>
+</tr>
+<tr>
+<td>MP-QQ</td>
+<td>QQ&#x5C0F;&#x7A0B;&#x5E8F;</td>
+<td>&#xFF08;&#x76EE;&#x524D;&#x4EC5;cli&#x7248;&#x652F;&#x6301;&#xFF09;</td>
+</tr>
+<tr>
+<td>MP</td>
+<td>&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;/&#x652F;&#x4ED8;&#x5B9D;&#x5C0F;&#x7A0B;&#x5E8F;/&#x767E;&#x5EA6;&#x5C0F;&#x7A0B;&#x5E8F;/&#x5934;&#x6761;&#x5C0F;&#x7A0B;&#x5E8F;/QQ&#x5C0F;&#x7A0B;&#x5E8F;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x7EC4;&#x4EF6;&#x7684;&#x6761;&#x4EF6;&#x6CE8;&#x91CA;">&#x7EC4;&#x4EF6;&#x7684;&#x6761;&#x4EF6;&#x6CE8;&#x91CA;</h5>
+<p>&#x4EE3;&#x7801;&#x6F14;&#x793A;</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- #ifdef H5 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+  h5&#x9875;&#x9762;&#x4F1A;&#x663E;&#x793A;
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- #endif --&gt;</span>
+<span class="hljs-comment">&lt;!-- #ifdef MP-WEIXIN --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+  &#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x4F1A;&#x663E;&#x793A;
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- #endif --&gt;</span>
+<span class="hljs-comment">&lt;!-- #ifdef APP-PLUS --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+  app&#x4F1A;&#x663E;&#x793A;
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- #endif --&gt;</span>
+</code></pre>
+<h5 id="api&#x7684;&#x6761;&#x4EF6;&#x6CE8;&#x91CA;">api&#x7684;&#x6761;&#x4EF6;&#x6CE8;&#x91CA;</h5>
+<p>&#x4EE3;&#x7801;&#x6F14;&#x793A;</p>
+<pre><code class="lang-js">onLoad () {
+  <span class="hljs-comment">//#ifdef MP-WEIXIN</span>
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&apos;</span>)
+  <span class="hljs-comment">//#endif</span>
+  <span class="hljs-comment">//#ifdef H5</span>
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;h5&#x9875;&#x9762;&apos;</span>)
+  <span class="hljs-comment">//#endif</span>
+}
+</code></pre>
+<p>&#x6837;&#x5F0F;&#x7684;&#x6761;&#x4EF6;&#x6CE8;&#x91CA;</p>
+<p>&#x4EE3;&#x7801;&#x6F14;&#x793A;</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* #ifdef H5 */</span>
+<span class="hljs-selector-tag">view</span>{
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">100px</span>;
+  <span class="hljs-attribute">background</span>: red;
+}
+<span class="hljs-comment">/* #endif */</span>
+<span class="hljs-comment">/* #ifdef MP-WEIXIN */</span>
+<span class="hljs-selector-tag">view</span>{
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">100px</span>;
+  <span class="hljs-attribute">background</span>: green;
+}
+<span class="hljs-comment">/* #endif */</span>
+</code></pre>
+<h4 id="uni&#x4E2D;&#x7684;&#x5BFC;&#x822A;&#x8DF3;&#x8F6C;">uni&#x4E2D;&#x7684;&#x5BFC;&#x822A;&#x8DF3;&#x8F6C;</h4>
+<h5 id="&#x5229;&#x7528;navigator&#x8FDB;&#x884C;&#x8DF3;&#x8F6C;">&#x5229;&#x7528;navigator&#x8FDB;&#x884C;&#x8DF3;&#x8F6C;</h5>
+<p>navigator&#x8BE6;&#x7EC6;&#x6587;&#x6863;&#xFF1A;<a href="https://uniapp.dcloud.io/component/navigator" target="_blank">&#x6587;&#x6863;&#x5730;&#x5740;</a></p>
+<p>&#x8DF3;&#x8F6C;&#x5230;&#x666E;&#x901A;&#x9875;&#x9762;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">navigator</span> <span class="hljs-attr">url</span>=<span class="hljs-string">&quot;/pages/about/about&quot;</span> <span class="hljs-attr">hover-class</span>=<span class="hljs-string">&quot;navigator-hover&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;default&quot;</span>&gt;</span>&#x8DF3;&#x8F6C;&#x5230;&#x5173;&#x4E8E;&#x9875;&#x9762;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">navigator</span>&gt;</span>
+</code></pre>
+<p>&#x8DF3;&#x8F6C;&#x5230;tabbar&#x9875;&#x9762;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">navigator</span> <span class="hljs-attr">url</span>=<span class="hljs-string">&quot;/pages/message/message&quot;</span> <span class="hljs-attr">open-type</span>=<span class="hljs-string">&quot;switchTab&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;default&quot;</span>&gt;</span>&#x8DF3;&#x8F6C;&#x5230;message&#x9875;&#x9762;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">navigator</span>&gt;</span>
+</code></pre>
+<h5 id="&#x5229;&#x7528;&#x7F16;&#x7A0B;&#x5F0F;&#x5BFC;&#x822A;&#x8FDB;&#x884C;&#x8DF3;&#x8F6C;">&#x5229;&#x7528;&#x7F16;&#x7A0B;&#x5F0F;&#x5BFC;&#x822A;&#x8FDB;&#x884C;&#x8DF3;&#x8F6C;</h5>
+<p><a href="[uni.navigateTo](https:/uniapp.dcloud.io/api/router">&#x5BFC;&#x822A;&#x8DF3;&#x8F6C;&#x6587;&#x6863;</a>)</p>
+<p><strong>&#x5229;&#x7528;navigateTo&#x8FDB;&#x884C;&#x5BFC;&#x822A;&#x8DF3;&#x8F6C;</strong></p>
+<p>&#x4FDD;&#x7559;&#x5F53;&#x524D;&#x9875;&#x9762;&#xFF0C;&#x8DF3;&#x8F6C;&#x5230;&#x5E94;&#x7528;&#x5185;&#x7684;&#x67D0;&#x4E2A;&#x9875;&#x9762;&#xFF0C;&#x4F7F;&#x7528;<code>uni.navigateBack</code>&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x5230;&#x539F;&#x9875;&#x9762;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;goAbout&quot;</span>&gt;</span>&#x8DF3;&#x8F6C;&#x5230;&#x5173;&#x4E8E;&#x9875;&#x9762;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<p>&#x901A;&#x8FC7;navigateTo&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x8DF3;&#x8F6C;&#x5230;&#x666E;&#x901A;&#x9875;&#x9762;</p>
+<pre><code class="lang-js">goAbout () {
+  uni.navigateTo({
+    url: <span class="hljs-string">&apos;/pages/about/about&apos;</span>,
+  })
+}
+</code></pre>
+<p><strong>&#x901A;&#x8FC7;switchTab&#x8DF3;&#x8F6C;&#x5230;tabbar&#x9875;&#x9762;</strong></p>
+<p>&#x8DF3;&#x8F6C;&#x5230;tabbar&#x9875;&#x9762;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;goMessage&quot;</span>&gt;</span>&#x8DF3;&#x8F6C;&#x5230;message&#x9875;&#x9762;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<p>&#x901A;&#x8FC7;switchTab&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x8DF3;&#x8F6C;</p>
+<pre><code class="lang-js">goMessage () {
+  uni.switchTab({
+    url: <span class="hljs-string">&apos;/pages/message/message&apos;</span>
+  })
+}
+</code></pre>
+<p><strong>redirectTo&#x8FDB;&#x884C;&#x8DF3;&#x8F6C;</strong> </p>
+<p>&#x5173;&#x95ED;&#x5F53;&#x524D;&#x9875;&#x9762;&#xFF0C;&#x8DF3;&#x8F6C;&#x5230;&#x5E94;&#x7528;&#x5185;&#x7684;&#x67D0;&#x4E2A;&#x9875;&#x9762;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- template --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;goMessage&quot;</span>&gt;</span>&#x8DF3;&#x8F6C;&#x5230;message&#x9875;&#x9762;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- js --&gt;</span>
+goMessage () {
+  uni.switchTab({
+    url: &apos;/pages/message/message&apos;
+  })
+}
+</code></pre>
+<p>&#x901A;&#x8FC7;onUnload&#x6D4B;&#x8BD5;&#x5F53;&#x524D;&#x7EC4;&#x4EF6;&#x786E;&#x5B9E;&#x5378;&#x8F7D;</p>
+<pre><code class="lang-js">onUnload () {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x7EC4;&#x4EF6;&#x5378;&#x8F7D;&#x4E86;&apos;</span>)
+}
+</code></pre>
+<h5 id="&#x5BFC;&#x822A;&#x8DF3;&#x8F6C;&#x4F20;&#x9012;&#x53C2;&#x6570;">&#x5BFC;&#x822A;&#x8DF3;&#x8F6C;&#x4F20;&#x9012;&#x53C2;&#x6570;</h5>
+<p>&#x5728;&#x5BFC;&#x822A;&#x8FDB;&#x884C;&#x8DF3;&#x8F6C;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x7ED9;&#x4E0B;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x4F20;&#x9012;&#x76F8;&#x5E94;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x63A5;&#x6536;&#x53C2;&#x6570;&#x7684;&#x9875;&#x9762;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;onLoad&#x751F;&#x547D;&#x5468;&#x671F;&#x8FDB;&#x884C;&#x63A5;&#x6536;</p>
+<p>&#x4F20;&#x9012;&#x53C2;&#x6570;&#x7684;&#x9875;&#x9762;</p>
+<pre><code class="lang-js">goAbout () {
+  uni.navigateTo({
+    url: <span class="hljs-string">&apos;/pages/about/about?id=80&apos;</span>,
+  });
+}
+</code></pre>
+<p>&#x63A5;&#x6536;&#x53C2;&#x6570;&#x7684;&#x9875;&#x9762;</p>
+<pre><code class="lang-js">&lt;script&gt;
+    export default {
+        onLoad (options) {
+            console.log(options)
+        }
+    }
+&lt;/script&gt;
+</code></pre>
+<h4 id=""> </h4>
+<h4 id="uni-app&#x4E2D;&#x7EC4;&#x4EF6;&#x7684;&#x521B;&#x5EFA;">uni-app&#x4E2D;&#x7EC4;&#x4EF6;&#x7684;&#x521B;&#x5EFA;</h4>
+<p>&#x5728;uni-app&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540E;&#x7F00;&#x540D;&#x4E3A;vue&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5373;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x6210;&#x529F;&#xFF0C;&#x5176;&#x4ED6;&#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x5C06;&#x8BE5;&#x7EC4;&#x4EF6;&#x901A;&#x8FC7;impot&#x7684;&#x65B9;&#x5F0F;&#x5BFC;&#x5165;&#xFF0C;&#x5728;&#x901A;&#x8FC7;components&#x8FDB;&#x884C;&#x6CE8;&#x518C;&#x5373;&#x53EF;</p>
+<ul>
+<li><p>&#x521B;&#x5EFA;login&#x7EC4;&#x4EF6;&#xFF0C;&#x5728;component&#x4E2D;&#x521B;&#x5EFA;login&#x76EE;&#x5F55;&#xFF0C;&#x7136;&#x540E;&#x65B0;&#x5EFA;login.vue&#x6587;&#x4EF6;</p>
+<pre><code>&lt;template&gt;
+    &lt;view&gt;
+        &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;
+    &lt;/view&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+&lt;/script&gt;
+
+&lt;style&gt;
+&lt;/style&gt;
+</code></pre></li>
+<li><p>&#x5728;&#x5176;&#x4ED6;&#x7EC4;&#x4EF6;&#x4E2D;&#x5BFC;&#x5165;&#x8BE5;&#x7EC4;&#x4EF6;&#x5E76;&#x6CE8;&#x518C;</p>
+<pre><code>import login from &quot;@/components/test/test.vue&quot;
+</code></pre></li>
+<li><p>&#x6CE8;&#x518C;&#x7EC4;&#x4EF6;</p>
+<pre><code class="lang-js">components: {test}
+</code></pre>
+</li>
+<li><p>&#x4F7F;&#x7528;&#x7EC4;&#x4EF6;</p>
+<pre><code>&lt;test&gt;&lt;/test&gt;
+</code></pre></li>
+</ul>
+<h5 id="&#x7EC4;&#x4EF6;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;">&#x7EC4;&#x4EF6;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;</h5>
+<table>
+<thead>
+<tr>
+<th>beforeCreate</th>
+<th>&#x5728;&#x5B9E;&#x4F8B;&#x521D;&#x59CB;&#x5316;&#x4E4B;&#x540E;&#x88AB;&#x8C03;&#x7528;&#x3002;<a href="https://cn.vuejs.org/v2/api/#beforeCreate" target="_blank">&#x8BE6;&#x89C1;</a></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>created</td>
+<td>&#x5728;&#x5B9E;&#x4F8B;&#x521B;&#x5EFA;&#x5B8C;&#x6210;&#x540E;&#x88AB;&#x7ACB;&#x5373;&#x8C03;&#x7528;&#x3002;<a href="https://cn.vuejs.org/v2/api/#created" target="_blank">&#x8BE6;&#x89C1;</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>beforeMount</td>
+<td>&#x5728;&#x6302;&#x8F7D;&#x5F00;&#x59CB;&#x4E4B;&#x524D;&#x88AB;&#x8C03;&#x7528;&#x3002;<a href="https://cn.vuejs.org/v2/api/#beforeMount" target="_blank">&#x8BE6;&#x89C1;</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>mounted</td>
+<td>&#x6302;&#x8F7D;&#x5230;&#x5B9E;&#x4F8B;&#x4E0A;&#x53BB;&#x4E4B;&#x540E;&#x8C03;&#x7528;&#x3002;<a href="https://cn.vuejs.org/v2/api/#mounted" target="_blank">&#x8BE6;&#x89C1;</a> &#x6CE8;&#x610F;&#xFF1A;&#x6B64;&#x5904;&#x5E76;&#x4E0D;&#x80FD;&#x786E;&#x5B9A;&#x5B50;&#x7EC4;&#x4EF6;&#x88AB;&#x5168;&#x90E8;&#x6302;&#x8F7D;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x5B50;&#x7EC4;&#x4EF6;&#x5B8C;&#x5168;&#x6302;&#x8F7D;&#x4E4B;&#x540E;&#x5728;&#x6267;&#x884C;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>$nextTick</code><a href="https://cn.vuejs.org/v2/api/#Vue-nextTick" target="_blank">Vue&#x5B98;&#x65B9;&#x6587;&#x6863;</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>beforeUpdate</td>
+<td>&#x6570;&#x636E;&#x66F4;&#x65B0;&#x65F6;&#x8C03;&#x7528;&#xFF0C;&#x53D1;&#x751F;&#x5728;&#x865A;&#x62DF; DOM &#x6253;&#x8865;&#x4E01;&#x4E4B;&#x524D;&#x3002;<a href="https://cn.vuejs.org/v2/api/#beforeUpdate" target="_blank">&#x8BE6;&#x89C1;</a></td>
+<td>&#x4EC5;H5&#x5E73;&#x53F0;&#x652F;&#x6301;</td>
+<td></td>
+</tr>
+<tr>
+<td>updated</td>
+<td>&#x7531;&#x4E8E;&#x6570;&#x636E;&#x66F4;&#x6539;&#x5BFC;&#x81F4;&#x7684;&#x865A;&#x62DF; DOM &#x91CD;&#x65B0;&#x6E32;&#x67D3;&#x548C;&#x6253;&#x8865;&#x4E01;&#xFF0C;&#x5728;&#x8FD9;&#x4E4B;&#x540E;&#x4F1A;&#x8C03;&#x7528;&#x8BE5;&#x94A9;&#x5B50;&#x3002;<a href="https://cn.vuejs.org/v2/api/#updated" target="_blank">&#x8BE6;&#x89C1;</a></td>
+<td>&#x4EC5;H5&#x5E73;&#x53F0;&#x652F;&#x6301;</td>
+<td></td>
+</tr>
+<tr>
+<td>beforeDestroy</td>
+<td>&#x5B9E;&#x4F8B;&#x9500;&#x6BC1;&#x4E4B;&#x524D;&#x8C03;&#x7528;&#x3002;&#x5728;&#x8FD9;&#x4E00;&#x6B65;&#xFF0C;&#x5B9E;&#x4F8B;&#x4ECD;&#x7136;&#x5B8C;&#x5168;&#x53EF;&#x7528;&#x3002;<a href="https://cn.vuejs.org/v2/api/#beforeDestroy" target="_blank">&#x8BE6;&#x89C1;</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>destroyed</td>
+<td>Vue &#x5B9E;&#x4F8B;&#x9500;&#x6BC1;&#x540E;&#x8C03;&#x7528;&#x3002;&#x8C03;&#x7528;&#x540E;&#xFF0C;Vue &#x5B9E;&#x4F8B;&#x6307;&#x793A;&#x7684;&#x6240;&#x6709;&#x4E1C;&#x897F;&#x90FD;&#x4F1A;&#x89E3;&#x7ED1;&#x5B9A;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x4F1A;&#x88AB;&#x79FB;&#x9664;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x5B50;&#x5B9E;&#x4F8B;&#x4E5F;&#x4F1A;&#x88AB;&#x9500;&#x6BC1;&#x3002;<a href="https://cn.vuejs.org/v2/api/#destroyed" target="_blank">&#x8BE6;&#x89C1;</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x7EC4;&#x4EF6;&#x7684;&#x901A;&#x8BAF;">&#x7EC4;&#x4EF6;&#x7684;&#x901A;&#x8BAF;</h4>
+<h5 id="&#x7236;&#x7EC4;&#x4EF6;&#x7ED9;&#x5B50;&#x7EC4;&#x4EF6;&#x4F20;&#x503C;">&#x7236;&#x7EC4;&#x4EF6;&#x7ED9;&#x5B50;&#x7EC4;&#x4EF6;&#x4F20;&#x503C;</h5>
+<p>&#x901A;&#x8FC7;props&#x6765;&#x63A5;&#x53D7;&#x5916;&#x754C;&#x4F20;&#x9012;&#x5230;&#x7EC4;&#x4EF6;&#x5185;&#x90E8;&#x7684;&#x503C;</p>
+<pre><code>&lt;template&gt;
+    &lt;view&gt;
+        &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6; {{msg}}
+    &lt;/view&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+    export default {
+        props: [&apos;msg&apos;]
+    }
+&lt;/script&gt;
+
+&lt;style&gt;
+&lt;/style&gt;
+</code></pre><p>&#x5176;&#x4ED6;&#x7EC4;&#x4EF6;&#x5728;&#x4F7F;&#x7528;login&#x7EC4;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#x4F20;&#x9012;&#x503C;</p>
+<pre><code>&lt;template&gt;
+    &lt;view&gt;
+        &lt;test :msg=&quot;msg&quot;&gt;&lt;/test&gt;
+    &lt;/view&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+    import test from &quot;@/components/test/test.vue&quot;
+    export default {
+        data () {
+            return {
+                msg: &apos;hello&apos;
+            }
+        },
+
+        components: {test}
+    }
+&lt;/script&gt;
+</code></pre><h5 id="&#x5B50;&#x7EC4;&#x4EF6;&#x7ED9;&#x7236;&#x7EC4;&#x4EF6;&#x4F20;&#x503C;">&#x5B50;&#x7EC4;&#x4EF6;&#x7ED9;&#x7236;&#x7EC4;&#x4EF6;&#x4F20;&#x503C;</h5>
+<p>&#x901A;&#x8FC7;$emit&#x89E6;&#x53D1;&#x4E8B;&#x4EF6;&#x8FDB;&#x884C;&#x4F20;&#x9012;&#x53C2;&#x6570;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+        &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6; {{msg}}
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;sendMsg&quot;</span>&gt;</span>&#x7ED9;&#x7236;&#x7EC4;&#x4EF6;&#x4F20;&#x503C;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                status: <span class="hljs-string">&apos;&#x6253;&#x7BEE;&#x7403;&apos;</span>
+            }
+        },
+        props: {
+            msg: {
+                type: <span class="hljs-built_in">String</span>,
+                value: <span class="hljs-string">&apos;&apos;</span>
+            }
+        },
+        methods: {
+            sendMsg () {
+                <span class="hljs-keyword">this</span>.$emit(<span class="hljs-string">&apos;myEvent&apos;</span>,<span class="hljs-keyword">this</span>.status)
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x7236;&#x7EC4;&#x4EF6;&#x5B9A;&#x4E49;&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x5E76;&#x63A5;&#x6536;&#x53C2;&#x6570;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">test</span> <span class="hljs-attr">:msg</span>=<span class="hljs-string">&quot;msg&quot;</span> @<span class="hljs-attr">myEvent</span>=<span class="hljs-string">&quot;getMsg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">test</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">import</span> test <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/components/test/test.vue&quot;</span>
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                msg: <span class="hljs-string">&apos;hello&apos;</span>
+            }
+        },
+        methods: {
+            getMsg (res) {
+                <span class="hljs-built_in">console</span>.log(res)
+            }
+        },
+
+        components: {test}
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h5 id="&#x5144;&#x5F1F;&#x7EC4;&#x4EF6;&#x901A;&#x8BAF;">&#x5144;&#x5F1F;&#x7EC4;&#x4EF6;&#x901A;&#x8BAF;</h5>
+<h4 id="uni-ui&#x7684;&#x4F7F;&#x7528;">uni-ui&#x7684;&#x4F7F;&#x7528;</h4>
+<p><a href="https://uniapp.dcloud.io/component/README?id=uniui" target="_blank">uni-ui&#x6587;&#x6863;</a></p>
+<p>1&#x3001;&#x8FDB;&#x5165;Grid&#x5BAB;&#x683C;&#x7EC4;&#x4EF6;</p>
+<p>2&#x3001;&#x4F7F;&#x7528;HBuilderX&#x5BFC;&#x5165;&#x8BE5;&#x7EC4;&#x4EF6;</p>
+<p>3&#x3001;&#x5BFC;&#x5165;&#x8BE5;&#x7EC4;&#x4EF6;</p>
+<pre><code class="lang-html">import uniGrid from &quot;@/components/uni-grid/uni-grid.vue&quot;
+import uniGridItem from &quot;@/components/uni-grid-item/uni-grid-item.vue&quot;
+</code></pre>
+<p>4&#x3001;&#x6CE8;&#x518C;&#x7EC4;&#x4EF6;</p>
+<pre><code class="lang-html">components: {uniGrid,uniGridItem}
+</code></pre>
+<p>5&#x3001;&#x4F7F;&#x7528;&#x7EC4;&#x4EF6;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">uni-grid</span> <span class="hljs-attr">:column</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">uni-grid-item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>&#x6587;&#x672C;<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">uni-grid-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">uni-grid-item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>&#x6587;&#x672C;<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">uni-grid-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">uni-grid-item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>&#x6587;&#x672C;<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">uni-grid-item</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">uni-grid</span>&gt;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="黑马商城.html" class="navigation navigation-next " aria-label="Next page: 2.黑马商城">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.uniapp基础知识","level":"1.2","depth":1,"next":{"title":"2.黑马商城","level":"1.3","depth":1,"path":"黑马商城.md","ref":"黑马商城.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"uniapp基础知识.md","mtime":"2022-05-28T04:06:20.340Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-28T04:06:29.405Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
