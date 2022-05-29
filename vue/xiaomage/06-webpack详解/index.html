@@ -1,399 +1,140 @@
-
-<!DOCTYPE HTML>
-<html lang="" >
-    <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>06-webpack详解 · GitBook</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
-        
-        
-        
-    
-    <link rel="stylesheet" href="../gitbook/style.css">
-
-    
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-        
-
-    
-
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-        
-    
-    
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
-
-    
-    <link rel="next" href="../07-Vue CLI详解/" />
-    
-    
-    <link rel="prev" href="../06-Vue CLI详解/" />
-    
-
-    </head>
-    <body>
-        
-<div class="book">
-    <div class="book-summary">
-        
-            
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
-
-            
-                <nav role="navigation">
-                
-
-
-<ul class="summary">
-    
-    
-
-    
-
-    
-        
-        
-    
-        <li class="chapter " data-level="1.1" data-path="../">
-            
-                <a href="../">
-            
-                    
-                    Introduction
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="../01-课程介绍/">
-            
-                <a href="../01-课程介绍/">
-            
-                    
-                    01-课程介绍
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="../02-邂逅Vuejs/">
-            
-                <a href="../02-邂逅Vuejs/">
-            
-                    
-                    02-邂逅Vuejs
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" data-path="../03-基础语法/">
-            
-                <a href="../03-基础语法/">
-            
-                    
-                    03-基础语法
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" data-path="../04-组件化开发/">
-            
-                <a href="../04-组件化开发/">
-            
-                    
-                    04-组件化开发
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6" data-path="../05-前端模块化/">
-            
-                <a href="../05-前端模块化/">
-            
-                    
-                    05-前端模块化
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7" data-path="../06-Vue CLI详解/">
-            
-                <a href="../06-Vue CLI详解/">
-            
-                    
-                    06-Vue CLI详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.8" data-path="./">
-            
-                <a href="./">
-            
-                    
-                    06-webpack详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9" data-path="../07-Vue CLI详解/">
-            
-                <a href="../07-Vue CLI详解/">
-            
-                    
-                    07-Vue CLI详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10" data-path="../07-vue-router详解/">
-            
-                <a href="../07-vue-router详解/">
-            
-                    
-                    07-vue-router详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11" data-path="../08-Promise的使用/">
-            
-                <a href="../08-Promise的使用/">
-            
-                    
-                    08-Promise的使用
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.12" data-path="../08-Vuex详解/">
-            
-                <a href="../08-Vuex详解/">
-            
-                    
-                    08-Vuex详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13" data-path="../09-Vuex详解/">
-            
-                <a href="../09-Vuex详解/">
-            
-                    
-                    09-Vuex详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.14" data-path="../10-网络模块封装/">
-            
-                <a href="../10-网络模块封装/">
-            
-                    
-                    10-网络模块封装
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-
-    <li class="divider"></li>
-
-    <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
-        </a>
-    </li>
-</ul>
-
-
-                </nav>
-            
-        
-    </div>
-
-    <div class="book-body">
-        
-            <div class="body-inner">
-                
-                    
-
-<div class="book-header" role="navigation">
-    
-
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >06-webpack详解</a>
-    </h1>
-</div>
-
-
-
-
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div id="book-search-results">
-    <div class="search-noresults">
-    
-                                <section class="normal markdown-section">
-                                
-                                <h1 id="06-webpack&#x8BE6;&#x89E3;">06-webpack&#x8BE6;&#x89E3;</h1>
-
-                                
-                                </section>
-                            
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
-                        </div>
-                    </div>
-                
-            </div>
-
-            
-                
-                <a href="../06-Vue CLI详解/" class="navigation navigation-prev " aria-label="Previous page: 06-Vue CLI详解">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="../07-Vue CLI详解/" class="navigation navigation-next " aria-label="Next page: 07-Vue CLI详解">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
-        
-    </div>
-
-    <script>
-        var gitbook = gitbook || [];
-        gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"06-webpack详解","level":"1.8","depth":1,"next":{"title":"07-Vue CLI详解","level":"1.9","depth":1,"path":"07-Vue CLI详解/README.md","ref":"07-Vue CLI详解/README.md","articles":[]},"previous":{"title":"06-Vue CLI详解","level":"1.7","depth":1,"path":"06-Vue CLI详解/README.md","ref":"06-Vue CLI详解/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"06-webpack详解/README.md","mtime":"2022-05-29T00:59:25.558Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-29T00:59:36.700Z"},"basePath":"..","book":{"language":""}});
-        });
-    </script>
-</div>
-
-        
-    <script src="../gitbook/gitbook.js"></script>
-    <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-
-    </body>
-</html>
-
+<!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>(06-webpack\317\352\275\342.pptx)</title><meta name="author" content="lala"/><style type="text/css"> * {margin:0; padding:0; text-indent:0; }
+ h1 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 57pt; }
+ p { color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; margin:0pt; }
+ .s2 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt; }
+ .s3 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .h2 { color: #3F3F3F; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 31.5pt; }
+ .s4 { color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt; }
+ h4 { color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ .s5 { color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14.5pt; }
+ h3 { color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 15.5pt; }
+ .s6 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s7 { color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 13pt; }
+ .s8 { color: #F00; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ .s9 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; vertical-align: 21pt; }
+ .s10 { color: #0562C1; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 15.5pt; }
+ .s11 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; vertical-align: 2pt; }
+ .a, a { color: #F00; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ li {display: block; }
+ #l1 {padding-left: 0pt; }
+ #l1> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l2 {padding-left: 0pt; }
+ #l2> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l3 {padding-left: 0pt; }
+ #l3> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l4 {padding-left: 0pt; }
+ #l4> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l5 {padding-left: 0pt; }
+ #l5> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l6 {padding-left: 0pt; }
+ #l6> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l7 {padding-left: 0pt; }
+ #l7> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l8 {padding-left: 0pt; }
+ #l8> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l9 {padding-left: 0pt; }
+ #l9> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l10 {padding-left: 0pt; }
+ #l10> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l11 {padding-left: 0pt; }
+ #l11> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l12 {padding-left: 0pt; }
+ #l12> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l13 {padding-left: 0pt; }
+ #l13> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l14 {padding-left: 0pt; }
+ #l14> li>*:first-child:before {content: " "; color: #585858; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ #l15 {padding-left: 0pt; }
+ #l15> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l16 {padding-left: 0pt; }
+ #l16> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l17 {padding-left: 0pt; }
+ #l17> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l18 {padding-left: 0pt; }
+ #l18> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l19 {padding-left: 0pt; }
+ #l19> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l20 {padding-left: 0pt; }
+ #l20> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l21 {padding-left: 0pt; }
+ #l21> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l22 {padding-left: 0pt; }
+ #l22> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l23 {padding-left: 0pt; }
+ #l23> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l24 {padding-left: 0pt; }
+ #l24> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l25 {padding-left: 0pt; }
+ #l25> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l26 {padding-left: 0pt; }
+ #l26> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l27 {padding-left: 0pt; }
+ #l27> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l28 {padding-left: 0pt; }
+ #l28> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l29 {padding-left: 0pt; }
+ #l29> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l30 {padding-left: 0pt; }
+ #l30> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l31 {padding-left: 0pt; }
+ #l31> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l32 {padding-left: 0pt; }
+ #l32> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l33 {padding-left: 0pt; }
+ #l33> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l34 {padding-left: 0pt; }
+ #l34> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l35 {padding-left: 0pt; }
+ #l35> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l36 {padding-left: 0pt; }
+ #l36> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l37 {padding-left: 0pt; }
+ #l37> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l38 {padding-left: 0pt; }
+ #l38> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l39 {padding-left: 0pt; }
+ #l39> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l40 {padding-left: 0pt; }
+ #l40> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l41 {padding-left: 0pt; }
+ #l41> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l42 {padding-left: 0pt; }
+ #l42> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l43 {padding-left: 0pt; }
+ #l43> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l44 {padding-left: 0pt; }
+ #l44> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l45 {padding-left: 0pt; }
+ #l45> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l46 {padding-left: 0pt; }
+ #l46> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l47 {padding-left: 0pt; }
+ #l47> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l48 {padding-left: 0pt; }
+ #l48> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l49 {padding-left: 0pt; }
+ #l49> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l50 {padding-left: 0pt; }
+ #l50> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l51 {padding-left: 0pt; }
+ #l51> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l52 {padding-left: 0pt; }
+ #l52> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l53 {padding-left: 0pt; }
+ #l53> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l54 {padding-left: 0pt; }
+ #l54> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l55 {padding-left: 0pt; }
+ #l55> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l56 {padding-left: 0pt; }
+ #l56> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l57 {padding-left: 0pt; }
+ #l57> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l58 {padding-left: 0pt; }
+ #l58> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l59 {padding-left: 0pt; }
+ #l59> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l60 {padding-left: 0pt; }
+ #l60> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+</style></head><body><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1117" height="22" alt="image" src="index_files/Image_001.png"/></span></p><h1 style="padding-left: 229pt;text-indent: 0pt;line-height: 95pt;text-align: center;">Webpack详解</h1><p style="padding-top: 17pt;padding-left: 229pt;text-indent: 0pt;line-height: 27pt;text-align: center;">王红元</p><p style="padding-left: 359pt;text-indent: -9pt;line-height: 90%;text-align: center;"><span>微博：coderwhy<br/>微信：372623326</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 368pt;text-indent: 0pt;text-align: left;"><span><img width="140" height="50" alt="image" src="index_files/Image_002.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1117" height="22" alt="image" src="index_files/Image_003.png"/></span></p><p style="padding-left: 229pt;text-indent: 0pt;text-align: center;"><a href="http://www.520it.com/" class="s2" target="_blank">实力IT教育 www.520it.com</a></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_004.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_005.jpg"/></span>        <span class="h2">内容概述</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><ul id="l1"><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">认识webpack</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">webpack的安装</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">webpack的起步</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">webpack的配置</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">loader的使用</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">webpack中配置Vue</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">plugin的使用</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_006.png"/></span></p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">搭建本地服务器</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_007.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_008.jpg"/></span>        <span class="h2">什么是Webpack？</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p class="s4" style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">什么是webpack？</p><ul id="l2"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">这个webpack还真不是一两句话可以说清楚的。</p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;line-height: 26pt;text-align: left;">我们先看看官方的解释：</p><ul id="l3"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">At its core, <b>webpack </b>is a <span class="s5">static module bundler </span>for modern JavaScript applications.</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">从本质上来讲，webpack是一个现代的JavaScript应用的静态<b>模块打包</b>工具。</p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">但是它是什么呢？用概念解释概念，还是不清晰。</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_009.png"/></span></p><ul id="l4"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">我们从两个点来解释上面这句话：<b>模块 </b>和 <b>打包</b></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 42pt;text-indent: 0pt;text-align: left;"><span><img width="564" height="219" alt="image" src="index_files/Image_010.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_011.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_012.jpg"/></span>        <span class="h2">前端模块化</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p class="s4" style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">前端模块化：</p><ul id="l5"><li><p class="s4" style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 85%;text-align: left;"><span>在前面学习中，我已经用了大量的篇幅解释了为什么前端需要<br/>模块化。</span></p></li><li><p class="s4" style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 85%;text-align: left;"><span>而且我也提到了目前使用前端模块化的一些方案：AMD、<br/>CMD、CommonJS、ES6。</span></p></li><li><p class="s4" style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 85%;text-align: left;"><span>在ES6之前，我们要想进行模块化开发，就必须借助于其他的<br/>工具，让我们可以进行模块化开发。</span></p></li><li><p class="s4" style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 85%;text-align: left;"><span>并且在通过模块化开发完成了项目后，还需要处理模块间的各<br/>种依赖，并且将其进行整合打包。</span></p></li><li><p class="s4" style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 85%;text-align: left;"><span>而webpack其中一个核心就是让我们可能进行模块化开发，并<br/>且会帮助我们处理模块间的依赖关系。</span></p></li><li><p class="s4" style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 85%;text-align: left;"><span>而且不仅仅是JavaScript文件，我们的CSS、图片、json文件<br/>等等在webpack中都可以被当做模块来使用（在后续我们会看<br/>到）。</span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_013.png"/></span></p></li><li><p class="s4" style="padding-top: 1pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">这就是webpack中模块化的概念。</p></li></ul></li><li><h4 style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">打包<span class="s4">如何理解呢？</span></h4><ul id="l6"><li><p class="s4" style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 85%;text-align: left;"><span>理解了webpack可以帮助我们进行模块化，并<br/>且处理模块间的各种复杂关系后，打包的概念就                                                                                                                                        <br/>非常好理解了。</span></p></li><li><p class="s4" style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 85%;text-align: left;"><span>就是将webpack中的各种资源模块进行打包合<br/>并成一个或多个包(Bundle)。</span></p></li><li><p class="s4" style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 85%;text-align: left;"><span>并且在打包的过程中，还可以对资源进行处理，<br/>比如压缩图片，将scss转成css，将ES6语法转成<br/>ES5语法，将TypeScript转成JavaScript等等操<br/>作。</span></p></li><li><p class="s4" style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 85%;text-align: left;"><span>但是打包的操作似乎grunt/gulp也可以帮助我<br/>们完成，它们有什么不同呢？</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_014.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_015.jpg"/></span>        <span class="h2">和grunt/gulp的对比</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p class="s4" style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;line-height: 26pt;text-align: left;">grunt/gulp的核心是Task</p><ul id="l7"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;line-height: 25pt;text-align: left;">我们可以配置一系列的task，并且定义task要处理的事务（例如ES6、ts转化，图片压缩，scss转成css）</p><p style="text-indent: 0pt;text-align: left;"><span><img width="365" height="208" alt="image" src="index_files/Image_016.jpg"/></span></p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;line-height: 25pt;text-align: left;">之后让grunt/gulp来依次执行这些task，而且让整个流程自动化。</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">所以grunt/gulp也被称为前端自动化任务管理工具。</p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;line-height: 26pt;text-align: left;">我们来看一个gulp的task</p><ul id="l8"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;line-height: 25pt;text-align: left;">下面的task就是将src下面的所有js文件转成ES5的语法。</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">并且最终输出到dist文件夹中。</p></li></ul></li><li><p class="s4" style="padding-top: 3pt;padding-left: 33pt;text-indent: -15pt;line-height: 26pt;text-align: left;">什么时候用grunt/gulp呢？</p><ul id="l9"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;line-height: 25pt;text-align: left;">如果你的工程模块依赖非常简单，甚至是没有用到模块化的概念。</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;line-height: 25pt;text-align: left;">只需要进行简单的合并、压缩，就使用grunt/gulp即可。</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">但是如果整个项目使用了模块化管理，而且相互依赖非常强，我们就可以使用更加强大的webpack了。</p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">所以，grunt/gulp和webpack有什么不同呢？</p><ul id="l10"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">grunt/gulp更加强调的是前端流程的自动化，模块化不是它的核心。</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_017.png"/></span></p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">webpack更加强调模块化开发管理，而文件压缩合并、预处理等功能，是他附带的功能。</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_018.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_019.jpg"/></span>        <span class="h2">webpack安装</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">安装webpack首先需要安装Node.js，Node.js自带了软件包管理工具npm</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">查看自己的node版本：</p><p style="padding-left: 31pt;text-indent: 0pt;text-align: left;"><span><img width="244" height="41" alt="image" src="index_files/Image_020.gif"/></span></p></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">全局安装webpack(这里我先指定版本号3.6.0，因为vue cli2依赖该版本)</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 31pt;text-indent: 0pt;text-align: left;"><span><img width="289" height="34" alt="image" src="index_files/Image_021.gif"/></span></p></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">局部安装webpack（后续才需要）</p><ul id="l11"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">--save-dev`是开发时依赖，项目打包后不需要继续使用的。</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 31pt;text-indent: 0pt;text-align: left;"><span><img width="362" height="49" alt="image" src="index_files/Image_022.gif"/></span></p></li></ul></li><li><p style="padding-top: 17pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">为什么全局安装后，还需要局部安装呢？</p><ul id="l12"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">在终端直接执行webpack命令，使用的全局安装的webpack</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_023.png"/></span></p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">当在package.json中定义了scripts时，其中包含了webpack命令，那么使用的是局部webpack</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_024.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_025.jpg"/></span>        <span class="h2">准备工作</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="363" height="154" alt="image" src="index_files/Image_026.jpg"/></span></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">我们创建如下文件和文件夹：</p></li><li><h3 style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">文件和文件夹解析：</h3><ul id="l13"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">dist文件夹：用于存放之后打包的文件</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">src文件夹：用于存放我们写的源文件</p><p style="text-indent: 0pt;text-align: left;"><span><img width="264" height="208" alt="image" src="index_files/Image_027.jpg"/></span></p><ul id="l14"><li><p style="padding-left: 96pt;text-indent: -15pt;line-height: 26pt;text-align: left;">main.js：项目的入口文件。具体内容查看下面详情。</p></li><li><p style="padding-top: 3pt;padding-left: 96pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>mathUtils.js：定义了一些数学工具函数，可以在其他地方<br/>引用，并且使用。具体内容查看下面的详情。</span></p></li></ul></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">index.html：浏览器打开展示的首页html</p></li><li><p style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>package.json：通过npm init生成的，npm包管理的文件（暂<br/>时没有用上，后面才会用上）</span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="315" height="108" alt="image" src="index_files/Image_028.jpg"/></span></p></li></ul></li><li><p style="padding-top: 3pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">mathUtils.js文件中的代码：</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_029.png"/></span></p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">main.js文件中的代码：</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_030.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_031.jpg"/></span>        <span class="h2">js文件的打包</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p class="s4" style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">现在的js文件中使用了模块化的方式进行开发，他们可以直接使用吗？不可以。</p><ul id="l15"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">因为如果直接在index.html引入这两个js文件，浏览器并不识别其中的模块化代码。</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">另外，在真实项目中当有许多这样的js文件时，我们一个个引用非常麻烦，并且后期非常不方便对它们进行管理。</p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">我们应该怎么做呢？使用webpack工具，对多个js文件进行打包。</p><ul id="l16"><li><p class="s4" style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 85%;text-align: left;"><span>我们知道，webpack就是一个模块化的打包工具，所以它支持我们代码中写模块化，可以对模块化的代码进行处理。（如<br/>何处理的，待会儿在原理中，我会讲解）</span></p></li><li><p class="s4" style="padding-top: 1pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">另外，如果在处理完所有模块之间的关系后，将多个js打包到一个js文件中，引入时就变得非常方便了。</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_032.png"/></span></p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-bottom: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">OK，如何打包呢？使用webpack的指令即可</p><p style="padding-left: 41pt;text-indent: 0pt;text-align: left;"><span><img width="335" height="36" alt="image" src="index_files/Image_033.gif"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 41pt;text-indent: 0pt;text-align: left;"><span><img width="612" height="142" alt="image" src="index_files/Image_034.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_035.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_036.jpg"/></span>        <span class="h2">使用打包后的文件</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p class="s4" style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">打包后会在dist文件下，生成一个bundle.js文件</p><ul id="l17"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">文件内容有些复杂，这里暂时先不看，后续再进行分析。</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_037.png"/></span></p></li><li><p class="s4" style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 85%;text-align: left;"><span>bundle.js文件，是webpack处理了项目直接文件依赖后生成的一个js文件，我们只需要将这个js文件在index.html中引入即<br/>可</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s6" style="padding-left: 39pt;text-indent: 0pt;text-align: left;"><span><img width="670" height="287" alt="image" src="index_files/Image_038.jpg"/></span>	<span><img width="316" height="142" alt="image" src="index_files/Image_039.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_040.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_041.jpg"/></span>        <span class="h2">入口和出口</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 6pt;padding-left: 33pt;text-indent: -15pt;line-height: 76%;text-align: left;"><span>我们考虑一下，如果每次使用webpack的命令都需要写上入口和出口作为参数，就非常麻烦，有没有一种方法可<br/>以将这两个参数写到配置中，在运行时，直接读取呢？</span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_042.png"/></span></p></li><li><p style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">当然可以，就是创建一个webpack.config.js文件</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 28pt;text-indent: 0pt;text-align: left;"><span><img width="685" height="242" alt="image" src="index_files/Image_043.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_044.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_045.jpg"/></span>        <span class="h2">局部安装webpack</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p class="s4" style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">目前，我们使用的webpack是全局的webpack，如果我们想使用局部来打包呢？</p><ul id="l18"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">因为一个项目往往依赖特定的webpack版本，全局的版本可能很这个项目的webpack版本不一致，导出打包出现问题。</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">所以通常一个项目，都有自己局部的webpack。</p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">第一步，项目中需要安装自己局部的webpack</p><ul id="l19"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">这里我们让局部安装webpack3.6.0</p></li><li><p class="s4" style="padding-bottom: 3pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">Vue CLI3中已经升级到webpack4，但是它将配置文件隐藏了起来，所以查看起来不是很方便。</p><p style="padding-left: 50pt;text-indent: 0pt;text-align: left;"><span><img width="372" height="32" alt="image" src="index_files/Image_046.gif"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_047.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="498" height="196" alt="image" src="index_files/Image_048.jpg"/></span></p></li></ul></li><li><p class="s4" style="padding-top: 8pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">第二步，通过node_modules/.bin/webpack启动webpack打包</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 50pt;text-indent: 0pt;text-align: left;"><span><img width="254" height="29" alt="image" src="index_files/Image_049.gif"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_050.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_051.jpg"/></span>        <span class="h2">package.json中定义启动</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="431" height="291" alt="image" src="index_files/Image_052.jpg"/></span></p></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">但是，每次执行都敲这么一长串有没有觉得不方便呢？</p><ul id="l20"><li><p style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 76%;text-align: left;"><span>OK，我们可以在package.json的scripts中定义自己的<br/>执行脚本。</span></p></li></ul></li><li><p style="padding-top: 8pt;padding-left: 33pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>package.json中的scripts的脚本在执行时，会按照一定的顺<br/>序寻找命令对应的位置。</span></p><ul id="l21"><li><p style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>首先，会寻找本地的node_modules/.bin路径中对应的<br/>命令。</span></p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">如果没有找到，会去全局的环境变量中寻找。</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_053.png"/></span></p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">如何执行我们的build指令呢？</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 46pt;text-indent: 0pt;text-align: left;"><span><img width="184" height="34" alt="image" src="index_files/Image_054.gif"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_055.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_056.jpg"/></span>        <span class="h2">什么是loader？</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">loader是webpack中一个非常核心的概念。</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">webpack用来做什么呢？</p><ul id="l22"><li><p style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>在我们之前的实例中，我们主要是用webpack来处理我们写的js代码，并且webpack会自动处理js之间相关的<br/>依赖。</span></p></li><li><p style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>但是，在开发中我们不仅仅有基本的js代码处理，我们也需要加载css、图片，也包括一些高级的将ES6转成<br/>ES5代码，将TypeScript转成ES5代码，将scss、less转成css，将.jsx、.vue文件转成js文件等等。</span></p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">对于webpack本身的能力来说，对于这些转化是不支持的。</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">那怎么办呢？给webpack扩展对应的loader就可以啦。</p></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">loader使用过程：</p><ul id="l23"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">步骤一：通过npm安装需要使用的loader</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">步骤二：在webpack.config.js中的modules关键字下进行配置</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_057.png"/></span></p></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">大部分loader我们都可以在webpack的官网中找到，并且学习对应的用法。</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_058.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_059.jpg"/></span>        <span class="h2">css文件处理 - 准备工作</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="369" height="218" alt="image" src="index_files/Image_060.jpg"/></span></p></li><li><p style="padding-top: 6pt;padding-left: 33pt;text-indent: -15pt;line-height: 76%;text-align: left;"><span>项目开发过程中，我们必然需要添加很多的样式，而样式我们往往<br/>写到一个单独的文件中。</span></p><ul id="l24"><li><p style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>在src目录中，创建一个css文件，其中创建一个normal.css文<br/>件。</span></p></li><li><p style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>我们也可以重新组织文件的目录结构，将零散的js文件放在一<br/>个js文件夹中。</span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="247" height="65" alt="image" src="index_files/Image_061.jpg"/></span></p></li></ul></li><li><p style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">normal.css中的代码非常简单，就是将body设置为red</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 28pt;text-align: left;">但是，这个时候normal.css中的样式会生效吗？</p><p style="text-indent: 0pt;text-align: left;"><span><img width="437" height="183" alt="image" src="index_files/Image_062.jpg"/></span></p><ul id="l25"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">当然不会，因为我们压根就没有引用它。</p></li><li><p style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 76%;text-align: left;"><span>webpack也不可能找到它，因为我们只有一个入口，webpack<br/>会从入口开始查找其他依赖的文件。</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_063.png"/></span></p></li></ul></li><li><p style="padding-left: 33pt;text-indent: -15pt;text-align: left;">在入口文件中引用：</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_064.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_065.jpg"/></span>        <span class="h2">css文件处理 – 打包报错信息</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">重新打包，会出现如下错误：</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 21pt;text-indent: 0pt;text-align: left;"><span><img width="929" height="262" alt="image" src="index_files/Image_066.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_067.png"/></span></p></li><li><p style="padding-top: 10pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">这个错误告诉我们：加载normal.css文件必须有对应的loader。</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_068.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_069.jpg"/></span>        <span class="h2">css文件处理 – css-loader</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="415" height="316" alt="image" src="index_files/Image_070.jpg"/></span><span><img width="513" height="166" alt="image" src="index_files/Image_071.jpg"/></span></p></li><li><p style="padding-top: 6pt;padding-left: 33pt;text-indent: -15pt;line-height: 76%;text-align: left;"><span>在webpack的官方中，我们可以找到如下关于样式的<br/>loader使用方法：</span></p></li><li><p style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">按照官方配置webpack.config.js文件</p><ul id="l26"><li><p style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>注意：配置中有一个style-loader，我们并不知<br/>道它是什么，所以可以暂时不进行配置。</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-left: 33pt;text-indent: -15pt;text-align: left;">重新打包项目：</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">但是，运行index.html，你会发现样式并没有生效。</p><ul id="l27"><li><p style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>原因是css-loader只负责加载css文件，但是并<br/>不负责将css具体样式嵌入到文档中。</span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_072.png"/></span></p></li><li><p style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>这个时候，我们还需要一个style-loader帮助我<br/>们处理。</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_073.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_074.jpg"/></span>        <span class="h2">css文件处理 – style-loader</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="665" height="404" alt="image" src="index_files/Image_075.jpg"/></span></p></li></ul></li><li><p style="padding-top: 1pt;padding-bottom: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: justify;">我们来安装style-loader</p><p style="padding-left: 33pt;text-indent: 0pt;text-align: left;"><span><img width="363" height="36" alt="image" src="index_files/Image_076.gif"/></span></p></li><li><p style="padding-top: 9pt;padding-left: 33pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>注意：style-loader需要放在css-<br/>loader的前面。</span></p></li><li><p style="padding-top: 8pt;padding-left: 33pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>疑惑：不对吧？按照我们的逻辑，在<br/>处理css文件过程中，应该是css-<br/>loader先加载css文件，再由style-<br/>loader来进行进一步的处理，为什么<br/> 会将style-loader放在前面呢？</span></p></li><li><p style="padding-top: 8pt;padding-left: 33pt;text-indent: -15pt;line-height: 77%;text-align: justify;"><span>答案：这次因为webpack在读取使用<br/>的loader的过程中，是按照从右向左<br/>的顺序读取的。</span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_077.png"/></span></p></li><li><p style="padding-top: 3pt;padding-left: 33pt;text-indent: -15pt;text-align: justify;">目前，webpack.config.js的配置如下：</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_078.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_079.jpg"/></span>        <span class="h2">less文件处理 – 准备工作</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="381" height="197" alt="image" src="index_files/Image_080.jpg"/></span></p></li><li><p style="padding-top: 6pt;padding-left: 33pt;text-indent: -15pt;line-height: 76%;text-align: left;"><span>如果我们希望在项目中使用less、scss、stylus来写样式，<br/>webpack是否可以帮助我们处理呢？</span></p><ul id="l28"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 28pt;text-align: left;">我们这里以less为例，其他也是一样的。</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_081.png"/></span></p></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">我们还是先创建一个less文件，依然放在css文件夹中</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s6" style="padding-left: 26pt;text-indent: 0pt;text-align: left;"><span><img width="459" height="279" alt="image" src="index_files/Image_082.jpg"/></span>	<span><img width="564" height="214" alt="image" src="index_files/Image_083.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_084.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_085.jpg"/></span>        <span class="h2">less文件处理 – less-loader</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">继续在官方中查找，我们会找到less-loader相关的使用说明</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">首先，还是需要安装对应的loader</p><ul id="l29"><li><p style="padding-bottom: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">注意：我们这里还安装了less，因为webpack会使用less对less文件进行编译</p><p style="padding-left: 49pt;text-indent: 0pt;text-align: left;"><span><img width="434" height="37" alt="image" src="index_files/Image_086.gif"/></span></p></li></ul></li><li><p style="padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">其次，修改对应的配置文件</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_087.png"/></span></p><ul id="l30"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">添加一个rules选项，用于处理.less文件</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 49pt;text-indent: 0pt;text-align: left;"><span><img width="649" height="227" alt="image" src="index_files/Image_088.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_089.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_090.jpg"/></span>        <span class="h2">图片文件处理 – 资源准备阶段</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">首先，我们在项目中加入两张图片：</p><ul id="l31"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">一张较小的图片test01.jpg(小于8kb)，一张较大的图片test02.jpeg(大于8kb)</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">待会儿我们会针对这两张图片进行不同的处理</p><p style="text-indent: 0pt;text-align: left;"><span><img width="382" height="84" alt="image" src="index_files/Image_091.jpg"/></span></p></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">我们先考虑在css样式中引用图片的情况，所以我更改了normal.css中的样式：</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_092.png"/></span></p></li><li><p style="padding-left: 33pt;text-indent: -15pt;text-align: left;">如果我们现在直接打包，会出现如下问题</p><p style="padding-left: 46pt;text-indent: 0pt;text-align: left;"><span><img width="627" height="216" alt="image" src="index_files/Image_093.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_094.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_095.jpg"/></span>        <span class="h2">图片文件处理 – url-loader</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 1pt;padding-bottom: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">图片处理，我们使用url-loader来处理，依然先安装url-loader</p><p style="padding-left: 32pt;text-indent: 0pt;text-align: left;"><span><img width="352" height="30" alt="image" src="index_files/Image_096.gif"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="341" height="235" alt="image" src="index_files/Image_097.jpg"/></span></p></li><li><p style="padding-top: 7pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">修改webpack.config.js配置文件：</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 316pt;text-indent: 0pt;text-align: left;"><span><img width="606" height="152" alt="image" src="index_files/Image_098.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">再次打包，运行index.html，就会发现我们的背景图片选出了出来。</p><ul id="l32"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">而仔细观察，你会发现背景图是通过base64显示出来的</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_099.png"/></span></p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">OK，这也是limit属性的作用，当图片小于8kb时，对图片进行base64编码</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_100.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_101.jpg"/></span>        <span class="h2">图片文件处理 – file-loader</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">那么问题来了，如果大于8kb呢？我们将background的图片改成test02.jpg</p><ul id="l33"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">这次因为大于8kb的图片，会通过file-loader进行处理，但是我们的项目中并没有file-loader</p><p style="padding-left: 50pt;text-indent: 0pt;text-align: left;"><span><img width="692" height="158" alt="image" src="index_files/Image_102.jpg"/></span></p></li></ul></li><li><p style="padding-top: 5pt;padding-bottom: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">所以，我们需要安装file-loader</p><p style="padding-left: 50pt;text-indent: 0pt;text-align: left;"><span><img width="328" height="35" alt="image" src="index_files/Image_103.gif"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_104.png"/></span></p></li><li><p style="padding-top: 5pt;padding-bottom: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">再次打包，就会发现dist文件夹下多了一个图片文件</p><p style="padding-left: 50pt;text-indent: 0pt;text-align: left;"><span><img width="323" height="60" alt="image" src="index_files/Image_105.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_106.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_107.jpg"/></span>        <span class="h2">图片文件处理 – 修改文件名称</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="377" height="91" alt="image" src="index_files/Image_108.jpg"/></span></p></li><li><p class="s7" style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">我们发现webpack自动帮助我们生成一个非常长的名字</p><ul id="l34"><li><p class="s7" style="padding-top: 2pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">这是一个32位hash值，目的是防止名字重复</p></li><li><p class="s7" style="padding-top: 2pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">但是，真实开发中，我们可能对打包的图片名字有一定的要求</p></li><li><p class="s7" style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;line-height: 91%;text-align: left;"><span>比如，将所有的图片放在一个文件夹中，跟上图片原来的名称，同时也要<br/>防止重复</span></p></li></ul></li><li><p class="s7" style="padding-top: 7pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">所以，我们可以在options中添加上如下选项：</p><ul id="l35"><li><p class="s7" style="padding-top: 2pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">img：文件要打包到的文件夹</p><p style="text-indent: 0pt;text-align: left;"><span><img width="422" height="126" alt="image" src="index_files/Image_109.jpg"/></span></p></li><li><p class="s7" style="padding-top: 2pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">name：获取图片原来的名字，放在该位置</p></li><li><p class="s7" style="padding-top: 2pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">hash:8：为了防止图片名称冲突，依然使用hash，但是我们只保留8位</p></li><li><p class="s7" style="padding-top: 2pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">ext：使用图片原来的扩展名</p></li></ul></li><li><p class="s7" style="padding-top: 6pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">但是，我们发现图片并没有显示出来，这是因为图片使用的路径不正确</p><ul id="l36"><li><p class="s7" style="padding-top: 2pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">默认情况下，webpack会将生成的路径直接返回给使用者</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_110.png"/></span></p></li><li><p class="s7" style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 91%;text-align: left;"><span>但是，我们整个程序是打包在dist文件夹下的，所以这里我们需要在路径下<br/>再添加一个dist/</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_111.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_112.jpg"/></span>        <span class="h2">ES6语法处理</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 6pt;padding-left: 33pt;text-indent: -15pt;line-height: 76%;text-align: left;"><span>如果你仔细阅读webpack打包的js文件，发现写的ES6语法并没有转成ES5，那么就意味着可能一些对ES6还不支持<br/>的浏览器没有办法很好的运行我们的代码。</span></p></li><li><p style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">在前面我们说过，如果希望将ES6的语法转成ES5，那么就需要使用babel。</p><ul id="l37"><li><p style="padding-bottom: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">而在webpack中，我们直接使用babel对应的loader就可以了。</p><p class="s8" style="padding-top: 2pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">npm install --save-dev babel-loader@7 babel-core babel-preset-es2015</p><p style="padding-left: 47pt;text-indent: 0pt;text-align: left;"/></li></ul></li><li><p style="padding-top: 1pt;padding-bottom: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">配置webpack.config.js文件</p><p style="padding-left: 47pt;text-indent: 0pt;text-align: left;"><span><img width="455" height="200" alt="image" src="index_files/Image_113.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_114.png"/></span></p></li><li><p style="padding-left: 33pt;text-indent: -15pt;text-align: left;">重新打包，查看bundle.js文件，发现其中的内容变成了ES5的语法</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_115.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_116.jpg"/></span>        <span class="h2">引入vue.js</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">后续项目中，我们会使用Vuejs进行开发，而且会以特殊的文件来组织vue的组件。</p><ul id="l38"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">所以，下面我们来学习一下如何在我们的webpack环境中集成Vuejs</p></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 28pt;text-align: left;">现在，我们希望在项目中使用Vuejs，那么必然需要对其有依赖，所以需要先进行安装</p><ul id="l39"><li><p style="padding-bottom: 1pt;padding-left: 64pt;text-indent: -15pt;line-height: 28pt;text-align: left;">注：因为我们后续是在实际项目中也会使用vue的，所以并不是开发时依赖</p><p style="padding-left: 49pt;text-indent: 0pt;text-align: left;"><span><img width="266" height="36" alt="image" src="index_files/Image_117.gif"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_118.png"/></span></p></li></ul></li><li><p style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">那么，接下来就可以按照我们之前学习的方式来使用Vue了</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s9" style="padding-left: 49pt;text-indent: 0pt;text-align: left;"><span><img width="368" height="173" alt="image" src="index_files/Image_119.jpg"/></span>	<span><img width="459" height="231" alt="image" src="index_files/Image_120.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_121.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_122.jpg"/></span>        <span class="h2">打包项目 – 错误信息</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">修改完成后，重新打包，运行程序：</p><ul id="l40"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">打包过程没有任何错误(因为只是多打包了一个vue的js文件而已)</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">但是运行程序，没有出现想要的效果，而且浏览器中有报错</p><p style="padding-left: 39pt;text-indent: 0pt;text-align: left;"><span><img width="788" height="157" alt="image" src="index_files/Image_123.jpg"/></span></p></li></ul></li><li><p style="padding-top: 15pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">这个错误说的是我们使用的是runtime-only版本的Vue，什么意思呢？</p><ul id="l41"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">这里我只说解决方案：<span class="s10">Vue不同版本构建</span>，后续我具体讲解runtime-only和runtime-compiler的区别。</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_124.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="236" height="136" alt="image" src="index_files/Image_125.jpg"/></span></p></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">所以我们修改webpack的配置，添加如下内容即可</p><p style="padding-left: 47pt;text-indent: 0pt;text-align: left;"><span><img width="317" height="99" alt="image" src="index_files/Image_126.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_127.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_128.jpg"/></span>        <span class="h2">el和template区别（一）</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p class="s4" style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">正常运行之后，我们来考虑另外一个问题：</p><ul id="l42"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">如果我们希望将data中的数据显示在界面中，就必须是修改index.html</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">如果我们后面自定义了组件，也必须修改index.html来使用组件</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">但是html模板在之后的开发中，我并不希望手动的来频繁修改，是否可以做到呢？</p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">定义template属性：</p><ul id="l43"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">在前面的Vue实例中，我们定义了el属性，用于和index.html中的#app进行绑定，让Vue实例之后可以管理它其中的内容</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">这里，我们可以将div元素中的{{message}}内容删掉，只保留一个基本的id为div的元素</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">但是如果我依然希望在其中显示{{message}}的内容，应该怎么处理呢？</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_129.png"/></span></p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">我们可以再定义一个template属性，代码如下：</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 48pt;text-indent: 0pt;text-align: left;"><span><img width="487" height="150" alt="image" src="index_files/Image_130.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_131.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_132.jpg"/></span>        <span class="h2">el和template区别（二）</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">重新打包，运行程序，显示一样的结果和HTML代码结构</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">那么，el和template模板的关系是什么呢？</p><ul id="l44"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">在我们之前的学习中，我们知道el用于指定Vue要管理的DOM，可以帮助解析其中的指令、事件监听等等。</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 28pt;text-align: left;">而如果Vue实例中同时指定了template，那么template模板的内容会替换掉挂载的对应el的模板。</p></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 28pt;text-align: left;">这样做有什么好处呢？</p><ul id="l45"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 28pt;text-align: left;">这样做之后我们就不需要在以后的开发中再次操作index.html，只需要在template中写入对应的标签即可</p></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">但是，书写template模块非常麻烦怎么办呢？</p><ul id="l46"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">没有关系，稍后我们会将template模板中的内容进行抽离。</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_133.png"/></span></p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 28pt;text-align: left;">会分成三部分书写：template、script、style，结构变得非常清晰。</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_134.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_135.jpg"/></span>        <span class="h2">Vue组件化开发引入</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">在学习组件化开发的时候，我说过以后的Vue开发过程中，我们都会采用组件化开发的思想。</p><ul id="l47"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">那么，在当前项目中，如果我也想采用组件化的形式进行开发，应该怎么做呢？</p></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 28pt;text-align: left;">查看下面的代码：</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_136.png"/></span></p><ul id="l48"><li><p style="padding-bottom: 1pt;padding-left: 64pt;text-indent: -15pt;line-height: 28pt;text-align: left;">当然，我们也可以将下面的代码抽取到一个js文件中，并且导出。</p><p class="s11" style="padding-left: 29pt;text-indent: 0pt;text-align: left;"><span><img width="373" height="340" alt="image" src="index_files/Image_137.jpg"/></span>	<span><img width="483" height="343" alt="image" src="index_files/Image_138.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_139.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_140.jpg"/></span>        <span class="h2">.vue文件封装处理</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="423" height="318" alt="image" src="index_files/Image_141.jpg"/></span></p></li></ul></li><li><p class="s4" style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">但是一个组件以一个js对象的形式进行组织和使用的时候是非常不方便的</p><ul id="l49"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">一方面编写template模块非常的麻烦</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">另外一方面如果有样式的话，我们写在哪里比较合适呢？</p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">现在，我们以一种全新的方式来组织一个vue的组件</p></li><li><p class="s4" style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">但是，这个时候这个文件可以被正确的加载吗？</p><ul id="l50"><li><p class="s4" style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 85%;text-align: left;"><span>必然不可以，这种特殊的文件以及特殊的格式，必须有人帮助我们<br/>处理。</span></p></li><li><p class="s4" style="padding-top: 1pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">谁来处理呢？vue-loader以及vue-template-compiler。</p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">安装vue-loader和vue-template-compiler</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s8" style="padding-top: 2pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">npm install vue-loader vue-template-compiler --save-dev</p><p style="padding-left: 38pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_142.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="351" height="96" alt="image" src="index_files/Image_143.jpg"/></span></p></li><li><p class="s4" style="padding-top: 3pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">修改webpack.config.js的配置文件：</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_144.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_145.jpg"/></span>        <span class="h2">认识plugin</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">plugin是什么？</p><ul id="l51"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">plugin是插件的意思，通常是用于对某个现有的架构进行扩展。</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">webpack中的插件，就是对webpack现有功能的各种扩展，比如打包优化，文件压缩等等。</p></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">loader和plugin区别</p><ul id="l52"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">loader主要用于转换某些类型的模块，它是一个转换器。</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">plugin是插件，它是对webpack本身的扩展，是一个扩展器。</p></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">plugin的使用过程：</p><ul id="l53"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">步骤一：通过npm安装需要使用的plugins(某些webpack已经内置的插件不需要安装)</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">步骤二：在webpack.config.js中的plugins中配置插件。</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_146.png"/></span></p></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">下面，我们就来看看可以通过哪些插件对现有的webpack打包过程进行扩容，让我们的webpack变得更加好用。</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_147.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_148.jpg"/></span>        <span class="h2">添加版权的Plugin</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">我们先来使用一个最简单的插件，为打包的文件添加版权声明</p><ul id="l54"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">该插件名字叫BannerPlugin，属于webpack自带的插件。</p></li></ul></li><li><p style="padding-top: 2pt;padding-bottom: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">按照下面的方式来修改webpack.config.js的文件：</p><p style="padding-left: 46pt;text-indent: 0pt;text-align: left;"><span><img width="537" height="194" alt="image" src="index_files/Image_149.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_150.png"/></span></p></li><li><p style="padding-top: 7pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">重新打包程序：查看bundle.js文件的头部，看到如下信息</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 46pt;text-indent: 0pt;text-align: left;"><span><img width="451" height="49" alt="image" src="index_files/Image_151.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_152.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_153.jpg"/></span>        <span class="h2">打包html的plugin</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p class="s4" style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">目前，我们的index.html文件是存放在项目的根目录下的。</p><ul id="l55"><li><p class="s4" style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 85%;text-align: left;"><span>我们知道，在真实发布项目时，发布的是dist文件夹中的内容，但是dist文件夹中如果没有index.html文件，那么打包的js<br/>等文件也就没有意义了。</span></p></li><li><p class="s4" style="padding-top: 1pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">所以，我们需要将index.html文件打包到dist文件夹中，这个时候就可以使用HtmlWebpackPlugin插件</p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">HtmlWebpackPlugin插件可以为我们做这些事情：</p><ul id="l56"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">自动生成一个index.html文件(可以指定模板来生成)</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">将打包的js文件，自动通过script标签插入到body中</p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-bottom: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">安装HtmlWebpackPlugin插件</p><p class="s8" style="padding-top: 2pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">npm install html-webpack-plugin --save-dev</p><p style="padding-left: 40pt;text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="121" alt="image" src="index_files/Image_154.jpg"/></span></p></li><li><p class="s4" style="padding-top: 6pt;padding-left: 33pt;text-indent: -15pt;line-height: 25pt;text-align: left;">使用插件，修改webpack.config.js文件中plugins部分的内容如下：</p><ul id="l57"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">这里的template表示根据什么模板来生成index.html</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">另外，我们需要删除之前在output中添加的publicPath属性</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_155.png"/></span></p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">否则插入的script标签中的src可能会有问题</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_156.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_157.jpg"/></span>        <span class="h2">js压缩的Plugin</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">在项目发布之前，我们必然需要对js等文件进行压缩处理</p><ul id="l58"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">这里，我们就对打包的js文件进行压缩</p></li><li><p style="padding-bottom: 2pt;padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">我们使用一个第三方的插件uglifyjs-webpack-plugin，并且版本号指定1.1.1，和CLI2保持一致</p><p class="s8" style="padding-top: 2pt;padding-left: 6pt;text-indent: 0pt;text-align: left;"><a href="mailto:uglifyjs-webpack-plugin@1.1.1" class="a" target="_blank">npm install uglifyjs-webpack-plugin@1.1.1</a> --save-dev</p><p style="padding-left: 50pt;text-indent: 0pt;text-align: left;"/></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">修改webpack.config.js文件，使用插件：</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 50pt;text-indent: 0pt;text-align: left;"><span><img width="599" height="240" alt="image" src="index_files/Image_158.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_159.png"/></span></p></li><li><p style="padding-left: 33pt;text-indent: -15pt;text-align: left;">查看打包后的bunlde.js文件，是已经被压缩过了。</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_160.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_161.jpg"/></span>        <span class="h2">搭建本地服务器</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 6pt;padding-left: 33pt;text-indent: -15pt;line-height: 76%;text-align: left;"><span>webpack提供了一个可选的本地开发服务器，这个本地服务器基于node.js搭建，内部使用express框架，可以实<br/>现我们想要的让浏览器自动刷新显示我们修改后的结果。</span></p></li><li><p style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">不过它是一个单独的模块，在webpack中使用之前需要先安装它</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-top: 2pt;padding-left: 5pt;text-indent: 0pt;text-align: left;"><a href="mailto:webpack-dev-server@2.9.1" class="a" target="_blank">npm install --save-dev </a><a href="mailto:webpack-dev-server@2.9.1" target="_blank">webpack-dev-server@2.9.1</a></p><p style="padding-left: 34pt;text-indent: 0pt;text-align: left;"/></li><li><p style="padding-left: 33pt;text-indent: -15pt;line-height: 28pt;text-align: left;">devserver也是作为webpack中的一个选项，选项本身可以设置如下属性：</p><ul id="l59"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">contentBase：为哪一个文件夹提供本地服务，默认是根文件夹，我们这里要填写./dist</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">port：端口号</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">inline：页面实时刷新</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">historyApiFallback：在SPA页面中，依赖HTML5的history模式</p><p style="text-indent: 0pt;text-align: left;"><span><img width="343" height="91" alt="image" src="index_files/Image_162.jpg"/></span></p></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">webpack.config.js文件配置修改如下：</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">我们可以再配置另外一个scripts：</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_163.png"/></span></p><ul id="l60"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">--open参数表示直接打开浏览器</p></li></ul></li></ul><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 340pt;text-indent: 0pt;text-align: left;"><span><img width="364" height="36" alt="image" src="index_files/Image_164.gif"/></span></p></body></html>

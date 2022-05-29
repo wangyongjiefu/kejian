@@ -1,399 +1,152 @@
-
-<!DOCTYPE HTML>
-<html lang="" >
-    <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>07-vue-router详解 · GitBook</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
-        
-        
-        
-    
-    <link rel="stylesheet" href="../gitbook/style.css">
-
-    
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-        
-
-    
-
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-        
-    
-    
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
-
-    
-    <link rel="next" href="../08-Promise的使用/" />
-    
-    
-    <link rel="prev" href="../07-Vue CLI详解/" />
-    
-
-    </head>
-    <body>
-        
-<div class="book">
-    <div class="book-summary">
-        
-            
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
-
-            
-                <nav role="navigation">
-                
-
-
-<ul class="summary">
-    
-    
-
-    
-
-    
-        
-        
-    
-        <li class="chapter " data-level="1.1" data-path="../">
-            
-                <a href="../">
-            
-                    
-                    Introduction
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="../01-课程介绍/">
-            
-                <a href="../01-课程介绍/">
-            
-                    
-                    01-课程介绍
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="../02-邂逅Vuejs/">
-            
-                <a href="../02-邂逅Vuejs/">
-            
-                    
-                    02-邂逅Vuejs
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" data-path="../03-基础语法/">
-            
-                <a href="../03-基础语法/">
-            
-                    
-                    03-基础语法
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" data-path="../04-组件化开发/">
-            
-                <a href="../04-组件化开发/">
-            
-                    
-                    04-组件化开发
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6" data-path="../05-前端模块化/">
-            
-                <a href="../05-前端模块化/">
-            
-                    
-                    05-前端模块化
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7" data-path="../06-Vue CLI详解/">
-            
-                <a href="../06-Vue CLI详解/">
-            
-                    
-                    06-Vue CLI详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8" data-path="../06-webpack详解/">
-            
-                <a href="../06-webpack详解/">
-            
-                    
-                    06-webpack详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9" data-path="../07-Vue CLI详解/">
-            
-                <a href="../07-Vue CLI详解/">
-            
-                    
-                    07-Vue CLI详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.10" data-path="./">
-            
-                <a href="./">
-            
-                    
-                    07-vue-router详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11" data-path="../08-Promise的使用/">
-            
-                <a href="../08-Promise的使用/">
-            
-                    
-                    08-Promise的使用
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.12" data-path="../08-Vuex详解/">
-            
-                <a href="../08-Vuex详解/">
-            
-                    
-                    08-Vuex详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13" data-path="../09-Vuex详解/">
-            
-                <a href="../09-Vuex详解/">
-            
-                    
-                    09-Vuex详解
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.14" data-path="../10-网络模块封装/">
-            
-                <a href="../10-网络模块封装/">
-            
-                    
-                    10-网络模块封装
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-
-    <li class="divider"></li>
-
-    <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
-        </a>
-    </li>
-</ul>
-
-
-                </nav>
-            
-        
-    </div>
-
-    <div class="book-body">
-        
-            <div class="body-inner">
-                
-                    
-
-<div class="book-header" role="navigation">
-    
-
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >07-vue-router详解</a>
-    </h1>
-</div>
-
-
-
-
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div id="book-search-results">
-    <div class="search-noresults">
-    
-                                <section class="normal markdown-section">
-                                
-                                <h1 id="07-vue-router&#x8BE6;&#x89E3;">07-vue-router&#x8BE6;&#x89E3;</h1>
-
-                                
-                                </section>
-                            
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
-                        </div>
-                    </div>
-                
-            </div>
-
-            
-                
-                <a href="../07-Vue CLI详解/" class="navigation navigation-prev " aria-label="Previous page: 07-Vue CLI详解">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="../08-Promise的使用/" class="navigation navigation-next " aria-label="Next page: 08-Promise的使用">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
-        
-    </div>
-
-    <script>
-        var gitbook = gitbook || [];
-        gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"07-vue-router详解","level":"1.10","depth":1,"next":{"title":"08-Promise的使用","level":"1.11","depth":1,"path":"08-Promise的使用/README.md","ref":"08-Promise的使用/README.md","articles":[]},"previous":{"title":"07-Vue CLI详解","level":"1.9","depth":1,"path":"07-Vue CLI详解/README.md","ref":"07-Vue CLI详解/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"07-vue-router详解/README.md","mtime":"2022-05-29T00:59:25.568Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-29T00:59:36.700Z"},"basePath":"..","book":{"language":""}});
-        });
-    </script>
-</div>
-
-        
-    <script src="../gitbook/gitbook.js"></script>
-    <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-
-    </body>
-</html>
-
+<!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>(07-vue-router\317\352\275\342.pptx)</title><meta name="author" content="lala"/><style type="text/css"> * {margin:0; padding:0; text-indent:0; }
+ h1 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 57pt; }
+ .p, p { color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; margin:0pt; }
+ .a, a { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt; }
+ .s2 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s3 { color: #3F3F3F; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 31.5pt; }
+ h4 { color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 15.5pt; }
+ .s4 { color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt; }
+ h2 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 31.5pt; }
+ .s6 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 31.5pt; }
+ .s7 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 15.5pt; }
+ .s8 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ .s9 { color: #0562C1; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ .s10 { color: #0562C1; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 15.5pt; }
+ .s11 { color: #F00; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ .s13 { color: black; font-family:宋体; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt; }
+ .s14 { color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt; }
+ h3 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 28pt; }
+ .s15 { color: #F00; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ .s16 { color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ .s17 { color: black; font-family:宋体; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ .s18 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s19 { color: #F00; font-family:Consolas, monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ .s20 { color: black; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; vertical-align: 1pt; }
+ .s21 { color: #585858; font-family:微软雅黑, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14.5pt; }
+ li {display: block; }
+ #l1 {padding-left: 0pt; }
+ #l1> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l2 {padding-left: 0pt; }
+ #l2> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l3 {padding-left: 0pt; }
+ #l3> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l4 {padding-left: 0pt; }
+ #l4> li>*:first-child:before {content: " "; color: #585858; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ #l5 {padding-left: 0pt; }
+ #l5> li>*:first-child:before {content: " "; color: #585858; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ #l6 {padding-left: 0pt; }
+ #l6> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l7 {padding-left: 0pt; }
+ #l7> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l8 {padding-left: 0pt; }
+ #l8> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l9 {padding-left: 0pt; }
+ #l9> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l10 {padding-left: 0pt; }
+ #l10> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l11 {padding-left: 0pt; }
+ #l11> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l12 {padding-left: 0pt; }
+ #l12> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l13 {padding-left: 0pt; }
+ #l13> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l14 {padding-left: 0pt; }
+ #l14> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ #l15 {padding-left: 0pt; }
+ #l15> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ #l16 {padding-left: 0pt; }
+ #l16> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l17 {padding-left: 0pt; }
+ #l17> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l18 {padding-left: 0pt; }
+ #l18> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l19 {padding-left: 0pt; }
+ #l19> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l20 {padding-left: 0pt; }
+ #l20> li>*:first-child:before {content: " "; color: #585858; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt; }
+ #l21 {padding-left: 0pt; }
+ #l21> li>*:first-child:before {content: " "; color: #585858; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt; }
+ #l22 {padding-left: 0pt; }
+ #l22> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ li {display: block; }
+ #l23 {padding-left: 0pt; }
+ #l23> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l24 {padding-left: 0pt; }
+ #l24> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l25 {padding-left: 0pt; }
+ #l25> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l26 {padding-left: 0pt; }
+ #l26> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l27 {padding-left: 0pt; }
+ #l27> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l28 {padding-left: 0pt; }
+ #l28> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l29 {padding-left: 0pt; }
+ #l29> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l30 {padding-left: 0pt; }
+ #l30> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l31 {padding-left: 0pt; }
+ #l31> li>*:first-child:before {content: " "; color: #585858; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt; }
+ #l32 {padding-left: 0pt; }
+ #l32> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l33 {padding-left: 0pt; }
+ #l33> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l34 {padding-left: 0pt; }
+ #l34> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l35 {padding-left: 0pt; }
+ #l35> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l36 {padding-left: 0pt; }
+ #l36> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l37 {padding-left: 0pt; }
+ #l37> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l38 {padding-left: 0pt; }
+ #l38> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l39 {padding-left: 0pt; }
+ #l39> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ #l40 {padding-left: 0pt; }
+ #l40> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15.5pt; }
+ #l41 {padding-left: 0pt; }
+ #l41> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l42 {padding-left: 0pt; }
+ #l42> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l43 {padding-left: 0pt; }
+ #l43> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l44 {padding-left: 0pt; }
+ #l44> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l45 {padding-left: 0pt; }
+ #l45> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l46 {padding-left: 0pt; }
+ #l46> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l47 {padding-left: 0pt; }
+ #l47> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l48 {padding-left: 0pt; }
+ #l48> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l49 {padding-left: 0pt; }
+ #l49> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ li {display: block; }
+ #l50 {padding-left: 0pt; }
+ #l50> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l51 {padding-left: 0pt; }
+ #l51> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l52 {padding-left: 0pt; }
+ #l52> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l53 {padding-left: 0pt; }
+ #l53> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l54 {padding-left: 0pt; }
+ #l54> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l55 {padding-left: 0pt; }
+ #l55> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l56 {padding-left: 0pt; }
+ #l56> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l57 {padding-left: 0pt; }
+ #l57> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l58 {padding-left: 0pt; }
+ #l58> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l59 {padding-left: 0pt; }
+ #l59> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l60 {padding-left: 0pt; }
+ #l60> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l61 {padding-left: 0pt; }
+ #l61> li>*:first-child:before {content: " "; color: black; font-family:Wingdings; font-style: normal; font-weight: normal; text-decoration: none; }
+</style></head><body><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1117" height="22" alt="image" src="index_files/Image_001.png"/></span></p><h1 style="padding-left: 130pt;text-indent: 0pt;line-height: 95pt;text-align: center;">vue-router详解</h1><p style="padding-top: 17pt;padding-left: 130pt;text-indent: 0pt;line-height: 27pt;text-align: center;">王红元</p><p style="padding-left: 355pt;text-indent: 0pt;line-height: 90%;text-align: center;"><span>微博：coderwhy<br/>微信：372623326</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 368pt;text-indent: 0pt;text-align: left;"><span><img width="140" height="50" alt="image" src="index_files/Image_002.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1117" height="22" alt="image" src="index_files/Image_003.png"/></span></p><p style="padding-left: 130pt;text-indent: 0pt;text-align: center;"><a href="http://www.520it.com/" class="a" target="_blank">实力IT教育 </a><a href="http://www.520it.com/" target="_blank">www.520it.com</a></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_004.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s2" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_005.jpg"/></span>        <span class="s3">内容概述</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><ul id="l1"><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">认识路由</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">vue-router基本使用</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">vue-router嵌套路由</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">vue-router参数传递</p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">vue-router导航守卫</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_006.png"/></span></p></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">keep-alive</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_007.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s2" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_008.jpg"/></span>        <span class="s3">什么是路由？</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">说起路由你想起了什么？</p><ul id="l2"><li><p style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">路由是一个网络工程里面的术语。</p></li><li><h4 style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">路由<span class="p">（</span>routing<span class="p">）就是通过互联的网络把信息从源地址传输到目的地址的活动. --- 维基百科</span></h4></li></ul></li><li><p style="padding-top: 8pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">额, 啥玩意? 没听懂</p><ul id="l3"><li><p style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">在生活中, 我们有没有听说过路由的概念呢? 当然了, 路由器嘛.</p><p style="text-indent: 0pt;text-align: left;"><span><img width="428" height="240" alt="image" src="index_files/Image_009.jpg"/></span></p></li><li><p style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">路由器是做什么的? 你有想过吗?</p></li><li><p style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">路由器提供了两种机制: 路由和转送.</p><ul id="l4"><li><p style="padding-top: 4pt;padding-left: 96pt;text-indent: -15pt;text-align: left;">路由是决定数据包从<b>来源</b>到<b>目的地</b>的路径.</p></li><li><p style="padding-top: 4pt;padding-left: 96pt;text-indent: -15pt;text-align: left;">转送将<b>输入端</b>的数据转移到合适的<b>输出端</b>.</p></li></ul></li><li><p style="padding-top: 4pt;padding-left: 64pt;text-indent: -15pt;text-align: left;">路由中有一个非常重要的概念叫路由表.</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_010.png"/></span></p><ul id="l5"><li><p style="padding-top: 4pt;padding-left: 96pt;text-indent: -15pt;text-align: left;">路由表本质上就是一个映射表, 决定了数据包的指向.</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_011.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s2" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_012.jpg"/></span>        <span class="s3">后端路由阶段</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li></ul></li><li><p class="s4" style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">早期的网站开发整个HTML页面是由服务器来渲染的.</p><ul id="l6"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">服务器直接生产渲染好对应的HTML页面, 返回给客户端进行展示.</p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">但是, 一个网站, 这么多页面服务器如何处理呢?</p><ul id="l7"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">一个页面有自己对应的网址, 也就是URL.</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">URL会发送到服务器, 服务器会通过正则对该URL进行匹配, 并且最后交给一个Controller进行处理.</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">Controller进行各种处理, 最终生成HTML或者数据, 返回给前端.</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">这就完成了一个IO操作.</p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">上面的这种操作, 就是后端路由.</p><ul id="l8"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">当我们页面中需要请求不同的<b>路径</b>内容时, 交给服务器来进行处理, 服务器渲染好整个页面, 并且将页面返回给客户顿.</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">这种情况下渲染好的页面, 不需要单独加载任何的js和css, 可以直接交给浏览器展示, 这样也有利于SEO的优化.</p></li></ul></li><li><p class="s4" style="padding-top: 4pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">后端路由的缺点:</p><ul id="l9"><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">一种情况是整个页面的模块由后端人员来编写和维护的.</p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">另一种情况是前端开发人员如果要开发页面, 需要通过PHP和Java等语言来编写页面代码.</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_013.png"/></span></p></li><li><p class="s4" style="padding-left: 64pt;text-indent: -15pt;text-align: left;">而且通常情况下HTML代码和数据以及对应的逻辑会混在一起, 编写和维护都是非常糟糕的事情.</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_014.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_015.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">前端路由阶段</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">前后端分离阶段：</p><ul id="l10"><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">随着Ajax的出现, 有了前后端分离的开发模式.</p></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">后端只提供API来返回数据, 前端通过Ajax获取数据, 并且可以通过JavaScript将数据渲染到页面中.</p></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">这样做最大的优点就是前后端责任的清晰, 后端专注于数据上, 前端专注于交互和可视化上.</p></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">并且当移动端(iOS/Android)出现后, 后端不需要进行任何处理, 依然使用之前的一套API即可.</p></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">目前很多的网站依然采用这种模式开发.</p></li></ul></li><li><h4 style="padding-top: 3pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">单页面富应用阶段:</h4><ul id="l11"><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">其实SPA最主要的特点就是在前后端分离的基础上加了一层前端路由.</p></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">也就是前端来维护一套路由规则.</p></li></ul></li><li><p style="padding-top: 3pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">前端路由的核心是什么呢？</p><ul id="l12"><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">改变URL，但是页面不进行整体的刷新。</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_016.png"/></span></p></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">如何实现呢？</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_017.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_018.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">URL的hash</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">URL的hash</p><ul id="l13"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">URL的hash也就是锚点(#), 本质上是改变window.location的href属性.</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_019.png"/></span></p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">我们可以通过直接赋值location.hash来改变href, 但是页面不发生刷新</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 44pt;text-indent: 0pt;text-align: left;"><span><img width="768" height="345" alt="image" src="index_files/Image_020.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_021.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_022.jpg"/></span></p><p class="s6" style="padding-left: 94pt;text-indent: 0pt;line-height: 55pt;text-align: center;">HTML5的history模式：<b>pushState</b></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">history接口是HTML5新增的, 它有五种模式改变URL而不刷新页面.</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_023.png"/></span></p></li><li><p style="padding-top: 5pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">history.pushState()</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 33pt;text-indent: 0pt;text-align: left;"><span><img width="768" height="356" alt="image" src="index_files/Image_024.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_025.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_026.jpg"/></span></p><p class="s6" style="padding-left: 130pt;text-indent: 0pt;line-height: 55pt;text-align: center;">HTML5的history模式：r<b>eplaceState</b></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_027.png"/></span></p></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">history.replaceState()</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 27pt;text-indent: 0pt;text-align: left;"><span><img width="759" height="377" alt="image" src="index_files/Image_028.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_029.png"/></span></p><p style="padding-left: 13pt;text-indent: 0pt;text-align: left;"><span><img width="140" height="50" alt="image" src="index_files/Image_030.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_031.png"/></span></p></li><li><p style="padding-left: 35pt;text-indent: -18pt;text-align: left;">history.go()</p><p class="s6" style="padding-left: 7pt;text-indent: 0pt;line-height: 55pt;text-align: left;">HTML5的history模式：go</p><p style="text-indent: 0pt;text-align: left;"><br/></p><ul id="l14"><li><p class="s7" style="padding-top: 5pt;padding-left: 25pt;text-indent: -19pt;line-height: 29pt;text-align: left;">补充说明：</p></li></ul><ul id="l15"><li><p class="s8" style="padding-left: 25pt;text-indent: -19pt;line-height: 28pt;text-align: left;">上面只演示了三个方法</p></li><li><p class="s8" style="padding-left: 25pt;text-indent: -19pt;line-height: 28pt;text-align: left;">因为 history.back() 等价于 history.go(-1)</p></li><li><p class="s8" style="padding-left: 25pt;text-indent: -19pt;line-height: 28pt;text-align: left;">history.forward() 则等价于 history.go(1)</p></li><li><p class="s8" style="padding-left: 25pt;text-indent: -19pt;line-height: 28pt;text-align: left;">这三个接口等同于浏览器界面的前进后退。</p></li></ul><p class="s18" style="padding-left: 21pt;text-indent: 0pt;text-align: left;"><span><img width="536" height="345" alt="image" src="index_files/Image_032.jpg"/></span>	</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_033.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_034.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">认识vue-router</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">目前前端流行的三大框架, 都有自己的路由实现:</p><ul id="l16"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">Angular的ngRouter</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">React的ReactRouter</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">Vue的vue-router</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-left: 35pt;text-indent: -18pt;text-align: left;">当然, 我们的重点是vue-router</p><ul id="l17"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">vue-router是Vue.js官方的路由插件，它和vue.js是深度集成的，适合用于构建单页面应用。</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">我们可以访问其官方网站对其进行学习: <span class="s10">https://router.vuejs.org/zh/</span></p></li></ul></li><li><p style="padding-top: 5pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">vue-router是基于路由和组件的</p><ul id="l18"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">路由用于设定访问路径, 将路径和组件映射起来.</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_035.png"/></span></p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">在vue-router的单页面应用中, 页面的路径的改变就是组件的切换.</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_036.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_037.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">安装和使用vue-router</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">因为我们已经学习了webpack, 后续开发中我们主要是通过工程化的方式进行开发的.</p><ul id="l19"><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">所以在后续, 我们直接使用npm来安装路由即可.</p></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">步骤一: 安装vue-router</p><ul id="l20"><li><p class="s4" style="padding-top: 2pt;padding-left: 79pt;text-indent: -15pt;text-align: left;">npm install vue-router --save</p></li></ul></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">步骤二: 在模块化工程中使用它(因为是一个插件, 所以可以通过Vue.use()来安装路由功能)</p><p class="s11" style="padding-top: 2pt;padding-left: 6pt;text-indent: 0pt;line-height: 19pt;text-align: left;">import Vue from &#39;vue&#39;</p><p class="s11" style="padding-left: 6pt;text-indent: 0pt;line-height: 19pt;text-align: left;">import VueRouter from &#39;vue-router&#39;</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s11" style="padding-left: 6pt;text-indent: 0pt;text-align: left;">Vue.use(VueRouter)</p><p style="text-indent: 0pt;text-align: left;"/><ul id="l21"><li><p class="s4" style="padding-top: 2pt;padding-left: 79pt;text-indent: -15pt;text-align: left;">第一步：<span style=" color: #F00;">导入</span>路由对象，并且<span style=" color: #F00;">调用 Vue.use(VueRouter)</span></p></li><li><p class="s4" style="padding-top: 2pt;padding-left: 79pt;text-indent: -15pt;text-align: left;">第二步：创建<span style=" color: #F00;">路由实例</span>，并且传入路由<span style=" color: #F00;">映射配置</span></p></li><li><p class="s4" style="padding-top: 3pt;padding-left: 79pt;text-indent: -15pt;text-align: left;">第三步：在<span style=" color: #F00;">Vue实例</span>中<span style=" color: #F00;">挂载</span>创建的<span style=" color: #F00;">路由实例</span></p></li></ul></li></ul></li><li><p style="padding-top: 3pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">使用vue-router的步骤:</p><ul id="l22"><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">第一步: 创建路由组件</p></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">第二步: 配置路由映射: 组件和路径映射关系</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_038.png"/></span></p></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">第三步: 使用路由: 通过&lt;router-link&gt;和&lt;router-view&gt;</p></li></ul></li></ul><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="967" height="503" alt="image" src="index_files/Image_039.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_040.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_041.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_042.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">创建router实例</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1065" height="509" alt="image" src="index_files/Image_043.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_044.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_045.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_046.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">挂载到Vue实例中</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_047.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_048.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_049.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">步骤一：创建路由组件</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 11pt;text-indent: 0pt;text-align: left;"><span><img width="1098" height="350" alt="image" src="index_files/Image_050.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="895" height="509" alt="image" src="index_files/Image_051.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_052.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_053.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_054.jpg"/></span></p><h2 style="padding-left: 103pt;text-indent: 0pt;line-height: 55pt;text-align: center;">步骤二：<span class="s6">配置组件和路径的映射关系</span></h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_055.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_056.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">步骤三：<span class="s6">使用路由.</span></h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="812" height="431" alt="image" src="index_files/Image_057.jpg"/></span></p><ul id="l23"><li><p class="s13" style="padding-left: 32pt;text-indent: -19pt;line-height: 141%;text-align: justify;"><span>&lt;router-link&gt;: 该标签是一个<br/>vue-router中已经内置的组件,<br/>它会被渲染成一个&lt;a&gt;标签.</span></p></li><li><p class="s13" style="padding-left: 32pt;text-indent: -19pt;line-height: 141%;text-align: left;"><span>&lt;router-view&gt;: 该标签会根据<br/>当前的路径, 动态渲染出不同<br/>的组件.</span></p><ul id="l24"><li><p class="s13" style="padding-left: 32pt;text-indent: -19pt;line-height: 141%;text-align: left;"><span>网页的其他内容, 比如顶部的<br/>标题/导航, 或者底部的一些版                                                   <br/>权信息等会和&lt;router-view&gt;处<br/>于同一个等级.</span></p></li><li><p class="s13" style="padding-left: 32pt;text-indent: -19pt;line-height: 18pt;text-align: left;">在路由切换时, 切换的是</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_058.png"/></span></p><p class="s13" style="padding-top: 6pt;padding-left: 32pt;text-indent: 0pt;line-height: 141%;text-align: left;"><span>&lt;router-view&gt;挂载的组件, 其<br/>他内容不会发生改变</span><span class="s14">.</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="782" height="512" alt="image" src="index_files/Image_059.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_060.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_061.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_062.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">最终效果如下</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_063.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_064.jpg"/></span></p><h3 style="padding-left: 131pt;text-indent: 0pt;line-height: 49pt;text-align: left;">路由的默认路径</h3><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><ul id="l25"><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">我们这里还有一个不太好的实现:</p><ul id="l26"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">默认情况下, 进入网站的首页, 我们希望&lt;router-view&gt;渲染首页的内容.</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">但是我们的实现中, 默认没有显示首页组件, 必须让用户点击才可以.</p></li></ul></li><li><p style="padding-top: 5pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">如何可以让<b>路径</b>默认跳到到<b>首页</b>, 并且&lt;router-view&gt;渲染首页组件呢?</p><p style="text-indent: 0pt;text-align: left;"><span><img width="288" height="107" alt="image" src="index_files/Image_065.jpg"/></span></p><ul id="l27"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">非常简单, 我们只需要配置多配置一个映射就可以了.</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-left: 35pt;text-indent: -18pt;text-align: left;">配置解析:</p><ul id="l28"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">我们在routes中又配置了一个映射.</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">path配置的是根路径: /</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_066.png"/></span></p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">redirect是重定向, 也就是我们将根路径重定向到/home的路径下, 这样就可以得到我们想要的结果了.</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_067.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_068.jpg"/></span></p><h3 style="padding-left: 131pt;text-indent: 0pt;line-height: 49pt;text-align: left;">HTML5的History模式</h3><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="445" height="443" alt="image" src="index_files/Image_069.jpg"/></span></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">我们前面说过改变路径的方式有两种:</p><ul id="l29"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">URL的hash</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">HTML5的history</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">默认情况下, 路径的改变使用的URL的hash.</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_070.png"/></span></p></li></ul></li><li><p style="padding-top: 5pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">如果希望使用HTML5的history模式, 非常简单, 进行如下配置即可:</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 30pt;text-indent: 0pt;text-align: left;"><span><img width="521" height="187" alt="image" src="index_files/Image_071.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_072.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_073.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">router-link补充</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">在前面的&lt;router-link&gt;中, 我们只是使用了一个<span style=" color: #F00;">属性: to</span>, 用于指定跳转的路径.</p></li><li><p style="padding-top: 5pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">&lt;router-link&gt;还有一些<b>其他属性</b>:</p><p class="s11" style="padding-top: 14pt;padding-left: 17pt;text-indent: 0pt;text-align: left;">&lt;router-link to=&#39;/home&#39; tag=&#39;li&#39;&gt;</p><ul id="l30"><li><p class="s15" style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">tag: <span style=" color: #585858;">tag可以指定&lt;router-link&gt;之后渲染成什么组件, 比如上面的代码会被渲染成一个&lt;li&gt;元素, 而不是&lt;a&gt;</span></p></li><li><p class="s15" style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">replace: <span style=" color: #585858;">replace不会留下history记录, 所以指定replace的情况下, 后退键返回不能返回到上一个页面中</span></p></li><li><p class="s15" style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">active-class: <span style=" color: #585858;">当&lt;router-link&gt;对应的路由匹配成功时, 会自动给当前元素设置一个router-link-active的class,<br/>设置active-class可以修改默认的名称.</span></p><ul id="l31"><li><p class="s4" style="padding-top: 4pt;padding-left: 79pt;text-indent: -15pt;text-align: left;">在进行高亮显示的导航菜单或者底部tabbar时, 会使用到该类.</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_074.png"/></span></p></li><li><p class="s4" style="padding-top: 4pt;padding-left: 79pt;text-indent: -15pt;text-align: left;">但是通常不会修改类的属性, 会直接使用默认的router-link-active即可.</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 66pt;text-indent: 0pt;text-align: left;"><span><img width="793" height="117" alt="image" src="index_files/Image_075.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_076.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_077.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">修改linkActiveClass</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="586" height="318" alt="image" src="index_files/Image_078.jpg"/></span></p></li></ul></li></ul></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">该class具体的名称也可以通过router实例的属性进行修改</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li></ul></li><li><p class="s16" style="padding-left: 32pt;text-indent: -19pt;text-align: left;">exact-active-class</p><ul id="l32"><li><p class="s17" style="padding-top: 8pt;padding-left: 32pt;text-indent: -19pt;line-height: 143%;text-align: left;">类似于<span class="s16">active-class, </span><span>只是在精准匹配下才会<br/>出现的</span><span class="s16">class.</span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_079.png"/></span></p></li><li><p class="s17" style="padding-left: 32pt;text-indent: -19pt;line-height: 143%;text-align: left;">后面看到嵌套路由时<span class="s16">, </span><span>我们再看下这个属<br/>性</span><span class="s16">.</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 28pt;text-indent: 0pt;text-align: left;"><span><img width="474" height="101" alt="image" src="index_files/Image_080.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_081.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_082.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">路由代码跳转</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><ul id="l33"><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">有时候, 页面的跳转可能需要执行对应的JavaScript代码, 这个时候, 就可以使用第二种跳转方式了</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_083.png"/></span></p></li><li><p style="padding-top: 5pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">比如, 我们将代码修改如下:</p><p style="padding-left: 37pt;text-indent: 0pt;text-align: left;"><span><img width="648" height="399" alt="image" src="index_files/Image_084.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_085.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_086.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">动态路由</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">在某些情况下，一个页面的path路径可能是不确定的，比如我们进入用户界面时，希望是如下的路径：</p><ul id="l34"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">/user/aaaa或/user/bbbb</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">除了有前面的/user之外，后面还跟上了用户的ID</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_087.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="366" height="115" alt="image" src="index_files/Image_088.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="419" height="83" alt="image" src="index_files/Image_089.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="475" height="206" alt="image" src="index_files/Image_090.jpg"/></span></p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">这种path和Component的匹配关系，我们称之为动态路由(也是路由传递数据的一种方式)。</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 31pt;text-indent: 0pt;text-align: left;"><span><img width="612" height="28" alt="image" src="index_files/Image_091.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_092.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s2" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_093.jpg"/></span>        <span class="s3">认识路由的懒加载</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">官方给出了解释:</p><ul id="l35"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">当打包构建应用时，Javascript 包会变得非常大，影响页面加载。</p></li><li><p style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>如果我们能把不同路由对应的组件分割成不同的代码块，然后当路由被访问的时候才加载对应组件，这样就更<br/>加高效了</span></p></li></ul></li><li><p style="padding-top: 3pt;padding-left: 33pt;text-indent: -15pt;line-height: 28pt;text-align: left;">官方在说什么呢?</p><ul id="l36"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">首先, 我们知道路由中通常会定义很多不同的页面.</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">这个页面最后被打包在哪里呢? 一般情况下, 是放在一个js文件中.</p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">但是, 页面这么多放在一个js文件中, 必然会造成这个页面非常的大.</p></li><li><p style="padding-top: 3pt;padding-left: 64pt;text-indent: -15pt;line-height: 77%;text-align: left;"><span>如果我们一次性从服务器请求下来这个页面, 可能需要花费一定的时间, 甚至用户的电脑上还出现了短暂空白的<br/>情况.</span></p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 28pt;text-align: left;">如何避免这种情况呢? 使用路由懒加载就可以了.</p></li></ul></li><li><p style="padding-top: 2pt;padding-left: 33pt;text-indent: -15pt;line-height: 27pt;text-align: left;">路由懒加载做了什么?</p><ul id="l37"><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 26pt;text-align: left;">路由懒加载的主要作用就是将路由对应的组件打包成一个个的js代码块.</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_094.png"/></span></p></li><li><p style="padding-left: 64pt;text-indent: -15pt;line-height: 27pt;text-align: left;">只有在这个路由被访问到的时候, 才加载对应的组件</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_095.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_096.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="338" height="152" alt="image" src="index_files/Image_097.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="366" height="212" alt="image" src="index_files/Image_098.jpg"/></span></p><p class="s2" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_099.jpg"/></span>        <span class="s3">路由懒加载的效果</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s18" style="padding-left: 30pt;text-indent: 0pt;text-align: left;"><span><img width="392" height="321" alt="image" src="index_files/Image_100.jpg"/></span>	<span><img width="462" height="203" alt="image" src="index_files/Image_101.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_102.png"/></span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s2" style="padding-left: 13pt;text-indent: 0pt;line-height: 55pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_103.jpg"/></span>        <span class="s3">懒加载的方式</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">方式一: 结合Vue的异步组件和Webpack的代码分析.</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s19" style="padding-top: 2pt;padding-left: 30pt;text-indent: 0pt;text-align: left;">const Home = resolve =&gt; { require.ensure([&#39;../components/Home.vue&#39;], () =&gt;</p><p class="s19" style="padding-left: 30pt;text-indent: 0pt;text-align: left;">{ resolve(require(&#39;../components/Home.vue&#39;)) })};</p></li><li><p style="padding-top: 12pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">方式二: AMD写法</p><p class="s19" style="padding-top: 3pt;padding-left: 37pt;text-indent: 0pt;text-align: left;">const About = resolve =&gt; require([&#39;../components/About.vue&#39;], resolve);</p></li><li><p style="padding-top: 11pt;padding-left: 33pt;text-indent: -15pt;text-align: left;">方式三: 在ES6中, 我们可以有更加简单的写法来组织Vue异步组件和Webpack的代码分割.</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_104.png"/></span></p><p class="s19" style="padding-top: 2pt;padding-left: 33pt;text-indent: 0pt;text-align: left;">const Home = () =&gt; import(&#39;../components/Home.vue&#39;)</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_105.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_106.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">认识嵌套路由</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">嵌套路由是一个很常见的功能</p><ul id="l38"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">比如在home页面中, 我们希望通过/home/news和/home/message访问一些内容.</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">一个路径映射一个组件, 访问这两个路径也会分别渲染两个组件.</p></li></ul></li><li><p style="padding-top: 5pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">路径和组件的关系如下:</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="230" height="244" alt="image" src="index_files/Image_107.gif"/></span></p><ul id="l39"><li><p class="s8" style="padding-top: 1pt;padding-left: 325pt;text-indent: -19pt;line-height: 29pt;text-align: left;">实现嵌套路由有两个步骤:</p></li></ul><ul id="l40"><li><p class="s8" style="padding-left: 325pt;text-indent: -19pt;line-height: 28pt;text-align: left;">创建对应的子组件, 并且在路由映射中配置对应的子路由.</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_108.png"/></span></p></li><li><p class="s8" style="padding-left: 325pt;text-indent: -19pt;line-height: 29pt;text-align: left;">在组件内部使用&lt;router-view&gt;标签.</p></li></ul><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_109.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_110.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">嵌套路由实现</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_111.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="591" height="216" alt="image" src="index_files/Image_112.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="407" height="252" alt="image" src="index_files/Image_113.jpg"/></span><span><img width="239" height="232" alt="image" src="index_files/Image_114.jpg"/></span></p></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">定义两个组件:</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 64pt;text-indent: 0pt;text-align: left;"><span><img width="460" height="242" alt="image" src="index_files/Image_115.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_116.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_117.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">嵌套默认路径</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_118.png"/></span></p></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">嵌套路由也可以配置默认的路径, 配置方式如下:</p><p style="padding-left: 30pt;text-indent: 0pt;text-align: left;"><span><img width="823" height="439" alt="image" src="index_files/Image_119.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_120.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_121.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">准备工作</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="452" height="243" alt="image" src="index_files/Image_122.jpg"/></span><span><img width="508" height="325" alt="image" src="index_files/Image_123.jpg"/></span><span><img width="464" height="254" alt="image" src="index_files/Image_124.jpg"/></span></p></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">为了演示传递参数, 我们这里再创建一个组件, 并且将其配置好</p><ul id="l41"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">第一步: 创建新的组件Profile.vue</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">第二步: 配置路由映射</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_125.png"/></span></p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">第三步: 添加跳转的&lt;router-link&gt;</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_126.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_127.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">传递参数的方式</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">传递参数主要有两种类型: params和query</p></li><li><h4 style="padding-top: 5pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">params的类型:</h4><ul id="l42"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">配置路由格式: <span style=" color: #F00;">/router/:id</span></p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">传递的方式: <span style=" color: #F00;">在path后面跟上对应的值</span></p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">传递后形成的路径: <span style=" color: #F00;">/router/123, /router/abc</span></p></li></ul></li><li><h4 style="padding-top: 5pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">query的类型:</h4><ul id="l43"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">配置路由格式: <span style=" color: #F00;">/router</span>, 也就是普通配置</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">传递的方式: 对象中使用<span style=" color: #F00;">query的key作为传递方式</span></p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">传递后形成的路径: <span style=" color: #F00;">/router?id=123, /router?id=abc</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_128.png"/></span></p></li></ul></li><li><p style="padding-left: 35pt;text-indent: -18pt;text-align: left;">如何使用它们呢? 也有两种方式: &lt;router-link&gt;的方式和JavaScript代码方式</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_129.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_130.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_131.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">传递参数方式一: &lt;router-link&gt;</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 11pt;text-indent: 0pt;text-align: left;"><span><img width="1096" height="483" alt="image" src="index_files/Image_132.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_133.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_134.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_135.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">传递参数方式二: JavaScript代码</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 11pt;text-indent: 0pt;text-align: left;"><span><img width="1091" height="482" alt="image" src="index_files/Image_136.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_137.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_138.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">获取参数</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">获取参数通过$route对象获取的.</p><ul id="l44"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;"><span>在使用了 vue-router 的应用中，路由对象会被注入每个组件中，赋值为 this.$route ，并且当路由切换时，路<br/>由对象会被更新。</span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_139.png"/></span></p></li></ul></li><li><p style="padding-top: 5pt;padding-bottom: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">通过$route获取传递的信息如下:</p><p style="padding-left: 35pt;text-indent: 0pt;text-align: left;"><span><img width="787" height="318" alt="image" src="index_files/Image_140.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_141.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_142.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">$route和$router是有区别的</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">$route和$router是有区别的</p><ul id="l45"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">$router为VueRouter实例，想要导航到不同URL，则使用$router.push方法</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_143.png"/></span></p></li><li><p style="padding-top: 5pt;padding-bottom: 1pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">$route为当前router跳转对象里面可以获取name、path、query、params等</p><p style="padding-left: 36pt;text-indent: 0pt;text-align: left;"><span><img width="972" height="359" alt="image" src="index_files/Image_144.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_145.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_146.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">为什么使用导航守卫?</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">我们来考虑一个需求: 在一个SPA应用中, 如何改变网页的标题呢?</p><ul id="l46"><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">网页标题是通过&lt;title&gt;来显示的, 但是SPA只有一个固定的HTML, 切换不同的页面时, 标题并不会改变.</p></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">但是我们可以通过JavaScript来修改&lt;title&gt;的内容.window.document.title = &#39;新的标题&#39;.</p></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">那么在Vue项目中, 在哪里修改? 什么时候修改比较合适呢?</p></li></ul></li><li><p style="padding-top: 3pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">普通的修改方式:</p><ul id="l47"><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">我们比较容易想到的修改标题的位置是每一个路由对应的组件.vue文件中.</p></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">通过mounted声明周期函数, 执行对应的代码进行修改即可.</p></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">但是当页面比较多时, 这种方式不容易维护(因为需要在多个页面执行类似的代码).</p></li></ul></li><li><p style="padding-top: 3pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">有没有更好的办法呢? 使用导航守卫即可.</p></li><li><p style="padding-top: 3pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">什么是导航守卫?</p><ul id="l48"><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">vue-router提供的导航守卫主要用来监听监听路由的进入和离开的.</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_147.png"/></span></p></li><li><p style="padding-top: 3pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">vue-router提供了beforeEach和afterEach的钩子函数, 它们会在路由即将改变前和改变后触发.</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_148.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_149.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">导航守卫使用</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">我们可以利用beforeEach来完成标题的修改.</p><ul id="l49"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">首先, 我们可以在钩子当中定义一些标题, 可以利用meta来定义</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_150.png"/></span></p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">其次, 利用导航守卫,修改我们的标题.</p></li></ul></li></ul></li></ul></li><li><p class="s8" style="padding-top: 7pt;padding-left: 32pt;text-indent: -19pt;line-height: 24pt;text-align: left;">导航钩子的三个参数解析:</p></li></ul><ul id="l50"><li><p class="s8" style="padding-left: 32pt;text-indent: -19pt;line-height: 19pt;text-align: left;">to: 即将要进入的目标的路由对象.</p></li><li><p class="s8" style="padding-left: 32pt;text-indent: -19pt;line-height: 19pt;text-align: left;">from: 当前导航即将要离开的路由对象.</p></li><li><p class="s8" style="padding-left: 32pt;text-indent: -19pt;line-height: 24pt;text-align: left;">next: 调用该方法后, 才能进入下一个钩子.</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s20" style="padding-left: 29pt;text-indent: 0pt;text-align: left;"><span><img width="434" height="341" alt="image" src="index_files/Image_151.jpg"/></span>	<span><img width="608" height="342" alt="image" src="index_files/Image_152.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_153.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_154.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">导航守卫补充</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><ul id="l51"><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">补充一:如果是后置钩子, 也就是afterEach, 不需要主动调用next()函数.</p></li><li><p style="padding-top: 5pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">补充二: 上面我们使用的导航守卫, 被称之为<b>全局守卫</b>.</p><ul id="l52"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">路由独享的守卫.</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">组件内的守卫.</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-left: 35pt;text-indent: -18pt;text-align: left;">更多内容, 可以查看官网进行学习:</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_155.png"/></span></p><ul id="l53"><li><p class="s10" style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">https://router.vuejs.org/zh/guide/advanced/navigation-<span class="s9"><br/></span>guards.html#%E8%B7%AF%E7%94%B1%E7%8B%AC%E4%BA%AB%E7%9A%84%E5%AE%88%E5%8<span class="s9"><br/></span>D%AB</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_156.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_157.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">keep-alive遇见vue-router</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">keep-alive 是 Vue 内置的一个组件，可以使被包含的组件保留状态，或避免重新渲染。</p><ul id="l54"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">它们有两个非常重要的属性:</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">include - 字符串或正则表达，只有匹配的组件会被缓存</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">exclude - 字符串或正则表达式，任何匹配的组件都不会被缓存</p></li></ul></li><li><p style="padding-top: 5pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">router-view 也是一个组件，如果直接被包在 keep-alive 里面，所有路径匹配到的视图组件都会被缓存：</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 35pt;text-indent: 0pt;text-align: left;"><span><img width="678" height="115" alt="image" src="index_files/Image_158.gif"/></span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_159.png"/></span></p></li><li><p style="padding-left: 35pt;text-indent: -18pt;text-align: left;">通过create声明周期函数来验证</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_160.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_161.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">TabBar实现思路</h2><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="277" height="485" alt="image" src="index_files/Image_162.jpg"/></span></p></li><li><p style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">1. 如果在下方有一个单独的TabBar组件，你如何封装</p><ul id="l55"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">自定义TabBar组件，在APP中使用</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">让TabBar出于底部，并且设置相关的样式</p></li></ul></li><li><p style="padding-top: 5pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">2.TabBar中显示的内容由外界决定</p><ul id="l56"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">定义插槽</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">flex布局平分TabBar</p></li></ul></li><li><p style="padding-top: 5pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">3.自定义TabBarItem，可以传入 图片和文字</p><ul id="l57"><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">定义TabBarItem，并且定义两个插槽：图片、文字。</p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">给两个插槽外层包装div，用于设置样式。</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_163.png"/></span></p></li><li><p style="padding-top: 5pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">填充插槽，实现底部TabBar的效果</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"/><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_164.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_165.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">TabBar实现思路</h2><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ul></li><li><p class="s21" style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">4.传入 高亮图片</p><ul id="l58"><li><p class="s21" style="padding-top: 1pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">定义另外一个插槽，插入active-icon的数据</p></li><li><p class="s21" style="padding-top: 1pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">定义一个变量isActive，通过v-show来决定是否显示对应的icon</p></li></ul></li><li><p class="s21" style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">5.TabBarItem绑定路由数据</p><ul id="l59"><li><p class="s21" style="padding-top: 1pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">安装路由：npm install vue-router —save</p></li><li><p class="s21" style="padding-top: 1pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">完成router/index.js的内容，以及创建对应的组件</p></li><li><p class="s21" style="padding-top: 1pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">main.js中注册router</p></li><li><p class="s21" style="padding-top: 1pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">APP中加入&lt;router-view&gt;组件</p></li></ul></li><li><p class="s21" style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">6.点击item跳转到对应路由，并且动态决定isActive</p><ul id="l60"><li><p class="s21" style="padding-top: 1pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">监听item的点击，通过this.$router.replace()替换路由路径</p></li><li><p class="s21" style="padding-top: 1pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">通过this.$route.path.indexOf(this.link) !== -1来判断是否是active</p></li></ul></li><li><p class="s21" style="padding-top: 1pt;padding-left: 35pt;text-indent: -18pt;text-align: left;">7.动态计算active样式</p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_166.png"/></span></p><ul id="l61"><li><p class="s21" style="padding-top: 1pt;padding-left: 60pt;text-indent: -21pt;text-align: left;">封装新的计算属性：<b>this</b>.isActive ? {&#39;color&#39;: &#39;red&#39;} : {}</p></li></ul></li></ul></li></ul><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span><img width="430" height="511" alt="image" src="index_files/Image_167.jpg"/></span><span><img width="623" height="515" alt="image" src="index_files/Image_168.jpg"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="7" alt="image" src="index_files/Image_169.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="1119" height="6" alt="image" src="index_files/Image_170.png"/></span></p><p style="text-indent: 0pt;text-align: left;"><span><img width="141" height="50" alt="image" src="index_files/Image_171.jpg"/></span></p><h2 style="padding-left: 131pt;text-indent: 0pt;line-height: 55pt;text-align: left;">代码实现</h2></body></html>
