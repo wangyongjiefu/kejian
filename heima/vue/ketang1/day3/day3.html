@@ -1,0 +1,690 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:day3</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h1 id="vue-js-day3">Vue.js - Day3</h1>
+<h2 id="-vue-">定义Vue组件</h2>
+<p>什么是组件： 组件的出现，就是为了拆分Vue实例的代码量的，能够让我们以不同的组件，来划分不同的功能模块，将来我们需要什么样的功能，就可以去调用对应的组件即可；
+组件化和模块化的不同：</p>
+<ul>
+<li>模块化： 是从代码逻辑的角度进行划分的；方便代码分层开发，保证每个功能模块的职能单一；</li>
+<li>组件化： 是从UI界面的角度进行划分的；前端的组件化，方便UI组件的重用；<h3 id="-">全局组件定义的三种方式</h3>
+<ol>
+<li>使用 Vue.extend 配合 Vue.component 方法：<pre><code>var login = Vue.extend({
+template: &#39;&lt;h1&gt;登录&lt;/h1&gt;&#39;
+});
+Vue.component(&#39;login&#39;, login);
+</code></pre></li>
+<li>直接使用 Vue.component 方法：<pre><code>Vue.component(&#39;register&#39;, {
+template: &#39;&lt;h1&gt;注册&lt;/h1&gt;&#39;
+});
+</code></pre></li>
+<li>将模板字符串，定义到script标签种：<pre><code>&lt;script id=&quot;tmpl&quot; type=&quot;x-template&quot;&gt;
+&lt;div&gt;&lt;a href=&quot;#&quot;&gt;登录&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;注册&lt;/a&gt;&lt;/div&gt;
+&lt;/script&gt;
+</code></pre>同时，需要使用 Vue.component 来定义组件：<pre><code>Vue.component(&#39;account&#39;, {
+template: &#39;#tmpl&#39;
+});
+</code></pre></li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>注意： 组件中的DOM结构，有且只能有唯一的根元素（Root Element）来进行包裹！</p>
+</blockquote>
+<h3 id="-">组件中展示数据和响应事件</h3>
+<ol>
+<li>在组件中，<code>data</code>需要被定义为一个方法，例如：<pre><code>Vue.component(&#39;account&#39;, {
+   template: &#39;#tmpl&#39;,
+   data() {
+     return {
+       msg: &#39;大家好！&#39;
+     }
+   },
+   methods:{
+     login(){
+       alert(&#39;点击了登录按钮&#39;);
+     }
+   }
+ });
+</code></pre></li>
+<li>在子组件中，如果将模板字符串，定义到了script标签中，那么，要访问子组件身上的<code>data</code>属性中的值，需要使用<code>this</code>来访问；</li>
+</ol>
+<h3 id="-data-">【重点】为什么组件中的data属性必须定义为一个方法并返回一个对象</h3>
+<ol>
+<li>通过计数器案例演示</li>
+</ol>
+<h3 id="-components-">使用<code>components</code>属性定义局部子组件</h3>
+<ol>
+<li>组件实例定义方式：<pre><code>&lt;script&gt;
+ // 创建 Vue 实例，得到 ViewModel
+ var vm = new Vue({
+   el: &#39;#app&#39;,
+   data: {},
+   methods: {},
+   components: { // 定义子组件
+     account: { // account 组件
+       template: &#39;&lt;div&gt;&lt;h1&gt;这是Account组件{{name}}&lt;/h1&gt;&lt;login&gt;&lt;/login&gt;&lt;/div&gt;&#39;, // 在这里使用定义的子组件
+       components: { // 定义子组件的子组件
+         login: { // login 组件
+           template: &quot;&lt;h3&gt;这是登录组件&lt;/h3&gt;&quot;
+         }
+       }
+     }
+   }
+ });
+&lt;/script&gt;
+</code></pre></li>
+<li>引用组件：<pre><code>&lt;div id=&quot;app&quot;&gt;
+ &lt;account&gt;&lt;/account&gt;
+&lt;/div&gt;
+</code></pre></li>
+</ol>
+<h2 id="-flag-v-if-v-else-">使用<code>flag</code>标识符结合<code>v-if</code>和<code>v-else</code>切换组件</h2>
+<ol>
+<li>页面结构：<pre><code>&lt;div id=&quot;app&quot;&gt;
+ &lt;input type=&quot;button&quot; value=&quot;toggle&quot; @click=&quot;flag=!flag&quot;&gt;
+ &lt;my-com1 v-if=&quot;flag&quot;&gt;&lt;/my-com1&gt;
+ &lt;my-com2 v-else=&quot;flag&quot;&gt;&lt;/my-com2&gt;
+&lt;/div&gt;
+</code></pre></li>
+<li><p>Vue实例定义：</p>
+<pre><code>&lt;script&gt;
+ Vue.component(&#39;myCom1&#39;, {
+   template: &#39;&lt;h3&gt;奔波霸&lt;/h3&gt;&#39;
+ })
+
+ Vue.component(&#39;myCom2&#39;, {
+   template: &#39;&lt;h3&gt;霸波奔&lt;/h3&gt;&#39;
+ })
+
+ // 创建 Vue 实例，得到 ViewModel
+ var vm = new Vue({
+   el: &#39;#app&#39;,
+   data: {
+     flag: true
+   },
+   methods: {}
+ });
+&lt;/script&gt;
+</code></pre></li>
+</ol>
+<h2 id="-is-">使用<code>:is</code>属性来切换不同的子组件,并添加切换动画</h2>
+<ol>
+<li><p>组件实例定义方式：</p>
+<pre><code>// 登录组件
+ const login = Vue.extend({
+   template: `&lt;div&gt;
+     &lt;h3&gt;登录组件&lt;/h3&gt;
+   &lt;/div&gt;`
+ });
+ Vue.component(&#39;login&#39;, login);
+
+ // 注册组件
+ const register = Vue.extend({
+   template: `&lt;div&gt;
+     &lt;h3&gt;注册组件&lt;/h3&gt;
+   &lt;/div&gt;`
+ });
+ Vue.component(&#39;register&#39;, register);
+
+ // 创建 Vue 实例，得到 ViewModel
+ var vm = new Vue({
+   el: &#39;#app&#39;,
+   data: { comName: &#39;login&#39; },
+   methods: {}
+ });
+</code></pre></li>
+<li>使用<code>component</code>标签，来引用组件，并通过<code>:is</code>属性来指定要加载的组件：<pre><code>&lt;div id=&quot;app&quot;&gt;
+ &lt;a href=&quot;#&quot; @click.prevent=&quot;comName=&#39;login&#39;&quot;&gt;登录&lt;/a&gt;
+ &lt;a href=&quot;#&quot; @click.prevent=&quot;comName=&#39;register&#39;&quot;&gt;注册&lt;/a&gt;
+ &lt;hr&gt;
+ &lt;transition mode=&quot;out-in&quot;&gt;
+   &lt;component :is=&quot;comName&quot;&gt;&lt;/component&gt;
+ &lt;/transition&gt;
+&lt;/div&gt;
+</code></pre></li>
+<li><p>添加切换样式：</p>
+<pre><code>&lt;style&gt;
+ .v-enter,
+ .v-leave-to {
+   opacity: 0;
+   transform: translateX(30px);
+ }
+
+ .v-enter-active,
+ .v-leave-active {
+   position: absolute;
+   transition: all 0.3s ease;
+ }
+
+ h3{
+   margin: 0;
+ }
+&lt;/style&gt;
+</code></pre></li>
+</ol>
+<h2 id="-">父组件向子组件传值</h2>
+<ol>
+<li>组件实例定义方式，注意：一定要使用<code>props</code>属性来定义父组件传递过来的数据<pre><code>&lt;script&gt;
+ // 创建 Vue 实例，得到 ViewModel
+ var vm = new Vue({
+   el: &#39;#app&#39;,
+   data: {
+     msg: &#39;这是父组件中的消息&#39;
+   },
+   components: {
+     son: {
+       template: &#39;&lt;h1&gt;这是子组件 --- {{finfo}}&lt;/h1&gt;&#39;,
+       props: [&#39;finfo&#39;]
+     }
+   }
+ });
+&lt;/script&gt;
+</code></pre></li>
+<li>使用<code>v-bind</code>或简化指令，将数据传递到子组件中：<pre><code>&lt;div id=&quot;app&quot;&gt;
+ &lt;son :finfo=&quot;msg&quot;&gt;&lt;/son&gt;
+&lt;/div&gt;
+</code></pre></li>
+</ol>
+<h2 id="-">子组件向父组件传值</h2>
+<ol>
+<li>原理：父组件将方法的引用，传递到子组件内部，子组件在内部调用父组件传递过来的方法，同时把要发送给父组件的数据，在调用方法的时候当作参数传递进去；</li>
+<li>父组件将方法的引用传递给子组件，其中，<code>getMsg</code>是父组件中<code>methods</code>中定义的方法名称，<code>func</code>是子组件调用传递过来方法时候的方法名称<pre><code>&lt;son @func=&quot;getMsg&quot;&gt;&lt;/son&gt;
+</code></pre></li>
+<li><p>子组件内部通过<code>this.$emit(&#39;方法名&#39;, 要传递的数据)</code>方式，来调用父组件中的方法，同时把数据传递给父组件使用</p>
+<pre><code>&lt;div id=&quot;app&quot;&gt;
+ &lt;!-- 引用父组件 --&gt;
+ &lt;son @func=&quot;getMsg&quot;&gt;&lt;/son&gt;
+
+ &lt;!-- 组件模板定义 --&gt;
+ &lt;script type=&quot;x-template&quot; id=&quot;son&quot;&gt;
+   &lt;div&gt;
+     &lt;input type=&quot;button&quot; value=&quot;向父组件传值&quot; @click=&quot;sendMsg&quot; /&gt;
+   &lt;/div&gt;
+ &lt;/script&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+ // 子组件的定义方式
+ Vue.component(&#39;son&#39;, {
+   template: &#39;#son&#39;, // 组件模板Id
+   methods: {
+     sendMsg() { // 按钮的点击事件
+       this.$emit(&#39;func&#39;, &#39;OK&#39;); // 调用父组件传递过来的方法，同时把数据传递出去
+     }
+   }
+ });
+
+ // 创建 Vue 实例，得到 ViewModel
+ var vm = new Vue({
+   el: &#39;#app&#39;,
+   data: {},
+   methods: {
+     getMsg(val){ // 子组件中，通过 this.$emit() 实际调用的方法，在此进行定义
+       alert(val);
+     }
+   }
+ });
+&lt;/script&gt;
+</code></pre></li>
+</ol>
+<h2 id="-">评论列表案例</h2>
+<p>目标：主要练习父子组件之间传值</p>
+<h2 id="-this-refs-">使用 <code>this.$refs</code> 来获取元素和组件</h2>
+<pre><code>  &lt;div id=&quot;app&quot;&gt;
+    &lt;div&gt;
+      &lt;input type=&quot;button&quot; value=&quot;获取元素内容&quot; @click=&quot;getElement&quot; /&gt;
+      &lt;!-- 使用 ref 获取元素 --&gt;
+      &lt;h1 ref=&quot;myh1&quot;&gt;这是一个大大的H1&lt;/h1&gt;
+
+      &lt;hr&gt;
+      &lt;!-- 使用 ref 获取子组件 --&gt;
+      &lt;my-com ref=&quot;mycom&quot;&gt;&lt;/my-com&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;script&gt;
+    Vue.component(&#39;my-com&#39;, {
+      template: &#39;&lt;h5&gt;这是一个子组件&lt;/h5&gt;&#39;,
+      data() {
+        return {
+          name: &#39;子组件&#39;
+        }
+      }
+    });
+
+    // 创建 Vue 实例，得到 ViewModel
+    var vm = new Vue({
+      el: &#39;#app&#39;,
+      data: {},
+      methods: {
+        getElement() {
+          // 通过 this.$refs 来获取元素
+          console.log(this.$refs.myh1.innerText);
+          // 通过 this.$refs 来获取组件
+          console.log(this.$refs.mycom.name);
+        }
+      }
+    });
+  &lt;/script&gt;
+</code></pre><h2 id="-">什么是路由</h2>
+<ol>
+<li><p>对于普通的网站，所有的超链接都是URL地址，所有的URL地址都对应服务器上对应的资源；</p>
+</li>
+<li><p>对于单页面应用程序来说，主要通过URL中的hash(#号)来实现不同页面之间的切换，同时，hash有一个特点：HTTP请求中不会包含hash相关的内容；所以，单页面程序中的页面跳转主要用hash实现；</p>
+</li>
+<li><p>在单页面应用程序中，这种通过hash改变来切换页面的方式，称作前端路由（区别于后端路由）；</p>
+</li>
+</ol>
+<h2 id="-vue-vue-router">在 vue 中使用 vue-router</h2>
+<ol>
+<li>导入 vue-router 组件类库：<pre><code>&lt;!-- 1. 导入 vue-router 组件类库 --&gt;
+&lt;script src=&quot;./lib/vue-router-2.7.0.js&quot;&gt;&lt;/script&gt;
+</code></pre></li>
+<li>使用 router-link 组件来导航<pre><code>&lt;!-- 2. 使用 router-link 组件来导航 --&gt;
+&lt;router-link to=&quot;/login&quot;&gt;登录&lt;/router-link&gt;
+&lt;router-link to=&quot;/register&quot;&gt;注册&lt;/router-link&gt;
+</code></pre></li>
+<li>使用 router-view 组件来显示匹配到的组件<pre><code>&lt;!-- 3. 使用 router-view 组件来显示匹配到的组件 --&gt;
+&lt;router-view&gt;&lt;/router-view&gt;
+</code></pre></li>
+<li><p>创建使用<code>Vue.extend</code>创建组件</p>
+<pre><code> // 4.1 使用 Vue.extend 来创建登录组件
+ var login = Vue.extend({
+   template: &#39;&lt;h1&gt;登录组件&lt;/h1&gt;&#39;
+ });
+
+ // 4.2 使用 Vue.extend 来创建注册组件
+ var register = Vue.extend({
+   template: &#39;&lt;h1&gt;注册组件&lt;/h1&gt;&#39;
+ });
+</code></pre></li>
+<li>创建一个路由 router 实例，通过 routers 属性来定义路由匹配规则<pre><code>// 5. 创建一个路由 router 实例，通过 routers 属性来定义路由匹配规则
+ var router = new VueRouter({
+   routes: [
+     { path: &#39;/login&#39;, component: login },
+     { path: &#39;/register&#39;, component: register }
+   ]
+ });
+</code></pre></li>
+<li>使用 router 属性来使用路由规则<pre><code>// 6. 创建 Vue 实例，得到 ViewModel
+ var vm = new Vue({
+   el: &#39;#app&#39;,
+   router: router // 使用 router 属性来使用路由规则
+ });
+</code></pre></li>
+</ol>
+<h2 id="-">设置路由高亮</h2>
+<h2 id="-">设置路由切换动效</h2>
+<h2 id="-">在路由规则中定义参数</h2>
+<ol>
+<li>在规则中定义参数：<pre><code>{ path: &#39;/register/:id&#39;, component: register }
+</code></pre></li>
+<li>通过 <code>this.$route.params</code>来获取路由中的参数：<pre><code>var register = Vue.extend({
+   template: &#39;&lt;h1&gt;注册组件 --- {{this.$route.params.id}}&lt;/h1&gt;&#39;
+ });
+</code></pre></li>
+</ol>
+<h2 id="-children-">使用 <code>children</code> 属性实现路由嵌套</h2>
+<pre><code>  &lt;div id=&quot;app&quot;&gt;
+    &lt;router-link to=&quot;/account&quot;&gt;Account&lt;/router-link&gt;
+
+    &lt;router-view&gt;&lt;/router-view&gt;
+  &lt;/div&gt;
+
+  &lt;script&gt;
+    // 父路由中的组件
+    const account = Vue.extend({
+      template: `&lt;div&gt;
+        这是account组件
+        &lt;router-link to=&quot;/account/login&quot;&gt;login&lt;/router-link&gt; | 
+        &lt;router-link to=&quot;/account/register&quot;&gt;register&lt;/router-link&gt;
+        &lt;router-view&gt;&lt;/router-view&gt;
+      &lt;/div&gt;`
+    });
+
+    // 子路由中的 login 组件
+    const login = Vue.extend({
+      template: &#39;&lt;div&gt;登录组件&lt;/div&gt;&#39;
+    });
+
+    // 子路由中的 register 组件
+    const register = Vue.extend({
+      template: &#39;&lt;div&gt;注册组件&lt;/div&gt;&#39;
+    });
+
+    // 路由实例
+    var router = new VueRouter({
+      routes: [
+        { path: &#39;/&#39;, redirect: &#39;/account/login&#39; }, // 使用 redirect 实现路由重定向
+        {
+          path: &#39;/account&#39;,
+          component: account,
+          children: [ // 通过 children 数组属性，来实现路由的嵌套
+            { path: &#39;login&#39;, component: login }, // 注意，子路由的开头位置，不要加 / 路径符
+            { path: &#39;register&#39;, component: register }
+          ]
+        }
+      ]
+    });
+
+    // 创建 Vue 实例，得到 ViewModel
+    var vm = new Vue({
+      el: &#39;#app&#39;,
+      data: {},
+      methods: {},
+      components: {
+        account
+      },
+      router: router
+    });
+  &lt;/script&gt;
+</code></pre><h2 id="-">命名视图实现经典布局</h2>
+<ol>
+<li>标签代码结构：<pre><code>&lt;div id=&quot;app&quot;&gt;
+ &lt;router-view&gt;&lt;/router-view&gt;
+ &lt;div class=&quot;content&quot;&gt;
+   &lt;router-view name=&quot;a&quot;&gt;&lt;/router-view&gt;
+   &lt;router-view name=&quot;b&quot;&gt;&lt;/router-view&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></li>
+<li><p>JS代码：</p>
+<pre><code>&lt;script&gt;
+ var header = Vue.component(&#39;header&#39;, {
+   template: &#39;&lt;div class=&quot;header&quot;&gt;header&lt;/div&gt;&#39;
+ });
+
+ var sidebar = Vue.component(&#39;sidebar&#39;, {
+   template: &#39;&lt;div class=&quot;sidebar&quot;&gt;sidebar&lt;/div&gt;&#39;
+ });
+
+ var mainbox = Vue.component(&#39;mainbox&#39;, {
+   template: &#39;&lt;div class=&quot;mainbox&quot;&gt;mainbox&lt;/div&gt;&#39;
+ });
+
+ // 创建路由对象
+ var router = new VueRouter({
+   routes: [
+     {
+       path: &#39;/&#39;, components: {
+         default: header,
+         a: sidebar,
+         b: mainbox
+       }
+     }
+   ]
+ });
+
+ // 创建 Vue 实例，得到 ViewModel
+ var vm = new Vue({
+   el: &#39;#app&#39;,
+   data: {},
+   methods: {},
+   router
+ });
+&lt;/script&gt;
+</code></pre></li>
+<li><p>CSS 样式：</p>
+<pre><code>&lt;style&gt;
+ .header {
+   border: 1px solid red;
+ }
+
+ .content{
+   display: flex;
+ }
+ .sidebar {
+   flex: 2;
+   border: 1px solid green;
+   height: 500px;
+ }
+ .mainbox{
+   flex: 8;
+   border: 1px solid blue;
+   height: 500px;
+ }
+&lt;/style&gt;
+</code></pre></li>
+</ol>
+<h2 id="watch-"><code>watch</code>属性的使用</h2>
+<p>考虑一个问题：想要实现 <code>名</code> 和 <code>姓</code> 两个文本框的内容改变，则全名的文本框中的值也跟着改变；（用以前的知识如何实现？？？）</p>
+<ol>
+<li><p>监听<code>data</code>中属性的改变：</p>
+<pre><code>&lt;div id=&quot;app&quot;&gt;
+ &lt;input type=&quot;text&quot; v-model=&quot;firstName&quot;&gt; +
+ &lt;input type=&quot;text&quot; v-model=&quot;lastName&quot;&gt; =
+ &lt;span&gt;{{fullName}}&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+ // 创建 Vue 实例，得到 ViewModel
+ var vm = new Vue({
+   el: &#39;#app&#39;,
+   data: {
+     firstName: &#39;jack&#39;,
+     lastName: &#39;chen&#39;,
+     fullName: &#39;jack - chen&#39;
+   },
+   methods: {},
+   watch: {
+     &#39;firstName&#39;: function (newVal, oldVal) { // 第一个参数是新数据，第二个参数是旧数据
+       this.fullName = newVal + &#39; - &#39; + this.lastName;
+     },
+     &#39;lastName&#39;: function (newVal, oldVal) {
+       this.fullName = this.firstName + &#39; - &#39; + newVal;
+     }
+   }
+ });
+&lt;/script&gt;
+</code></pre></li>
+<li><p>监听路由对象的改变：</p>
+<pre><code>&lt;div id=&quot;app&quot;&gt;
+ &lt;router-link to=&quot;/login&quot;&gt;登录&lt;/router-link&gt;
+ &lt;router-link to=&quot;/register&quot;&gt;注册&lt;/router-link&gt;
+
+ &lt;router-view&gt;&lt;/router-view&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+ var login = Vue.extend({
+   template: &#39;&lt;h1&gt;登录组件&lt;/h1&gt;&#39;
+ });
+
+ var register = Vue.extend({
+   template: &#39;&lt;h1&gt;注册组件&lt;/h1&gt;&#39;
+ });
+
+ var router = new VueRouter({
+   routes: [
+     { path: &quot;/login&quot;, component: login },
+     { path: &quot;/register&quot;, component: register }
+   ]
+ });
+
+ // 创建 Vue 实例，得到 ViewModel
+ var vm = new Vue({
+   el: &#39;#app&#39;,
+   data: {},
+   methods: {},
+   router: router,
+   watch: {
+     &#39;$route&#39;: function (newVal, oldVal) {
+       if (newVal.path === &#39;/login&#39;) {
+         console.log(&#39;这是登录组件&#39;);
+       }
+     }
+   }
+ });
+&lt;/script&gt;
+</code></pre></li>
+</ol>
+<h2 id="computed-"><code>computed</code>计算属性的使用</h2>
+<ol>
+<li><p>默认只有<code>getter</code>的计算属性：</p>
+<pre><code>&lt;div id=&quot;app&quot;&gt;
+ &lt;input type=&quot;text&quot; v-model=&quot;firstName&quot;&gt; +
+ &lt;input type=&quot;text&quot; v-model=&quot;lastName&quot;&gt; =
+ &lt;span&gt;{{fullName}}&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+ // 创建 Vue 实例，得到 ViewModel
+ var vm = new Vue({
+   el: &#39;#app&#39;,
+   data: {
+     firstName: &#39;jack&#39;,
+     lastName: &#39;chen&#39;
+   },
+   methods: {},
+   computed: { // 计算属性； 特点：当计算属性中所以来的任何一个 data 属性改变之后，都会重新触发 本计算属性 的重新计算，从而更新 fullName 的值
+     fullName() {
+       return this.firstName + &#39; - &#39; + this.lastName;
+     }
+   }
+ });
+&lt;/script&gt;
+</code></pre></li>
+<li><p>定义有<code>getter</code>和<code>setter</code>的计算属性：</p>
+<pre><code>&lt;div id=&quot;app&quot;&gt;
+ &lt;input type=&quot;text&quot; v-model=&quot;firstName&quot;&gt;
+ &lt;input type=&quot;text&quot; v-model=&quot;lastName&quot;&gt;
+ &lt;!-- 点击按钮重新为 计算属性 fullName 赋值 --&gt;
+ &lt;input type=&quot;button&quot; value=&quot;修改fullName&quot; @click=&quot;changeName&quot;&gt;
+
+ &lt;span&gt;{{fullName}}&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+ // 创建 Vue 实例，得到 ViewModel
+ var vm = new Vue({
+   el: &#39;#app&#39;,
+   data: {
+     firstName: &#39;jack&#39;,
+     lastName: &#39;chen&#39;
+   },
+   methods: {
+     changeName() {
+       this.fullName = &#39;TOM - chen2&#39;;
+     }
+   },
+   computed: {
+     fullName: {
+       get: function () {
+         return this.firstName + &#39; - &#39; + this.lastName;
+       },
+       set: function (newVal) {
+         var parts = newVal.split(&#39; - &#39;);
+         this.firstName = parts[0];
+         this.lastName = parts[1];
+       }
+     }
+   }
+ });
+&lt;/script&gt;
+</code></pre></li>
+</ol>
+<h2 id="watch-computed-methods-"><code>watch</code>、<code>computed</code>和<code>methods</code>之间的对比</h2>
+<ol>
+<li><code>computed</code>属性的结果会被缓存，除非依赖的响应式属性变化才会重新计算。主要当作属性来使用；</li>
+<li><code>methods</code>方法表示一个具体的操作，主要书写业务逻辑；</li>
+<li><code>watch</code>一个对象，键是需要观察的表达式，值是对应回调函数。主要用来监听某些特定数据的变化，从而进行某些具体的业务逻辑操作；可以看作是<code>computed</code>和<code>methods</code>的结合体；</li>
+</ol>
+<h2 id="nrm-"><code>nrm</code>的安装使用</h2>
+<p>作用：提供了一些最常用的NPM包镜像地址，能够让我们快速的切换安装包时候的服务器地址；
+什么是镜像：原来包刚一开始是只存在于国外的NPM服务器，但是由于网络原因，经常访问不到，这时候，我们可以在国内，创建一个和官网完全一样的NPM服务器，只不过，数据都是从人家那里拿过来的，除此之外，使用方式完全一样；</p>
+<ol>
+<li>运行<code>npm i nrm -g</code>全局安装<code>nrm</code>包；</li>
+<li>使用<code>nrm ls</code>查看当前所有可用的镜像源地址以及当前所使用的镜像源地址；</li>
+<li>使用<code>nrm use npm</code>或<code>nrm use taobao</code>切换不同的镜像源地址；</li>
+</ol>
+<h2 id="-">相关文件</h2>
+<ol>
+<li><a href="http://www.cnblogs.com/joyho/articles/4430148.html">URL中的hash（井号）</a></li>
+</ol>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>

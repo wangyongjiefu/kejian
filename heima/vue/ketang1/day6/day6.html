@@ -1,0 +1,495 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:day6</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h1 id="vue-js-day6">Vue.js - day6</h1>
+<h2 id="-">注意：</h2>
+<p>有时候使用<code>npm i node-sass -D</code>装不上，这时候，就必须使用 <code>cnpm i node-sass -D</code></p>
+<h2 id="-render-">在普通页面中使用render函数渲染组件</h2>
+<h2 id="-webpack-vue-">在webpack中配置.vue组件页面的解析</h2>
+<ol>
+<li><p>运行<code>cnpm i vue -S</code>将vue安装为运行依赖；</p>
+</li>
+<li><p>运行<code>cnpm i vue-loader vue-template-compiler -D</code>将解析转换vue的包安装为开发依赖；</p>
+</li>
+<li><p>运行<code>cnpm i style-loader css-loader -D</code>将解析转换CSS的包安装为开发依赖，因为.vue文件中会写CSS样式；</p>
+</li>
+<li><p>在<code>webpack.config.js</code>中，添加如下<code>module</code>规则：</p>
+</li>
+</ol>
+<pre><code>
+module: {
+
+    rules: [
+
+      { test: /\.css$/, use: [&#39;style-loader&#39;, &#39;css-loader&#39;] },
+
+      { test: /\.vue$/, use: &#39;vue-loader&#39; }
+
+    ]
+
+  }
+
+</code></pre><ol start="5">
+<li>创建<code>App.js</code>组件页面：</li>
+</ol>
+<pre><code>
+    &lt;template&gt;
+
+      &lt;!-- 注意：在 .vue 的组件中，template 中必须有且只有唯一的根元素进行包裹，一般都用 div 当作唯一的根元素 --&gt;
+
+      &lt;div&gt;
+
+        &lt;h1&gt;这是APP组件 - {{msg}}&lt;/h1&gt;
+
+        &lt;h3&gt;我是h3&lt;/h3&gt;
+
+      &lt;/div&gt;
+
+    &lt;/template&gt;
+
+
+
+    &lt;script&gt;
+
+    // 注意：在 .vue 的组件中，通过 script 标签来定义组件的行为，需要使用 ES6 中提供的 export default 方式，导出一个vue实例对象
+
+    export default {
+
+      data() {
+
+        return {
+
+          msg: &#39;OK&#39;
+
+        }
+
+      }
+
+    }
+
+    &lt;/script&gt;
+
+
+
+    &lt;style scoped&gt;
+
+    h1 {
+
+      color: red;
+
+    }
+
+    &lt;/style&gt;
+
+</code></pre><ol start="6">
+<li>创建<code>main.js</code>入口文件：</li>
+</ol>
+<pre><code>
+    // 导入 Vue 组件
+
+    import Vue from &#39;vue&#39;
+
+
+
+    // 导入 App组件
+
+    import App from &#39;./components/App.vue&#39;
+
+
+
+    // 创建一个 Vue 实例，使用 render 函数，渲染指定的组件
+
+    var vm = new Vue({
+
+      el: &#39;#app&#39;,
+
+      render: c =&gt; c(App)
+
+    });
+
+</code></pre><h2 id="-webpack-vue-">在使用webpack构建的Vue项目中使用模板对象？</h2>
+<ol>
+<li>在<code>webpack.config.js</code>中添加<code>resolve</code>属性：<pre><code>resolve: {
+ alias: {
+   &#39;vue$&#39;: &#39;vue/dist/vue.esm.js&#39;
+ }
+}
+</code></pre></li>
+</ol>
+<h2 id="es6-">ES6中语法使用总结</h2>
+<ol>
+<li><p>使用 <code>export default</code> 和 <code>export</code> 导出模块中的成员; 对应ES5中的 <code>module.exports</code> 和 <code>export</code></p>
+</li>
+<li><p>使用 <code>import ** from **</code> 和 <code>import &#39;路径&#39;</code> 还有 <code>import {a, b} from &#39;模块标识&#39;</code> 导入其他模块</p>
+</li>
+<li><p>使用箭头函数：<code>(a, b)=&gt; { return a-b; }</code></p>
+</li>
+</ol>
+<h2 id="-vue-vue-router-">在vue组件页面中，集成vue-router路由模块</h2>
+<p><a href="https://router.vuejs.org/">vue-router官网</a></p>
+<ol>
+<li>导入路由模块：</li>
+</ol>
+<pre><code>
+import VueRouter from &#39;vue-router&#39;
+
+</code></pre><ol start="2">
+<li>安装路由模块：</li>
+</ol>
+<pre><code>
+Vue.use(VueRouter);
+
+</code></pre><ol start="3">
+<li>导入需要展示的组件:</li>
+</ol>
+<pre><code>
+import login from &#39;./components/account/login.vue&#39;
+
+import register from &#39;./components/account/register.vue&#39;
+
+</code></pre><ol start="4">
+<li>创建路由对象:</li>
+</ol>
+<pre><code>
+var router = new VueRouter({
+
+  routes: [
+
+    { path: &#39;/&#39;, redirect: &#39;/login&#39; },
+
+    { path: &#39;/login&#39;, component: login },
+
+    { path: &#39;/register&#39;, component: register }
+
+  ]
+
+});
+
+</code></pre><ol start="5">
+<li>将路由对象，挂载到 Vue 实例上:</li>
+</ol>
+<pre><code>
+var vm = new Vue({
+
+  el: &#39;#app&#39;,
+
+  // render: c =&gt; { return c(App) }
+
+  render(c) {
+
+    return c(App);
+
+  },
+
+  router // 将路由对象，挂载到 Vue 实例上
+
+});
+
+</code></pre><ol start="6">
+<li>改造App.vue组件，在 template 中，添加<code>router-link</code>和<code>router-view</code>：</li>
+</ol>
+<pre><code>
+    &lt;router-link to=&quot;/login&quot;&gt;登录&lt;/router-link&gt;
+
+    &lt;router-link to=&quot;/register&quot;&gt;注册&lt;/router-link&gt;
+
+
+
+    &lt;router-view&gt;&lt;/router-view&gt;
+
+</code></pre><h2 id="-css-">组件中的css作用域问题</h2>
+<h2 id="-">抽离路由为单独的模块</h2>
+<h2 id="-mintui-">使用 饿了么的 MintUI 组件</h2>
+<p><a href="https://github.com/ElemeFE/mint-ui">Github 仓储地址</a></p>
+<p><a href="http://mint-ui.github.io/#!/zh-cn">Mint-UI官方文档</a></p>
+<ol>
+<li>导入所有MintUI组件：</li>
+</ol>
+<pre><code>
+import MintUI from &#39;mint-ui&#39;
+
+</code></pre><ol start="2">
+<li>导入样式表：</li>
+</ol>
+<pre><code>
+import &#39;mint-ui/lib/style.css&#39;
+
+</code></pre><ol start="3">
+<li>在 vue 中使用 MintUI中的Button按钮和Toast弹框提示：</li>
+</ol>
+<pre><code>
+Vue.use(MintUI)
+
+</code></pre><ol start="4">
+<li>使用的例子：</li>
+</ol>
+<pre><code>
+&lt;mt-button type=&quot;primary&quot; size=&quot;large&quot;&gt;primary&lt;/mt-button&gt;
+
+</code></pre><h2 id="mint-ui-">Mint-UI中按需导入的配置方式</h2>
+<h2 id="-mui-">使用 MUI 代码片段</h2>
+<blockquote>
+<p>注意： MUI 不同于 Mint-UI，MUI只是开发出来的一套好用的代码片段，里面提供了配套的样式、配套的HTML代码段，类似于 Bootstrap； 而 Mint-UI，是真正的组件库，是使用 Vue 技术封装出来的 成套的组件，可以无缝的和 VUE项目进行集成开发；
+因此，从体验上来说， Mint-UI体验更好，因为这是别人帮我们开发好的现成的Vue组件；
+从体验上来说， MUI和Bootstrap类似；
+理论上，任何项目都可以使用 MUI 或 Bootstrap，但是，MInt-UI只适用于Vue项目；</p>
+</blockquote>
+<p>注意： MUI 并不能使用  npm 去下载，需要自己手动从 github 上，下载现成的包，自己解压出来，然后手动拷贝到项目中使用；</p>
+<p><a href="http://dev.dcloud.net.cn/mui/">官网首页</a></p>
+<p><a href="http://dev.dcloud.net.cn/mui/ui/">文档地址</a></p>
+<ol>
+<li>导入 MUI 的样式表：</li>
+</ol>
+<pre><code>
+import &#39;../lib/mui/css/mui.min.css&#39;
+
+</code></pre><ol start="2">
+<li>在<code>webpack.config.js</code>中添加新的loader规则：</li>
+</ol>
+<pre><code>
+{ test: /\.(png|jpg|gif|ttf)$/, use: &#39;url-loader&#39; }
+
+</code></pre><ol start="3">
+<li>根据官方提供的文档和example，尝试使用相关的组件</li>
+</ol>
+<h2 id="-oschina-">将项目源码托管到oschina中</h2>
+<ol>
+<li><p>点击头像 -&gt; 修改资料 -&gt; SSH公钥 <a href="http://git.mydoc.io/?t=154712">如何生成SSH公钥</a></p>
+</li>
+<li><p>创建自己的空仓储，使用 <code>git config --global user.name &quot;用户名&quot;</code> 和 <code>git config --global user.email ***@**.com</code> 来全局配置提交时用户的名称和邮箱</p>
+</li>
+<li><p>使用 <code>git init</code> 在本地初始化项目</p>
+</li>
+<li><p>使用 <code>touch README.md</code> 和 <code>touch .gitignore</code> 来创建项目的说明文件和忽略文件；</p>
+</li>
+<li><p>使用 <code>git add .</code> 将所有文件托管到 git 中</p>
+</li>
+<li><p>使用 <code>git commit -m &quot;init project&quot;</code> 将项目进行本地提交</p>
+</li>
+<li><p>使用 <code>git remote add origin 仓储地址</code>将本地项目和远程仓储连接，并使用origin最为远程仓储的别名</p>
+</li>
+<li><p>使用 <code>git push -u origin master</code> 将本地代码push到仓储中</p>
+</li>
+</ol>
+<h2 id="app-vue-">App.vue 组件的基本设置</h2>
+<ol>
+<li><p>头部的固定导航栏使用 <code>Mint-UI</code> 的 <code>Header</code> 组件；</p>
+</li>
+<li><p>底部的页签使用 <code>mui</code> 的 <code>tabbar</code>;</p>
+</li>
+<li><p>购物车的图标，使用 <code>icons-extra</code> 中的 <code>mui-icon-extra mui-icon-extra-cart</code>，同时，应该把其依赖的字体图标文件 <code>mui-icons-extra.ttf</code>，复制到 <code>fonts</code> 目录下！</p>
+</li>
+<li><p>将底部的页签，改造成 <code>router-link</code> 来实现单页面的切换；</p>
+</li>
+<li><p>Tab Bar 路由激活时候设置高亮的两种方式：</p>
+<ul>
+<li>全局设置样式如下：</li>
+</ul>
+<pre><code>
+  .router-link-active{
+
+       color:#007aff !important;
+
+ }
+
+</code></pre><ul>
+<li>或者在 <code>new VueRouter</code> 的时候，通过 <code>linkActiveClass</code> 来指定高亮的类：</li>
+</ul>
+<pre><code>
+  // 创建路由对象
+
+ var router = new VueRouter({
+
+   routes: [
+
+     { path: &#39;/&#39;, redirect: &#39;/home&#39; }
+
+   ],
+
+   linkActiveClass: &#39;mui-active&#39;
+
+ });
+
+</code></pre></li>
+</ol>
+<h2 id="-tabbar-">实现 tabbar 页签不同组件页面的切换</h2>
+<ol>
+<li><p>将 tabbar 改造成 <code>router-link</code> 形式，并指定每个连接的 <code>to</code> 属性；</p>
+</li>
+<li><p>在入口文件中导入需要展示的组件，并创建路由对象：</p>
+</li>
+</ol>
+<pre><code>
+    // 导入需要展示的组件
+
+    import Home from &#39;./components/home/home.vue&#39;
+
+    import Member from &#39;./components/member/member.vue&#39;
+
+    import Shopcar from &#39;./components/shopcar/shopcar.vue&#39;
+
+    import Search from &#39;./components/search/search.vue&#39;
+
+
+
+    // 创建路由对象
+
+    var router = new VueRouter({
+
+      routes: [
+
+        { path: &#39;/&#39;, redirect: &#39;/home&#39; },
+
+        { path: &#39;/home&#39;, component: Home },
+
+        { path: &#39;/member&#39;, component: Member },
+
+        { path: &#39;/shopcar&#39;, component: Shopcar },
+
+        { path: &#39;/search&#39;, component: Search }
+
+      ],
+
+      linkActiveClass: &#39;mui-active&#39;
+
+    });
+
+</code></pre><h2 id="-mt-swipe-">使用 mt-swipe 轮播图组件</h2>
+<ol>
+<li>假数据：</li>
+</ol>
+<pre><code>
+lunbo: [
+
+        &#39;http://www.itcast.cn/images/slidead/BEIJING/2017440109442800.jpg&#39;,
+
+        &#39;http://www.itcast.cn/images/slidead/BEIJING/2017511009514700.jpg&#39;,
+
+        &#39;http://www.itcast.cn/images/slidead/BEIJING/2017421414422600.jpg&#39;
+
+      ]
+
+</code></pre><ol start="2">
+<li>引入轮播图组件：</li>
+</ol>
+<pre><code>
+&lt;!-- Mint-UI 轮播图组件 --&gt;
+
+    &lt;div class=&quot;home-swipe&quot;&gt;
+
+      &lt;mt-swipe :auto=&quot;4000&quot;&gt;
+
+        &lt;mt-swipe-item v-for=&quot;(item, i) in lunbo&quot; :key=&quot;i&quot;&gt;
+
+          &lt;img :src=&quot;item&quot; alt=&quot;&quot;&gt;
+
+        &lt;/mt-swipe-item&gt;
+
+      &lt;/mt-swipe&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+</code></pre><h2 id="-vue-vue-resource-">在<code>.vue</code>组件中使用<code>vue-resource</code>获取数据</h2>
+<ol>
+<li><p>运行<code>cnpm i vue-resource -S</code>安装模块</p>
+</li>
+<li><p>导入 vue-resource 组件</p>
+</li>
+</ol>
+<pre><code>
+import VueResource from &#39;vue-resource&#39;
+
+</code></pre><ol start="3">
+<li>在vue中使用 vue-resource 组件</li>
+</ol>
+<pre><code>
+Vue.use(VueResource);
+
+</code></pre>
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>

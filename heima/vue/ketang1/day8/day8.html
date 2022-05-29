@@ -1,0 +1,145 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:day8</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h1 id="day8">day8</h1>
+<h2 id="-mui-tab-top-webview-main-">使用mui的<code>tab-top-webview-main</code>完成分类滑动栏</h2>
+<h3 id="-">兼容问题</h3>
+<ol>
+<li><p>和 App.vue 中的 <code>router-link</code> 身上的类名 <code>mui-tab-item</code> 存在兼容性问题，导致tab栏失效，可以把<code>mui-tab-item</code>改名为<code>mui-tab-item1</code>，并复制相关的类样式，来解决这个问题；</p>
+<pre><code> .mui-bar-tab .mui-tab-item1.mui-active {
+   color: #007aff;
+ }
+
+ .mui-bar-tab .mui-tab-item1 {
+   display: table-cell;
+   overflow: hidden;
+   width: 1%;
+   height: 50px;
+   text-align: center;
+   vertical-align: middle;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   color: #929292;
+ }
+
+ .mui-bar-tab .mui-tab-item1 .mui-icon {
+   top: 3px;
+   width: 24px;
+   height: 24px;
+   padding-top: 0;
+   padding-bottom: 0;
+ }
+
+ .mui-bar-tab .mui-tab-item1 .mui-icon~.mui-tab-label {
+   font-size: 11px;
+   display: block;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ }
+</code></pre></li>
+<li><code>tab-top-webview-main</code>组件第一次显示到页面中的时候，无法被滑动的解决方案：<ul>
+<li>先导入 mui 的JS文件:<pre><code>import mui from &#39;../../../lib/mui/js/mui.min.js&#39;
+</code></pre></li>
+<li>在 组件的 <code>mounted</code> 事件钩子中，注册 mui 的滚动事件：<pre><code>mounted() {
+   // 需要在组件的 mounted 事件钩子中，注册 mui 的 scroll 滚动事件
+   mui(&#39;.mui-scroll-wrapper&#39;).scroll({
+     deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+   });
+ }
+</code></pre></li>
+</ul>
+</li>
+<li>滑动的时候报警告：<code>Unable to preventDefault inside passive event listener due to target being treated as passive. See https://www.chromestatus.com/features/5093566007214080</code><pre><code>解决方法，可以加上* { touch-action: pan-y; } 这句样式去掉。
+</code></pre>原因：（是chrome为了提高页面的滑动流畅度而新折腾出来的一个东西） <a href="http://www.cnblogs.com/pearl07/p/6589114.html">http://www.cnblogs.com/pearl07/p/6589114.html</a>
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/touch-action">https://developer.mozilla.org/zh-CN/docs/Web/CSS/touch-action</a></li>
+</ol>
+<h2 id="-">移除严格模式</h2>
+<p><a href="https://github.com/genify/babel-plugin-transform-remove-strict-mode">babel-plugin-transform-remove-strict-mode</a></p>
+<h2 id="vue-preview"><a href="https://github.com/LS1231/vue-preview">vue-preview</a></h2>
+<p>一个Vue集成PhotoSwipe图片预览插件</p>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>
