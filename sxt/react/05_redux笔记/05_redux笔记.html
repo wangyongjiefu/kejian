@@ -1,0 +1,334 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>05_redux笔记 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../04_react-UI_教程/04_react-UI_教程.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01_react_笔记/01_react_笔记.html">
+            
+                <a href="../01_react_笔记/01_react_笔记.html">
+            
+                    
+                    01react笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02_react案例_笔记/02_react案例_笔记.html">
+            
+                <a href="../02_react案例_笔记/02_react案例_笔记.html">
+            
+                    
+                    02react案例笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../03_react-router_教程/03_react-router_教程.html">
+            
+                <a href="../03_react-router_教程/03_react-router_教程.html">
+            
+                    
+                    03react-router教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04_react-UI_教程/04_react-UI_教程.html">
+            
+                <a href="../04_react-UI_教程/04_react-UI_教程.html">
+            
+                    
+                    04react-UI教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="05_redux笔记.html">
+            
+                <a href="05_redux笔记.html">
+            
+                    
+                    05_redux笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05_redux笔记.html">
+            <a href="../尚硅谷-React全家桶/尚硅谷-React全家桶.html">
+                尚硅谷-React全家桶
+            </a>
+        </li>
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >05_redux笔记</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="0-redux&#x8981;&#x70B9;">0. redux&#x8981;&#x70B9;</h1>
+<pre><code>1. redux&#x7406;&#x89E3;
+2. redux&#x76F8;&#x5173;API
+3. redux&#x6838;&#x5FC3;&#x6982;&#x5FF5;(3&#x4E2A;)
+4. redux&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;
+5. &#x4F7F;&#x7528;redux&#x53CA;&#x76F8;&#x5173;&#x5E93;&#x7F16;&#x7801;
+</code></pre><h1 id="1-redux&#x7406;&#x89E3;">1. redux&#x7406;&#x89E3;</h1>
+<pre><code>&#x4EC0;&#x4E48;?: redux&#x662F;&#x4E13;&#x95E8;&#x505A;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x7684;&#x72EC;&#x7ACB;&#x7B2C;3&#x65B9;&#x5E93;, &#x4E0D;&#x662F;react&#x63D2;&#x4EF6;
+&#x4F5C;&#x7528;?: &#x5BF9;&#x5E94;&#x7528;&#x4E2D;&#x72B6;&#x6001;&#x8FDB;&#x884C;&#x96C6;&#x4E2D;&#x5F0F;&#x7684;&#x7BA1;&#x7406;(&#x5199;/&#x8BFB;)
+&#x5F00;&#x53D1;: &#x4E0E;react-redux, redux-thunk&#x7B49;&#x63D2;&#x4EF6;&#x914D;&#x5408;&#x4F7F;&#x7528;
+</code></pre><h1 id="2-redux&#x76F8;&#x5173;api">2. redux&#x76F8;&#x5173;API</h1>
+<pre><code>redux&#x4E2D;&#x5305;&#x542B;: createStore(), applyMiddleware(), combineReducers()
+store&#x5BF9;&#x8C61;: getState(), dispatch(), subscribe()
+react-redux: &lt;Provider&gt;, connect()()
+</code></pre><h1 id="3-redux&#x6838;&#x5FC3;&#x6982;&#x5FF5;3&#x4E2A;">3. redux&#x6838;&#x5FC3;&#x6982;&#x5FF5;(3&#x4E2A;)</h1>
+<pre><code>action: 
+    &#x9ED8;&#x8BA4;&#x662F;&#x5BF9;&#x8C61;(&#x540C;&#x6B65;action), {type: &apos;xxx&apos;, data: value}, &#x9700;&#x8981;&#x901A;&#x8FC7;&#x5BF9;&#x5E94;&#x7684;actionCreator&#x4EA7;&#x751F;, 
+    &#x5B83;&#x7684;&#x503C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x51FD;&#x6570;(&#x5F02;&#x6B65;action), &#x9700;&#x8981;&#x5F15;&#x5165;redux-thunk&#x624D;&#x53EF;&#x4EE5;
+reducer
+    &#x6839;&#x636E;&#x8001;&#x7684;state&#x548C;&#x6307;&#x5B9A;&#x7684;action, &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;state
+    &#x4E0D;&#x80FD;&#x4FEE;&#x6539;&#x8001;&#x7684;state
+store
+    redux&#x6700;&#x6838;&#x5FC3;&#x7684;&#x7BA1;&#x7406;&#x5BF9;&#x8C61;
+    &#x5185;&#x90E8;&#x7BA1;&#x7406;&#x7740;: state&#x548C;reducer
+    &#x63D0;&#x4F9B;&#x65B9;&#x6CD5;: getState(), dispatch(action), subscribe(listener)
+</code></pre><h1 id="4-redux&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;">4. redux&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;</h1>
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016091802.jpg" alt="">
+<img src="https://i.imgur.com/2R5G8bG.png" alt=""></p>
+<h1 id="5-&#x4F7F;&#x7528;redux&#x53CA;&#x76F8;&#x5173;&#x5E93;&#x7F16;&#x7801;">5. &#x4F7F;&#x7528;redux&#x53CA;&#x76F8;&#x5173;&#x5E93;&#x7F16;&#x7801;</h1>
+<pre><code>&#x9700;&#x8981;&#x5F15;&#x5165;&#x7684;&#x5E93;: 
+    redux
+    react-redux
+    redux-thunk
+    redux-devtools-extension(&#x8FD9;&#x4E2A;&#x53EA;&#x5728;&#x5F00;&#x53D1;&#x65F6;&#x9700;&#x8981;)
+redux&#x6587;&#x4EF6;&#x5939;: 
+    action-types.js
+    actions.js
+    reducers.js
+    store.js
+&#x7EC4;&#x4EF6;&#x5206;2&#x7C7B;: 
+    ui&#x7EC4;&#x4EF6;(components): &#x4E0D;&#x4F7F;&#x7528;redux&#x76F8;&#x5173;PAI
+    &#x5BB9;&#x5668;&#x7EC4;&#x4EF6;(containers): &#x4F7F;&#x7528;redux&#x76F8;&#x5173;API
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../04_react-UI_教程/04_react-UI_教程.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 04react-UI教程">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"05_redux笔记","level":"1.6","depth":1,"previous":{"title":"04react-UI教程","level":"1.5","depth":1,"path":"04_react-UI_教程/04_react-UI_教程.md","ref":"04_react-UI_教程/04_react-UI_教程.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"05_redux笔记/05_redux笔记.md","mtime":"2018-01-25T17:02:44.062Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-29T15:05:15.082Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
