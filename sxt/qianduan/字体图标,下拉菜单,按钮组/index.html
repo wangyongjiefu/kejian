@@ -379,12 +379,21 @@
 <div id="book-search-results">
     <div class="search-noresults">
     
-                                <section class="normal markdown-section">
-                                
-                                <h1 id="22bootstrap&#x5B57;&#x4F53;&#x56FE;&#x6807;&#x4E0B;&#x62C9;&#x83DC;&#x5355;&#x6309;&#x94AE;&#x7EC4;">2_2bootstrap&#x5B57;&#x4F53;&#x56FE;&#x6807;,&#x4E0B;&#x62C9;&#x83DC;&#x5355;,&#x6309;&#x94AE;&#x7EC4;</h1>
-
-                                
-                                </section>
+        <section class="normal markdown-section">
+			<div style="width: 100%;"><img src="./img/0.png" alt=""></div>
+			<script src="../../../public/js/jquery-3.5.1.min.js"></script>
+			<script>
+				$(function(){
+					for (var index=0; index < 20; index++) {
+						let div = $('<div style="width: 100%;"><img src="./img/'+(index+1)+'.png" alt=""></div>')
+						$(".normal").append(div);
+					}
+                    setTimeout(()=>{
+                        //alert(index)
+                    },2222)
+				})
+			</script>
+		</section>
                             
     </div>
     <div class="search-results">

@@ -379,12 +379,21 @@
 <div id="book-search-results">
     <div class="search-noresults">
     
-                                <section class="normal markdown-section">
-                                
-                                <h1 id="15&#x76D2;&#x5B50;&#x6A21;&#x578B;">15_&#x76D2;&#x5B50;&#x6A21;&#x578B;</h1>
-
-                                
-                                </section>
+        <section class="normal markdown-section">
+			<div style="width: 100%;"><img src="./img/0.png" alt=""></div>
+			<script src="../../../public/js/jquery-3.5.1.min.js"></script>
+			<script>
+				$(function(){
+					for (var index=0; index < 28; index++) {
+						let div = $('<div style="width: 100%;"><img src="./img/'+(index+1)+'.png" alt=""></div>')
+						$(".normal").append(div);
+					}
+                    setTimeout(()=>{
+                        //alert(index)
+                    },2222)
+				})
+			</script>
+		</section>
                             
     </div>
     <div class="search-results">
